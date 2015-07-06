@@ -1,0 +1,112 @@
+.plane-future {
+  text-align: center;
+  padding: 83px 0 171px 0;
+
+  h1 {
+    color: #000;
+    font-size: 50px;
+    font-weight: 100;
+
+    max-width: 840px;
+    margin: 0 0 116px 0;
+
+    display: inline-block;
+  }
+
+  .plane-future-steps {
+    margin: 0;
+    overflow: hidden;
+
+    li {
+      width: 50%;
+      float: left;
+      text-align: center;
+
+      list-style-type: none;
+      display: table;
+
+      margin: 0;
+      padding-right: 108px;
+
+      span {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 400;
+
+        display: table-cell;
+        float: left;
+        vertical-align: middle;
+
+        border-radius: 50%;
+
+        padding: 3px 0;
+        margin: 0 19px 0 0;
+
+        width: 56px;
+        height: 56px;
+      }
+
+      .first-step {
+        background-color: #51b985;
+      }
+
+      .second-step {
+        background-color: #e0bf3b;
+      }
+
+      .third-step {
+        background-color: #e66f27;
+      }
+
+      .fourth-step {
+        background-color: #9c78c5;
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: 100;
+        text-align: left;
+
+        overflow: hidden;
+      }
+    }
+  }
+
+  .plane-future-steps:last-child {
+    margin: 93px 0 0 0;
+  }
+}
+
+@media (max-width: @container-sm) {
+  .plane-future {
+    padding: 45px 0 47px 0;
+
+    h1 {
+      font-size: 36px;
+      margin: 0 0 55px 0;
+    }
+
+    .plane-future-steps {
+      margin: 0;
+      padding: 0;
+
+      li {
+        width: 100%;
+        float: none;
+
+        margin: 0;
+        padding: 0;
+
+        p {
+          font-size: 18px;
+
+          width: auto;
+        }
+      }
+    }
+
+    .plane-future-steps:last-child {
+      margin: 0 0 0 0;
+    }
+  }
+}

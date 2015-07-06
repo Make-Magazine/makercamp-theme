@@ -1,0 +1,147 @@
+.how-it-works {
+  text-align: center;
+
+  background-image: url("../../assets/img/bg_how_maker_camp_works.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 83px;
+  padding-bottom: 151px;
+  h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 42px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 29px;
+  }
+  p {
+    margin: 0 auto;
+    max-width: 391px;
+    font-weight: 400;
+    padding-bottom: 30px;
+  }
+  a {
+    color: #00bff3;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+  .photo {
+    max-width: 142px;
+    margin-bottom: 37px;
+  }
+
+  .read-more-list {
+    margin: 0;
+    padding: 0;
+    &,
+    li {
+      list-style: none;
+    }
+  }
+
+  .read-more {
+    display: inline-block;
+    margin-left: 33px;
+    padding: 10px 0 10px 62px;
+
+    background: url("../../assets/img/arrow_right.png") left center no-repeat;
+    background-size: 37px;
+
+    color: #00bff3;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &.small {
+      padding-left: 38px;
+      background-size: 24px;
+    }
+
+    &.show-in-mobile {
+      display: none;
+    }
+
+    .read-more:hover {
+      color: #0A6996 ;
+    }
+  }
+
+  .row {
+    margin-top: 59px;
+  }
+}
+
+@media (max-width: @container-sm) {
+  .how-it-works {
+    background-position: center bottom;
+    background-image: url("../../assets/img/bg_how_it_work_m.jpg");
+
+    padding: 28px 0 124px 0;
+
+    h1 {
+      color: #1f366a;
+      font-size: 36px;
+      font-weight: 100;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 30px;
+    }
+
+    .row {
+      margin-top: 47px;
+
+      .col-sm-6 {
+        margin-bottom: 68px;
+
+        .photo {
+          max-width: 133px;
+          margin-bottom: 21px;
+        }
+
+        h3 {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 13px;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          text-align: center;
+
+          max-width: 100%;
+          padding-bottom: 22px;
+        }
+
+
+        .read-more {
+          margin-left: 0;
+          &.hide-in-mobile {
+            display: none;
+          }
+
+          &.show-in-mobile {
+            display: inline-block;
+          }
+        }
+      }
+
+      .col-sm-6:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

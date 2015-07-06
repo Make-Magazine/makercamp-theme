@@ -1,0 +1,253 @@
+#footer {
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+}
+
+.uni-footer {
+  padding:20px 0;
+  border-top: 20px solid #3FAFED;
+  .container {
+    padding-bottom: 15px;
+  }
+  .footer_copyright {
+    p {
+      margin: 0px;
+      line-height: 16px;
+      &.muted {
+        font-size: 85%;
+        color: #999999;
+      }
+
+    }
+  }
+  li {
+    padding:3px 0;
+    a {
+      color: #3FAFED;
+      font-size: 18px;
+    }
+  }
+  .footer_logo {
+    width: 122px;
+    padding-bottom: 10px;
+  }
+  h4 {
+    color: #005D8F;
+    font-size: 22px;
+    padding-top: 9px;
+    margin-bottom: 6px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+  }
+  .stay-connected {
+    margin-bottom: 14px;
+  }
+  .social-profile-icons {
+    height: 33px;
+    margin-bottom: 20px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+  }
+  form {
+    margin: 0 0 20px;
+    input[name=email] {
+      padding: 6px 8px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 1em;
+      border: 2px solid #cccccc;
+      width: 100%;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    span {
+      padding: 6px 10px;
+      color:rgb(85, 85, 85)!important;
+    }
+  }
+
+  .btn-cyan {
+    padding: 10px 8px;
+    font-size: 15px;
+    line-height: 1em;
+    width: 100%;
+  }
+  .social-foot-mobile{
+    .accordion-heading .accordion-toggle {
+      padding: 12px 15px 8px;
+      padding-left: 26px;
+    }
+    .nav {
+      margin-bottom: 0px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+    #accordionF {
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  .copyright {
+    margin: 15px 0 0 0;
+
+    text-align: center;
+    p {
+      margin: 0;
+
+      color: #92928f;
+      font-size: 12px;
+      font-weight: 400;
+      font-family: Arial;
+
+      span {
+        color: #0A6996;
+      }
+    }
+  }
+}
+// SOCIAL MEDIA SPRITES
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+}
+
+.social-profile-icons {
+  a {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 23.75%;
+    height: 33px;
+    .social-profile-cont {
+      background-position: center;
+      display: inline-block;
+      width: 32px;
+    }
+    &.sprite-facebook-32 {
+      span {
+        .stitches-sprite(-5px, -5px, 17px, 32px);
+      }
+      background-color: #335A8E;
+      transition: background-color 0.2s ease;
+      margin-right: 1.25%;
+    }
+    &.sprite-facebook-32:hover {
+      background-color: #1d3250;
+      transition: background-color 0.2s ease;
+    }
+    &.sprite-googleplus-32 {
+      span {
+        .stitches-sprite(-5px, -47px, 32px, 32px);
+      }
+      background-color: #C04B36;
+      transition: background-color 0.2s ease;
+    }
+    &.sprite-googleplus-32:hover {
+      background-color: #7e3123;
+      transition: background-color 0.2s ease;
+    }
+    &.sprite-pinterest-32 {
+      span {
+        .stitches-sprite(-5px, -89px, 32px, 32px);
+      }
+      background-color: #BA4236;
+      transition: background-color 0.2s ease;
+      margin-right: 1.25%;
+    }
+    &.sprite-pinterest-32:hover {
+      background-color: #782b23;
+      transition: background-color 0.2s ease;
+    }
+    &.sprite-twitter-32 {
+      span {
+        .stitches-sprite(-5px, -131px, 32px, 32px);
+      }
+      background-color: #75ADCF;
+      transition: background-color 0.2s ease;
+      margin-right: 1.25%;
+    }
+    &.sprite-twitter-32:hover {
+      background-color: #3e86b1;
+      transition: background-color 0.2s ease;
+    }
+  }
+}
+
+.sprite {
+  background-image: url(../../assets/img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 33px;
+}
+
+// Primary Call to Action button
+.btn-cyan {
+  padding: 10px 8px;
+  font-size: 15px;
+  line-height: 1em;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #3FAFED;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+.btn-cyan:hover {
+  background-color: #1490d4;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+.btn-red {
+  padding: 10px 8px;
+  font-size: 15px;
+  line-height: 1em;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #ef574e;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+.btn-red:hover {
+  background-color: #d32f25;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+form {
+  margin: 0 0 20px;
+  input[name=email], input[name=name] {
+    padding: 6px 8px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1em;
+    border: 2px solid #cccccc;
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  span {
+    padding: 6px 10px;
+    color:rgb(85, 85, 85)!important;
+  }
+}
+
+@media (max-width: @container-sm) {
+  .custom-center {
+    text-align: center;
+  }
+}

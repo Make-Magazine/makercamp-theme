@@ -1,0 +1,492 @@
+.hero {
+  position: relative;
+  width: 100%;
+
+  background-image: url("../../assets/img/animation/static.gif");
+  text-align: center;
+
+  &.show-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 2;
+  }
+
+  .arrows {
+    position: absolute;
+    bottom: 0;
+    margin-left: 48%;
+    padding-bottom: 26px;
+    z-index: 20;
+
+    .col-xs-1 .arrow-background {
+      width: 44px;
+      height: 25px;
+      background-image: url("../../assets/img/white_arrow.png");
+      background-position: center;
+      background-size: cover;
+
+    }
+  }
+
+  .animation-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    @media (max-width: @container-sm) {
+      display: block;
+    }
+
+    .align {
+      position: relative;
+      width: 10000px;
+      left: 50%;
+      margin: 0 0 0 -5000px;
+
+      text-align: center;
+
+      img {
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+  }
+
+  &,
+  .week {
+    height: 610px;
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  .week {
+    position: absolute;
+    top: 0;
+    display: none;
+
+    &.active,
+    &.current-week {
+      display: block;
+    }
+  }
+
+  .week-1 {
+    background-image: url("../../assets/img/animation/week1.gif");
+  }
+  .week-2 {
+    background-image: url("../../assets/img/animation/week2.gif");
+  }
+  .week-3 {
+    background-image: url("../../assets/img/animation/week3.gif");
+  }
+  .week-4 {
+    background-image: url("../../assets/img/animation/week4.gif");
+  }
+  .week-5 {
+    background-image: url("../../assets/img/animation/week5.gif");
+  }
+  .week-6 {
+    background-image: url("../../assets/img/animation/week6.gif");
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+
+    z-index: 5;
+
+    article {
+      display: none;
+    }
+
+    .start-screen {
+      display: block;
+      padding: 170px 0 40px;
+
+      @media (max-width: @container-sm) {
+        padding: 100px 25.5px 40px;
+      }
+
+      h1 {
+        margin-bottom: 68px;
+
+        font-size: 80px;
+
+        @media (max-width: @container-sm) {
+          font-size: 48px;
+        }
+      }
+
+      .sign-up {
+        margin-bottom: 20px;
+      }
+
+      .sign-in {
+        display: block;
+
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    .sign-up-screen {
+      padding: 90px 10px 40px;
+
+      @media (max-width: @container-sm) {
+        padding: 50px 10px 40px;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 40px auto 0;
+
+        @media (max-width: @container-sm) {
+          margin: 20px auto 0;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+          padding: 15px 24px;
+
+          border: 0;
+          border-radius: 40px;
+          overflow: hidden;
+
+          color: rgba(30, 30, 30, 0.44);
+          font-size: 18px;
+          font-style: normal;
+
+          outline: none;
+
+          @media (max-width: @container-sm) {
+            margin-bottom: 20px;
+          }
+        }
+
+        input[type="text"]:active,
+        input[type="email"]:active {
+          outline: none;
+        }
+      }
+
+      input[type="submit"] {
+        margin-top: 30px;
+
+        border: none;
+
+        @media (max-width: @container-sm) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .thank-you-screen {
+      padding: 140px 40px;
+
+      @media (max-width: @container-sm) {
+        padding: 50px 10px 40px;
+      }
+
+      .start-now {
+        margin-top: 40px;
+      }
+    }
+
+    .sign-up-screen,
+    .thank-you-screen {
+      h1 {
+        margin-bottom: 35px;
+
+        font-size: 60px;
+
+        @media (max-width: @container-sm) {
+          margin-bottom: 15px;
+          font-size: 48px;
+        }
+      }
+
+      p {
+        color: #ffffff;
+        font-size: 22px;
+
+        @media (max-width: @container-sm) {
+          font-size: 17px;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    .thank-you-screen {
+      p {
+        max-width: 655px;
+
+        display: inline-block;
+      }
+    }
+
+    .start-screen,
+    .sign-up-screen,
+    .thank-you-screen {
+      text-align: center;
+
+      h1 {
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .sign-up,
+      .start-now,
+      input[type="submit"] {
+        display: inline-block;
+        padding: 15px 30px;
+
+        border-radius: 40px;
+        overflow: hidden;
+
+        color: #ffffff;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        background: #00bff3;
+
+        @media (max-width: @container-sm) {
+          padding: 15px;
+          font-size: 17px;
+          max-width: 220px;
+        }
+      }
+
+      .start-now {
+        display: block;
+        width: 114px;
+        margin: 0 auto;
+        margin-top: 60px;
+        padding: 15px;
+      }
+    }
+
+  }
+
+  .week-modal-wrapper {
+    display: none;
+    position: absolute;
+    top: 170px;
+
+    min-height: 185px;
+    width: 100%;
+
+    z-index: 5;
+
+    .week-modal {
+      max-width: 670px;
+      margin: 0 auto;
+
+      background: rgba(60, 85, 118, 0.9);
+      border-radius: 160px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+
+      text-align: left;
+
+      .week-modal-inner {
+        position: relative;
+        padding: 0 20px 0 0;
+
+        .content-wrap {
+          overflow: hidden;
+        }
+      }
+
+      .close-modal {
+        position: absolute;
+        right: -28px;
+        top: -28px;
+        width: 55px;
+        height: 55px;
+
+        background: #797979;
+
+        color: white;
+        font-size: 43px;
+        line-height: 1.25;
+        text-align: center;
+
+        border-radius: 50%;
+      }
+
+      img {
+        float: left;
+        margin-right: 20px;
+        max-width: 185px;
+
+        border: 5px solid white;
+        border-radius: 50%;
+      }
+
+      .hero-week-status {
+        display: none;
+      }
+
+      .week-title {
+        display: block;
+        margin: 15px 0 10px;
+
+        color:  #ffffff;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      p {
+        color:  #ffffff;
+        font-size: 16px;
+      }
+
+      .start-week {
+        display: inline-block;
+        padding: 15px 45px;
+        margin-top: 5px;
+
+        background: #35adef;
+
+        color:  #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+
+        border-radius: 5px;
+      }
+    }
+  }
+}
+@media (max-width: @container-sm) {
+  .hero {
+    .arrows {
+      display: none;
+    }
+
+    .start-screen {
+      padding: 29px 0 22px 0;
+    }
+
+    map,
+    .week,
+    .week.current-week {
+      display: none;
+    }
+
+    .week-modal-wrapper {
+      top: -615px;
+      position: relative;
+      min-height: 80px;
+      overflow: hidden;
+
+      .week-modal {
+        margin: 10px 10px 0 60px;
+
+        border-radius: 0;
+
+        .close-modal {
+          display: none;
+        }
+
+        .week-modal-inner {
+          padding: 0;
+
+          .content-wrap {
+            display: block;
+            min-height: 80px;
+            overflow: inherit;
+            padding: 10px 60px 10px 0;
+
+            position: relative;
+
+            .icon-locked, .icon-current {
+              display: block;
+              position: absolute;
+              top: 25px;
+              right: 10px;
+
+              border-radius: 50%;
+
+              background-color: #0e98c8;
+              background-repeat: no-repeat;
+              background-size: 15px;
+              background-position: left 10px top 10px;
+
+              width: 35px;
+              height: 35px;
+            }
+
+            .icon-locked::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-image: url("../../assets/img/lock_icon.png");
+              opacity: 0.6;
+              background-repeat: no-repeat;
+              background-size: 15px;
+              background-position: left 10px top 7px;
+            }
+
+            .icon-current {
+              background-image: url("../../assets/img/current_icon.png");
+            }
+
+            p {
+              padding-left: 10px;
+            }
+
+            .coming-soon {
+              display: block;
+              margin: 10px 0 0 0;
+              font-weight: 700;
+            }
+          }
+
+          img {
+            max-width: 80px;
+            position: relative;
+            left: -35px;
+            top: -10px;
+            margin-right: 0;
+          }
+
+          .week-title {
+            font-size: 16px;
+            margin-top: 0;
+          }
+
+          .hero-paragraph {
+            display: none;
+            margin-bottom: 0;
+          }
+
+          .start-week {
+            padding: 5px 10px;
+            font-size: 14px;
+            display: none;
+            margin: 10px 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "maker-camp-theme",
+  "title": "Maker Camp Theme",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-watch": "latest"
+  },
+  "keywords": []
+}

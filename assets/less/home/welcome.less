@@ -1,0 +1,106 @@
+.welcome {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 49px;
+  padding-bottom: 79px;
+
+  .welcome-icon {
+    max-width: 77px;
+  }
+
+  h1 {
+    margin-top: 42px;
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 65px;
+  }
+
+  .row .col-sm-4 {
+    text-align: left;
+
+    .pic-for-vid {
+      width: 100%;
+    }
+
+    p {
+      margin-bottom: 55px;
+      margin-left: 33px;
+    }
+
+    .read-more {
+      margin-left: 33px;
+      padding: 10px 0 10px 62px;
+
+      background: url("../../assets/img/arrow_right.png") left center no-repeat;
+      background-size: 37px;
+
+      color: #00bff3;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .read-more:hover {
+      color: #0A6996 ;
+    }
+  }
+
+
+}
+
+#fancybox-wrap, #fancybox-content {
+  box-sizing: content-box;
+}
+
+
+
+@media (max-width: @container-sm) {
+  .welcome {
+    padding: 16px 0 38px 0;
+
+    h1 {
+      color: #223b6d;
+      font-size: 36px;
+      font-weight: 100;
+
+      margin-top: 27px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+
+      margin-top: 30px;
+      margin-bottom: 53px;
+      line-height: 1.2;
+    }
+
+    .row {
+      .col-sm-4 {
+        text-align: center;
+        margin-bottom: 63.5px;
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+
+          margin: 0 0 19px;
+        }
+
+        .read-more {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      .col-sm-4:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

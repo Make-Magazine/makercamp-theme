@@ -1,0 +1,137 @@
+.affiliates-todo {
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 83px 0 109px 0;
+
+  text-align: center;
+
+  h1 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 56px;
+
+
+    max-width: 1038px;
+
+    margin: 0;
+    display: inline-block;
+  }
+
+  .affiliates-todo-list {
+    margin: 0 auto;
+    margin-top: 116px;
+
+//    max-width: 945px;
+
+    overflow: hidden;
+
+    li {
+      width: 50%;
+      float: left;
+      text-align: center;
+
+      list-style-type: none;
+
+      margin-bottom: 58px;
+      padding-right: 60px;
+
+      span {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 400;
+
+        display: table-cell;
+        float: left;
+        vertical-align: middle;
+
+        border-radius: 50%;
+
+        padding: 3px 0;
+        margin: 0 19px 0 0;
+
+        width: 56px;
+        height: 56px;
+      }
+
+      .first-todo {
+        background-color: #51b985;
+      }
+
+      .second-todo {
+        background-color: #e0bf3b;
+      }
+
+      .third-todo {
+        background-color: #e66f27;
+      }
+
+      .fourth-todo {
+        background-color: #9c78c5;
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: 100;
+        text-align: left;
+
+        overflow: hidden;
+      }
+
+      .read-more {
+        display: inline-block;
+        padding: 10px 0 10px 62px;
+
+        background: url("../assets/img/arrow_right.png") left center no-repeat;
+        background-size: 37px;
+
+        color: #00bff3;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    li:last-child, li:nth-child(5) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: @container-sm) {
+  .affiliates-todo {
+    padding: 26px 0 32px 0;
+
+    h1 {
+      line-height: normal;
+    }
+
+    .affiliates-todo-list {
+      margin-top: 46px;
+      padding: 0;
+
+      li {
+        float: none;
+
+        width: auto;
+
+        margin-bottom: 47px;
+        padding-right: 0;
+
+        .read-more {
+          margin-top: 15px;
+
+          background-size: 31px;
+        }
+      }
+
+      .link{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

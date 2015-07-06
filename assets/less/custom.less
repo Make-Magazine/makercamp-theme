@@ -1,0 +1,708 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+10.0 - Content
+	10.1 - Posts and pages
+	10.2 - Asides
+	10.3 - Comments
+11.0 - Infinite scroll
+12.0 - Media
+	12.1 - Captions
+	12.2 - Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 - Bootstrap CSS
+--------------------------------------------------------------*/
+@import 'base.less';
+@import "typography/typography";
+@import "layouts/header";
+@import "layouts/footer";
+@import "home/index";
+@import "find-a-camp/index";
+@import "hidden/index";
+@import "host-a-camp/index";
+@import "about/index";
+
+// Glyphicon Path Fix
+@icon-font-path: "http://makercamp.com/wp-content/themes/makercamp-theme/bower_components/bootstrap/fonts/";
+
+/*--------------------------------------------------------------
+2.0 - Custom Styling
+--------------------------------------------------------------*/
+
+body {
+  padding-bottom: 20px;
+}
+
+.admin-bar .navbar-fixed-top {
+  margin-top: 30px;
+}
+
+// Sidebar
+
+#secondary {
+  padding-top: 30px;
+}
+
+// Main Content
+
+#primary {
+
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/*--------------------------------------------------------------
+2.1 Week day
+--------------------------------------------------------------*/
+.makercamp {
+  .flexslider {
+    background-color: #e5e5e5;
+
+    border: 0;
+    border-radius: 0;
+
+    padding: 0;
+    margin: 0;
+
+    min-height: 516px;
+    min-height: 516px;
+
+    .week-mobile-image {
+      display: none;
+    }
+
+    .taxonomy-week {
+      background-size: cover;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+
+      height: 516px;
+    }
+
+    .flex-direction-nav {
+      .flex-next {
+        right: 179px;
+        width: 105px;
+        height: 96px;
+
+        opacity: 1;
+
+        text-align: left;
+        text-decoration: none;
+
+        padding: 37px 0 0 0;
+
+        font-size: 0;
+
+        background: url("../../assets/img/slider_arrow_right.png") right center no-repeat;
+        background-size: 54px;
+      }
+
+      .flex-prev {
+        left: 179px;
+        width: 120px;
+        height: 96px;
+
+        opacity: 1;
+
+        text-align: left;
+        text-decoration: none;
+
+        padding: 37px 0 0 57px;
+
+        font-size: 0;
+
+        background: url("../../assets/img/slider_arrow_left.png") left center no-repeat;
+        background-size: 54px;
+      }
+
+      .flex-next:before {
+        content: "";
+      }
+
+      .flex-prev:before {
+        content: "";
+      }
+
+      .flex-next:hover:after {
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+
+        text-transform: uppercase;
+      }
+
+      .flex-prev:hover:after {
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+
+        text-transform: uppercase;
+      }
+    }
+
+    .container {
+      p {
+        color: #333;
+        font-size: 16px;
+        font-weight: 400;
+        display: none;
+      }
+
+      text-align: center;
+
+      .week-title {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 100;
+
+        text-transform: uppercase;
+        margin: 0;
+        padding: 69px 0 30px 0;
+      }
+
+      .day-title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 0 16px 0;
+
+        .label {
+          text-transform: uppercase;
+        }
+      }
+
+      .list-label {
+        position: relative;
+
+        margin-bottom: 21px;
+        padding-right: 25px;
+
+        color: #fff;
+        font-size: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      .camp_days {
+        margin: 0 auto;
+        margin-top: 30px;
+
+        display: inline-block;
+
+        .camp_day-number {
+          position: relative;
+          display: inline-block;
+
+          margin-right: 36px;
+
+          a {
+            padding: 2px 0 0 0;
+            text-decoration: none;
+          }
+
+          .icon-locked {
+            position: absolute;
+            top: -15px;
+            left: 35px;
+
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-color: #e95130;
+            background-image: url("../../assets/img/lock_icon.png");
+            background-size: 15px;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            border-radius: 50%;
+          }
+
+          .label {
+            text-transform: uppercase;
+            font-size: inherit;
+          }
+        }
+
+        .icon-current {
+          position: absolute;
+          top: -15px;
+          left: 35px;
+
+          display: block;
+          width: 32px;
+          height: 32px;
+          background-color: #ebf954;
+          background-image: url("../../assets/img/current_icon.png");
+          background-size: 15px;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          border-radius: 50%;
+        }
+
+        a {
+          display: block;
+
+          color: #000;
+          font-size: 38px;
+          font-weight: 600;
+
+          width: 71px;
+          height: 71px;
+
+          background-color: #fff;
+
+          border-radius: 50%;
+          border: 6px solid #05729f;
+        }
+
+        a:hover {
+          color: #000;
+          text-decoration: none;
+          background-color: #3299c3;
+        }
+
+        a:visited {
+          color: #000;
+        }
+      }
+
+      .camp_day-number:last-child {
+        margin-right: 0;
+      }
+
+      .opened-day {
+        a {
+          background-color: #3299c3;
+        }
+      }
+    }
+
+    .play-first-video-button {
+      display: block;
+      padding: 19px 45px;
+      margin: 0 auto;
+      margin-top: 49px;
+      margin-bottom: 60px;
+
+      max-width: 284px;
+
+      border-radius: 40px;
+      overflow: hidden;
+
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      background: #00bff3;
+    }
+
+    .dayly-camp-videos {
+
+    }
+  }
+}
+
+@media (max-width: @container-sm) {
+  .makercamp {
+
+    .flexslider {
+      background: #daf1f7;
+      padding: 28px 0 31px 0;
+
+      min-height: 732px;
+
+
+      .taxonomy-week {
+        background: none !important;
+
+        height: auto;
+      }
+
+      .week-mobile-image {
+        display: block;
+        margin: 0 auto;
+
+        width: 181px;
+      }
+
+      .flex-direction-nav {
+
+        .flex-next, .flex-prev {
+          width: 35px;
+          background-size: 30px;
+        }
+
+        .flex-next {
+          top: 160px;
+          right: 10px;
+        }
+
+        .flex-prev {
+          top: 160px;
+          left: 10px;
+        }
+
+        .flex-next:hover:after, .flex-prev:hover:after {
+          display: none;
+        }
+      }
+
+      .container {
+        text-align: center;
+
+        p {
+          margin-top: 19px;
+          display: block;
+        }
+
+        .week-title {
+          color: #333;
+          font-size: 44px;
+          font-weight: 100;
+
+          padding: 0 0 24px 0;
+        }
+
+        .day-title, .label {
+          color: #333;
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        .attachment-thumbnail {
+          display: block;
+        }
+
+        .list-label {
+          color: #00bff3;
+          font-size: 22px;
+
+          padding-right: 0;
+          margin-top: 48px;
+          display: block;
+        }
+
+        .camp_days {
+          margin-top: 0;
+
+          .camp_day-number {
+            margin-bottom: 30px;
+          }
+        }
+
+        .day-title {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+.daily-camp-videos-wrapper {
+  background-color: #e5e5e5;
+  text-align: center;
+
+  padding: 35px 0 32px 0;
+
+  .hentry {
+    margin-bottom: 0;
+  }
+
+  .dayly-camp-videos {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+
+    li {
+      float: left;
+
+      width: 352px;
+
+      margin-right: 47px;
+
+      a {
+        float: left;
+        position: relative;
+
+        img {
+          width: 201px;
+        }
+
+        .fancybox-video-play-button {
+          background-image: url("../../assets/img/play_button.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 58px;
+          width: 58px;
+
+          display: block;
+          position: absolute;
+          top: 46px;
+          left: 69px;
+        }
+      }
+
+      h3 {
+        color: #010101;
+        font-size-adjust: 20.5px;
+        font-weight: 600;
+        text-align: left;
+
+        margin-top: 20.5px;
+        margin-left: 229px;
+
+        clear: none;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 229px;
+        display: inherit;
+      }
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.fancybox-inner {
+  width: 150px !important;
+  height: 100px !important;
+}
+
+@media (max-width: @container-sm) {
+  .daily-camp-videos-wrapper {
+    background-color: #f6f6f6;
+
+    padding: 24px 0 38px 0;
+
+    .dayly-camp-videos {
+      padding: 0 14px;
+
+      li {
+        float: none;
+        margin: 0;
+        margin-bottom: 60px;
+
+        width: 100%;
+
+        a {
+          float: none;
+
+          img {
+            width: 100%;
+          }
+
+          .fancybox-video-play-button {
+            top: 50%;
+            left: 50%;
+
+            margin: -29px 0 0 -29px;
+          }
+        }
+
+        h3 {
+          margin-top: 13px;
+        }
+
+        h3, p {
+          font-size: 18;
+          text-align: center;
+          margin-left: 0;
+        }
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  background-color: #f7f7f7;
+  padding: 21px 0 21px 0;
+  text-align: center;
+
+  .hentry {
+    margin-bottom: 0;
+  }
+
+  .entry-content {
+    margin-top: 0;
+  }
+
+  p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+
+    max-width: 888px;
+    display: inline-block;
+
+    margin: 0;
+  }
+}
+
+@media (max-width: @container-sm) {
+  .content-wrapper {
+    display: none;
+  }
+}
+
+.camp-resources-wrapper {
+  padding: 68px 0 63px 0;
+
+  .hentry {
+    margin-bottom: 0;
+  }
+
+  .camp-resources {
+    margin-bottom: 0;
+
+    li {
+      width: 48%;
+      font-size: 18px;
+      text-align: left;
+
+      float: left;
+
+      text-align: left;
+
+      img {
+        width: 90px;
+        float: left;
+
+        margin-right: 43px;
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+
+        margin: 0;
+
+        display: block;
+        clear: none;
+      }
+
+      p {
+        font-weight: 400;
+        margin: 29px 0 0 0;
+        padding: 0 109px 0 0;
+      }
+
+      .read-more {
+        display: inline-block;
+        margin-left: 0;
+        padding: 10px 0 10px 62px;
+
+        background: url("../../assets/img/arrow_right.png") left center no-repeat;
+        background-size: 21px;
+
+        color: #00bff3;
+        font-size: 17px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .other-projects {
+        overflow: hidden;
+
+        li {
+          float: none;
+          width: 100%;
+          text-align: left;
+
+          .read-more {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @container-sm) {
+  .camp-resources-wrapper {
+    padding: 34px 0 31px 0;
+
+    .camp-resources {
+
+      li {
+        width: 100%;
+        float: none;
+
+        text-align: center;
+        margin-bottom: 59px;
+
+        img {
+          width: 86px;
+          float: none;
+
+          margin: 0 auto;
+          margin-bottom: 35px;
+        }
+
+        p {
+          padding: 0 14px;
+          margin-bottom: 22px;
+        }
+
+        .read-more {
+          text-align: left;
+          margin-left: 27px;
+        }
+
+        .other-projects {
+          padding-top: 15px;
+
+          li {
+            text-align: center;
+
+            margin-bottom: 21px;
+
+            a {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+

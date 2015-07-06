@@ -1,0 +1,45 @@
+.banner {
+  background: url("../assets/img/bg_banner.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  padding-top: 122px;
+  padding-bottom:163px;
+
+  text-align: center;
+  color: #e4e4e4;
+
+  h1 {
+    color: #e4e4e4;
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 74px;
+  }
+
+  p {
+    max-width: 951px;
+
+    font-size: 22px;
+    font-weight: 100;
+
+    display: inline-block;
+  }
+}
+
+@media (max-width: @container-sm) {
+  .banner {
+    height: inherit;
+    padding: 39px 0 34px 0;
+  }
+
+  h1 {
+    color: #e4e4e4;
+    font-size: 44px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+}
