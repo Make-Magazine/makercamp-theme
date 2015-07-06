@@ -435,8 +435,7 @@
 			<div class="col-sm-4">
 				<h2>Make</h2>
 
-				<p>Our cool and fun step-by-step projects branch out from the theme. Advanced Makers can
-					take on our camp Challenges.
+				<p>Get your feet wet as you get inspired by what Makers do, and play around with the stuff, tools, and ways of making.
 				</p>
 			</div>
 			<div class="col-sm-4">
