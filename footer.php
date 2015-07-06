@@ -23,7 +23,7 @@
 					<li><a href="//makezine.com/projects">Make: Projects</a></li>
 					<li><a href="//makezine.com/category/workshop/3d-printing-workshop/">3D Projects</a></li>
 					<li><a href="//makezine.com/category/electronics/arduino/">Arduino Projects</a></li>
-					<li><a href="//makezine.com/category/electronics/raspberry-pi/">Raspberry Pi Projects</a></li>
+					<li><a href="https://help.makercamp.com/hc/en-us">Maker Camp Help Page</a></li>
 				</ul>
 			</div>
 
@@ -165,7 +165,7 @@
 								<li><a href="//makezine.com/projects">Make: Projects</a></li>
 								<li><a href="//makezine.com/category/workshop/3d-printing-workshop/">3D Projects</a></li>
 								<li><a href="//makezine.com/category/electronics/arduino/">Arduino Projects</a></li>
-								<li><a href="//makezine.com/category/electronics/raspberry-pi/">Raspberry Pi Projects</a></li>
+								<li><a href="https://help.makercamp.com/hc/en-us">Maker Camp Help Page</a></li>
 							</ul>
 						</div>
 					</div>
@@ -214,7 +214,7 @@
 	</div>
 	<!-- END container -->
     <div class="copyright">
-        <p>Make: and Maker Faire are registered trademarks of Maker Media, Inc. | Make: Site Map</p>
+        <p>Make: and Maker Camp are registered trademarks of Maker Media, Inc.</p>
         <p>Copyright © 2004-2015 Maker Media, Inc. All rights reserved</p>
     </div>
 </footer>
