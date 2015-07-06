@@ -161,7 +161,7 @@
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_five.jpg" alt="Maker Camp Affiliate Kit">
 
 					<p>Maker Camp Affiliate Kit. Get a PDF with all the items you need. </p>
-					<a href="http://makercamp.com/wp-content/uploads/2015/07/Maker-Camp-2015-Packing-List.pdf" class="read-more">Download </a>
+					<a href="http://makercamp.com/wp-content/uploads/2015/07/MakerCamp2015_Packing-List.pdf" class="read-more">Download </a>
 				</li>
 			</ul>
 
