@@ -71,16 +71,6 @@
 					<a href="<?php bloginfo( 'url' ); ?>/wp-content/uploads/2015/07/2015_week1.pdf" class="read-more">Download pdf</a>
 				</li>
 				<li>
-					<h3>Week 5: </h3>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>2015_maker_camp_week_5.png" alt="fiveth week" class="img-circle">
-
-					<h2><strong>Flight</strong>, August 3–7 </h2>
-
-					<p>Take off in this make-off of all things that zip and zoom above our heads, culminating
-						in the Maker Camp Air Show.
-					</p>
-				</li>
-				<li>
 					<h3>Week 2: </h3>
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>2015_maker_camp_week_2.png" alt="second week" class="img-circle">
 
@@ -88,8 +78,19 @@
 
 					<p>Make some instruments, then make some noise in the Maker Camp Battle of the Bands. </p>
 					<a href="#" class="read-more">Download pdf</a>
-
 				</li>
+        <li>
+          <h3>Week 3: </h3>
+          <img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>2015_maker_camp_week_3.png" alt="third week" class="img-circle">
+
+          <h2><strong>Farmstead</strong>, July 20–24 </h2>
+
+          <p>Hack the Hoedown with sustainable energy, food, architecture, and craft that bridge
+            across centuries.
+          </p>
+        </li>
+      </ul>
+      <ul class="weeks-section">
 				<li>
 					<h3>Week 4: </h3>
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>2015_maker_camp_week_4.png" alt="fourth week" class="img-circle">
@@ -100,16 +101,16 @@
 						Camp Carnival.
 					</p>
 				</li>
-				<li>
-					<h3>Week 3: </h3>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>2015_maker_camp_week_3.png" alt="third week" class="img-circle">
+        <li>
+          <h3>Week 5: </h3>
+          <img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>2015_maker_camp_week_5.png" alt="fiveth week" class="img-circle">
 
-					<h2><strong>Farmstead</strong>, July 20–24 </h2>
+          <h2><strong>Flight</strong>, August 3–7 </h2>
 
-					<p>Hack the Hoedown with sustainable energy, food, architecture, and craft that bridge
-						across centuries.
-					</p>
-				</li>
+          <p>Take off in this make-off of all things that zip and zoom above our heads, culminating
+            in the Maker Camp Air Show.
+          </p>
+        </li>
 				<li>
 					<h3>Week 6: </h3>
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>2015_maker_camp_week_6.png" alt="sixth week" class="img-circle">
