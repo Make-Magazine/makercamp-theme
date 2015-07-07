@@ -5,6 +5,7 @@
     "bootstrap": "latest"
   },
   "devDependencies": {
-    "fancybox": "~2.1.5"
+    "fancybox": "~2.1.5",
+    "jquery.cookie": "~1.4.1"
   }
 }

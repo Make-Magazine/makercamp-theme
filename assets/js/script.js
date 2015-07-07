@@ -75,6 +75,7 @@ $(document).ready(function () {
     $('.start-screen').hide();
 
     userSignUp = true; // User already have account
+    $.cookie('user_sign_up', true);
 
     if ($(document).width() < 769) {
       hero_section.addClass('show-content');
@@ -102,6 +103,8 @@ $(document).ready(function () {
     $('.thank-you-screen').hide();
 
     userSignUp = true; // User signed up with whatcounts
+    $.cookie('user_sign_up', true);
+
     if ($(document).width() < 769) {
       hero_section.addClass('show-content');
       $('.week-modal-wrapper').show();
@@ -178,6 +181,13 @@ $(document).ready(function () {
 
     $(this).next().slideToggle();
   });
+
+  /**
+   * Check of user is already signed up and show interactive hero
+   */
+  if ($.cookie('user_sign_up') == 'true') {
+    $('.sign-in').click();
+  }
 
   /**
    * Initialize fancybox for videos
