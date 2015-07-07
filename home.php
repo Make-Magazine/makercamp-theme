@@ -277,8 +277,8 @@
 
 					<h3>Participate online from home</h3>
 
-					<p>Join us at Makercamp.com to explore a new project every day. Get an overview about the project in pur daily
-						video playlist. Folow links to work on projects at home.
+					<p>Join us at Makercamp.com to explore a new project every day. Get an overview about the project in our daily
+						video playlist. Follow links to work on projects at home.
 					</p>
 
 					<a href="#hero" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual" class="read-more sign-in-trigger">Sign up for fun alerts</a>
