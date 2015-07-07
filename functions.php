@@ -173,3 +173,51 @@ add_action('init', 'modify_jquery');
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
+add_action( 'add_meta_boxes', 'add_metabox_about_us', 1);
+
+function add_metabox_about_us(){
+
+  add_meta_box(
+      'about_filds',__( 'More About Us' ),
+      'about_callback', 'page', 'normal', 'high' );
+}
+
+function about_callback ( $post ) {
+  echo '<h3>More information About Us (under hero)</h3>';
+
+  echo '<input name="about_us_more_info_title" id="about_us_more_info_title" placeholder="title">';
+  echo '<p>';
+  echo '<textarea name="about_us_more_info" id="about_us_more_info" placeholder="description"></textarea>';
+  echo '</p>';
+  ?>
+  <input type="text" name="week-image" class="makercamp-file-uploaded" value="<?php echo esc_attr( $category_image_url ); ?>" />
+	<input type="button" class="button makercamp-file-uploader makercamp-image" value="<?php _e( 'Choose or Upload a File' ) ?>" />
+  <?php
+
+  echo '<h3>Information about Crew</h3>';
+
+  $project_links = get_post_meta( $post->ID, '_project_links', TRUE );
+
+  if ( $project_links ) {
+    echo '<ul class="project-sources">';
+    foreach ( $project_links as $index => $value ) {
+
+      echo '<li data-index="' . $index . '">';
+      echo '<label for="makercamp_project_source_' . $index . '"_url>';
+      printf( __( 'Project source %d', 'makercamp' ), $index + 1 );
+      echo '</label> ';
+      echo '<input type="text" id="makercamp_project_source_' . $index . '_url" name="makercamp_project_source[' . $index . '][url]" placeholder="' . __( 'Enter a url', 'makercamp' ) . '" value="' . ( ! empty( $project_links[ $index ][ 'url' ] ) ? esc_attr( $project_links[ $index ][ 'url' ] ) : '' ) . '" size="25" />';
+      echo '<input type="text" name="makercamp_project_source[' . $index . '][title]" placeholder="' . __( 'Enter readable title', 'makercamp' ) . '" value="' . ( ! empty( $project_links[ $index ][ 'title' ] ) ? esc_attr( $project_links[ $index ][ 'title' ] ) : '' ) . '" size="25" />';
+      echo '<a class="makercamp-project-delete" href="#">' . __( 'Remove', 'makercamp' ) . '</a>';
+      echo '</li>';
+    }
+    echo '</ul>';
+  }
+
+  echo '<p>';
+  echo '<a class="makercamp-add-project" href="#">' . __( 'Add new project link', 'makercamp' ) . '</a>';
+  echo '</p>';
+
+  echo '<ul class="new-projects"></ul>';
+
+};
