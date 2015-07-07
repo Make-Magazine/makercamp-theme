@@ -97,12 +97,15 @@ function makercamp_theme_scripts() {
 	/* Add Custom CSS */
 	wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css' );
 
+	/* Add jquery.cookie */
+	wp_enqueue_script( 'jquery.cookie', get_stylesheet_directory_uri() . '/bower_components/jquery.cookie/jquery.cookie.js', array( 'jquery' ), NULL, TRUE );
+
 	/* Add Fancybox */
-	wp_enqueue_style( 'fancybox-css', MAKERCAMP_URL . 'assets/js/vendor/fancybox/source/jquery.fancybox.css' );
-	wp_enqueue_script( 'fancybox-js', MAKERCAMP_URL . 'assets/js/vendor/fancybox/source/jquery.fancybox.pack.js', array( 'jquery' ), NULL, TRUE );
+	wp_enqueue_style( 'fancybox-css', get_stylesheet_directory_uri() . '/bower_components/fancybox/source/jquery.fancybox.css' );
+	wp_enqueue_script( 'fancybox-js', get_stylesheet_directory_uri() . '/bower_components/fancybox/source/jquery.fancybox.pack.js', array( 'jquery' ), NULL, TRUE );
 
 	/* Add Bootstrap JS */
-	wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js', array('jquery', 'fancybox-js'), '', true );
+	wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js', array('jquery', 'fancybox-js', 'jquery.cookie'), '', true );
 
 	/* Add JS for specific Bootstrap JS Calls */
 	wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/public/js/theme.min.js', array('jquery', 'script-js'), '', true );

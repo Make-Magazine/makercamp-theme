@@ -277,8 +277,8 @@
 
 					<h3>Participate online from home</h3>
 
-					<p>Join us at Makercamp.com to explore a new project every day. Get an overview about the project in pur daily
-						video playlist. Folow links to work on projects at home.
+					<p>Join us at Makercamp.com to explore a new project every day. Get an overview about the project in our daily
+						video playlist. Follow links to work on projects at home.
 					</p>
 
 					<a href="#hero" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual" class="read-more sign-in-trigger">Sign up for fun alerts</a>
@@ -433,13 +433,13 @@
 			<h1>A Day At Camp</h1>
 
 			<div class="col-sm-4">
-				<h2>Make</h2>
+				<h2>Explore</h2>
 
 				<p>Get your feet wet as you get inspired by what Makers do, and play around with the stuff, tools, and ways of making.
 				</p>
 			</div>
 			<div class="col-sm-4">
-				<h2>Share</h2>
+				<h2>Make</h2>
 
 				<p>Our cool and fun step-by-step projects branch out from the theme. Advanced Makers can
 					take on our Camp Challenges.
