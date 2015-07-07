@@ -411,7 +411,7 @@
             display: block;
             min-height: 80px;
             overflow: inherit;
-            padding: 10px 60px 10px 0;
+            padding: 10px 60px 10px 60px;
 
             position: relative;
 
@@ -450,9 +450,9 @@
               background-image: url("../../assets/img/current_icon.png");
             }
 
-            p {
-              padding-left: 10px;
-            }
+//            p {
+////              padding-left: 10px;
+//            }
 
             .coming-soon {
               display: block;
@@ -463,10 +463,12 @@
 
           img {
             max-width: 80px;
-            position: relative;
-            left: -35px;
-            top: -10px;
+            position: absolute;
+            left: -40px;
+            top: 0;
             margin-right: 0;
+
+            margin: 0 0 30px 0;
           }
 
           .week-title {
@@ -476,14 +478,14 @@
 
           .hero-paragraph {
             display: none;
+            overflow: hidden;
             margin-bottom: 0;
           }
 
           .start-week {
             padding: 5px 10px;
             font-size: 14px;
-            display: none;
-            margin: 10px 0 0 10px;
+            margin: 10px 0 0 0;
           }
         }
       }
