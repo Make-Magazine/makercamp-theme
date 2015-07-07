@@ -27,7 +27,7 @@
 					Sign up to get updates and fun alerts!
 				</p>
 
-				<form action="http://whatcounts.com/bin/listctrl" method="POST" class="whatcounts-signup">
+				<form action="http://whatcounts.com/bin/listctrl" method="POST" id="home-page-sign-up-form" class="whatcounts-signup">
 					<input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
 					<input type="hidden" name="cmd" value="subscribe" />
 					<input type="hidden" name="goto" value="http://makercamp.com" />
