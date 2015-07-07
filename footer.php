@@ -14,9 +14,7 @@
 	<div class="container-fluid">
 		<div class="row social-foot-desktop hidden-xs">
 			<div class="col-sm-12 col-sm-6 col-sm-3 social-foot-col">
-				<a href="/"><img class="footer_logo"
-								 src="http://1abxf1rh6g01lhm2riyrt55k.wpengine.netdna-cdn.com/wp-content/themes/makeblog/img/make-logo.png"
-								 alt="Make Logo"></a>
+				<a href="/"><img class="footer_logo" src="http://1abxf1rh6g01lhm2riyrt55k.wpengine.netdna-cdn.com/wp-content/themes/makeblog/img/make-logo.png"  alt="Make Logo"></a>
 				<ul class="list-unstyled">
 					<li><a href="//www.pubservice.com/MK/subscribe.aspx?PC=MK&PK=M3AMZB" target="_blank">Subscribe to Make:</a>
 					</li>
