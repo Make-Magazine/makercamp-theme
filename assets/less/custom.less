@@ -113,7 +113,7 @@ ul, li {
 
         font-size: 0;
 
-        background: url("../../assets/img/slider_arrow_right.png") right center no-repeat;
+        background: url("../assets/img/slider_arrow_right.png") right center no-repeat;
         background-size: 54px;
       }
 
@@ -131,7 +131,7 @@ ul, li {
 
         font-size: 0;
 
-        background: url("../../assets/img/slider_arrow_left.png") left center no-repeat;
+        background: url("../assets/img/slider_arrow_left.png") left center no-repeat;
         background-size: 54px;
       }
 
@@ -229,7 +229,7 @@ ul, li {
             width: 32px;
             height: 32px;
             background-color: #e95130;
-            background-image: url("../../assets/img/lock_icon.png");
+            background-image: url("../assets/img/lock_icon.png");
             background-size: 15px;
             background-position: center;
             background-repeat: no-repeat;
@@ -252,7 +252,7 @@ ul, li {
           width: 32px;
           height: 32px;
           background-color: #ebf954;
-          background-image: url("../../assets/img/current_icon.png");
+          background-image: url("../assets/img/current_icon.png");
           background-size: 15px;
           background-position: center;
           background-repeat: no-repeat;
@@ -452,7 +452,7 @@ ul, li {
         }
 
         .fancybox-video-play-button {
-          background-image: url("../../assets/img/play_button.png");
+          background-image: url("../assets/img/play_button.png");
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -621,7 +621,7 @@ ul, li {
         margin-left: 0;
         padding: 10px 0 10px 62px;
 
-        background: url("../../assets/img/arrow_right.png") left center no-repeat;
+        background: url("../assets/img/arrow_right.png") left center no-repeat;
         background-size: 21px;
 
         color: #00bff3;
@@ -721,5 +721,41 @@ ul, li {
 @media screen and (orientation: portrait) and (max-width: 620px) and (min-width: 531px) {
   .fancybox-inner {
     max-height: 300px;
+  }
+}
+
+/*--------------------------------------------------------------
+2.2 Week day - Calender
+--------------------------------------------------------------*/
+.calendar-wrapper {
+  background: #90D1BE url('../assets/img/calendar-bg.png') bottom center no-repeat;
+
+  .calendar {
+    background: #2BAD63 !important;
+    color: white;
+
+    -webkit-box-shadow: 10px 14px 0px 0px #3A905F;
+    -moz-box-shadow: 10px 14px 0px 0px #3A905F;
+    box-shadow: 10px 14px 0px 0px #3A905F;
+
+    .go-back {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 50px;
+      text-transform: uppercase;
+    }
+  }
+
+  .cal-week-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .cal-week-description {
+    font-size: 16px;
+    line-height: 40px;
   }
 }
