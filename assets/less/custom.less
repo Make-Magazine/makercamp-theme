@@ -296,6 +296,23 @@ ul, li {
           background-color: #3299c3;
         }
       }
+
+      .calendar-button {
+        background-color: #3ec075;
+        background-image: url("../../assets/img/calendar_icon.png");
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        position: absolute;
+        display: inline-block;
+
+        width: 52px;
+        height: 52px;
+
+        border-radius: 50%;
+        margin: 40px 0 0 31px;
+      }
     }
 
     .play-first-video-button {
@@ -772,5 +789,111 @@ ul, li {
   .cal-week-description {
     font-size: 16px;
     line-height: 40px;
+  }
+
+  .camp_days {
+    text-align: center;
+
+    .camp_day-number {
+      position: relative;
+      display: inline-block;
+
+      margin: 0 64px 0 0;
+
+      .icon-locked {
+        position: absolute;
+        top: -8px;
+        left: 44px;
+
+        display: block;
+        width: 32px;
+        height: 32px;
+
+        background-color: #e95130;
+        background-image: url("../assets/img/lock_icon.png");
+        background-size: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        border-radius: 50%;
+
+        z-index: 3;
+      }
+//
+//      .icon-locked::after {
+//        content: "";
+//        display: block;
+//        width: 32px;
+//        height: 32px;
+//
+//        top: 2px;
+//        left: 4px;
+//
+//        background-color: #3a905f;
+//        border-radius: 50%;
+//
+//        position: absolute;
+//        z-index: -1;
+//      }
+
+    }
+
+    a {
+      display: block;
+      position: relative;
+
+      color: #666;
+      font-size: 46px;
+      font-weight: 600;
+      text-decoration: none;
+
+      width: 71px;
+      height: 71px;
+
+      background-color: #fff;
+
+      border-radius: 50%;
+      border: 3px solid #05729f;
+
+      -webkit-box-shadow: 5px 4px 0px 0px #3a905f;
+      -moz-box-shadow: 5px 4px 0px 0px #3a905f;
+      box-shadow: 5px 4px 0px 0px #3a905f;
+      z-index: 2;
+    }
+  }
+}
+
+@media (max-width: @container-sm) {
+  .calendar-wrapper {
+    .calendar {
+      padding: 0 0 80px !important;
+
+      .go-back {
+        width: 100%;
+        display: block;
+
+        margin: 0;
+        padding: 0 0 0 48px;
+
+        background-color: #288d17;
+        background-position: 15px center;
+      }
+
+      .cal-weeks {
+        margin: 0 15px;
+      }
+
+      .cal-week-title, .cal-week-description {
+        text-align: center;
+      }
+
+      .cal-week-description {
+        line-height: normal;
+      }
+
+      .camp_day-number {
+        margin: 0 15px 15px 0;
+      }
+    }
   }
 }
