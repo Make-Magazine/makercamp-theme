@@ -304,14 +304,14 @@ ul, li {
         background-position: center;
         background-repeat: no-repeat;
 
-        position: absolute;
-        display: inline-block;
+        display: block;
 
         width: 52px;
         height: 52px;
 
         border-radius: 50%;
-        margin: 40px 0 0 31px;
+        margin: 0 auto;
+        margin-top: 20px;
 
         font-size: 0;
       }
@@ -391,6 +391,10 @@ ul, li {
 
       .container {
         text-align: center;
+
+        .calendar-button{
+          margin-top: 0;
+        }
 
         p {
           margin-top: 19px;
@@ -916,18 +920,6 @@ ul, li {
 
       .camp_day-number {
         margin: 0 15px 15px 0;
-
-        .icon-current {
-          border: 2px solid #28aade;
-
-          background-color: #fff;
-          background-image: url("../assets/img/current_icon_blue.png");
-        }
-
-        .icon-locked {
-          border: 2px solid #28aade;
-          background-color: #5581a9;
-        }
       }
     }
 
