@@ -77,7 +77,7 @@
 					<h2><strong>Funkytown</strong>, July 13–17 </h2>
 
 					<p>Make some instruments, then make some noise in the Maker Camp Battle of the Bands. </p>
-					<a href="#" class="read-more">Download pdf</a>
+					<a href="<?php bloginfo( 'url' ); ?>/wp-content/uploads/2015/07/2015_week2.pdf" class="read-more">Download pdf</a>
 				</li>
         <li>
           <h3>Week 3: </h3>
