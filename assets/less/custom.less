@@ -893,18 +893,47 @@ ul, li {
 
       .cal-weeks {
         margin: 0 15px;
+        display: inline-block;
       }
 
-      .cal-week-title, .cal-week-description {
+      .cal-week-title {
         text-align: center;
+        margin: 28px 0 16px 0;
+
+        font-weight: 400;
       }
 
       .cal-week-description {
+        text-align: center;
         line-height: normal;
+
+        font-weight: 400;
+
+
+        margin: 0;
+        padding: 0 0 31px 0;
       }
 
       .camp_day-number {
         margin: 0 15px 15px 0;
+
+        .icon-current {
+          border: 2px solid #28aade;
+
+          background-color: #fff;
+          background-image: url("../assets/img/current_icon_blue.png");
+        }
+
+        .icon-locked {
+          border: 2px solid #28aade;
+          background-color: #5581a9;
+        }
+      }
+    }
+
+    .camp_days {
+      a {
+        border-color: #28aade;
       }
     }
   }
