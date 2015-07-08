@@ -304,14 +304,16 @@ ul, li {
         background-position: center;
         background-repeat: no-repeat;
 
-        display: block;
+        display: inline-block;
 
         width: 52px;
         height: 52px;
 
+        position: relative;
+        top: -37px;
+
         border-radius: 50%;
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 0 0 0 25px;
 
         font-size: 0;
       }
@@ -392,8 +394,10 @@ ul, li {
       .container {
         text-align: center;
 
-        .calendar-button{
-          margin-top: 0;
+        .calendar-button {
+          display: block;
+          top: 0;
+          margin: 0 auto;
         }
 
         p {
@@ -432,7 +436,11 @@ ul, li {
           margin-top: 0;
 
           .camp_day-number {
-            margin: 0 15px 25px 0;
+            margin: 0 0 25px 15px;
+
+            &:first-child {
+              margin-left: 0;
+            }
           }
         }
 
@@ -760,7 +768,6 @@ ul, li {
 2.2 Week day - Calender
 --------------------------------------------------------------*/
 .calendar-wrapper {
-//  display: block !important;
   background: #90D1BE url('../assets/img/calendar-bg.png') bottom center no-repeat;
 
   .calendar {
@@ -777,6 +784,7 @@ ul, li {
     }
 
     .go-back {
+      float: right;
       padding: 5px 0 5px 33px;
 
       color: white;
@@ -788,11 +796,14 @@ ul, li {
       background: url("../assets/img/arrow-left.png") left center no-repeat;
       background-size: 23px;
 
-      float: right;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
   .cal-week-title {
+    margin-bottom: 16px;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -800,6 +811,7 @@ ul, li {
   }
 
   .cal-week-description {
+    margin-bottom: 21px;
     font-size: 16px;
     line-height: 40px;
   }
@@ -813,18 +825,42 @@ ul, li {
 
       margin: 0 64px 0 0;
 
+      a {
+        display: block;
+        position: relative;
+
+        color: #666;
+        font-size: 46px;
+        font-weight: 600;
+        text-decoration: none;
+        line-height: 5.25rem;
+
+        width: 95px;
+        height: 95px;
+
+        background-color: #fff;
+
+        border-radius: 50%;
+        border: 3px solid #05729f;
+
+        -webkit-box-shadow: 5px 4px 0px 0px #3a905f;
+        -moz-box-shadow: 5px 4px 0px 0px #3a905f;
+        box-shadow: 5px 4px 0px 0px #3a905f;
+        z-index: 2;
+      }
+
       .icon-locked {
         position: absolute;
         top: -8px;
-        left: 44px;
+        right: -7px;
 
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 45px;
+        height: 45px;
 
         background-color: #e95130;
         background-image: url("../assets/img/lock_icon.png");
-        background-size: 15px;
+        background-size: 22px;
         background-position: center;
         background-repeat: no-repeat;
 
@@ -836,15 +872,15 @@ ul, li {
       .icon-current {
         position: absolute;
         top: -8px;
-        left: 44px;
+        right: -7px;
 
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 45px;
+        height: 45px;
 
         background-color: #e9d447;
         background-image: url("../assets/img/current_icon.png");
-        background-size: 15px;
+        background-size: 30px;
         background-position: center;
         background-repeat: no-repeat;
 
@@ -852,29 +888,6 @@ ul, li {
 
         z-index: 3;
       }
-    }
-
-    a {
-      display: block;
-      position: relative;
-
-      color: #666;
-      font-size: 46px;
-      font-weight: 600;
-      text-decoration: none;
-
-      width: 71px;
-      height: 71px;
-
-      background-color: #fff;
-
-      border-radius: 50%;
-      border: 3px solid #05729f;
-
-      -webkit-box-shadow: 5px 4px 0px 0px #3a905f;
-      -moz-box-shadow: 5px 4px 0px 0px #3a905f;
-      box-shadow: 5px 4px 0px 0px #3a905f;
-      z-index: 2;
     }
   }
 }
@@ -896,36 +909,48 @@ ul, li {
       }
 
       .cal-weeks {
-        margin: 0 15px;
-        display: inline-block;
+        overflow: hidden;
       }
 
       .cal-week-title {
         text-align: center;
-        margin: 28px 0 16px 0;
+        margin: 35px 0 16px 0;
 
         font-weight: 400;
       }
 
       .cal-week-description {
         text-align: center;
-        line-height: normal;
-
-        font-weight: 400;
-
+        line-height: 24px;
+        font-variant: small-caps;
 
         margin: 0;
         padding: 0 0 31px 0;
       }
 
       .camp_day-number {
-        margin: 0 15px 15px 0;
-      }
-    }
+        margin: 0 16px 33px;
 
-    .camp_days {
-      a {
-        border-color: #28aade;
+        a {
+          border-color: #28aade;
+          color: #797979;
+          font-size: 38px;
+          line-height: 4.5rem;
+
+          width: 71px;
+          height: 71px;
+        }
+
+        .icon-current,
+        .icon-locked {
+          width: 31px;
+          height: 31px;
+          background-size: 15px;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
     }
   }
