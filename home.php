@@ -54,7 +54,7 @@
 							<img class="img-responsive" src="http://makercamp.com/wp-content/uploads/2015/07/camp-video-day-3.jpg" alt="video still image of next camp video"/>
 						</a>
 					</div>
-					<a class="go-to-camp" href="/curent-day">WATCH TODAYS VIDEO!</a>
+					<a class="go-to-camp" href="/curent-day">WATCH TODAY&#39;S VIDEO!</a>
 				</div>
 				<div class="col-xs-12">
 					<a class="start-now clearfix" href="#">OR EXPLORE THE MAP</a>
