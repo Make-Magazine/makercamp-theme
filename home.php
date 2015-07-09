@@ -51,7 +51,7 @@
 				<div class="watch-video-click-screen col-sm-6 col-sm-offset-3">
 					<div>
 						<a href="/curent-day">
-							<img class="img-responsive" src="http://makercamp.com/wp-content/uploads/2015/07/camp-video-day-3.jpg" alt="video still image of next camp video"/>
+							<img class="img-responsive" src="/video-screen-shot.jpq" alt="video still image of next camp video"/>
 						</a>
 					</div>
 					<a class="go-to-camp" href="/curent-day">WATCH TODAY&#39;S VIDEO!</a>
