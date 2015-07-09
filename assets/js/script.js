@@ -71,8 +71,8 @@ $(document).ready(function () {
   $(document).on('click', '.sign-in', function (e) {
     e.preventDefault();
 
-    hero_section.removeClass('show-content');
     $('.start-screen').hide();
+    $('.thank-you-screen').show();
 
     userSignUp = true; // User already have account
     $.cookie('user_sign_up', true);
@@ -444,7 +444,7 @@ $(document).ready(function () {
    * Scroll up to sign up form or Show message You are already Sig Up!
    */
   $(document).on('click', '.sign-in-trigger', function (e) {
-    e.preventDefault();
+    // e.preventDefault();
 
     if (!userSignUp) {
       // scroll up and show form
