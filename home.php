@@ -48,14 +48,18 @@
 			</article>
 
 			<article class="thank-you-screen">
-				<h1>Welcome to Maker Camp!</h1>
+				<div class="watch-video-click-screen col-sm-6 col-sm-offset-3">
+					<div>
+						<a href="/curent-day">
+							<img class="img-responsive" src="/video-screen-shot.jpq" alt="video still image of next camp video"/>
+						</a>
+					</div>
+					<a class="go-to-camp" href="/curent-day">WATCH TODAY&#39;S VIDEO!</a>
+				</div>
+				<div class="col-xs-12">
+					<a class="start-now clearfix" href="#">OR EXPLORE THE MAP</a>
+				</div>
 
-				<p>
-					Thanks! Maker Camp is an online camp full of fun and adventure.
-					Start now and explore the map to learn more about each week.
-				</p>
-
-				<a class="start-now" href="#">Start!</a>
 			</article>
 		</div>
 
