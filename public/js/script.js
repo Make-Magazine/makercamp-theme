@@ -2396,6 +2396,7 @@ $(document).ready(function () {
     e.preventDefault();
 
     $('.start-screen').hide();
+    $('.arrow-background').hide();
     $('.sign-up-screen').show();
   });
 
@@ -2406,6 +2407,7 @@ $(document).ready(function () {
     e.preventDefault();
 
     $('.start-screen').hide();
+    $('.arrow-background').hide();
     $('.thank-you-screen').show();
 
     userSignUp = true; // User already have account
