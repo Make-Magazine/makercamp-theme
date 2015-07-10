@@ -50,11 +50,11 @@
 			<article class="thank-you-screen">
 				<div class="watch-video-click-screen col-sm-6 col-sm-offset-3">
 					<div>
-						<a href="/curent-day">
+						<a href="/current-day">
 							<img class="img-responsive" src="/video-screen-shot.jpq" alt="video still image of next camp video"/>
 						</a>
 					</div>
-					<a class="go-to-camp" href="/curent-day">WATCH TODAY&#39;S VIDEO!</a>
+					<a class="go-to-camp" href="/current-day">WATCH TODAY&#39;S VIDEO!</a>
 				</div>
 				<div class="col-xs-12">
 					<a class="start-now clearfix" href="#">OR EXPLORE THE MAP</a>
