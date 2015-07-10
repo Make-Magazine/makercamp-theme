@@ -70,6 +70,10 @@ ul, li {
   list-style: none;
 }
 
+.error-404 {
+  margin: 80px 0;
+}
+
 /*--------------------------------------------------------------
 2.1 Week day
 --------------------------------------------------------------*/
@@ -161,13 +165,6 @@ ul, li {
     }
 
     .container {
-      p {
-        color: #333;
-        font-size: 16px;
-        font-weight: 400;
-        display: none;
-      }
-
       text-align: center;
 
       .week-title {
@@ -189,6 +186,14 @@ ul, li {
         .label {
           text-transform: uppercase;
         }
+      }
+
+      .day-description {
+        display: none;
+
+        color: #333;
+        font-size: 16px;
+        font-weight: 400;
       }
 
       .list-label {
@@ -216,8 +221,31 @@ ul, li {
           margin-right: 36px;
 
           a {
+            display: block;
             padding: 2px 0 0 0;
+
+            color: #000;
+            font-size: 38px;
+            font-weight: 600;
             text-decoration: none;
+
+            width: 71px;
+            height: 71px;
+
+            background-color: #fff;
+
+            border-radius: 50%;
+            border: 6px solid #05729f;
+
+            &:hover {
+              color: #000;
+              text-decoration: none;
+              background-color: #3299c3;
+            }
+
+            &:visited {
+              color: #000;
+            }
           }
 
           .icon-locked {
@@ -241,6 +269,12 @@ ul, li {
             text-transform: uppercase;
             font-size: inherit;
           }
+
+          &.opened-day {
+            a {
+              background-color: #3299c3;
+            }
+          }
         }
 
         .icon-current {
@@ -259,42 +293,10 @@ ul, li {
 
           border-radius: 50%;
         }
-
-        a {
-          display: block;
-
-          color: #000;
-          font-size: 38px;
-          font-weight: 600;
-
-          width: 71px;
-          height: 71px;
-
-          background-color: #fff;
-
-          border-radius: 50%;
-          border: 6px solid #05729f;
-        }
-
-        a:hover {
-          color: #000;
-          text-decoration: none;
-          background-color: #3299c3;
-        }
-
-        a:visited {
-          color: #000;
-        }
       }
 
       .camp_day-number:last-child {
         margin-right: 0;
-      }
-
-      .opened-day {
-        a {
-          background-color: #3299c3;
-        }
       }
 
       .calendar-button {
@@ -400,11 +402,6 @@ ul, li {
           margin: 0 auto;
         }
 
-        p {
-          margin-top: 19px;
-          display: block;
-        }
-
         .week-title {
           color: #333;
           font-size: 44px;
@@ -417,6 +414,11 @@ ul, li {
           color: #333;
           font-size: 20px;
           font-weight: 400;
+        }
+
+        .day-description {
+          display: block;
+          margin-top: 19px;
         }
 
         .attachment-thumbnail {
@@ -822,12 +824,6 @@ ul, li {
 
       margin: 0 32px;
 
-      &.opened-day {
-        a {
-          background-color: #3299c3;
-        }
-      }
-
       a {
         display: block;
         position: relative;
@@ -900,6 +896,12 @@ ul, li {
         border-radius: 50%;
 
         z-index: 3;
+      }
+
+      &.opened-day {
+        a {
+          background-color: #3299c3;
+        }
       }
     }
   }
