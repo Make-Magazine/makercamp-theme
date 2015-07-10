@@ -474,54 +474,237 @@ function makercamp_customizer( $wp_customize ) {
           'type' => 'text',
       )
   );
+  //=====first==============================================================================
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_picture_first',
+        array(
+            'default' => 'chose a picrute',
+        )
+    );
 
-  $wp_customize->add_setting(
-      'affiliate_program_proj_n_video_picture',
-      array(
-          'default' => 'chose a picrute',
-      )
-  );
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_picture_first',
+        array(
+            'label' => 'Picture, description & link for the first discover video',
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'button',
+        )
+    );
 
-  $wp_customize->add_control(
-      'affiliate_program_proj_n_video_picture',
-      array(
-          'label' => 'Picture of the project',
-          'section' => 'makercamp_section_host_camp',
-          'type' => 'button',
-      )
-  );
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_description_first',
+        array(
+            'default' => 'description of project',
+        )
+    );
 
-  $wp_customize->add_setting(
-      'affiliate_program_proj_n_video_description',
-      array(
-          'default' => 'description of project',
-      )
-  );
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_description_first',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
 
-  $wp_customize->add_control(
-      'affiliate_program_proj_n_video_description',
-      array(
-          'label' => 'Description of project',
-          'section' => 'makercamp_section_host_camp',
-          'type' => 'text',
-      )
-  );
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_link_first',
+        array(
+            'default' => 'http://',
+        )
+    );
 
-  $wp_customize->add_setting(
-      'affiliate_program_proj_n_video_link',
-      array(
-          'default' => 'http://',
-      )
-  );
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_link_first',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
+  //====second=================================================================================
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_picture_second',
+        array(
+            'default' => 'chose a picrute',
+        )
+    );
 
-  $wp_customize->add_control(
-      'affiliate_program_proj_n_video_link',
-      array(
-          'label' => 'Link for the project matirial',
-          'section' => 'makercamp_section_host_camp',
-          'type' => 'text',
-      )
-  );
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_picture_second',
+        array(
+            'label' => 'Picture, description & link for the second discover video',
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'button',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_description_second',
+        array(
+            'default' => 'description of project',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_description_second',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_link_second',
+        array(
+            'default' => 'http://',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_link_second',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
+  //====third=================================================================================
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_picture_third',
+        array(
+            'default' => 'chose a picrute',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_picture_third',
+        array(
+            'label' => 'Picture, description & link for the third discover video',
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'button',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_description_third',
+        array(
+            'default' => 'description of project',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_description_third',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_link_third',
+        array(
+            'default' => 'http://',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_link_third',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
+  //=====fourth================================================================================
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_picture_fourth',
+        array(
+            'default' => 'chose a picrute',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_picture_fourth',
+        array(
+            'label' => 'Picture, description & link for the fourth discover video',
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'button',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_description_fourth',
+        array(
+            'default' => 'description of project',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_description_fourth',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_link_fourth',
+        array(
+            'default' => 'http://',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_link_fourth',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
+  //=====fifth===============================================================================
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_picture_fifth',
+        array(
+            'default' => 'chose a picrute',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_picture_fifth',
+        array(
+            'label' => 'Picture, description & link for the fifth discover video',
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'button',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_description_fifth',
+        array(
+            'default' => 'description of project',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_description_fifth',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'affiliate_program_proj_n_video_link_fifth',
+        array(
+            'default' => 'http://',
+        )
+    );
+
+    $wp_customize->add_control(
+        'affiliate_program_proj_n_video_link_fifth',
+        array(
+            'section' => 'makercamp_section_host_camp',
+            'type' => 'text',
+        )
+    );
+  //====================================================================================
   /**
    * section in costomizer for Hidden page
    */
@@ -679,53 +862,237 @@ function makercamp_customizer( $wp_customize ) {
       )
   );
 
+  //=====first==============================================================================
   $wp_customize->add_setting(
-      'digital_assets_section_picture',
+      'digital_assets_section__picture_first',
       array(
           'default' => 'chose a picrute',
       )
   );
 
   $wp_customize->add_control(
-      'digital_assets_section_picture',
+      'digital_assets_section__picture_first',
       array(
-          'label' => 'Picture of the assets',
+          'label' => 'Picture, description & link for the first assets',
           'section' => 'makercamp_section_hidden_page',
           'type' => 'button',
       )
   );
 
   $wp_customize->add_setting(
-      'digital_assets_description',
+      'digital_assets_section__description_first',
       array(
           'default' => 'description of assets',
       )
   );
 
   $wp_customize->add_control(
-      'digital_assets_description',
+      'digital_assets_section__description_first',
       array(
-          'label' => 'Description of assets',
           'section' => 'makercamp_section_hidden_page',
           'type' => 'text',
       )
   );
 
   $wp_customize->add_setting(
-      'digital_assets_link',
+      'digital_assets_section__link_first',
       array(
           'default' => 'http://',
       )
   );
 
   $wp_customize->add_control(
-      'digital_assets_link',
+      'digital_assets_section__link_first',
       array(
-          'label' => 'Link for the digital assets',
           'section' => 'makercamp_section_hidden_page',
           'type' => 'text',
       )
   );
+//====second=================================================================================
+  $wp_customize->add_setting(
+      'digital_assets_section__picture_second',
+      array(
+          'default' => 'chose a picrute',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__picture_second',
+      array(
+          'label' => 'Picture, description & link for the second assets',
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'button',
+      )
+  );
+
+  $wp_customize->add_setting(
+      'digital_assets_section__description_second',
+      array(
+          'default' => 'description of assets',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__description_second',
+      array(
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'text',
+      )
+  );
+
+  $wp_customize->add_setting(
+      'digital_assets_section__link_second',
+      array(
+          'default' => 'http://',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__link_second',
+      array(
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'text',
+      )
+  );
+//====third=================================================================================
+  $wp_customize->add_setting(
+      'digital_assets_section__picture_third',
+      array(
+          'default' => 'chose a picrute',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__picture_third',
+      array(
+          'label' => 'Picture, description & link for the third assets',
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'button',
+      )
+  );
+
+  $wp_customize->add_setting(
+      'digital_assets_section__description_third',
+      array(
+          'default' => 'description of assets',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__description_third',
+      array(
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'text',
+      )
+  );
+
+  $wp_customize->add_setting(
+      'digital_assets_section__link_third',
+      array(
+          'default' => 'http://',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__link_third',
+      array(
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'text',
+      )
+  );
+//=====fourth================================================================================
+  $wp_customize->add_setting(
+      'digital_assets_section__picture_fourth',
+      array(
+          'default' => 'chose a picrute',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__picture_fourth',
+      array(
+          'label' => 'Picture, description & link for the fourth assets',
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'button',
+      )
+  );
+
+  $wp_customize->add_setting(
+      'digital_assets_section__description_fourth',
+      array(
+          'default' => 'description of assets',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__description_fourth',
+      array(
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'text',
+      )
+  );
+
+  $wp_customize->add_setting(
+      'digital_assets_section__link_fourth',
+      array(
+          'default' => 'http://',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__link_fourth',
+      array(
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'text',
+      )
+  );
+//=====fifth===============================================================================
+  $wp_customize->add_setting(
+      'digital_assets_section__picture_fifth',
+      array(
+          'default' => 'chose a picrute',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__picture_fifth',
+      array(
+          'label' => 'Picture, description & link for the fifth assets',
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'button',
+      )
+  );
+
+  $wp_customize->add_setting(
+      'digital_assets_section__description_fifth',
+      array(
+          'default' => 'description of assets',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__description_fifth',
+      array(
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'text',
+      )
+  );
+
+  $wp_customize->add_setting(
+      'digital_assets_section__link_fifth',
+      array(
+          'default' => 'http://',
+      )
+  );
+
+  $wp_customize->add_control(
+      'digital_assets_section__link_fifth',
+      array(
+          'section' => 'makercamp_section_hidden_page',
+          'type' => 'text',
+      )
+  );
+//====================================================================================
   // Interested In section
   $wp_customize->add_setting(
       'interested_in_section',
@@ -1291,3 +1658,46 @@ function makercamp_customizer( $wp_customize ) {
   );
 }
 add_action( 'customize_register', 'makercamp_customizer' );
+
+add_action( 'init', 'crew_post_types' );
+
+function crew_post_types() {
+  $labels = array(
+    'name'                => _x('Crews list', 'post type general name'),
+		'singular_name'       => _x('Crew', 'post type singular name'),
+		'add_new'             => _x('Add New', 'new crew'),
+		'add_new_item'        => __('Add New Crew'),
+		'edit_item'           => __('Edit Crew'),
+		'new_item'            => __('New Crew'),
+		'view_item'           => __('View Crew'),
+		'search_items'        => __('Search Crew'),
+		'not_found'           => __('Nothing found'),
+		'not_found_in_trash'  => __('Nothing found in Trash'),
+		'parent_item_colon'   => ''
+	);
+
+  $args = array(
+    'labels'              => $labels,
+		'public'              => true,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'query_var'           => true,
+		'rewrite'             => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => false,
+		'menu_position'       => null,
+		'supports'            => array('title','editor','thumbnail')
+	  );
+
+  register_post_type( 'crew', $args );
+
+  $args = array(
+    "hierarchical"      => true,
+    "label"             => "Crews",
+    "singular_label"    => "Crew",
+    "rewrite"           => true,
+  );
+
+  register_taxonomy("Crew list", array("crew"), $args);
+
+}
