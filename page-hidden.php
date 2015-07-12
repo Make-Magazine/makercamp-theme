@@ -15,35 +15,27 @@
 
 	<section class="affiliates-todo">
 		<div class="container-fluid">
-			<h1>With lively, daily videos, fun projects, and an active online community, there's no shortage of ways
-				to participate! We ask affiliates to do just a few things
-			</h1>
+			<h1><?php echo get_theme_mod( 'hidden_first_section_title' ); ?></h1>
 
 			<ul class="affiliates-todo-list">
 				<li>
 					<span class="first-todo">1</span>
-
-					<p>Share videos, photos, comments of projects, experience. </p>
+					<p><?php echo get_theme_mod( 'hidden_first_section_first_text' ); ?></p>
 				</li>
 				<li>
 					<span class="second-todo">2</span>
-
-					<p>Provide feedback, comments, input about what works, what doesn't. </p>
+					<p><?php echo get_theme_mod( 'hidden_first_section_second_text' ); ?></p>
 				</li>
 				<li>
 					<span class="third-todo">3</span>
-
-					<p>Share aggregate data of campers (non-individualized ages, gender). </p>
+					<p><?php echo get_theme_mod( 'hidden_first_section_third_text' ); ?></p>
 				</li>
 				<li>
 					<span class="fourth-todo">4</span>
-
-					<p>Be available and willing to speak with press/media about your campers'
-						participation and projects.
-					</p>
+					<p><?php echo get_theme_mod( 'hidden_first_section_fourth_text' ); ?></p>
 				</li>
 				<li class="link">
-					<a href="https://plus.google.com/communities/107377046073638428310" class="read-more">visit google+ community </a>
+					<a href="<?php echo get_theme_mod( 'hidden_first_section_link' ); ?>" class="read-more">visit google+ community </a>
 				</li>
 			</ul>
 
@@ -54,11 +46,8 @@
 		<div class="container-fluid">
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>pensils.png" alt="Section logo, pensils">
 
-			<h1>Maker Camp 2015</h1>
-
-			<p>Remember you are welcome to do any making activity on any day, even if you do not
-				follow our schedule or recommendations. The content for each week is released weekly.
-			</p>
+			<h1><?php echo get_theme_mod( 'hidden_second_section_title' ); ?></h1>
+			<p><?php echo get_theme_mod( 'hidden_second_section_text' ); ?></p>
 
 			<ul class="weeks-section">
 				<li>
@@ -126,43 +115,40 @@
 		</div>
 	</section>
 
-
 	<section class="digital-assets">
 		<div class="container-fluid">
-			<h1>These digital assets are for stand-alone use on your website or in promotional
-				materials Please do not modify them.
-			</h1>
+			<h1><?php echo get_theme_mod( 'hidden_third_section_title' ); ?></h1>
 
 			<ul class="assets-download">
 				<li>
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_one.jpg" alt="Maker Camp Affiliate Badges">
 
-					<p>Maker Camp Affiliate Badges, avaliable in PNG and JPG format.</p>
-					<a href="http://makercamp.com/promote" class="read-more">Download</a>
+					<p><?php echo get_theme_mod( 'hidden_third_section_first_block_title' ); ?></p>
+					<a href="<?php echo get_theme_mod( 'hidden_third_section_first_block_link' ); ?>" class="read-more">Download</a>
 				</li>
 				<li>
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_two.jpg" alt="Maker Camp Robot Logo ">
 
-					<p>Maker Camp Robot Logo. Get it in white, single and full color.</p>
-					<a href="http://makercamp.com/promote" class="read-more">Download</a>
+					<p><?php echo get_theme_mod( 'hidden_third_section_second_block_title' ); ?></p>
+					<a href="<?php echo get_theme_mod( 'hidden_third_section_second_block_link' ); ?>" class="read-more">Download</a>
 				</li>
 				<li>
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_three.jpg" alt="Maker Camp Logo ">
 
-					<p>Maker Camp Logo. Get it in white, single and full color. </p>
-					<a href="http://makercamp.com/promote" class="read-more">Download</a>
+					<p><?php echo get_theme_mod( 'hidden_third_section_third_block_title' ); ?></p>
+					<a href="<?php echo get_theme_mod( 'hidden_third_section_third_block_link' ); ?>" class="read-more">Download</a>
 				</li>
 				<li>
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_four.jpg" alt="Maker Camp Affiliate Playbook">
 
-					<p>Maker Camp Affiliate Playbook. Find even more project ideas. </p>
-					<a href="http://makercamp.com/wp-content/uploads/2014/06/MakerCamp-Playbook-2014-smaller.pdf" class="read-more">Download</a>
+					<p><?php echo get_theme_mod( 'hidden_third_section_fourth_block_title' ); ?></p>
+					<a href="<?php echo get_theme_mod( 'hidden_third_section_fourth_block_link' ); ?>" class="read-more">Download</a>
 				</li>
 				<li>
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_five.jpg" alt="Maker Camp Affiliate Kit">
 
-					<p>Maker Camp Affiliate Kit. Get a PDF with all the items you need. </p>
-					<a href="http://makercamp.com/wp-content/uploads/2015/07/MakerCamp2015_Packing-List.pdf" class="read-more">Download </a>
+					<p><?php echo get_theme_mod( 'hidden_third_section_fifth_block_title' ); ?></p>
+					<a href="<?php echo get_theme_mod( 'hidden_third_section_fifth_block_link' ); ?>" class="read-more">Download </a>
 				</li>
 			</ul>
 
@@ -173,24 +159,14 @@
 		<div class="container-fluid">
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>castle.png" alt="Castle section logo">
 
-			<p>We’re interested in reaching and inspiring young women, as well as kids who couldn’t otherwise
-				attend a camp. If your recruitment and outreach focuses on girls, low-income families, or any
-				other groups who are not well-represented in technology, we’d love to hear about it!
-			</p>
+			<p><?php echo get_theme_mod( 'hidden_fourth_section_text' ); ?></p>
 		</div>
 	</section>
 
 	<section class="contacts">
 		<div class="container-fluid">
-			<p>Please
-				<strong>do not</strong> share this list with the general Maker Camp community. We share projects with use
-				the affiliates early to allow more time for you to prepare for the groups of campers who come
-				to your site. Hearing news of the next daily project is exciting for our makers or campers, so
-				please help us maintain that shared experience in our online community period.
-			</p>
-
-			<p>If you have questions at any time please don't hesitate to contact us. </p>
-
+			<p><?php echo get_theme_mod( 'hidden_fifth_section_text_first' ); ?></p>
+			<p><?php echo get_theme_mod( 'hidden_fifth_section_text_second' ); ?></p>
 		</div>
 	</section>
 

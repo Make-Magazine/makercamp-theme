@@ -14,17 +14,12 @@
 	</section>
 
 	<section class="camps-map">
-		<h1 class="container-fluid">Is there a campsite close to you? Join the fun </h1>
+		<h1 class="container-fluid"><?php echo get_theme_mod( 'title_before_map' ); ?></h1>
 		<iframe src="https://www.google.com/maps/d/embed?mid=znSdL4uF4CiE.k7sHDldZCKys"></iframe>
 		<div class="container-fluid">
-			<h1 class="hide-in-mobile container-fluid">... or start a new campsite</h1>
+			<h1 class="hide-in-mobile container-fluid"><?php echo get_theme_mod( 'title_after_map' ); ?></h1>
 
-			<p>If you can’t find a nearby site in the list or the map, talk to your local library, makerspace, Boys & Girls Club,
-				or community center about hosting Maker Camp for the kids in your community. Maker Camp Affiliate
-				Sites receive a package of materials for making and for promoting the camp, while supplies last. Remember that
-				whether or not you are able to find an organization to host Maker Camp, you can still be a part of Maker Camp no
-				matter where you are, because it is online and free!
-			</p>
+			<p><?php echo get_theme_mod( 'description_after_map' ); ?></p>
 		</div>
 	</section>
 

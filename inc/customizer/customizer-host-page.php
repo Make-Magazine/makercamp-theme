@@ -7,7 +7,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_section(   // 1-st section
       'makercamp_host_first_section',
       array(
-          'title' => 'Host a Camp 1-st section',
+          'title' => 'Host a Campm 1-st section',
           'description' => 'Host a Camp, 1-st section settings',
           'priority' => 207,
       )
@@ -27,7 +27,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'host_first_section_title',
       array(
-          'default' => '',
+          'default' => 'Our Affiliate Program supports campsites worldwide, and you can join!',
       )
   );
 
@@ -43,7 +43,8 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 1-st text
       'host_first_section_first_text',
       array(
-          'default' => '',
+          'default' => 'Integrate the Maker Camp projects, guest makers and virtual field trips into your existing
+						summer program for kids',
       )
   );
 
@@ -59,7 +60,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 2-nd text
       'host_first_section_second_text',
       array(
-          'default' => '',
+          'default' => 'Promote your Maker Camp program and affiliate status with a link on the Maker Camp map',
       )
   );
 
@@ -75,7 +76,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 3-rd text
       'host_first_section_third_text',
       array(
-          'default' => '',
+          'default' => 'Let kids in your neighborhood know you are a Maker Camp affiliate',
       )
   );
 
@@ -91,7 +92,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 4-th text
       'host_first_section_fourth_text',
       array(
-          'default' => '',
+          'default' => 'Have the kids share their projects on the Maker Camp Community page',
       )
   );
 
@@ -110,7 +111,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'host_second_section_title',
       array(
-          'default' => '',
+          'default' => 'Discover our wide range of kid-friendly, hands-on projects and videos',
       )
   );
 
@@ -129,7 +130,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'host_second_section_first_block_title',
       array(
-          'default' => '',
+          'default' => 'Find projects ideas listed by week on makercamp.com',
       )
   );
 
@@ -145,7 +146,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'host_second_section_first_block_link',
       array(
-          'default' => '',
+          'default' => '/',
       )
   );
 
@@ -158,7 +159,7 @@ function makercamp_host_customizer( $wp_customize ) {
       )
   );
 
-  $wp_customize->add_setting(   // Link
+  $wp_customize->add_setting(   // Picture
       'host_second_section_first_block_picture'
   );
 
@@ -180,7 +181,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'host_second_section_second_block_title',
       array(
-          'default' => '',
+          'default' => 'See Maker Camp 2013 YouTube playlist!',
       )
   );
 
@@ -196,7 +197,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'host_second_section_second_block_link',
       array(
-          'default' => '',
+          'default' => 'https://www.youtube.com/playlist?list=PLwhkA66li5vD027TQQWc3qLtU9LtEtCdZ',
       )
   );
 
@@ -231,7 +232,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'host_second_section_third_block_title',
       array(
-          'default' => '',
+          'default' => 'See Maker Camp 2014 YouTube playlist!',
       )
   );
 
@@ -247,7 +248,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'host_second_section_third_block_link',
       array(
-          'default' => '',
+          'default' => 'https://www.youtube.com/playlist?list=PLwhkA66li5vAR_CboA0lVOlrmqIqvlw_O',
       )
   );
 
@@ -281,7 +282,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'host_second_section_fourth_block_title',
       array(
-          'default' => '',
+          'default' => 'See the projects posted by other campers, or post your own!',
       )
   );
 
@@ -297,7 +298,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'host_second_section_fourth_block_link',
       array(
-          'default' => '',
+          'default' => 'https://plus.google.com/communities/107377046073638428310',
       )
   );
 
@@ -332,7 +333,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'host_second_section_fifth_block_title',
       array(
-          'default' => '',
+          'default' => 'Find more project ideas in the Maker Camp Affiliate Playbook!',
       )
   );
 
@@ -348,7 +349,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'host_second_section_fifth_block_link',
       array(
-          'default' => '',
+          'default' => 'http://makercamp.com/wp-content/uploads/2014/06/MakerCamp-Playbook-2014-smaller.pdf',
       )
   );
 

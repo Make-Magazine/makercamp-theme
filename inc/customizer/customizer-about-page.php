@@ -26,7 +26,7 @@ function makercamp_about_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'section_first_title',
       array(
-          'default' => '',
+          'default' => 'What is Maker Camp?',
       )
   );
 
@@ -42,7 +42,9 @@ function makercamp_about_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 1-st paragraph
       'section_first_text_first',
       array(
-          'default' => '',
+          'default' => 'Maker Camp is a free, 6-week online (and in-person) summer camp for young Makers interested in DIY, making,
+				creating, crafting, hacking, tinkering, and learning. It combines the best parts of summer camp and with sure-fire
+				starter projects, so that young Makers across the country and the world can make together.',
       )
   );
 
@@ -58,7 +60,11 @@ function makercamp_about_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 2-nd paragraph
       'section_first_text_second',
       array(
-          'default' => '',
+          'default' => 'Campers make projects,
+				go on virtual field trips, and interact with our counselors wherever they are including: from home, on the road,
+				or at local community spaces like public libraries, Boys and Girls Clubs, Computer Clubhouses, 4-H Clubs, scouting
+				groups, and more. Past field trips have included virtual visits to NASA, Disney, LEGO, the White House, Blue Man
+				Group, and Pixar.',
       )
   );
 
@@ -74,7 +80,7 @@ function makercamp_about_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 3-rd paragraph
       'section_first_text_third',
       array(
-          'default' => '',
+          'default' => 'Maker Camp is produced by Maker Media, the people behind Maker Faire and Make: magazine.',
       )
   );
 
@@ -93,7 +99,7 @@ function makercamp_about_customizer( $wp_customize ) {
   $wp_customize->add_setting(     // Title
       'about_second_section_title',
       array(
-          'default' => '',
+          'default' => 'Our Camp Crew',
       )
   );
   $wp_customize->add_control(

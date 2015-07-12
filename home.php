@@ -237,30 +237,25 @@
 		<div class="container-fluid">
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>welcome_rocket.png" class="welcome-icon" alt="Welcome Maker Camp">
 
-			<h1>Welcome to Maker Camp!</h1>
+		  <h1><?php echo get_theme_mod( 'first_section_title'); ?></h1>
 
-			<h2>July 6th - August 14th, 2015</h2>
+      <h2><?php echo get_theme_mod( 'first_section_subtitle' ); ?></h2>
 
 			<div class="row">
 				<div class="col-sm-4">
-					<a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/lxxgvv__pUo?autoplay=1">
+					<a class="fancybox" data-fancybox-type="iframe" href="<?php echo get_theme_mod( 'first_section_video'); ?>">
 						<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>video_pic_with_button.png" alt="Video from the camp" class="pic-for-vid">
 					</a>
 				</div>
 				<div class="col-sm-4">
 					<p>
-						<strong>Join young inventors and artists from around the world</strong>
-						in our
-						<a href="https://plus.google.com/communities/107377046073638428310">Maker Camp Community </a>. We make awesome projects, go on epic virtual “field trips,” and meet the
-						world’s coolest makers.
+            <?php echo get_theme_mod('first_section_central_description'); ?>
 					</p>
 					<a href="#hero" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual" class="read-more sign-in-trigger">Sign up!</a>
 				</div>
 				<div class="col-sm-4">
 					<p>
-						<strong>Sign up to be a Maker Camp Affiliate Site.</strong>
-						You’ll inspire kids to embrace their inner maker, get their hands dirty, fix some things, break some things,
-						and have a lot of fun doing it.
+            <?php echo get_theme_mod('first_section_right_description'); ?>
 					</p>
 
 					<a href="<?php bloginfo( 'url' ); ?>/affiliate-program" class="read-more">Host a camp</a>
@@ -271,30 +266,25 @@
 
 	<section class="how-it-works" id="how-it-works">
 		<div class="container-fluid">
-			<h1>How Maker Camp Works</h1>
+			<h1><?php echo get_theme_mod( 'second_section_title' ); ?></h1>
 
-			<h2>Maker Camp is a free online summer camp you can join anytime!</h2>
+			<h2><?php echo get_theme_mod( 'second_section_subtitle' ); ?></h2>
 
 			<div class="row">
 				<div class="col-sm-6">
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>how_it_works.png" alt="Childrens in camp" class="img-circle photo">
 
-					<h3>Participate online from home</h3>
-
-					<p>Join us at Makercamp.com to explore a new project every day. Get an overview about the project in our daily
-						video playlist. Follow links to work on projects at home.
-					</p>
+					<h3><?php echo get_theme_mod( 'second_section_left_title' ); ?></h3>
+					<p><?php echo get_theme_mod( 'second_section_left_text' ); ?></p>
 
 					<a href="#hero" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual" class="read-more sign-in-trigger">Sign up for fun alerts</a>
 				</div>
 				<div class="col-sm-6">
 					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>how_camp_works.png" alt="Childrens in camp" class="img-circle photo">
 
-					<h3>Join a hosted camp in your neighborhood</h3>
+					<h3><?php echo get_theme_mod( 'second_section_right_title' ); ?></h3>
 
-					<p>Maker Camp affiliates host physical campsites where campers work with other kids and adults to guide you.
-						Affiliates can be Boys & Girls Clubs, community centers and many more!
-					</p>
+					<p><?php echo get_theme_mod( 'second_section_right_text' ); ?></p>
 
 					<a href="<?php bloginfo( 'url' ); ?>/map" class="show-in-mobile read-more">Find a campsite</a>
 
@@ -311,12 +301,10 @@
 		</div>
 	</section>
 
-
 	<section class="camp-themes" id="themes">
 		<div class="container-fluid">
-			<h1>2015 Maker Camp Themes</h1>
-
-			<h2>6 weeks of hands-on projects & cool field trips!</h2>
+			<h1><?php echo get_theme_mod( 'third_section_title' ); ?></h1>
+			<h2><?php echo get_theme_mod( 'third_section_subtitle' ); ?></h2>
 
 			<ul class="weeks-section">
 				<li>
@@ -386,11 +374,9 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-offset-6 col-sm-6">
-					<h1>Physical Campsites</h1>
-
-					<h2>Maker Camp happens at more than a 1000 campsites all over the world!</h2>
-
-					<h3>Maker Camp Partners:</h3>
+					<h1><?php echo get_theme_mod( 'fourth_section_title' ); ?></h1>
+					<h2><?php echo get_theme_mod( 'fourth_section_subtitle' ); ?></h2>
+					<h3><?php echo get_theme_mod( 'fourth_section_subsubtitle' ); ?></h3>
 
 					<ul class="sponsors-logo">
 						<li class="smaller">
@@ -416,17 +402,12 @@
 		<div class="container-fluid">
 			<ul class="physical-campsites-description-list">
 				<li>
-					<p>We are an online summer camp, but you can meet your neighbors who are taking part in Maker Camp, too, at
-						local campsites worldwide!
-					</p>
-
-					<p>Many libraries, makerspaces, and community centers are hosting Maker Camp for the kids in
-						their communities!
-					</p>
+					<p><?php echo get_theme_mod( 'fourth_section_first_paragraph' ); ?></p>
+					<p><?php echo get_theme_mod( 'fourth_section_second_paragraph' ); ?></p>
 				</li>
 				<li>
-					<a href="<?php bloginfo( 'url' ); ?>/map" class="read-more">Find out if there’s one close to you, and join the fun</a>
-					<a href="<?php bloginfo( 'url' ); ?>/affiliate-program" class="read-more">Host a camp</a>
+					<a href="<?php bloginfo( 'url' ); echo get_theme_mod( 'fourth_section_first_link' ); ?>" class="read-more">Find out if there’s one close to you, and join the fun</a>
+					<a href="<?php bloginfo( 'url' ); echo get_theme_mod( 'fourth_section_second_link' ); ?>" class="read-more">Host a camp</a>
 				</li>
 			</ul>
 		</div>
@@ -434,58 +415,46 @@
 
 	<section class="day-at-camp" id="day-at-camp">
 		<div class="container-fluid">
-			<h1>A Day At Camp</h1>
+			<h1><?php echo get_theme_mod( 'fifth_section_title' ); ?></h1>
 
 			<div class="col-sm-4">
-				<h2>Explore</h2>
-
-				<p>Get your feet wet as you get inspired by what Makers do, and play around with the stuff, tools, and ways of making.
-				</p>
+				<h2><?php echo get_theme_mod( 'fifth_section_left_title' ); ?></h2>
+				<p><?php echo get_theme_mod( 'fifth_section_left_text' ); ?></p>
 			</div>
 			<div class="col-sm-4">
-				<h2>Make</h2>
-
-				<p>Our cool and fun step-by-step projects branch out from the theme. Advanced Makers can
-					take on our Camp Challenges.
-				</p>
+        <h2><?php echo get_theme_mod( 'fifth_section_central_title' ); ?></h2>
+        <p><?php echo get_theme_mod( 'fifth_section_central_text' ); ?></p>
 			</div>
 			<div class="col-sm-4">
-				<h2>Share</h2>
-
-				<p>Share what you’ve done online. Meet up in real life with our end-of-week showcases. Or
-					connect cabin-to-cabin with other Maker Campers.
-				</p>
+        <h2><?php echo get_theme_mod( 'fifth_section_right_title' ); ?></h2>
+        <p><?php echo get_theme_mod( 'fifth_section_right_text' ); ?></p>
 			</div>
 		</div>
 	</section>
 
 	<section class="stock-up" id="stock-up">
 		<div class="container-fluid">
-			<h1>Stock up for Camp</h1>
+			<h1><?php echo get_theme_mod( 'sixth_section_title' ); ?></h1>
 			<ul class="stor-up-links">
 				<li>
-					<a href="http://www.makershed.com/collections/maker-camp-2015"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_1.png" alt="Change this later" class="img-circle"></a>
+					<a href="<?php echo get_theme_mod( 'sixth_section_first_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_1.png" alt="Change this later" class="img-circle"></a>
 				</li>
 				<li>
-					<a href="http://www.makershed.com/collections/maker-camp-2015"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_2.png" alt="Change this later" class="img-circle"></a>
+					<a href="<?php echo get_theme_mod( 'sixth_section_second_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_2.png" alt="Change this later" class="img-circle"></a>
 				</li>
 				<li>
-					<a href="http://www.makershed.com/collections/maker-camp-2015"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_3.png" alt="Change this later" class="img-circle"></a>
+					<a href="<?php echo get_theme_mod( 'sixth_section_third_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_3.png" alt="Change this later" class="img-circle"></a>
 				</li>
 				<li>
-					<a href="http://www.makershed.com/collections/maker-camp-2015"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_4.png" alt="Change this later" class="img-circle"></a>
+					<a href="<?php echo get_theme_mod( 'sixth_section_fourth_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_4.png" alt="Change this later" class="img-circle"></a>
 				</li>
 				<li>
-					<a href="http://www.makershed.com/collections/maker-camp-2015"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_5.png" alt="Change this later" class="img-circle"></a>
+					<a href="<?php echo get_theme_mod( 'sixth_section_fifth_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_5.png" alt="Change this later" class="img-circle"></a>
 				</li>
 			</ul>
 
-			<p>Maker Shed covers all your camp needs... and more! </p>
-
-			<p>Make sure to visit
-				<strong><a href="http://www.makershed.com/collections/maker-camp-2015">our special camp page on makershed.com</a></strong>. We've created a special collection
-				of kids, tools and supplies we think that work well for making projects.
-			</p>
+			<p><?php echo get_theme_mod( 'sixth_section_first_paragraph' ); ?></p>
+			<p><?php echo get_theme_mod( 'sixth_section_second_paragraph' ); ?></p>
 		</div>
 	</section>
 

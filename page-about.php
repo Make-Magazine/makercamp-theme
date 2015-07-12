@@ -15,32 +15,17 @@
 
 	<section class="our-mission">
 		<div class="container-fluid">
-			<h1>What is Maker Camp?</h1>
-
-			<p>
-				Maker Camp is a free, 6-week online (and in-person) summer camp for young Makers interested in DIY, making,
-				creating, crafting, hacking, tinkering, and learning. It combines the best parts of summer camp and with sure-fire
-				starter projects, so that young Makers across the country and the world can make together.</p>
-
-			<p>Campers make projects,
-				go on virtual field trips, and interact with our counselors wherever they are including: from home, on the road,
-				or at local community spaces like public libraries, Boys and Girls Clubs, Computer Clubhouses, 4-H Clubs, scouting
-				groups, and more. Past field trips have included virtual visits to NASA, Disney, LEGO, the White House, Blue Man
-				Group, and Pixar.
-			</p>
-
-			<p>
-				Maker Camp is produced by Maker Media, the people behind Maker Faire and Make: magazine.
-			</p>
-
+			<h1><?php echo get_theme_mod( 'section_first_title' ); ?></h1>
+			<p><?php echo get_theme_mod( 'section_first_text_first' ); ?></p>
+			<p><?php echo get_theme_mod( 'section_first_text_second' ); ?></p>
+			<p><?php echo get_theme_mod( 'section_first_text_third' ); ?></p>
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>about_robot.png" alt="virtual trips">
 		</div>
 	</section>
 
 	<section class="presenters container-fluid">
 		<h1>
-			<span class="presenters-desctop">Our Camp Crew</span>
-			<span class="presenters-mobile">Our <br /> great presenters</span>
+			<span class="presenters-desctop"><?php echo get_theme_mod( 'about_second_section_title' ); ?></span>
 		</h1>
 		<ul class="presenters-section">
 			<li>

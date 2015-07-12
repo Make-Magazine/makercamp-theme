@@ -64,7 +64,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'first_section_title',
       array(
-          'default' => '',
+          'default' => 'Welcome to Maker Camp! ',
       )
   );
 
@@ -80,7 +80,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Subtitle
       'first_section_subtitle',
       array(
-          'default' => '',
+          'default' => 'July 6th - August 14th, 2015 ',
       )
   );
 
@@ -96,7 +96,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(    // Link to video
       'first_section_video',
       array(
-          'default' => '',
+          'default' => 'https://www.youtube.com/embed/lxxgvv__pUo?autoplay=1',
       )
   );
 
@@ -112,7 +112,9 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Central part 1-st section
       'first_section_central_description',
       array(
-          'default' => '',
+          'default' => '<strong>Join young inventors and artists from around the world</strong> in our
+            <a href="https://plus.google.com/communities/107377046073638428310">Maker Camp Community</a> .
+            We make awesome projects, go on epic virtual “field trips,” and meet the world’s coolest makers.',
       )
   );
 
@@ -128,7 +130,9 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Right part 1-st section
       'first_section_right_description',
       array(
-          'default' => '',
+          'default' => '<strong>Sign up to be a Maker Camp Affiliate Site.</strong>
+						You’ll inspire kids to embrace their inner maker, get their hands dirty, fix some things, break some things,
+						and have a lot of fun doing it. ',
       )
   );
 
@@ -146,7 +150,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'second_section_title',
       array(
-          'default' => '',
+          'default' => 'How Maker Camp Works',
       )
   );
 
@@ -162,7 +166,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Subtitle
       'second_section_subtitle',
       array(
-          'default' => '',
+          'default' => 'Maker Camp is a free online summer camp you can join anytime!',
       )
   );
 
@@ -194,7 +198,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Left column title
       'second_section_left_title',
       array(
-          'default' => '',
+          'default' => 'Participate online from home',
       )
   );
 
@@ -210,7 +214,8 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Left column text
       'second_section_left_text',
       array(
-          'default' => '',
+          'default' => 'Join us at Makercamp.com to explore a new project every day. Get an overview about the project in our daily
+						video playlist. Follow links to work on projects at home.',
       )
   );
 
@@ -223,10 +228,26 @@ function makercamp_home_customizer( $wp_customize ) {
       )
   );
 
+  $wp_customize->add_setting(   // Right column picture
+      'second_section_right_picture'
+  );
+
+  $wp_customize->add_control(
+      new WP_Customize_Image_Control(
+          $wp_customize,
+          'second_section_right_picture',
+          array(
+              'label' => 'Right column picture',
+              'section' => 'makercamp_second_section_home_page',
+              'settings' => 'second_section_right_picture'
+          )
+      )
+  );
+
   $wp_customize->add_setting(   // Right column title
       'second_section_right_title',
       array(
-          'default' => '',
+          'default' => 'Join a hosted camp in your neighborhood',
       )
   );
 
@@ -242,7 +263,8 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Right column text
       'second_section_right_text',
       array(
-          'default' => '',
+          'default' => 'Maker Camp affiliates host physical campsites where campers work with other kids and adults to guide you.
+						Affiliates can be Boys & Girls Clubs, community centers and many more!',
       )
   );
 
@@ -261,7 +283,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'third_section_title',
       array(
-          'default' => '',
+          'default' => '2015 Maker Camp Themes',
       )
   );
 
@@ -277,7 +299,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Subtitle
       'third_section_subtitle',
       array(
-          'default' => '',
+          'default' => '6 weeks of hands-on projects & cool field trips!',
       )
   );
 
@@ -298,7 +320,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'fourth_section_title',
       array(
-          'default' => '',
+          'default' => 'Physical Campsites',
       )
   );
 
@@ -314,7 +336,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Subtitle
       'fourth_section_subtitle',
       array(
-          'default' => '',
+          'default' => 'Maker Camp happens at more than a 1000 campsites all over the world!',
       )
   );
 
@@ -330,7 +352,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Subtitled subtitle
       'fourth_section_subsubtitle',
       array(
-          'default' => '',
+          'default' => 'Maker Camp Partners:',
       )
   );
 
@@ -410,7 +432,8 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // First paragraph text
       'fourth_section_first_paragraph',
       array(
-          'default' => '',
+          'default' => 'We are an online summer camp, but you can meet your neighbors who are taking part in Maker Camp, too, at
+						local campsites worldwide!',
       )
   );
 
@@ -426,7 +449,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // First link
       'fourth_section_first_link',
       array(
-          'default' => '',
+          'default' => '/map',
       )
   );
 
@@ -442,7 +465,8 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 2-nd paragraph text
       'fourth_section_second_paragraph',
       array(
-          'default' => '',
+          'default' => 'Many libraries, makerspaces, and community centers are hosting Maker Camp for the kids in
+						their communities!',
       )
   );
 
@@ -458,7 +482,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 2-nd link
       'fourth_section_second_link',
       array(
-          'default' => '',
+          'default' => '/affiliate-program',
       )
   );
 
@@ -478,7 +502,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'fifth_section_title',
       array(
-          'default' => '',
+          'default' => 'A Day At Camp',
       )
   );
 
@@ -494,7 +518,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Left title
       'fifth_section_left_title',
       array(
-          'default' => '',
+          'default' => 'Explore',
       )
   );
 
@@ -510,7 +534,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Left text
       'fifth_section_left_text',
       array(
-          'default' => '',
+          'default' => 'Get your feet wet as you get inspired by what Makers do, and play around with the stuff, tools, and ways of making.',
       )
   );
 
@@ -526,7 +550,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Central title
       'fifth_section_central_title',
       array(
-          'default' => '',
+          'default' => 'Make',
       )
   );
 
@@ -542,7 +566,8 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Central text
       'fifth_section_central_text',
       array(
-          'default' => '',
+          'default' => 'Our cool and fun step-by-step projects branch out from the theme. Advanced Makers can
+					take on our Camp Challenges.',
       )
   );
 
@@ -558,7 +583,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Right title
       'fifth_section_right_title',
       array(
-          'default' => '',
+          'default' => 'Share',
       )
   );
 
@@ -574,7 +599,8 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Right text
       'fifth_section_right_text',
       array(
-          'default' => '',
+          'default' => 'Share what you’ve done online. Meet up in real life with our end-of-week showcases. Or
+					connect cabin-to-cabin with other Maker Campers.',
       )
   );
 
@@ -593,7 +619,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'sixth_section_title',
       array(
-          'default' => '',
+          'default' => 'Stock up for Camp',
       )
   );
 
@@ -625,7 +651,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 1-st link for 1-st picture
       'sixth_section_first_link',
       array(
-          'default' => '',
+          'default' => 'http://www.makershed.com/collections/maker-camp-2015',
       )
   );
 
@@ -657,7 +683,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 2-nd link for 2-nd picture
       'sixth_section_second_link',
       array(
-          'default' => '',
+          'default' => 'http://www.makershed.com/collections/maker-camp-2015',
       )
   );
 
@@ -689,7 +715,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 3-rd link for 3-rd picture
       'sixth_section_third_link',
       array(
-          'default' => '',
+          'default' => 'http://www.makershed.com/collections/maker-camp-2015',
       )
   );
 
@@ -721,7 +747,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 4-th link for 4-th picture
       'sixth_section_fourth_link',
       array(
-          'default' => '',
+          'default' => 'http://www.makershed.com/collections/maker-camp-2015',
       )
   );
 
@@ -753,7 +779,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 5-th link for 5-th picture
       'sixth_section_fifth_link',
       array(
-          'default' => '',
+          'default' => 'http://www.makershed.com/collections/maker-camp-2015',
       )
   );
 
@@ -769,7 +795,7 @@ function makercamp_home_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 1-st paragraph
       'sixth_section_first_paragraph',
       array(
-          'default' => '',
+          'default' => 'Maker Shed covers all your camp needs... and more! ',
       )
   );
 
@@ -785,7 +811,8 @@ function makercamp_home_customizer( $wp_customize ) {
     $wp_customize->add_setting(   // 2-nd paragraph
         'sixth_section_second_paragraph',
         array(
-            'default' => '',
+            'default' => 'Make sure to visit <strong><a href="http://www.makershed.com/collections/maker-camp-2015">our special camp page on makershed.com</a></strong>. We\'ve created a special collection
+				of kids, tools and supplies we think that work well for making projects.',
         )
     );
 
