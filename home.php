@@ -661,7 +661,7 @@
 				</li>
 				<li>
 
-          <?php if (!empty($sixth_section_fifth_link)) :?>
+          <?php if (!empty($sixth_section_fifth_link)) : ?>
             <a href="<?php echo $sixth_section_fifth_link; ?>">
               <?php if (!empty($sixth_section_fifth_picture)) : ?>
                 <img src="<?php echo $sixth_section_fifth_picture; ?>" alt="Collection Maker Camp 2015" class="img-circle">

@@ -159,7 +159,10 @@ function makercamp_host_customizer( $wp_customize ) {
   );
 
   $wp_customize->add_setting(   // Picture
-      'host_second_section_first_block_picture'
+      'host_second_section_first_block_picture',
+      array(
+          'default' => $makercamp_defaults_customizer_values['host_second_section_first_block_picture'],
+      )
   );
 
   $wp_customize->add_control(
@@ -210,7 +213,10 @@ function makercamp_host_customizer( $wp_customize ) {
   );
 
   $wp_customize->add_setting(   // Picture
-      'host_second_section_second_block_picture'
+      'host_second_section_second_block_picture',
+      array(
+          'default' => $makercamp_defaults_customizer_values['host_second_section_second_block_picture'],
+      )
   );
 
   $wp_customize->add_control(
@@ -261,7 +267,10 @@ function makercamp_host_customizer( $wp_customize ) {
   );
 
   $wp_customize->add_setting(   // Picture
-      'host_second_section_third_block_picture'
+      'host_second_section_third_block_picture',
+      array(
+          'default' => $makercamp_defaults_customizer_values['host_second_section_third_block_picture'],
+      )
   );
 
   $wp_customize->add_control(
@@ -311,7 +320,10 @@ function makercamp_host_customizer( $wp_customize ) {
   );
 
   $wp_customize->add_setting(   // Picture
-      'host_second_section_fourth_block_picture'
+      'host_second_section_fourth_block_picture',
+      array(
+          'default' => $makercamp_defaults_customizer_values['host_second_section_fourth_block_picture'],
+      )
   );
 
   $wp_customize->add_control(
@@ -362,7 +374,10 @@ function makercamp_host_customizer( $wp_customize ) {
   );
 
   $wp_customize->add_setting(   // picture
-      'host_second_section_fifth_block_picture'
+      'host_second_section_fifth_block_picture',
+      array(
+          'default' => $makercamp_defaults_customizer_values['host_second_section_fifth_block_picture'],
+      )
   );
 
   $wp_customize->add_control(

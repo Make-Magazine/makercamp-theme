@@ -27,16 +27,16 @@
           <?php $hidden_first_section_first_text = makercamp_defaults_customizer('hidden_first_section_first_text');
             if (!empty($hidden_first_section_first_text)) :
           ?>
-					<p><?php echo makercamp_defaults_customizer( 'hidden_first_section_first_text', '' ); ?></p>
+					<p><?php echo makercamp_defaults_customizer( 'hidden_first_section_first_text'); ?></p>
           <?php endif; ?>
 				</li>
 
 				<li>
 					<span class="second-todo">2</span>
-          <?php $hidden_first_section_second_text = makercamp_defaults_customizer('hidden_second_section_second_text');
+          <?php $hidden_first_section_second_text = makercamp_defaults_customizer('hidden_first_section_second_text');
             if (!empty($hidden_first_section_second_text)) :
           ?>
-          <p><?php echo makercamp_defaults_customizer( 'hidden_first_section_second_text', '' ); ?></p>
+          <p><?php echo makercamp_defaults_customizer( 'hidden_first_section_second_text'); ?></p>
           <?php endif; ?>
         </li>
 
@@ -45,7 +45,7 @@
           <?php $hidden_first_section_third_text = makercamp_defaults_customizer('hidden_first_section_third_text');
             if (!empty($hidden_first_section_third_text)) :
           ?>
-          <p><?php echo makercamp_defaults_customizer( 'hidden_first_section_third_text', '' ); ?></p>
+          <p><?php echo makercamp_defaults_customizer( 'hidden_first_section_third_text'); ?></p>
           <?php endif; ?>
         </li>
 
@@ -54,7 +54,7 @@
           <?php $hidden_first_section_fourth_text = makercamp_defaults_customizer('hidden_first_section_fourth_text');
             if (!empty($hidden_first_section_fourth_text)) :
           ?>
-          <p><?php echo makercamp_defaults_customizer( 'hidden_first_section_fourth_text', '' ); ?></p>
+          <p><?php echo makercamp_defaults_customizer( 'hidden_first_section_fourth_text'); ?></p>
           <?php endif; ?>
         </li>
 
