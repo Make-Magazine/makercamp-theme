@@ -88,6 +88,7 @@
           <p>Hack the Hoedown with sustainable energy, food, architecture, and craft that bridge
             across centuries.
           </p>
+          <a href="<?php bloginfo( 'url' ); ?>/wp-content/uploads/2015/07/2015_week3.pdf" class="read-more">Download pdf</a>
         </li>
       </ul>
       <ul class="weeks-section">
