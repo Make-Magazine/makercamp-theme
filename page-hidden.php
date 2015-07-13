@@ -15,7 +15,7 @@
 
 	<section class="affiliates-todo">
 		<div class="container-fluid">
-      <?php $hidden_first_section_title = get_theme_mod('hidden_first_section_title');
+      <?php $hidden_first_section_title = makercamp_defaults_customizer('hidden_first_section_title');
         if (!empty($hidden_first_section_title)) :
       ?>
 			<h1><?php echo $hidden_first_section_title; ?></h1>
@@ -24,42 +24,42 @@
 			<ul class="affiliates-todo-list">
 				<li>
 					<span class="first-todo">1</span>
-          <?php $hidden_first_section_first_text = get_theme_mod('hidden_first_section_first_text');
+          <?php $hidden_first_section_first_text = makercamp_defaults_customizer('hidden_first_section_first_text');
             if (!empty($hidden_first_section_first_text)) :
           ?>
-					<p><?php echo get_theme_mod( 'hidden_first_section_first_text', '' ); ?></p>
+					<p><?php echo makercamp_defaults_customizer( 'hidden_first_section_first_text', '' ); ?></p>
           <?php endif; ?>
 				</li>
 
 				<li>
 					<span class="second-todo">2</span>
-          <?php $hidden_first_section_second_text = get_theme_mod('hidden_second_section_second_text');
+          <?php $hidden_first_section_second_text = makercamp_defaults_customizer('hidden_second_section_second_text');
             if (!empty($hidden_first_section_second_text)) :
           ?>
-          <p><?php echo get_theme_mod( 'hidden_first_section_second_text', '' ); ?></p>
+          <p><?php echo makercamp_defaults_customizer( 'hidden_first_section_second_text', '' ); ?></p>
           <?php endif; ?>
         </li>
 
 				<li>
 					<span class="third-todo">3</span>
-          <?php $hidden_first_section_third_text = get_theme_mod('hidden_first_section_third_text');
+          <?php $hidden_first_section_third_text = makercamp_defaults_customizer('hidden_first_section_third_text');
             if (!empty($hidden_first_section_third_text)) :
           ?>
-          <p><?php echo get_theme_mod( 'hidden_first_section_third_text', '' ); ?></p>
+          <p><?php echo makercamp_defaults_customizer( 'hidden_first_section_third_text', '' ); ?></p>
           <?php endif; ?>
         </li>
 
 				<li>
 					<span class="fourth-todo">4</span>
-          <?php $hidden_first_section_fourth_text = get_theme_mod('hidden_first_section_fourth_text');
+          <?php $hidden_first_section_fourth_text = makercamp_defaults_customizer('hidden_first_section_fourth_text');
             if (!empty($hidden_first_section_fourth_text)) :
           ?>
-          <p><?php echo get_theme_mod( 'hidden_first_section_fourth_text', '' ); ?></p>
+          <p><?php echo makercamp_defaults_customizer( 'hidden_first_section_fourth_text', '' ); ?></p>
           <?php endif; ?>
         </li>
 
 				<li class="link">
-          <?php $hidden_first_section_link = get_theme_mod('hidden_first_section_link');
+          <?php $hidden_first_section_link = makercamp_defaults_customizer('hidden_first_section_link');
             if (!empty($hidden_first_section_link)) :
           ?>
 					<a href="<?php echo $hidden_first_section_link; ?>" class="read-more">visit google+ community </a>
@@ -74,8 +74,8 @@
 		<div class="container-fluid">
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>pensils.png" alt="Section logo, pensils">
 
-      <?php $hidden_second_section_title = get_theme_mod( 'hidden_second_section_title');
-        $hidden_second_section_title = get_theme_mod( 'hidden_second_section_text');
+      <?php $hidden_second_section_title = makercamp_defaults_customizer( 'hidden_second_section_title');
+        $hidden_second_section_title = makercamp_defaults_customizer( 'hidden_second_section_text');
         if (!empty($hidden_second_section_title)) :
       ?>
 			<h1><?php echo $hidden_second_section_title; ?></h1>
@@ -153,7 +153,7 @@
 
 	<section class="digital-assets">
 		<div class="container-fluid">
-      <?php $hidden_third_section_title = get_theme_mod('hidden_third_section_title');
+      <?php $hidden_third_section_title = makercamp_defaults_customizer('hidden_third_section_title');
         if (!empty($hidden_third_section_title)) :
       ?>
 			<h1><?php echo $hidden_third_section_title; ?></h1>
@@ -161,9 +161,9 @@
 
 			<ul class="assets-download">
 				<li>
-          <?php $hidden_third_section_first_block_picture = get_theme_mod('hidden_third_section_first_block_picture');
-          $hidden_third_section_first_block_title = get_theme_mod('hidden_third_section_first_block_title');
-          $hidden_third_section_first_block_link = get_theme_mod('hidden_third_section_first_block_link');
+          <?php $hidden_third_section_first_block_picture = makercamp_defaults_customizer('hidden_third_section_first_block_picture');
+          $hidden_third_section_first_block_title = makercamp_defaults_customizer('hidden_third_section_first_block_title');
+          $hidden_third_section_first_block_link = makercamp_defaults_customizer('hidden_third_section_first_block_link');
 
           if (!empty($hidden_third_section_first_block_picture)) :
           ?>
@@ -180,9 +180,9 @@
 				</li>
 
 				<li>
-          <?php $hidden_third_section_second_block_picture = get_theme_mod('hidden_third_section_second_block_picture');
-            $hidden_third_section_second_block_title = get_theme_mod('hidden_third_section_second_block_title');
-            $hidden_third_section_second_block_link = get_theme_mod('hidden_third_section_second_block_link');
+          <?php $hidden_third_section_second_block_picture = makercamp_defaults_customizer('hidden_third_section_second_block_picture');
+            $hidden_third_section_second_block_title = makercamp_defaults_customizer('hidden_third_section_second_block_title');
+            $hidden_third_section_second_block_link = makercamp_defaults_customizer('hidden_third_section_second_block_link');
 
             if (!empty($hidden_third_section_second_block_picture)) :
           ?>
@@ -199,9 +199,9 @@
 				</li>
 
 				<li>
-          <?php $hidden_third_section_third_block_picture = get_theme_mod('hidden_third_section_third_block_picture');
-            $hidden_third_section_third_block_title = get_theme_mod('hidden_third_section_third_block_title');
-            $hidden_third_section_third_block_link = get_theme_mod('hidden_third_section_third_block_link');
+          <?php $hidden_third_section_third_block_picture = makercamp_defaults_customizer('hidden_third_section_third_block_picture');
+            $hidden_third_section_third_block_title = makercamp_defaults_customizer('hidden_third_section_third_block_title');
+            $hidden_third_section_third_block_link = makercamp_defaults_customizer('hidden_third_section_third_block_link');
 
             if (!empty($hidden_third_section_third_block_picture)) :
           ?>
@@ -218,9 +218,9 @@
 				</li>
 
 				<li>
-          <?php $hidden_third_section_fourth_block_picture = get_theme_mod('hidden_third_section_fourth_block_picture');
-            $hidden_third_section_fourth_block_title = get_theme_mod('hidden_third_section_fourth_block_title');
-            $hidden_third_section_fourth_block_link = get_theme_mod('hidden_third_section_fourth_block_link');
+          <?php $hidden_third_section_fourth_block_picture = makercamp_defaults_customizer('hidden_third_section_fourth_block_picture');
+            $hidden_third_section_fourth_block_title = makercamp_defaults_customizer('hidden_third_section_fourth_block_title');
+            $hidden_third_section_fourth_block_link = makercamp_defaults_customizer('hidden_third_section_fourth_block_link');
 
             if (!empty($hidden_third_section_fourth_block_picture)) :
           ?>
@@ -237,9 +237,9 @@
 				</li>
 
 				<li>
-          <?php $hidden_third_section_fifth_block_picture = get_theme_mod('hidden_third_section_fifth_block_picture');
-            $hidden_third_section_fifth_block_title = get_theme_mod('hidden_third_section_fifth_block_title');
-            $hidden_third_section_fifth_block_link = get_theme_mod('hidden_third_section_fifth_block_link');
+          <?php $hidden_third_section_fifth_block_picture = makercamp_defaults_customizer('hidden_third_section_fifth_block_picture');
+            $hidden_third_section_fifth_block_title = makercamp_defaults_customizer('hidden_third_section_fifth_block_title');
+            $hidden_third_section_fifth_block_link = makercamp_defaults_customizer('hidden_third_section_fifth_block_link');
 
             if (!empty($hidden_third_section_fifth_block_picture)) :
           ?>
@@ -262,7 +262,7 @@
 	<section class="castle">
 		<div class="container-fluid">
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>castle.png" alt="Castle section logo">
-      <?php $hidden_fourth_section_text = get_theme_mod('hidden_fourth_section_text');
+      <?php $hidden_fourth_section_text = makercamp_defaults_customizer('hidden_fourth_section_text');
         if (!empty($hidden_fourth_section_text)) :
       ?>
 			<p><?php echo $hidden_fourth_section_text; ?></p>
@@ -273,8 +273,8 @@
 	<section class="contacts">
 		<div class="container-fluid">
 
-      <?php $hidden_fifth_section_text_first = get_theme_mod( 'hidden_fifth_section_text_first' );
-        $hidden_fifth_section_text_second = get_theme_mod( 'hidden_fifth_section_text_second' );
+      <?php $hidden_fifth_section_text_first = makercamp_defaults_customizer( 'hidden_fifth_section_text_first' );
+        $hidden_fifth_section_text_second = makercamp_defaults_customizer( 'hidden_fifth_section_text_second' );
 
         if (!empty($hidden_fifth_section_text_first)) :
       ?>

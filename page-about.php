@@ -15,25 +15,25 @@
 
 	<section class="our-mission">
 		<div class="container-fluid">
-      <?php $section_first_title = get_theme_mod( 'section_first_title' );
+      <?php $section_first_title = makercamp_defaults_customizer( 'section_first_title' );
         if (!empty($section_first_title)) :
       ?>
 			<h1><?php echo $section_first_title; ?></h1>
       <?php endif; ?>
 
-      <?php $section_first_text_first = get_theme_mod( 'section_first_text_first' );
+      <?php $section_first_text_first = makercamp_defaults_customizer( 'section_first_text_first' );
         if (!empty($section_first_text_first)) :
       ?>
 			<p><?php echo $section_first_text_first; ?></p>
       <?php endif; ?>
 
-      <?php $section_first_text_second = get_theme_mod( 'section_first_text_second' );
+      <?php $section_first_text_second = makercamp_defaults_customizer( 'section_first_text_second' );
         if (!empty($section_first_text_second)) :
       ?>
 			<p><?php echo $section_first_text_second; ?></p>
       <?php endif; ?>
 
-      <?php $section_first_text_third = get_theme_mod( 'section_first_text_third' );
+      <?php $section_first_text_third = makercamp_defaults_customizer( 'section_first_text_third' );
         if (!empty($section_first_text_third)) :
       ?>
 			<p><?php echo $section_first_text_third; ?></p>
@@ -45,7 +45,7 @@
 	</section>
 
 	<section class="presenters container-fluid">
-    <?php $about_second_section_title = get_theme_mod( 'about_second_section_title' );
+    <?php $about_second_section_title = makercamp_defaults_customizer( 'about_second_section_title' );
       if (!empty($about_second_section_title)) :
     ?>
   	<h1>

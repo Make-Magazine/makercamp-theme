@@ -54,7 +54,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(     // Title
       'hidden_first_section_title',
       array(
-          'default' => 'With lively, daily videos, fun projects, and an active online community, there\'s no shortage of ways to participate! We ask affiliates to do just a few things',
+          'default' => $makercamp_defaults_customizer_values['hidden_first_section_title'],
       )
   );
 
@@ -70,7 +70,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(     // 1-st text
       'hidden_first_section_first_text',
       array(
-          'default' => 'Share videos, photos, comments of projects, experience. ',
+          'default' => $makercamp_defaults_customizer_values['hidden_first_section_first_text'],
       )
   );
 
@@ -86,7 +86,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(     // 2-nd text
       'hidden_first_section_second_text',
       array(
-          'default' => 'Provide feedback, comments, input about what works, what doesn\'t. ',
+          'default' => $makercamp_defaults_customizer_values['hidden_first_section_second_text'],
       )
   );
 
@@ -102,7 +102,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(     // 3-rd text
       'hidden_first_section_third_text',
       array(
-          'default' => 'Share aggregate data of campers (non-individualized ages, gender). ',
+          'default' => $makercamp_defaults_customizer_values['hidden_first_section_third_text'],
       )
   );
 
@@ -118,7 +118,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(     // 4-th text
       'hidden_first_section_fourth_text',
       array(
-          'default' => 'Be available and willing to speak with press/media about your campers\' participation and projects.',
+          'default' => $makercamp_defaults_customizer_values['hidden_first_section_fourth_text'],
       )
   );
 
@@ -134,7 +134,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(     // Link
       'hidden_first_section_link',
       array(
-          'default' => 'https://plus.google.com/communities/107377046073638428310',
+          'default' => $makercamp_defaults_customizer_values['hidden_first_section_link'],
       )
   );
 
@@ -153,7 +153,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_second_section_title',
       array(
-          'default' => 'Maker Camp 2015',
+          'default' => $makercamp_defaults_customizer_values['hidden_second_section_title'],
       )
   );
 
@@ -169,7 +169,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Text
       'hidden_second_section_text',
       array(
-          'default' => 'Remember you are welcome to do any making activity on any day, even if you do not follow our schedule or recommendations. The content for each week is released weekly.',
+          'default' => $makercamp_defaults_customizer_values['hidden_second_section_text'],
       )
   );
 
@@ -190,7 +190,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_title',
       array(
-          'default' => 'These digital assets are for stand-alone use on your website or in promotional materials Please do not modify them. ',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_title'],
       )
   );
 
@@ -209,7 +209,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_first_block_title',
       array(
-          'default' => 'Maker Camp Affiliate Badges, avaliable in PNG and JPG format.',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_first_block_title'],
       )
   );
 
@@ -225,7 +225,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'hidden_third_section_first_block_link',
       array(
-          'default' => 'http://makercamp.com/promote',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_first_block_link'],
       )
   );
 
@@ -260,7 +260,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_second_block_title',
       array(
-          'default' => 'Maker Camp Robot Logo. Get it in white, single and full color',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_second_block_title'],
       )
   );
 
@@ -276,7 +276,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'hidden_third_section_second_block_link',
       array(
-          'default' => 'http://makercamp.com/promote',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_second_block_link'],
       )
   );
 
@@ -311,7 +311,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_third_block_title',
       array(
-          'default' => 'Maker Camp Logo. Get it in white, single and full color.',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_third_block_title'],
       )
   );
 
@@ -327,7 +327,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'hidden_third_section_third_block_link',
       array(
-          'default' => 'http://makercamp.com/promote',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_third_block_link'],
       )
   );
 
@@ -361,7 +361,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_fourth_block_title',
       array(
-          'default' => 'Maker Camp Affiliate Playbook. Find even more project ideas. ',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_fourth_block_title'],
       )
   );
 
@@ -377,7 +377,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'hidden_third_section_fourth_block_link',
       array(
-          'default' => 'http://makercamp.com/wp-content/uploads/2014/06/MakerCamp-Playbook-2014-smaller.pdf',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_fourth_block_link'],
       )
   );
 
@@ -412,7 +412,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_fifth_block_title',
       array(
-          'default' => 'Maker Camp Affiliate Kit. Get a PDF with all the items you need.',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_fifth_block_title'],
       )
   );
 
@@ -428,7 +428,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Link
       'hidden_third_section_fifth_block_link',
       array(
-          'default' => 'http://makercamp.com/wp-content/uploads/2015/07/MakerCamp2015_Packing-List.pdf',
+          'default' => $makercamp_defaults_customizer_values['hidden_third_section_fifth_block_link'],
       )
   );
 
@@ -463,7 +463,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Text
       'hidden_fourth_section_text',
       array(
-          'default' => 'We’re interested in reaching and inspiring young women, as well as kids who couldn’t otherwise attend a camp. If your recruitment and outreach focuses on girls, low-income families, or any other groups who are not well-represented in technology, we’d love to hear about it!',
+          'default' => $makercamp_defaults_customizer_values['hidden_fourth_section_text'],
       )
   );
 
@@ -482,7 +482,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 1-st text
       'hidden_fifth_section_text_first',
       array(
-          'default' => 'Please <strong>do not</strong> share this list with the general Maker Camp community. We share projects with use the affiliates early to allow more time for you to prepare for the groups of campers who come to your site. Hearing news of the next daily project is exciting for our makers or campers, so please help us maintain that shared experience in our online community period.',
+          'default' => $makercamp_defaults_customizer_values['hidden_fifth_section_text_first'],
       )
   );
 
@@ -498,7 +498,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 2-nd text
       'hidden_fifth_section_text_second',
       array(
-          'default' => 'If you have questions at any time please don\'t hesitate to contact us. ',
+          'default' => $makercamp_defaults_customizer_values['hidden_fifth_section_text_second'],
       )
   );
 

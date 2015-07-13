@@ -15,7 +15,7 @@
 
 	<section class="camps-map">
     <?php
-      $title_before_map = get_theme_mod( 'title_before_map' );
+      $title_before_map = makercamp_defaults_customizer( 'title_before_map' );
       if (!empty($title_before_map)): ?>
         <h1 class="container-fluid">
           <?php echo $title_before_map; ?>
@@ -26,7 +26,7 @@
 		<div class="container-fluid">
 
       <?php
-        $title_after_map = get_theme_mod( 'title_after_map' );
+        $title_after_map = makercamp_defaults_customizer( 'title_after_map' );
         if (!empty($title_after_map)) :
       ?>
 			<h1 class="hide-in-mobile container-fluid">
@@ -34,7 +34,7 @@
       </h1>
       <?php endif; ?>
 
-      <?php $description_after_map = get_theme_mod( 'description_after_map' );
+      <?php $description_after_map = makercamp_defaults_customizer( 'description_after_map' );
         if (!empty($description_after_map)):
       ?>
 			<p><?php echo $description_after_map; ?></p>

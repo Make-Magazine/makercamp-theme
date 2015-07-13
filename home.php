@@ -237,8 +237,8 @@
 		<div class="container-fluid">
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>welcome_rocket.png" class="welcome-icon" alt="Welcome Maker Camp">
 
-      <?php $first_section_title = get_theme_mod( 'first_section_title' );
-        $first_section_subtitle = get_theme_mod( 'first_section_subtitle' );
+      <?php $first_section_title = makercamp_defaults_customizer( 'first_section_title' );
+        $first_section_subtitle = makercamp_defaults_customizer( 'first_section_subtitle' );
 
         if (!empty($first_section_title)) :
       ?>
@@ -253,7 +253,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 
-          <?php $first_section_video = get_theme_mod('first_section_video');
+          <?php $first_section_video = makercamp_defaults_customizer('first_section_video');
             if (!empty($first_section_video)) :
           ?>
 					<a class="fancybox" data-fancybox-type="iframe" href="<?php echo $first_section_video; ?>">
@@ -264,7 +264,7 @@
 				</div>
 				<div class="col-sm-4">
 
-          <?php $first_section_central_description = get_theme_mod('first_section_central_description');
+          <?php $first_section_central_description = makercamp_defaults_customizer('first_section_central_description');
             if (!empty($first_section_central_description)) :
           ?>
 					<p><?php echo $first_section_central_description; ?></p>
@@ -274,7 +274,7 @@
 				</div>
 				<div class="col-sm-4">
 
-          <?php $first_section_right_description = get_theme_mod('first_section_right_description');
+          <?php $first_section_right_description = makercamp_defaults_customizer('first_section_right_description');
             if (!empty($first_section_right_description)) :
           ?>
           <p><?php echo $first_section_right_description; ?></p>
@@ -289,8 +289,8 @@
 	<section class="how-it-works" id="how-it-works">
 		<div class="container-fluid">
 
-      <?php $second_section_title = get_theme_mod('second_section_title');
-        $second_section_subtitle = get_theme_mod('second_section_subtitle');
+      <?php $second_section_title = makercamp_defaults_customizer('second_section_title');
+        $second_section_subtitle = makercamp_defaults_customizer('second_section_subtitle');
 
         if (!empty($second_section_title)) :
       ?>
@@ -305,9 +305,9 @@
 			<div class="row">
 				<div class="col-sm-6">
 
-          <?php $second_section_left_picture = get_theme_mod('second_section_left_picture');
-            $second_section_left_title = get_theme_mod('second_section_left_title');
-            $second_section_left_text = get_theme_mod('second_section_left_text');
+          <?php $second_section_left_picture = makercamp_defaults_customizer('second_section_left_picture');
+            $second_section_left_title = makercamp_defaults_customizer('second_section_left_title');
+            $second_section_left_text = makercamp_defaults_customizer('second_section_left_text');
             if (!empty($second_section_left_picture)) :
           ?>
           <img src="<?php echo $second_section_left_picture; ?>" alt="Childrens in camp" class="img-circle photo">
@@ -326,9 +326,9 @@
 					<a href="#hero" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual" class="read-more sign-in-trigger">Sign up for fun alerts</a>
 				</div>
 				<div class="col-sm-6">
-          <?php $second_section_right_picture = get_theme_mod('second_section_right_picture');
-            $second_section_right_title = get_theme_mod('second_section_right_title');
-            $second_section_right_text = get_theme_mod('second_section_right_text');
+          <?php $second_section_right_picture = makercamp_defaults_customizer('second_section_right_picture');
+            $second_section_right_title = makercamp_defaults_customizer('second_section_right_title');
+            $second_section_right_text = makercamp_defaults_customizer('second_section_right_text');
             if (!empty($second_section_right_picture)) :
           ?>
 					<img src="<?php echo $second_section_right_picture; ?>" alt="Childrens in camp" class="img-circle photo">
@@ -361,8 +361,8 @@
 
 	<section class="camp-themes" id="themes">
 		<div class="container-fluid">
-      <?php $third_section_title = get_theme_mod('third_section_title');
-        $third_section_subtitle = get_theme_mod('third_section_subtitle');
+      <?php $third_section_title = makercamp_defaults_customizer('third_section_title');
+        $third_section_subtitle = makercamp_defaults_customizer('third_section_subtitle');
 
         if (!empty($third_section_title)) :
       ?>
@@ -443,9 +443,9 @@
 			<div class="row">
 				<div class="col-sm-offset-6 col-sm-6">
 
-          <?php $fourth_section_title = get_theme_mod('fourth_section_title');
-            $fourth_section_subtitle = get_theme_mod('fourth_section_subtitle');
-            $fourth_section_sububtitle = get_theme_mod('fourth_section_subsubtitle');
+          <?php $fourth_section_title = makercamp_defaults_customizer('fourth_section_title');
+            $fourth_section_subtitle = makercamp_defaults_customizer('fourth_section_subtitle');
+            $fourth_section_sububtitle = makercamp_defaults_customizer('fourth_section_subsubtitle');
 
             if (!empty($fourth_section_title)) :
           ?>
@@ -459,15 +459,15 @@
 
             if (!empty($fourth_section_subsubtitle)) :
           ?>
-					<h3><?php echo get_theme_mod( 'fourth_section_subsubtitle', '' ); ?></h3>
+					<h3><?php echo makercamp_defaults_customizer( 'fourth_section_subsubtitle', '' ); ?></h3>
           <?php endif; ?>
 
 					<ul class="sponsors-logo">
 
-            <?php $fourth_section_first_picture = get_theme_mod('fourth_section_first_picture');
-              $fourth_section_second_picture = get_theme_mod('fourth_section_second_picture');
-              $fourth_section_third_picture = get_theme_mod('fourth_section_third_picture');
-              $fourth_section_fourth_picture = get_theme_mod('fourth_section_fourth_picture');
+            <?php $fourth_section_first_picture = makercamp_defaults_customizer('fourth_section_first_picture');
+              $fourth_section_second_picture = makercamp_defaults_customizer('fourth_section_second_picture');
+              $fourth_section_third_picture = makercamp_defaults_customizer('fourth_section_third_picture');
+              $fourth_section_fourth_picture = makercamp_defaults_customizer('fourth_section_fourth_picture');
             ?>
 
 						<li class="smaller">
@@ -504,10 +504,10 @@
 		<div class="container-fluid">
 			<ul class="physical-campsites-description-list">
 
-        <?php $fourth_section_first_paragraph = get_theme_mod('fourth_section_first_paragraph');
-          $fourth_section_second_paragraph = get_theme_mod('fourth_section_second_paragraph');
-          $fourth_section_first_link = get_theme_mod('fourth_section_first_link');
-          $fourth_section_second_link = get_theme_mod('fourth_section_second link');
+        <?php $fourth_section_first_paragraph = makercamp_defaults_customizer('fourth_section_first_paragraph');
+          $fourth_section_second_paragraph = makercamp_defaults_customizer('fourth_section_second_paragraph');
+          $fourth_section_first_link = makercamp_defaults_customizer('fourth_section_first_link');
+          $fourth_section_second_link = makercamp_defaults_customizer('fourth_section_second link');
         ?>
 
 				<li>
@@ -541,13 +541,13 @@
 	<section class="day-at-camp" id="day-at-camp">
 		<div class="container-fluid">
 
-      <?php $fifth_section_title = get_theme_mod('fifth_section_title');
-        $fifth_section_left_title = get_theme_mod('fifth_section_left_title');
-        $fifth_section_left_text = get_theme_mod('fifth_section_left_text');
-        $fifth_section_central_title = get_theme_mod('fifth_section_central_title');
-        $fifth_section_central_text = get_theme_mod('fifth_section_central_text');
-        $fifth_section_right_title = get_theme_mod('fifth_section_right_title');
-        $fifth_section_right_text = get_theme_mod('fifth_section_right_text');
+      <?php $fifth_section_title = makercamp_defaults_customizer('fifth_section_title');
+        $fifth_section_left_title = makercamp_defaults_customizer('fifth_section_left_title');
+        $fifth_section_left_text = makercamp_defaults_customizer('fifth_section_left_text');
+        $fifth_section_central_title = makercamp_defaults_customizer('fifth_section_central_title');
+        $fifth_section_central_text = makercamp_defaults_customizer('fifth_section_central_text');
+        $fifth_section_right_title = makercamp_defaults_customizer('fifth_section_right_title');
+        $fifth_section_right_text = makercamp_defaults_customizer('fifth_section_right_text');
 
         if (!empty($fifth_section_title)) :
       ?>
@@ -595,7 +595,7 @@
 
 	<section class="stock-up" id="stock-up">
 		<div class="container-fluid">
-      <?php $sixth_section_title = get_theme_mod('sixth_section_title');
+      <?php $sixth_section_title = makercamp_defaults_customizer('sixth_section_title');
         if (!empty($sixth_section_title)) :
       ?>
 			<h1><?php echo $sixth_section_title; ?></h1>
@@ -603,16 +603,16 @@
 
 			<ul class="stor-up-links">
 
-        <?php $sixth_section_first_link = get_theme_mod('sixth_section_first_link');
-          $sixth_section_second_link = get_theme_mod('sixth_section_second_link');
-          $sixth_section_third_link = get_theme_mod('sixth_section_third_link');
-          $sixth_section_fourth_link = get_theme_mod('sixth_section_fourth_link');
-          $sixth_section_fifth_link = get_theme_mod('sixth_section_fifth_link');
-          $sixth_section_first_picture = get_theme_mod('sixth_section_first_picture');
-          $sixth_section_second_picture = get_theme_mod('sixth_section_second_picture');
-          $sixth_section_third_picture = get_theme_mod('sixth_section_third_picture');
-          $sixth_section_fourth_picture = get_theme_mod('sixth_section_fourth_picture');
-          $sixth_section_fifth_picture = get_theme_mod('sixth_section_fifth_picture');
+        <?php $sixth_section_first_link = makercamp_defaults_customizer('sixth_section_first_link');
+          $sixth_section_second_link = makercamp_defaults_customizer('sixth_section_second_link');
+          $sixth_section_third_link = makercamp_defaults_customizer('sixth_section_third_link');
+          $sixth_section_fourth_link = makercamp_defaults_customizer('sixth_section_fourth_link');
+          $sixth_section_fifth_link = makercamp_defaults_customizer('sixth_section_fifth_link');
+          $sixth_section_first_picture = makercamp_defaults_customizer('sixth_section_first_picture');
+          $sixth_section_second_picture = makercamp_defaults_customizer('sixth_section_second_picture');
+          $sixth_section_third_picture = makercamp_defaults_customizer('sixth_section_third_picture');
+          $sixth_section_fourth_picture = makercamp_defaults_customizer('sixth_section_fourth_picture');
+          $sixth_section_fifth_picture = makercamp_defaults_customizer('sixth_section_fifth_picture');
         ?>
 
 				<li>
@@ -672,8 +672,8 @@
         </li>
 			</ul>
 
-      <?php $sixth_section_first_paragraph = get_theme_mod('sixth_section_first_paragraph');
-        $sixth_section_second_paragraph = get_theme_mod('sixth_section_second_paragraph');
+      <?php $sixth_section_first_paragraph = makercamp_defaults_customizer('sixth_section_first_paragraph');
+        $sixth_section_second_paragraph = makercamp_defaults_customizer('sixth_section_second_paragraph');
 
         if (!empty($sixth_section_first_paragraph)) :
       ?>
