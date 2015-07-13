@@ -1,342 +1,42 @@
 [
   {
-    "Company":"Fundacion IRSA -Puerta 18-",
-    "Website":"www.puerta18.org.ar",
-    "City":"Buenos Aires",
+    "Company":"GDG Ado Ekiti",
+    "Website":"http://gdgadoekiti.blogspot.com/",
+    "City":"Akungba",
     "State":"",
     "Postal Code":"",
-    "Country":"Argentina",
-    "Continent":"South America",
+    "Country":"Nigeria",
+    "Continent":"Africa",
     "Accepting":"Yes"
   },
   {
-    "Company":"maker camp 32",
-    "Website":"google.com",
-    "City":"Narre Warren",
-    "State":"VIC",
-    "Postal Code":"3805",
-    "Country":"Australia",
-    "Continent":"Australia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Fitzroy Learning Network",
-    "Website":"fitzroylearningnetwork.org.au",
-    "City":"Melbourne",
-    "State":"VIC",
-    "Postal Code":"3065",
-    "Country":"Australia",
-    "Continent":"Australia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Western College",
-    "Website":"http://westerncollege.com.au/",
-    "City":"Dubbo",
-    "State":"NSW",
-    "Postal Code":"2830",
-    "Country":"Australia",
-    "Continent":"Australia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"ACM - SIM",
-    "Website":"https://www.facebook.com/boliviatechhub",
-    "City":"La Paz",
+    "Company":"Women Techmakers Ado Ekiti",
+    "Website":"http://gdgeksu.blogspot.com/",
+    "City":"Ado Ekiti",
     "State":"",
     "Postal Code":"",
-    "Country":"Bolivia",
-    "Continent":"South America",
+    "Country":"Nigeria",
+    "Continent":"Africa",
     "Accepting":"Yes"
   },
   {
-    "Company":"SESI",
-    "Website":"https://plus.google.com/u/0/",
-    "City":"Sao Paulo",
+    "Company":"GDG Ekiti State University",
+    "Website":"https://plus.google.com/+gdgeksublogspot1/posts",
+    "City":"Ado Ekiti",
     "State":"",
     "Postal Code":"",
-    "Country":"Brazil",
-    "Continent":"South America",
+    "Country":"Nigeria",
+    "Continent":"Africa",
     "Accepting":"Yes"
   },
   {
-    "Company":"Intel Computer Clubhouse Jardim Conceicao",
-    "Website":"http://www.computerclubhouse.org/",
-    "City":"Sao Paulo",
+    "Company":"Thexvision",
+    "Website":"https://plus.google.com/b/105348317821018432878/105348317821018432878",
+    "City":"Lagos",
     "State":"",
     "Postal Code":"",
-    "Country":"Brazil",
-    "Continent":"South America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Torch Motorcycles",
-    "Website":"http://www.torchmotorcycles.com/",
-    "City":"Calgary",
-    "State":"Alberta",
-    "Postal Code":"T3R 0V3",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Flavio Ortolano",
-    "Website":"https://plus.google.com/u/0/b/115418053018312833695/115418053018312833695/about/p/pub",
-    "City":"Surrey",
-    "State":"SelectBC",
-    "Postal Code":"V3S4N9",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"THOROLD PUBLIC LIBRARY",
-    "Website":"www.thoroldpubliclibrary.ca",
-    "City":"THOROLD",
-    "State":"ON",
-    "Postal Code":"L2V 1Y8",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Guysborough County Community Access Network",
-    "Website":"www.gccans.ca",
-    "City":"South Lochaber",
-    "State":"NS",
-    "Postal Code":"B2G 2L3",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Westlock Libraries",
-    "Website":"www.westlocklibrary.ca",
-    "City":"Westlock",
-    "State":"Alberta",
-    "Postal Code":"T7P 2H5",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Fort Erie Public Library",
-    "Website":"https://plus.google.com/b/100322768128381622294/100322768128381622294/posts",
-    "City":"Fort Erie",
-    "State":"Ontario",
-    "Postal Code":"L2A 2M1",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"STEAMLabs",
-    "Website":"www.steamlabs.ca",
-    "City":"Toronto",
-    "State":"Ontario",
-    "Postal Code":"M5T 2C2",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Summer of Science",
-    "Website":"http://Pfnuer.weebly.com",
-    "City":"Victoria",
-    "State":"British Columbia",
-    "Postal Code":"V9B 5T3",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"MostlyMommies",
-    "Website":"https://plus.google.com/u/0/100852739929672104196/posts",
-    "City":"Sechelt",
-    "State":"British Columbia",
-    "Postal Code":"V0N 3A0",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Nova Scotia Community Access Program",
-    "Website":"www.capcbco.ca",
-    "City":"Sydney",
-    "State":"Nova Scotia",
-    "Postal Code":"B1N2P7",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"MakerKids",
-    "Website":"www.makerkids.com",
-    "City":"Toronto",
-    "State":"Ontario",
-    "Postal Code":"m6r1x6",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Maker Camp",
-    "Website":"",
-    "City":"Papillion",
-    "State":"NE",
-    "Postal Code":"68046",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Life is a Banquet",
-    "Website":"https://plus.google.com/b/111138638113369132562/111138638113369132562/posts/p/pub",
-    "City":"Victoria",
-    "State":"British Columbia",
-    "Postal Code":"V8S 2G9",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"No"
-  },
-  {
-    "Company":"Michael Smith Laboratories, UBC",
-    "Website":"http://bioteach.ubc.ca",
-    "City":"Vancouver",
-    "State":"BC",
-    "Postal Code":"V6T",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Tinker Studio",
-    "Website":"www.tinkerstudio.ca",
-    "City":"Goderich",
-    "State":"Ontario",
-    "Postal Code":"N7A 3Y1",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"E2 Education Center",
-    "Website":"http://www.e2education.com",
-    "City":"Coquitlam",
-    "State":"BC",
-    "Postal Code":"V3J 2P2",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Vedic Math Rocks",
-    "Website":"http://www.vedicmath.rocks/",
-    "City":"Mississauga",
-    "State":"Ontario",
-    "Postal Code":"L5B3z2",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Inverness County C@P Network S",
-    "Website":"iccns.ca",
-    "City":"Port Hood",
-    "State":"Nova Scotia",
-    "Postal Code":"B0E 2W0",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Cramahe Township Public Library",
-    "Website":"www.cramahelibrary.ca",
-    "City":"Colborne",
-    "State":"Ontario",
-    "Postal Code":"K0K 1S0",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Michael Smith Laboratories",
-    "Website":"http://bioteach.ubc.ca",
-    "City":"Vancouver",
-    "State":"BC",
-    "Postal Code":"V6T1Z4",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Westlock Libraries",
-    "Website":"www.westlocklibrary.ca",
-    "City":"Westlock",
-    "State":"Alberta",
-    "Postal Code":"T7P 2H5",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Star Academy",
-    "Website":"www.staracademy.ca",
-    "City":"Mississauga",
-    "State":"Ontario",
-    "Postal Code":"L5E 2P8",
-    "Country":"Canada",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Genius Lab",
-    "Website":"",
-    "City":"Beijing",
-    "State":"",
-    "Postal Code":"",
-    "Country":"China",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Computer Clubhouse Tecnocentro Somos Pacifico",
-    "Website":"http://www.somospacifico.org/tcsp/",
-    "City":"Cali",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Colombia",
-    "Continent":"South America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Computer Clubhouse Casa de la Juventud Mora",
-    "Website":"https://plus.google.com/107508453790683863106/posts",
-    "City":"Ciudad Colon, Mora",
-    "State":"San Jose",
-    "Postal Code":"10701",
-    "Country":"Costa Rica",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Clubhouse CEDES Don Bosco",
-    "Website":"www.cedesdonbosco.ed.cr",
-    "City":"Alajuelita",
-    "State":"San Jose",
-    "Postal Code":"11004",
-    "Country":"Costa Rica",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Computer Clubhouse Odense",
-    "Website":"Ungdomshusetodense.dk",
-    "City":"Odense",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Denmark",
-    "Continent":"Europe",
+    "Country":"Nigeria",
+    "Continent":"Africa",
     "Accepting":"Yes"
   },
   {
@@ -346,6 +46,56 @@
     "State":"",
     "Postal Code":"21919",
     "Country":"Egypt",
+    "Continent":"Africa",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Afrimakers",
+    "Website":"http://www.afrimakers.org/",
+    "City":"Ibadan",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Nigeria",
+    "Continent":"Africa",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Bellavista Computer Clubhouse",
+    "Website":"https://bellavistacomputerclubhouse.wordpress.com/",
+    "City":"Johannesburg",
+    "State":"",
+    "Postal Code":"2091",
+    "Country":"South Africa",
+    "Continent":"Africa",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Sci-Bono Discovery Centre",
+    "Website":"http://www.sci-bono.co.za",
+    "City":"Johannesburg",
+    "State":"",
+    "Postal Code":"2001",
+    "Country":"South Africa",
+    "Continent":"Africa",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Faculty of Engineering Research Group, Ekiti State University.",
+    "Website":"http://www.fengeksu.edu.ng/",
+    "City":"Ado Ekiti",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Nigeria",
+    "Continent":"Africa",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"ECWA George Campion Academy, Egbe, Kogi State",
+    "Website":"https://goo.gl/f778v1",
+    "City":"Ado Ekiti",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Nigeria",
     "Continent":"Africa",
     "Accepting":"Yes"
   },
@@ -360,6 +110,26 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"Tech Republic Africa",
+    "Website":"http://www.techrepublic.co.ke/",
+    "City":"Nairobi",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Kenya",
+    "Continent":"Africa",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"School Unusual",
+    "Website":"http://www.schoolunusual.org/",
+    "City":"Lagos",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Nigeria",
+    "Continent":"Africa",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"SmartPeek Academy",
     "Website":"https://www.facebook.com/SmartPeekAcademy?_rdr=p",
     "City":"Port Said",
@@ -370,43 +140,13 @@
     "Accepting":"Yes"
   },
   {
-    "Company":"Mehackit",
-    "Website":"http://mehackit.org/",
-    "City":"Helsinki",
+    "Company":"Fablab Tunisia",
+    "Website":"",
+    "City":"Megrine Coteaux",
     "State":"",
     "Postal Code":"",
-    "Country":"Finland",
-    "Continent":"Europe",
-    "Accepting":"No"
-  },
-  {
-    "Company":"YouCan-Trust",
-    "Website":"www.iicamp.org",
-    "City":"Dusseldorf",
-    "State":"",
-    "Postal Code":"40591",
-    "Country":"Germany",
-    "Continent":"Europe",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"The Cube Athens",
-    "Website":"www.thecube.gr",
-    "City":"Athens",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Greece",
-    "Continent":"Europe",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Dimsum Lab",
-    "Website":"http://www.dimsumlabs.com/",
-    "City":"7A Shiu Fai Terrace",
-    "State":"Wan Chai",
-    "Postal Code":"",
-    "Country":"Hong Kong",
-    "Continent":"Asia",
+    "Country":"Tunisia",
+    "Continent":"Africa",
     "Accepting":"Yes"
   },
   {
@@ -431,7 +171,7 @@
   },
   {
     "Company":"Imperial Infosys",
-    "Website":"www.imperialinfosys.com",
+    "Website":"http://www.imperialinfosys.com",
     "City":"Himatnagar",
     "State":"Gujarat",
     "Postal Code":"383001",
@@ -451,7 +191,7 @@
   },
   {
     "Company":"Green Apple School",
-    "Website":"makercampgujarat.blogspot.com",
+    "Website":"http://makercampgujarat.blogspot.com",
     "City":"Idar",
     "State":"Gujarat",
     "Postal Code":"383430",
@@ -461,7 +201,7 @@
   },
   {
     "Company":"Nuts and Boltz",
-    "Website":"www.nutsandboltz.in",
+    "Website":"http://www.nutsandboltz.in",
     "City":"Delhi",
     "State":"",
     "Postal Code":"110035",
@@ -470,8 +210,28 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"Pakistan Science Club",
+    "Website":"http://www.paksc.org/",
+    "City":"Karachi",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Pakistan",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Playpourri International",
+    "Website":"http://www.playpourri.com",
+    "City":"Nagoya",
+    "State":"",
+    "Postal Code":"464-0847",
+    "Country":"Japan",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"GDG VIT Vellore",
-    "Website":"gdgvitvellore.com",
+    "Website":"http://gdgvitvellore.com",
     "City":"Tamil Nadu",
     "State":"",
     "Postal Code":"632014",
@@ -490,8 +250,18 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"OneMaker Group",
+    "Website":"http://www.onemakergroup.sg",
+    "City":"Singapore",
+    "State":"",
+    "Postal Code":"188969",
+    "Country":"Singapore",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"CLT Computer Clubhouse",
-    "Website":"www.cltindia.org",
+    "Website":"http://www.cltindia.org",
     "City":"Banglore",
     "State":"",
     "Postal Code":"560064",
@@ -501,7 +271,7 @@
   },
   {
     "Company":"Graphic Era Hill University",
-    "Website":"www.gehu.ac.in",
+    "Website":"http://www.gehu.ac.in",
     "City":"Dehradun",
     "State":"Uttarakhand",
     "Postal Code":"248001",
@@ -520,12 +290,52 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"The Intel Computer Clubhouse Network (ICCN)",
+    "Website":"http://www.nycc.org.il/page-22",
+    "City":"Haifa",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Israel",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"creative kids",
     "Website":"",
     "City":"New Delhi",
     "State":"Delhi",
     "Postal Code":"110096",
     "Country":"India",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"MakeDoNia Innovation Hub",
+    "Website":"http://www.makedonia.co",
+    "City":"South Jakarta",
+    "State":"",
+    "Postal Code":"14210",
+    "Country":"Indonesia",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Sustainable Living Lab",
+    "Website":"https://plus.google.com/109291947623471978891/about",
+    "City":"Singapore",
+    "State":"",
+    "Postal Code":"429650",
+    "Country":"Singapore",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"LearningWorks",
+    "Website":"http://facebook.com/learningworksjerusalem",
+    "City":"Jerusalem",
+    "State":"",
+    "Postal Code":"93389",
+    "Country":"Israel",
     "Continent":"Asia",
     "Accepting":"Yes"
   },
@@ -540,12 +350,82 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"Boys and Girls of Iwakuni",
+    "Website":"https://www.facebook.com/boysandgirlsclubofiwakuni/photos_stream",
+    "City":"Iwakuni",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Japan",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Genius Lab",
+    "Website":"",
+    "City":"Beijing",
+    "State":"",
+    "Postal Code":"",
+    "Country":"China",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Robokids",
+    "Website":"http://www.robokids.pk",
+    "City":"Lahore",
+    "State":"Punjab",
+    "Postal Code":"54810",
+    "Country":"Pakistan",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"The Jordanian Hashemite Fund For Human Development",
+    "Website":"https://plus.google.com/u/0/118275943467264472040",
+    "City":"Amman",
+    "State":"",
+    "Postal Code":"11123",
+    "Country":"Jordan",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Playpourri International",
+    "Website":"http://www.playpourri.com",
+    "City":"Nagoya",
+    "State":"Aichi",
+    "Postal Code":"464-0847",
+    "Country":"Japan",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Narula Institute of Technology",
-    "Website":"www.nit.ac.in",
+    "Website":"http://www.nit.ac.in",
     "City":"Kolkata",
     "State":"West Bengal",
     "Postal Code":"700109",
     "Country":"India",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Johnson Academy",
+    "Website":"",
+    "City":"singapore",
+    "State":"",
+    "Postal Code":"266734",
+    "Country":"Singapore",
+    "Continent":"Asia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Dimsum Lab",
+    "Website":"http://www.dimsumlabs.com/",
+    "City":"Wan Chai",
+    "State":"Wan Chai",
+    "Postal Code":"",
+    "Country":"Hong Kong",
     "Continent":"Asia",
     "Accepting":"Yes"
   },
@@ -561,7 +441,7 @@
   },
   {
     "Company":"The TechTalk",
-    "Website":"www.thetechtalk.in",
+    "Website":"http://www.thetechtalk.in",
     "City":"Himatnagar",
     "State":"Gujarat",
     "Postal Code":"383001",
@@ -590,23 +470,123 @@
     "Accepting":"Yes"
   },
   {
-    "Company":"MakeDoNia Innovation Hub",
-    "Website":"www.makedonia.co",
-    "City":"South Jakarta",
-    "State":"",
-    "Postal Code":"14210",
-    "Country":"Indonesia",
-    "Continent":"Asia",
+    "Company":"maker camp 32",
+    "Website":"",
+    "City":"Narre Warren",
+    "State":"VIC",
+    "Postal Code":"3805",
+    "Country":"Australia",
+    "Continent":"Australia",
     "Accepting":"Yes"
   },
   {
-    "Company":"MakeDoNia Innovation Hub",
-    "Website":"www.makedonia.co",
-    "City":"South Jakarta",
+    "Company":"Fitzroy Learning Network",
+    "Website":"https://www.fitzroylearningnetwork.org.au",
+    "City":"Melbourne",
+    "State":"VIC",
+    "Postal Code":"3065",
+    "Country":"Australia",
+    "Continent":"Australia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Western College",
+    "Website":"http://westerncollege.com.au/",
+    "City":"Dubbo",
+    "State":"NSW",
+    "Postal Code":"2830",
+    "Country":"Australia",
+    "Continent":"Australia",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Maker Camp",
+    "Website":"www.coderdojocivitavecchia.it",
+    "City":"Allumiere",
+    "State":"Roma",
+    "Postal Code":"51",
+    "Country":"Itay",
+    "Continent":"Campo Sportivo \"La Cavaccia\" Allumiere",
+    "Accepting":"makercamp@makercamp.it"
+  },
+  {
+    "Company":"MakerConvent",
+    "Website":"http://conventagusti.com/maker/",
+    "City":"Barcelona",
     "State":"",
-    "Postal Code":"14210",
-    "Country":"Indonesia",
-    "Continent":"Asia",
+    "Postal Code":"",
+    "Country":"Spain",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"YouCan-Trust",
+    "Website":"http://www.iicamp.org",
+    "City":"Dusseldorf",
+    "State":"",
+    "Postal Code":"40591",
+    "Country":"Germany",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"\"BONEVET\" Makerspace",
+    "Website":"http://www.bonevet.org/",
+    "City":"Gjakova",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Kosovo",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"FilmFanClub",
+    "Website":"http://www.filmfanclub.org",
+    "City":"Sokobanja",
+    "State":"",
+    "Postal Code":"18230",
+    "Country":"Serbia",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Biblioteca Pubblica di Fabriano / Makerspace at Fabriano Public Library",
+    "Website":"https://plus.google.com/b/112862693801108701105/112862693801108701105/posts?cfem=1",
+    "City":"Fabriano",
+    "State":"",
+    "Postal Code":"60044",
+    "Country":"Italy",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Granat Fund",
+    "Website":"",
+    "City":"Poznan",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Poland",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Zabota NGO",
+    "Website":"http://zabota.nnov.ru",
+    "City":"Nizhny Novgorod",
+    "State":"",
+    "Postal Code":"603074",
+    "Country":"Russia",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"The Cube Athens",
+    "Website":"http://www.thecube.gr",
+    "City":"Athens",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Greece",
+    "Continent":"Europe",
     "Accepting":"Yes"
   },
   {
@@ -616,6 +596,46 @@
     "State":"",
     "Postal Code":"",
     "Country":"Ireland",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Computer Clubhouse Odense",
+    "Website":"http://Ungdomshusetodense.dk",
+    "City":"Odense",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Denmark",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Mehackit",
+    "Website":"http://mehackit.org/",
+    "City":"Helsinki",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Finland",
+    "Continent":"Europe",
+    "Accepting":"No"
+  },
+  {
+    "Company":"Droide Comunidad",
+    "Website":"http://www.droidecomunidad.com",
+    "City":"Valencia",
+    "State":"",
+    "Postal Code":"46021",
+    "Country":"Spain",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"EdufunKids Learning Club",
+    "Website":"",
+    "City":"Chelmsford",
+    "State":"",
+    "Postal Code":"CM1 6TR",
+    "Country":"United Kingdom",
     "Continent":"Europe",
     "Accepting":"Yes"
   },
@@ -640,538 +660,28 @@
     "Accepting":"Yes"
   },
   {
-    "Company":"The Intel Computer Clubhouse Network (ICCN)",
-    "Website":"http://www.nycc.org.il/page-22",
-    "City":"Haifa",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Israel",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"LearningWorks",
-    "Website":"facebook.com/learningworksjerusalem",
-    "City":"Jerusalem",
-    "State":"",
-    "Postal Code":"93389",
-    "Country":"Israel",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Biblioteca Pubblica di Fabriano / Makerspace at Fabriano Public Library",
-    "Website":"https://plus.google.com/b/112862693801108701105/112862693801108701105/posts?cfem=1",
-    "City":"Fabriano",
-    "State":"",
-    "Postal Code":"60044",
-    "Country":"Italy",
-    "Continent":"Europe",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Playpourri International",
-    "Website":"www.playpourri.com",
-    "City":"Nagoya",
-    "State":"",
-    "Postal Code":"464-0847",
-    "Country":"Japan",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Boys and Girls of Iwakuni",
-    "Website":"https://www.facebook.com/boysandgirlsclubofiwakuni/photos_stream",
-    "City":"Iwakuni",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Japan",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Playpourri International",
-    "Website":"www.playpourri.com",
-    "City":"Nagoya",
-    "State":"Aichi",
-    "Postal Code":"464-0847",
-    "Country":"Japan",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"The Jordanian Hashemite Fund For Human Development",
-    "Website":"https://plus.google.com/u/0/118275943467264472040",
-    "City":"Amman",
-    "State":"",
-    "Postal Code":"11123",
-    "Country":"Jordan",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Tech Republic Africa",
-    "Website":"http://www.techrepublic.co.ke/",
-    "City":"Nairobi",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Kenya",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"\"BONEVET\" Makerspace",
-    "Website":"http://www.bonevet.org/",
-    "City":"Gjakova",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Kosovo",
-    "Continent":"Europe",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"TekisLab",
-    "Website":"www.tekislab.com",
-    "City":"Monterrey",
-    "State":"Nuevo Leon",
-    "Postal Code":"64840",
-    "Country":"Mexico",
+    "Company":"Hacker Guild",
+    "Website":"http://hackerguild.org/",
+    "City":"Laguna Niguel",
+    "State":"CA",
+    "Postal Code":"92677",
+    "Country":"United States",
     "Continent":"North America",
-    "Accepting":"Yes"
+    "Accepting":"hackerguildoc@gmail.com"
   },
   {
-    "Company":"clubhouse faro de oriente",
-    "Website":"http://clubhousefarodeoriente.blogspot.com/",
-    "City":"Iztapalapa",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
+    "Company":"Pleasant Valley School District",
+    "Website":"http://www.pvsd.k12.ca.us",
+    "City":"Camarillo",
+    "State":"CA",
+    "Postal Code":"93012",
+    "Country":"United States",
     "Continent":"North America",
-    "Accepting":"No"
-  },
-  {
-    "Company":"Forhum",
-    "Website":"http://aronalanis.com/",
-    "City":"Irapeo",
-    "State":"",
-    "Postal Code":"61310",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"ENOVA",
-    "Website":"http://bd.org.mx/",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"6700",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"RIA",
-    "Website":"http://www.ria.org.mx/",
-    "City":"Nezahualcoyotl",
-    "State":"",
-    "Postal Code":"57000",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Fundacion Proacceso",
-    "Website":"http://ria.org.mx",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Biblioteca Digital Tenango del Valle, Fundacion Proacceso",
-    "Website":"",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Biblioteca Digital Acolman, Fundacion Proacceso",
-    "Website":"http://bd.org.mx/",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"C.P. 06700",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Biblioteca Digital Acolman, Fundacion Proacceso",
-    "Website":"",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Fundacion Proacceso",
-    "Website":"",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"RIA SAN MATEO ATENCO, FUNDACIoN PROACCESO",
-    "Website":"",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Biblioteca DIgital (BD)",
-    "Website":"",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"FUNDACIoN PROACCESO",
-    "Website":"http://ria.org.mx/",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"RIA Ecatepec 3, Fundacion pro Acceso",
-    "Website":"http://ria.org.mx/",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"005ALJU1BD",
-    "Website":"http://bd.org.mx/",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"C.P. 06700",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"RIA VILLA GUERRERO1,FUNDACION PROACCESO",
-    "Website":"http://ria.org.mx/ ",
-    "City":"Mexico City",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Red de Innovacion y Aprendizaje (RIA)",
-    "Website":"http://ria.org.mx",
-    "City":"Tultepec",
-    "State":"",
-    "Postal Code":"54960",
-    "Country":"Mexico",
-    "Continent":"North America",
-    "Accepting":"No"
-  },
-  {
-    "Company":"Awa City Computer Clubhouse",
-    "Website":"www.awacityclubhouse.org.nz",
-    "City":"Whanganui",
-    "State":"",
-    "Postal Code":"4501",
-    "Country":"New Zealand",
-    "Continent":"Oceania",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"James Hargest College Maker Camp",
-    "Website":"http://jhclibrary.weebly.com/",
-    "City":"Invercargill",
-    "State":"",
-    "Postal Code":"9810",
-    "Country":"New Zealand",
-    "Continent":"Oceania",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"GDG Ado Ekiti",
-    "Website":"http://gdgadoekiti.blogspot.com/",
-    "City":"Akungba",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Nigeria",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Women Techmakers Ado Ekiti",
-    "Website":"http://gdgeksu.blogspot.com/",
-    "City":"Ado Ekiti",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Nigeria",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"GDG Ekiti State University",
-    "Website":"www.google.com/+gdgeksublogspot1",
-    "City":"Ado Ekiti",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Nigeria",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Thexvision",
-    "Website":"https://plus.google.com/b/105348317821018432878/105348317821018432878",
-    "City":"Lagos",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Nigeria",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Afrimakers",
-    "Website":"www.afrimakers.org",
-    "City":"Ibadan",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Nigeria",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Faculty of Engineering Research Group, Ekiti State University.",
-    "Website":"www.fengeksu.edu.ng",
-    "City":"Ado Ekiti",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Nigeria",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"ECWA George Campion Academy, Egbe, Kogi State",
-    "Website":"https://goo.gl/f778v1",
-    "City":"Ado Ekiti",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Nigeria",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"School Unusual",
-    "Website":"http://www.schoolunusual.org/",
-    "City":"Lagos",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Nigeria",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Pakistan Science Club",
-    "Website":"www.paksc.org",
-    "City":"Karachi",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Pakistan",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Robokids",
-    "Website":"www.robokids.pk",
-    "City":"Lahore",
-    "State":"Punjab",
-    "Postal Code":"54810",
-    "Country":"Pakistan",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"ThinkBigPalau",
-    "Website":"https://plus.google.com/u/0/114999011113298215071/about",
-    "City":"Koro",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Palau",
-    "Continent":"Oceania",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Clubhouse Fe y Alegia",
-    "Website":"https://www.facebook.com/pages/Fe-y-Alegria-Computer-Clubhouse/122246494507619?ref=hl",
-    "City":"Panama",
-    "State":"",
-    "Postal Code":"0834-02777",
-    "Country":"Panama",
-    "Continent":"North America",
-    "Accepting":"No"
-  },
-  {
-    "Company":"Computer Clubhouse Parroquia de Fatima",
-    "Website":"https://plus.google.com/u/0/113006182508660863972/posts",
-    "City":"Panama",
-    "State":"",
-    "Postal Code":"0843-03196 Panama",
-    "Country":"Panama",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Granat Fund",
-    "Website":"",
-    "City":"Pozna_",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Poland",
-    "Continent":"Europe",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Zabota NGO",
-    "Website":"zabota.nnov.ru",
-    "City":"Nizhny Novgorod",
-    "State":"",
-    "Postal Code":"603074",
-    "Country":"Russia",
-    "Continent":"Europe",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"FilmFanClub",
-    "Website":"www.filmfanclub.org",
-    "City":"Sokobanja",
-    "State":"",
-    "Postal Code":"18230",
-    "Country":"Serbia",
-    "Continent":"Europe",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"OneMaker Group",
-    "Website":"www.onemakergroup.sg",
-    "City":"Singapore",
-    "State":"",
-    "Postal Code":"188969",
-    "Country":"Singapore",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Sustainable Living Lab",
-    "Website":"https://plus.google.com/109291947623471978891/about",
-    "City":"Singapore",
-    "State":"",
-    "Postal Code":"429650",
-    "Country":"Singapore",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Johnson Academy",
-    "Website":"n/a",
-    "City":"singapore",
-    "State":"",
-    "Postal Code":"266734",
-    "Country":"Singapore",
-    "Continent":"Asia",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Bellavista Computer Clubhouse",
-    "Website":"https://bellavistacomputerclubhouse.wordpress.com/",
-    "City":"Johannesburg",
-    "State":"",
-    "Postal Code":"2091",
-    "Country":"South Africa",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Sci-Bono Discovery Centre",
-    "Website":"www.sci-bono.co.za",
-    "City":"Johannesburg",
-    "State":"",
-    "Postal Code":"2001",
-    "Country":"South Africa",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"MakerConvent",
-    "Website":"http://conventagusti.com/maker/",
-    "City":"Barcelona",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Spain",
-    "Continent":"Europe",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Droide Comunidad",
-    "Website":"www.droidecomunidad.com",
-    "City":"Valencia",
-    "State":"",
-    "Postal Code":"46021",
-    "Country":"Spain",
-    "Continent":"Europe",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"Fablab Tunisia",
-    "Website":"",
-    "City":"Megrine Coteaux",
-    "State":"",
-    "Postal Code":"",
-    "Country":"Tunisia",
-    "Continent":"Africa",
-    "Accepting":"Yes"
-  },
-  {
-    "Company":"EdufunKids Learning Club",
-    "Website":"",
-    "City":"Chelmsford",
-    "State":"",
-    "Postal Code":"CM1 6TR",
-    "Country":"United Kingdom",
-    "Continent":"Europe",
-    "Accepting":"Yes"
+    "Accepting":""
   },
   {
     "Company":"Boys & Girls Clubs of Kern County",
-    "Website":"www.bgclubsofkerncounty.org",
+    "Website":"http://www.bgclubsofkerncounty.org",
     "City":"Bakersfield",
     "State":"CA",
     "Postal Code":"93305",
@@ -1181,7 +691,7 @@
   },
   {
     "Company":"Michael A. Smith Inc",
-    "Website":"www.masbrevard.com",
+    "Website":"http://www.masbrevard.com",
     "City":"Rockledge",
     "State":"FL",
     "Postal Code":"32955",
@@ -1214,14 +724,14 @@
     "Website":"http://feedtheengine.org/",
     "City":"Biddeford",
     "State":"ME",
-    "Postal Code":"4005",
+    "Postal Code":"04005",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
   },
   {
     "Company":"Camden County Library District",
-    "Website":"www.ccld.us",
+    "Website":"http://www.ccld.us",
     "City":"Camdenton",
     "State":"MO",
     "Postal Code":"65020",
@@ -1241,7 +751,7 @@
   },
   {
     "Company":"Next Generation Clubhouse",
-    "Website":"nxtgenerationga.org",
+    "Website":"http://nxtgenerationga.org",
     "City":"Dawsonville",
     "State":"GA",
     "Postal Code":"30534",
@@ -1270,11 +780,21 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"Torch Motorcycles",
+    "Website":"http://www.torchmotorcycles.com/",
+    "City":"Calgary",
+    "State":"Alberta",
+    "Postal Code":"T3R 0V3",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Ocean County Library: Berkeley Branch",
     "Website":"www.theoceancountylibrary.org",
     "City":"Bayville",
     "State":"NJ",
-    "Postal Code":"8721",
+    "Postal Code":"08721",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1284,7 +804,7 @@
     "Website":"http://theoceancountylibrary.org/",
     "City":"Beachwood",
     "State":"NJ",
-    "Postal Code":"8722",
+    "Postal Code":"08722",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1334,7 +854,7 @@
     "Website":"https://www.facebook.com/PVMakerspace",
     "City":"Springfield",
     "State":"MA",
-    "Postal Code":"1108",
+    "Postal Code":"01108",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1364,7 +884,7 @@
     "Website":"http://theoceancountylibrary.org/branches/bgt/bgt.htm",
     "City":"Barnegat",
     "State":"NJ",
-    "Postal Code":"8005",
+    "Postal Code":"08005",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1374,7 +894,7 @@
     "Website":"http://theoceancountylibrary.org/branches/STF/stf.htm",
     "City":"Manahawkin",
     "State":"NJ",
-    "Postal Code":"8050",
+    "Postal Code":"08050",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1454,7 +974,7 @@
     "Website":"http://www.rockyhilllibrary.info/",
     "City":"Rocky Hill",
     "State":"CT",
-    "Postal Code":"6067",
+    "Postal Code":"06067",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1474,7 +994,7 @@
     "Website":"http://www.middletownschools.org/page.cfm?p=8490",
     "City":"Middletown",
     "State":"CT",
-    "Postal Code":"6457",
+    "Postal Code":"06457",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"No"
@@ -1514,7 +1034,7 @@
     "Website":"http://theoceancountylibrary.org/Branches/T/t.htm",
     "City":"Tuckerton",
     "State":"NJ",
-    "Postal Code":"8087",
+    "Postal Code":"08087",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1570,6 +1090,26 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"TekisLab",
+    "Website":"http://www.tekislab.com",
+    "City":"Monterrey",
+    "State":"Nuevo Leon",
+    "Postal Code":"64840",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Flavio Ortolano",
+    "Website":"https://plus.google.com/u/0/b/115418053018312833695/115418053018312833695/about/p/pub",
+    "City":"Surrey",
+    "State":"SelectBC",
+    "Postal Code":"V3S4N9",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Focus Homeschool",
     "Website":"www.focushomeschool.org",
     "City":"Wasilla",
@@ -1592,7 +1132,7 @@
   {
     "Company":"San Antonio Homeschool",
     "Website":"google.com/+amandahattman",
-    "City":"san antonio",
+    "City":"San Antonio",
     "State":"TX",
     "Postal Code":"78255",
     "Country":"United States",
@@ -1712,7 +1252,7 @@
   {
     "Company":"www.community-guilds.org",
     "Website":"www.steamtruck.org",
-    "City":"decatur",
+    "City":"Decatur",
     "State":"GA",
     "Postal Code":"30032",
     "Country":"United States",
@@ -1734,7 +1274,7 @@
     "Website":"http://theoceancountylibrary.org/",
     "City":"Manchester",
     "State":"NJ",
-    "Postal Code":"8759",
+    "Postal Code":"08759",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1746,6 +1286,16 @@
     "State":"TX",
     "Postal Code":"78681",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"THOROLD PUBLIC LIBRARY",
+    "Website":"http://www.thoroldpubliclibrary.ca",
+    "City":"Thorold",
+    "State":"ON",
+    "Postal Code":"L2V 1Y8",
+    "Country":"Canada",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -1766,6 +1316,16 @@
     "State":"TX",
     "Postal Code":"78023",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Guysborough County Community Access Network",
+    "Website":"http://gccans.ca",
+    "City":"South Lochaber",
+    "State":"NS",
+    "Postal Code":"B2G 2L3",
+    "Country":"Canada",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -1864,7 +1424,7 @@
     "Website":"www.EnrichScience.com",
     "City":"Blairstown",
     "State":"NJ",
-    "Postal Code":"7825",
+    "Postal Code":"07825",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1884,7 +1444,7 @@
     "Website":"http://theoceancountylibrary.org/Branches/JA/ja.htm",
     "City":"Jackson",
     "State":"NJ",
-    "Postal Code":"8527",
+    "Postal Code":"08527",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1934,17 +1494,17 @@
     "Website":"http://myhillsdalelibrary.org/",
     "City":"Hillsdale",
     "State":"NJ",
-    "Postal Code":"7642",
+    "Postal Code":"07642",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
   },
   {
     "Company":"Barney Library",
-    "Website":"vidalash@farmingtonlibraries.org",
+    "Website":"",
     "City":"Avon",
     "State":"CT",
-    "Postal Code":"6001",
+    "Postal Code":"06001",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -1962,7 +1522,7 @@
   {
     "Company":"Unity Computer Clubhouse",
     "Website":"unitycomputers.org",
-    "City":"SLC",
+    "City":"Salt Lake City",
     "State":"UT",
     "Postal Code":"84104",
     "Country":"United States",
@@ -1974,7 +1534,7 @@
     "Website":"http://theoceancountylibrary.org/branches/leh/leh.htm",
     "City":"Little Egg Harbor",
     "State":"NJ",
-    "Postal Code":"8087",
+    "Postal Code":"08087",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2004,7 +1564,7 @@
     "Website":"http://theoceancountylibrary.org/branches/TR/tr.htm",
     "City":"Toms River",
     "State":"NJ",
-    "Postal Code":"8753",
+    "Postal Code":"08753",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2054,7 +1614,7 @@
     "Website":"http://farmingtonlibraries.org/",
     "City":"Farmington",
     "State":"CT",
-    "Postal Code":"6032",
+    "Postal Code":"06032",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2154,7 +1714,7 @@
     "Website":"www.summitlibrary.org",
     "City":"Summit",
     "State":"NJ",
-    "Postal Code":"7901",
+    "Postal Code":"07901",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2164,7 +1724,7 @@
     "Website":"http://www.walker.lib.me.us/",
     "City":"Westbrook",
     "State":"ME",
-    "Postal Code":"4092",
+    "Postal Code":"04092",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2324,7 +1884,7 @@
     "Website":"https://www.google.com/+BeehiveSewingStudioWorkspaceLLCNorthampton",
     "City":"Northampton",
     "State":"MA",
-    "Postal Code":"1060",
+    "Postal Code":"01060",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2334,7 +1894,7 @@
     "Website":"http://www.ridgefieldlibrary.org/",
     "City":"Ridgefield",
     "State":"CT",
-    "Postal Code":"6877",
+    "Postal Code":"06877",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2384,7 +1944,7 @@
     "Website":"http://piscatawaylibrary.org",
     "City":"Piscataway",
     "State":"NJ",
-    "Postal Code":"8854",
+    "Postal Code":"08854",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2414,7 +1974,7 @@
     "Website":"https://plus.google.com/communities/112546731920595881346",
     "City":"mansfield",
     "State":"MA",
-    "Postal Code":"2048",
+    "Postal Code":"02048",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2491,7 +2051,7 @@
   },
   {
     "Company":"STEM Summer Camp",
-    "Website":"srk12.org",
+    "Website":"http://srk12.org",
     "City":"Malone",
     "State":"NY",
     "Postal Code":"12953",
@@ -2502,7 +2062,7 @@
   {
     "Company":"HP Daycamp",
     "Website":"https://plus.google.com/u/0/",
-    "City":"SAN PABLO",
+    "City":"San Pablo",
     "State":"CA",
     "Postal Code":"94806",
     "Country":"United States",
@@ -2524,7 +2084,7 @@
     "Website":"http://www.keenepubliclibrary.org",
     "City":"Keene",
     "State":"NH",
-    "Postal Code":"3431",
+    "Postal Code":"03431",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2544,7 +2104,7 @@
     "Website":"http://wellslibrary.org/wells/",
     "City":"Wells",
     "State":"ME",
-    "Postal Code":"4090",
+    "Postal Code":"04090",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2564,7 +2124,7 @@
     "Website":"www.montclairlibrary.org",
     "City":"Montclair",
     "State":"NJ",
-    "Postal Code":"7042",
+    "Postal Code":"07042",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2674,7 +2234,7 @@
     "Website":"livingston.bccls.org",
     "City":"Livingston",
     "State":"NJ",
-    "Postal Code":"7039",
+    "Postal Code":"07039",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2744,7 +2304,7 @@
     "Website":"http://www.bgcn.com/",
     "City":"Nashua",
     "State":"NH",
-    "Postal Code":"3060",
+    "Postal Code":"03060",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2774,7 +2334,7 @@
     "Website":"https://www.d-e.org/summer",
     "City":"tenafly",
     "State":"NJ",
-    "Postal Code":"7670",
+    "Postal Code":"07670",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2822,7 +2382,7 @@
   {
     "Company":"Hagerstown - Jefferson Township Library",
     "Website":"http://hagerstownlibrary.org",
-    "City":"HAGERSTOWN",
+    "City":"Hagerstown",
     "State":"IN",
     "Postal Code":"47346",
     "Country":"United States",
@@ -2844,7 +2404,7 @@
     "Website":"http://www.newmilfordlibrary.org",
     "City":"New Milford",
     "State":"CT",
-    "Postal Code":"6776",
+    "Postal Code":"06776",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2924,7 +2484,7 @@
     "Website":"nhfpl.org",
     "City":"New Haven",
     "State":"CT",
-    "Postal Code":"6510",
+    "Postal Code":"06510",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2936,6 +2496,16 @@
     "State":"NY",
     "Postal Code":"14211",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Westlock Libraries",
+    "Website":"http://www.westlocklibrary.ca",
+    "City":"Westlock",
+    "State":"Alberta",
+    "Postal Code":"T7P 2H5",
+    "Country":"Canada",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -2984,7 +2554,7 @@
     "Website":"http://www.trumbullct-library.org/",
     "City":"Trumbull",
     "State":"CT",
-    "Postal Code":"6611",
+    "Postal Code":"06611",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -2998,6 +2568,16 @@
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
+  },
+  {
+    "Company":"Clubhouse Fe y Alegia",
+    "Website":"https://www.facebook.com/pages/Fe-y-Alegria-Computer-Clubhouse/122246494507619?ref=hl",
+    "City":"Panama",
+    "State":"",
+    "Postal Code":"0834-02777",
+    "Country":"Panama",
+    "Continent":"North America",
+    "Accepting":"No"
   },
   {
     "Company":"District of Columbia Public Library",
@@ -3014,7 +2594,7 @@
     "Website":"www.manchesterpl.org",
     "City":"Manchester",
     "State":"MA",
-    "Postal Code":"1944",
+    "Postal Code":"01944",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3044,7 +2624,7 @@
     "Website":"www.cheshirelibrary.org",
     "City":"Cheshire",
     "State":"CT",
-    "Postal Code":"6410",
+    "Postal Code":"06410",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3134,7 +2714,7 @@
     "Website":"http://www.berwick.lib.me.us/",
     "City":"Berwick",
     "State":"ME",
-    "Postal Code":"3901",
+    "Postal Code":"03901",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3204,7 +2784,7 @@
     "Website":"http://www.coventrypl.org/makerspace.html",
     "City":"Coventry",
     "State":"CT",
-    "Postal Code":"6238",
+    "Postal Code":"06238",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3214,7 +2794,7 @@
     "Website":"http://www.coventrypl.org/makerspace.html",
     "City":"Coventry",
     "State":"CT",
-    "Postal Code":"6238",
+    "Postal Code":"06238",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3236,6 +2816,16 @@
     "State":"TX",
     "Postal Code":"78613",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Fort Erie Public Library",
+    "Website":"https://plus.google.com/100322768128381622294/posts",
+    "City":"Fort Erie",
+    "State":"Ontario",
+    "Postal Code":"L2A 2M1",
+    "Country":"Canada",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -3274,7 +2864,7 @@
     "Website":"www.wallingfordlibrary.org",
     "City":"Wallingford",
     "State":"CT",
-    "Postal Code":"6492",
+    "Postal Code":"06492",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3324,8 +2914,18 @@
     "Website":"www.theoceancountylibrary.org",
     "City":"Brick",
     "State":"NJ",
-    "Postal Code":"8723",
+    "Postal Code":"08723",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"STEAMLabs",
+    "Website":"http://steamlabs.ca",
+    "City":"Toronto",
+    "State":"Ontario",
+    "Postal Code":"M5T 2C2",
+    "Country":"Canada",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -3420,6 +3020,16 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"Summer of Science",
+    "Website":"http://pfnuer.weebly.com",
+    "City":"Victoria",
+    "State":"British Columbia",
+    "Postal Code":"V9B 5T3",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"San Antonio Public Library - Teen Services",
     "Website":"www.mysapl.org/teens.aspx",
     "City":"San Antonio",
@@ -3434,7 +3044,7 @@
     "Website":"www.spotslibrary.org",
     "City":"Spotswood",
     "State":"NJ",
-    "Postal Code":"8884",
+    "Postal Code":"08884",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3444,7 +3054,7 @@
     "Website":"http://www.winslow-me.gov/departments/library",
     "City":"Winslow",
     "State":"ME",
-    "Postal Code":"4901",
+    "Postal Code":"04901",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3484,7 +3094,7 @@
     "Website":"www.westhartfordlibrary.org",
     "City":"West Hartford",
     "State":"CT",
-    "Postal Code":"6107",
+    "Postal Code":"06107",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3514,7 +3124,7 @@
     "Website":"chathamstem.org",
     "City":"Chatham",
     "State":"NJ",
-    "Postal Code":"7928",
+    "Postal Code":"07928",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3540,11 +3150,21 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"MostlyMommies",
+    "Website":"https://plus.google.com/u/0/100852739929672104196/posts",
+    "City":"Sechelt",
+    "State":"British Columbia",
+    "Postal Code":"V0N 3A0",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Marian J. Mohr Library",
     "Website":"http://mohrlibrary.org/",
     "City":"Johnston",
     "State":"RI",
-    "Postal Code":"2919",
+    "Postal Code":"02919",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3556,6 +3176,16 @@
     "State":"DC",
     "Postal Code":"20011",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Nova Scotia Community Access Program",
+    "Website":"http://www.capcbco.ca",
+    "City":"Sydney",
+    "State":"Nova Scotia",
+    "Postal Code":"B1N2P7",
+    "Country":"Canada",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -3592,7 +3222,7 @@
   {
     "Company":"CreatorKids",
     "Website":"https://plus.google.com/u/0/b/103998541694004555115/103998541694004555115/posts",
-    "City":"OREM",
+    "City":"Orem",
     "State":"UT",
     "Postal Code":"84057",
     "Country":"United States",
@@ -3724,7 +3354,7 @@
     "Website":"danburylibrary.org",
     "City":"Danbury",
     "State":"CT",
-    "Postal Code":"6810",
+    "Postal Code":"06810",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3748,6 +3378,16 @@
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
+  },
+  {
+    "Company":"clubhouse faro de oriente",
+    "Website":"http://clubhousefarodeoriente.blogspot.com/",
+    "City":"Iztapalapa",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"No"
   },
   {
     "Company":"Sacramento Food Bank & Family Services (SFBFS)",
@@ -3820,6 +3460,16 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"MakerKids",
+    "Website":"http://www.makerkids.com",
+    "City":"Toronto",
+    "State":"Ontario",
+    "Postal Code":"m6r1x6",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Chillar Party",
     "Website":"https://www.facebook.com/home.php",
     "City":"South Jordan",
@@ -3844,7 +3494,7 @@
     "Website":"www.TechSavvyGirls.com",
     "City":"Burlington",
     "State":"VT",
-    "Postal Code":"5401",
+    "Postal Code":"05401",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3854,7 +3504,7 @@
     "Website":"www.enfieldpubliclibrary.org",
     "City":"Enfield",
     "State":"CT",
-    "Postal Code":"6082",
+    "Postal Code":"06082",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3904,7 +3554,7 @@
     "Website":"maplewoodlibrary.org",
     "City":"Maplewood",
     "State":"NJ",
-    "Postal Code":"7040",
+    "Postal Code":"07040",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -3954,7 +3604,7 @@
     "Website":"http://www.newtonfreelibrary.net/",
     "City":"Newton",
     "State":"MA",
-    "Postal Code":"2459",
+    "Postal Code":"02459",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4014,7 +3664,7 @@
     "Website":"www.bcls.lib.nj.us",
     "City":"Westampton",
     "State":"NJ",
-    "Postal Code":"8060",
+    "Postal Code":"08060",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4024,7 +3674,7 @@
     "Website":"http://www.thomastonlibrary.org/",
     "City":"Thomaston",
     "State":"CT",
-    "Postal Code":"6787",
+    "Postal Code":"06787",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4064,7 +3714,7 @@
     "Website":"www.afterschoolprograms.fnwsu.org",
     "City":"Swanton",
     "State":"VT",
-    "Postal Code":"5488",
+    "Postal Code":"05488",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4094,7 +3744,7 @@
     "Website":"www.acfpl.org",
     "City":"Atlantic City",
     "State":"NJ",
-    "Postal Code":"8401",
+    "Postal Code":"08401",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4154,7 +3804,7 @@
     "Website":"eastonlibrary.org",
     "City":"Easton",
     "State":"CT",
-    "Postal Code":"6612",
+    "Postal Code":"06612",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4166,6 +3816,16 @@
     "State":"WA",
     "Postal Code":"98926",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Maker Camp",
+    "Website":"",
+    "City":"Papillion",
+    "State":"NE",
+    "Postal Code":"68046",
+    "Country":"Canada",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -4194,7 +3854,7 @@
     "Website":"clubhousebeat.org",
     "City":"Boston",
     "State":"MA",
-    "Postal Code":"2114",
+    "Postal Code":"02114",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4268,6 +3928,16 @@
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
+  },
+  {
+    "Company":"Life is a Banquet",
+    "Website":"https://plus.google.com/b/111138638113369132562/111138638113369132562/posts/p/pub",
+    "City":"Victoria",
+    "State":"British Columbia",
+    "Postal Code":"V8S 2G9",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"No"
   },
   {
     "Company":"St. Anselm School",
@@ -4354,7 +4024,7 @@
     "Website":"http://waterfordtwplibrary.org/",
     "City":"Atco",
     "State":"NJ",
-    "Postal Code":"8004",
+    "Postal Code":"08004",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4394,7 +4064,7 @@
     "Website":"http://rockinghamlibrary.org/",
     "City":"Bellows Falls",
     "State":"VT",
-    "Postal Code":"5101",
+    "Postal Code":"05101",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4460,6 +4130,16 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"Michael Smith Laboratories, UBC",
+    "Website":"http://bioteach.ubc.ca",
+    "City":"Vancouver",
+    "State":"BC",
+    "Postal Code":"V6T",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Curious-on-Hudson",
     "Website":"www.curiousonhudson.com",
     "City":"Dobbs Ferry",
@@ -4474,7 +4154,7 @@
     "Website":"www.marktwainlibrary.org",
     "City":"Redding",
     "State":"CT",
-    "Postal Code":"6875",
+    "Postal Code":"06875",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4524,7 +4204,7 @@
     "Website":"http://www.cantonpubliclibrary.org/",
     "City":"Canton",
     "State":"CT",
-    "Postal Code":"6010",
+    "Postal Code":"06010",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4544,7 +4224,7 @@
     "Website":"www.bethellibrary.org/teen",
     "City":"Bethel",
     "State":"CT",
-    "Postal Code":"6109",
+    "Postal Code":"06109",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4602,7 +4282,7 @@
   {
     "Company":"Hart State Park",
     "Website":"facebook.com/campersofhart",
-    "City":"hartwell",
+    "City":"Hartwell",
     "State":"GA",
     "Postal Code":"30643",
     "Country":"United States",
@@ -4614,7 +4294,7 @@
     "Website":"http://www.mdihs.net/",
     "City":"Mount Desert",
     "State":"ME",
-    "Postal Code":"4660",
+    "Postal Code":"04660",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4654,7 +4334,7 @@
     "Website":"http://bgchc.org/",
     "City":"Jersey City",
     "State":"NJ",
-    "Postal Code":"7304",
+    "Postal Code":"07304",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4706,6 +4386,16 @@
     "State":"CO",
     "Postal Code":"80527",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Computer Clubhouse Casa de la Juventud Mora",
+    "Website":"https://plus.google.com/107508453790683863106/posts",
+    "City":"Ciudad Colon",
+    "State":"San Jose",
+    "Postal Code":"10701",
+    "Country":"Costa Rica",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -4790,6 +4480,16 @@
     "Accepting":"No"
   },
   {
+    "Company":"Clubhouse CEDES Don Bosco",
+    "Website":"http://www.cedesdonbosco.ed.cr",
+    "City":"Alajuelita",
+    "State":"San Jose",
+    "Postal Code":"11004",
+    "Country":"Costa Rica",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Boys & Girls Club of Collin County",
     "Website":"https://plus.google.com/u/0/113343055494566236256/posts",
     "City":"Frisco",
@@ -4804,7 +4504,7 @@
     "Website":"http://www.bgcb.org/our-location/gerald-darlene-jordan-club/",
     "City":"Chelsea",
     "State":"MA",
-    "Postal Code":"2150",
+    "Postal Code":"02150",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4842,7 +4542,7 @@
   {
     "Company":"Boys & Girls Club- Stalnaker",
     "Website":"bgclubspringfield.org",
-    "City":"SPRINGFIELD",
+    "City":"Springfield",
     "State":"MO",
     "Postal Code":"65802",
     "Country":"United States",
@@ -4858,6 +4558,16 @@
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"No"
+  },
+  {
+    "Company":"Tinker Studio",
+    "Website":"http://www.tinkerstudio.ca",
+    "City":"Goderich",
+    "State":"Ontario",
+    "Postal Code":"N7A 3Y1",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
   },
   {
     "Company":"Baltimore County Public Library",
@@ -4914,7 +4624,7 @@
     "Website":"bgcfl.org",
     "City":"Leominster",
     "State":"MA",
-    "Postal Code":"1453",
+    "Postal Code":"01453",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4934,7 +4644,7 @@
     "Website":"https://computerexplorers.com/SouthNJ",
     "City":"Lumberton",
     "State":"NJ",
-    "Postal Code":"8048",
+    "Postal Code":"08048",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -4944,7 +4654,7 @@
     "Website":"www.grotonpl.org",
     "City":"Groton",
     "State":"CT",
-    "Postal Code":"6340",
+    "Postal Code":"06340",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5024,7 +4734,7 @@
     "Website":"http://www.bgcmetrowest.org/locations/framingham-pearl-street-clubhouse/",
     "City":"Framingham",
     "State":"MA",
-    "Postal Code":"1702",
+    "Postal Code":"01702",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"No"
@@ -5032,9 +4742,9 @@
   {
     "Company":"boys and girls club of lawrence",
     "Website":"lawrencebgc.com",
-    "City":"lawrence",
+    "City":"Lawrence",
     "State":"MA",
-    "Postal Code":"1840",
+    "Postal Code":"01840",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5060,6 +4770,16 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"E2 Education Center",
+    "Website":"http://www.e2education.com",
+    "City":"Coquitlam",
+    "State":"BC",
+    "Postal Code":"V3J 2P2",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Camp Ujaama",
     "Website":"https://plus.google.com/110814613363688084443/about",
     "City":"Jacksonville",
@@ -5074,7 +4794,7 @@
     "Website":"http://www.monroetwplibrary.org/",
     "City":"Monroe Township",
     "State":"NJ",
-    "Postal Code":"8831",
+    "Postal Code":"08831",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5084,7 +4804,7 @@
     "Website":"",
     "City":"Jersey City",
     "State":"NJ",
-    "Postal Code":"7306",
+    "Postal Code":"07306",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"No"
@@ -5184,7 +4904,7 @@
     "Website":"www.metuchenlibrary.org",
     "City":"Metuchen",
     "State":"NJ",
-    "Postal Code":"8840",
+    "Postal Code":"08840",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5210,6 +4930,16 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"Vedic Math Rocks",
+    "Website":"http://www.vedicmath.rocks/",
+    "City":"Mississauga",
+    "State":"Ontario",
+    "Postal Code":"L5B3z2",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Yavneh Day School",
     "Website":"https://plus.google.com/115334530353351180399/posts?hl=en",
     "City":"Los Gatos",
@@ -5222,7 +4952,7 @@
   {
     "Company":"slater Marietta elementary",
     "Website":"http://www.greenville.k12.sc.us/slaterma/index.asp",
-    "City":"marietta",
+    "City":"Marietta",
     "State":"SC",
     "Postal Code":"29661",
     "Country":"United States",
@@ -5241,7 +4971,7 @@
   },
   {
     "Company":"Cheyenne Robotics / Junior Makers",
-    "Website":"Jdmac.com",
+    "Website":"http://Jdmac.com",
     "City":"Cheyenne",
     "State":"OK",
     "Postal Code":"73628",
@@ -5251,7 +4981,7 @@
   },
   {
     "Company":"Putnam District Library",
-    "Website":"Putnamlib.org",
+    "Website":"http://Putnamlib.org",
     "City":"Nashville",
     "State":"MI",
     "Postal Code":"49073",
@@ -5281,7 +5011,7 @@
   },
   {
     "Company":"The Naval Postgraduate School",
-    "Website":"nps.edu",
+    "Website":"http://nps.edu",
     "City":"Monterey",
     "State":"CA",
     "Postal Code":"93943",
@@ -5304,7 +5034,7 @@
     "Website":"https://plus.google.com/u/0/104009872375184086737/about/p/pub",
     "City":"Montclair",
     "State":"NJ",
-    "Postal Code":"7043",
+    "Postal Code":"07043",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5331,7 +5061,7 @@
   },
   {
     "Company":"NBVC Pt MuguYouth Center",
-    "Website":"PointMuguYouthCenter.com",
+    "Website":"http://PointMuguYouthCenter.com",
     "City":"Point Mugu",
     "State":"CA",
     "Postal Code":"93042",
@@ -5346,6 +5076,16 @@
     "State":"DC",
     "Postal Code":"20037",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Forhum",
+    "Website":"http://aronalanis.com/",
+    "City":"Irapeo",
+    "State":"",
+    "Postal Code":"61310",
+    "Country":"Mexico",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -5394,7 +5134,7 @@
     "Website":"https://spfmakerclub.wordpress.com/",
     "City":"Scotch Plains",
     "State":"NJ",
-    "Postal Code":"7076",
+    "Postal Code":"07076",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5406,6 +5146,16 @@
     "State":"WA",
     "Postal Code":"98230",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Inverness County C@P Network S",
+    "Website":"http://iccns.ca",
+    "City":"Port Hood",
+    "State":"Nova Scotia",
+    "Postal Code":"B0E 2W0",
+    "Country":"Canada",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -5431,7 +5181,7 @@
   },
   {
     "Company":"Houston Public Library Collier Regional Library",
-    "Website":"www.houstonlibrary.org",
+    "Website":"http://www.houstonlibrary.org",
     "City":"Houston",
     "State":"TX",
     "Postal Code":"77092",
@@ -5440,18 +5190,8 @@
     "Accepting":"Yes"
   },
   {
-    "Company":"STEAM Kids",
-    "Website":"https://plus.google.com/u/0/b/112124242789982713153/112124242789982713153/about/p/pub",
-    "City":"Chester",
-    "State":"VA",
-    "Postal Code":"23836",
-    "Country":"United States",
-    "Continent":"North America",
-    "Accepting":"Yes"
-  },
-  {
     "Company":"Grand Canyon University",
-    "Website":"Www.gcu.edu/stemsummercamp",
+    "Website":"http://Www.gcu.edu/stemsummercamp",
     "City":"Waddell",
     "State":"AZ",
     "Postal Code":"85355",
@@ -5461,10 +5201,10 @@
   },
   {
     "Company":"Tinker Center",
-    "Website":"www.tinkercenter.com",
+    "Website":"http://www.tinkercenter.com",
     "City":"South Plainfield",
     "State":"NJ",
-    "Postal Code":"7080",
+    "Postal Code":"07080",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5481,7 +5221,7 @@
   },
   {
     "Company":"Central Village Boys and Girls Club",
-    "Website":"www.bgcsyracuse.org",
+    "Website":"http://www.bgcsyracuse.org",
     "City":"Syracuse",
     "State":"NY",
     "Postal Code":"13202",
@@ -5501,7 +5241,7 @@
   },
   {
     "Company":"Germantown Public Library",
-    "Website":"www.germantown.lib.oh.us",
+    "Website":"http://www.germantown.lib.oh.us",
     "City":"Germantown",
     "State":"OH",
     "Postal Code":"45327",
@@ -5556,6 +5296,16 @@
     "State":"GA",
     "Postal Code":"30097",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Cramahe Township Public Library",
+    "Website":"http://www.cramahelibrary.ca",
+    "City":"Colborne",
+    "State":"Ontario",
+    "Postal Code":"K0K 1S0",
+    "Country":"Canada",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -5670,21 +5420,11 @@
     "Accepting":"No"
   },
   {
-    "Company":"East Moline Public Library",
-    "Website":"empl.lib.il.us",
-    "City":"East Moline",
-    "State":"IL",
-    "Postal Code":"61244",
-    "Country":"United States",
-    "Continent":"North America",
-    "Accepting":"No"
-  },
-  {
     "Company":"Newfield Branch Library",
     "Website":"www.bportlibrary.org/newfield",
     "City":"Bridgeport",
     "State":"CT",
-    "Postal Code":"6607",
+    "Postal Code":"06607",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5704,7 +5444,7 @@
     "Website":"chboothlibrary.org",
     "City":"Newtown",
     "State":"CT",
-    "Postal Code":"6470",
+    "Postal Code":"06470",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5714,7 +5454,7 @@
     "Website":"http://www.northbergen.k12.nj.us/domain/24",
     "City":"North Bergen",
     "State":"NJ",
-    "Postal Code":"7047",
+    "Postal Code":"07047",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5724,7 +5464,7 @@
     "Website":"http://www.mtpl.org",
     "City":"Middletown",
     "State":"NJ",
-    "Postal Code":"7748",
+    "Postal Code":"07748",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5794,7 +5534,7 @@
     "Website":"",
     "City":"Saddle River",
     "State":"NJ",
-    "Postal Code":"7458",
+    "Postal Code":"07458",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5854,7 +5594,7 @@
     "Website":"www.oldbridgelibrary.org",
     "City":"Old Bridge",
     "State":"NJ",
-    "Postal Code":"7722",
+    "Postal Code":"07722",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -5890,6 +5630,36 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"Computer Clubhouse Parroquia de Fatima",
+    "Website":"https://plus.google.com/u/0/113006182508660863972/posts",
+    "City":"Panama",
+    "State":"",
+    "Postal Code":"0843-03196 Panama",
+    "Country":"Panama",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Michael Smith Laboratories",
+    "Website":"http://bioteach.ubc.ca",
+    "City":"Vancouver",
+    "State":"BC",
+    "Postal Code":"V6T1Z4",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Westlock Libraries",
+    "Website":"http://www.westlocklibrary.ca",
+    "City":"Westlock",
+    "State":"Alberta",
+    "Postal Code":"T7P 2H5",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Grand Street Settlement Intel Computer Clubhouse",
     "Website":"https://plus.google.com/u/0/111038933287588327979/posts",
     "City":"New York",
@@ -5904,7 +5674,7 @@
     "Website":"http://www.plainfieldnjk12.org/Schools/PAAAS/PAAAS.php",
     "City":"Plainfield",
     "State":"NJ",
-    "Postal Code":"7063",
+    "Postal Code":"07063",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"No"
@@ -6064,7 +5834,7 @@
     "Website":"",
     "City":"Springfield",
     "State":"MA",
-    "Postal Code":"1108",
+    "Postal Code":"01108",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"No"
@@ -6124,7 +5894,7 @@
     "Website":"http://www.easthamptonct.gov/pages/easthamptonct_library/index",
     "City":"East Hampton",
     "State":"CT",
-    "Postal Code":"6424",
+    "Postal Code":"06424",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6174,7 +5944,7 @@
     "Website":"http://www.bigelowcoop.org/",
     "City":"Somerville",
     "State":"MA",
-    "Postal Code":"2143",
+    "Postal Code":"02143",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"No"
@@ -6194,7 +5964,7 @@
     "Website":"www.bgcb.org/our-location/blue-hill-club/",
     "City":"Dorchester",
     "State":"MA",
-    "Postal Code":"2124",
+    "Postal Code":"02124",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6230,9 +6000,29 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"ENOVA",
+    "Website":"http://bd.org.mx/",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"06700",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"RIA",
+    "Website":"http://www.ria.org.mx/",
+    "City":"Nezahualcoyotl",
+    "State":"",
+    "Postal Code":"57000",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Topsail Middle School",
     "Website":"https://plus.google.com/u/0/",
-    "City":"hampstead",
+    "City":"Hampstead",
     "State":"NC",
     "Postal Code":"28443",
     "Country":"United States",
@@ -6246,6 +6036,76 @@
     "State":"VA",
     "Postal Code":"23459",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Fundacion Proacceso",
+    "Website":"http://ria.org.mx",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Biblioteca Digital Tenango del Valle, Fundacion Proacceso",
+    "Website":"",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Biblioteca Digital Acolman, Fundacion Proacceso",
+    "Website":"http://bd.org.mx/",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"C.P. 06700",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Biblioteca Digital Acolman, Fundacion Proacceso",
+    "Website":"",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Fundacion Proacceso",
+    "Website":"",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"RIA SAN MATEO ATENCO, FUNDACIoN PROACCESO",
+    "Website":"",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Biblioteca DIgital (BD)",
+    "Website":"",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -6284,7 +6144,7 @@
     "Website":"http://www.hackncraftnj.org/",
     "City":"Belleville",
     "State":"NJ",
-    "Postal Code":"7109",
+    "Postal Code":"07109",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6300,6 +6160,16 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"FUNDACIoN PROACCESO",
+    "Website":"http://ria.org.mx/",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Shoshone Public Library",
     "Website":"shoshone.lili.org",
     "City":"Shoshone",
@@ -6310,12 +6180,42 @@
     "Accepting":"Yes"
   },
   {
+    "Company":"RIA Ecatepec 3, Fundacion pro Acceso",
+    "Website":"http://ria.org.mx/",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"005ALJU1BD",
+    "Website":"http://bd.org.mx/",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"C.P. 06700",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
     "Company":"Hurley Young Makers Club",
     "Website":"https://plus.google.com/110789114114892191145",
     "City":"Hurley",
     "State":"NY",
     "Postal Code":"12443",
     "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"RIA VILLA GUERRERO1,FUNDACION PROACCESO",
+    "Website":"http://ria.org.mx/ ",
+    "City":"Mexico City",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Mexico",
     "Continent":"North America",
     "Accepting":"Yes"
   },
@@ -6344,7 +6244,7 @@
     "Website":"https://plus.google.com/communities/114686312711906025975",
     "City":"Raynham",
     "State":"MA",
-    "Postal Code":"2767",
+    "Postal Code":"02767",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6354,7 +6254,7 @@
     "Website":"https://plus.google.com/communities/114686312711906025975",
     "City":"Raynham",
     "State":"MA",
-    "Postal Code":"2767",
+    "Postal Code":"02767",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6364,7 +6264,7 @@
     "Website":"https://plus.google.com/u/1/communities/107827461336455929802",
     "City":"Edison",
     "State":"NJ",
-    "Postal Code":"8820",
+    "Postal Code":"08820",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6404,7 +6304,7 @@
     "Website":"www.bgcppnj.org",
     "City":"Paterson",
     "State":"NJ",
-    "Postal Code":"7501",
+    "Postal Code":"07501",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6484,7 +6384,7 @@
     "Website":"http://www.georgia.lib.vt.us/",
     "City":"Georgia",
     "State":"VT",
-    "Postal Code":"5454",
+    "Postal Code":"05454",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6498,6 +6398,16 @@
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"No"
+  },
+  {
+    "Company":"Star Academy",
+    "Website":"http://www.staracademy.ca",
+    "City":"Mississauga",
+    "State":"Ontario",
+    "Postal Code":"L5E 2P8",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
   },
   {
     "Company":"Manasseh Baptist Church",
@@ -6514,7 +6424,7 @@
     "Website":"http://fitzybrosclub.weebly.com/",
     "City":"Pembroke",
     "State":"NH",
-    "Postal Code":"3275",
+    "Postal Code":"03275",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6554,15 +6464,25 @@
     "Website":"http://www.makehartford.com/",
     "City":"Hartford",
     "State":"CT",
-    "Postal Code":"6105",
+    "Postal Code":"06105",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
   },
   {
+    "Company":"Red de Innovacion y Aprendizaje (RIA)",
+    "Website":"http://ria.org.mx",
+    "City":"Tultepec",
+    "State":"",
+    "Postal Code":"54960",
+    "Country":"Mexico",
+    "Continent":"North America",
+    "Accepting":"No"
+  },
+  {
     "Company":"North Bingham County District Library",
     "Website":"northbingham.lili.org",
-    "City":"SHELLEY",
+    "City":"Shelley",
     "State":"ID",
     "Postal Code":"83274",
     "Country":"United States",
@@ -6754,7 +6674,7 @@
     "Website":"www.makerbar.com",
     "City":"Hoboken",
     "State":"NJ",
-    "Postal Code":"7030",
+    "Postal Code":"07030",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
@@ -6764,9 +6684,279 @@
     "Website":"hopes.org",
     "City":"Hoboken",
     "State":"NJ",
-    "Postal Code":"7030",
+    "Postal Code":"07030",
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"Yes"
+  },
+  {
+    "Company":"Awa City Computer Clubhouse",
+    "Website":"http://www.awacityclubhouse.org.nz",
+    "City":"Whanganui",
+    "State":"",
+    "Postal Code":"4501",
+    "Country":"New Zealand",
+    "Continent":"Oceania",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"ThinkBigPalau",
+    "Website":"https://plus.google.com/u/0/114999011113298215071/about",
+    "City":"Koro",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Palau",
+    "Continent":"Oceania",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"James Hargest College Maker Camp",
+    "Website":"http://jhclibrary.weebly.com/",
+    "City":"Invercargill",
+    "State":"",
+    "Postal Code":"9810",
+    "Country":"New Zealand",
+    "Continent":"Oceania",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"SESI",
+    "Website":"",
+    "City":"Sao Paulo",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Brazil",
+    "Continent":"South America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Computer Clubhouse Tecnocentro Somos Pacifico",
+    "Website":"http://www.somospacifico.org/tcsp/",
+    "City":"Cali",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Colombia",
+    "Continent":"South America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Fundacion IRSA -Puerta 18",
+    "Website":"http://www.puerta18.org.ar/",
+    "City":"Buenos Aires",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Argentina",
+    "Continent":"South America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"ACM - SIM",
+    "Website":"https://www.facebook.com/boliviatechhub",
+    "City":"La Paz",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Bolivia",
+    "Continent":"South America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Intel Computer Clubhouse Jardim Concei�ao",
+    "Website":"http://www.computerclubhouse.org",
+    "City":"Sao Paulo",
+    "State":"",
+    "Postal Code":"",
+    "Country":"Brazil",
+    "Continent":"South America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Surf City Homeschoolers",
+    "Website":"http://7dayweekends.jimdo.com",
+    "City":"Huntington Beach",
+    "State":"CA",
+    "Postal Code":"92647",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"No"
+  },
+  {
+    "Company":"Foundations for Independence",
+    "Website":"www.foundationsforindependence.com",
+    "City":"Boise",
+    "State":"ID",
+    "Postal Code":"83704",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Earth Academy",
+    "Website":"https://plus.google.com/u/1/",
+    "City":"Cairo",
+    "State":"",
+    "Postal Code":"11011",
+    "Country":"Egypt",
+    "Continent":"Africa",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Team STOBOR",
+    "Website":"www.stobor.club",
+    "City":"Syosset",
+    "State":"NY",
+    "Postal Code":"11791",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Mercury Group International",
+    "Website":"",
+    "City":"Lakeworth",
+    "State":"FL",
+    "Postal Code":"33460",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Lule� Makerspace",
+    "Website":"http://www.luleamakerspace.se/",
+    "City":"Lulea",
+    "State":"",
+    "Postal Code":"97753",
+    "Country":"Sweden",
+    "Continent":"Europe",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Homeroom Teacher/ Director of Summer Programs",
+    "Website":"http://www.thehillschool.org",
+    "City":"The Plains",
+    "State":"VA",
+    "Postal Code":"20198",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"No"
+  },
+  {
+    "Company":"Meadow Rock Farm",
+    "Website":"http://www.meadowrockfarm.com",
+    "City":"Butler",
+    "State":"PA",
+    "Postal Code":"16002",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Calvert Library",
+    "Website":"calvertlibrary.info",
+    "City":"Prince Frederick",
+    "State":"MD",
+    "Postal Code":"20678",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"GADGET TEAM",
+    "Website":"http://gadgetteam.weebly.com",
+    "City":"Sao Paulo",
+    "State":"",
+    "Postal Code":"18410480",
+    "Country":"Brazil",
+    "Continent":"South America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Blue Technology Inc.",
+    "Website":"www.meedow.com",
+    "City":"Palo Alto",
+    "State":"CA",
+    "Postal Code":"94306",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Indian Spring Middle School",
+    "Website":"http://indianspring.wacoisd.org",
+    "City":"Hewitt",
+    "State":"TX",
+    "Postal Code":"76643",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Dwight School Canada",
+    "Website":"http://Www.dwightcanada.org",
+    "City":"Duncan",
+    "State":"BC",
+    "Postal Code":"V9L 1R6",
+    "Country":"Canada",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"BYUI-Idaho",
+    "Website":"expansionanddiscovery.com",
+    "City":"Rexburg",
+    "State":"ID",
+    "Postal Code":"83460",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"Latinitas",
+    "Website":"www.LatinitasElPaso.com",
+    "City":"El Paso",
+    "State":"TX",
+    "Postal Code":"79925",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"St. Stephen School",
+    "Website":"http://www.ststephenschoolgr.com/",
+    "City":"East Grand Rapids",
+    "State":"MI",
+    "Postal Code":"49506",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"PA STEM Alliance",
+    "Website":"www.pastem.org",
+    "City":"Chester Springs",
+    "State":"PA",
+    "Postal Code":"19425",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"Yes"
+  },
+  {
+    "Company":"SCS Maker Evaluation",
+    "Website":"https://plus.google.com/104788069204395389569/posts",
+    "City":"Sunnyvale",
+    "State":"CA",
+    "Postal Code":"94086",
+    "Country":"United States",
+    "Continent":"North America",
+    "Accepting":"No"
+  },
+  {
+    "Company":"",
+    "Website":"",
+    "City":"",
+    "State":"",
+    "Postal Code":"",
+    "Country":"",
+    "Continent":"",
+    "Accepting":""
   }
 ]
