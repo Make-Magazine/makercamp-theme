@@ -4,39 +4,67 @@
 
 	<section class="hiden-hero">
 		<div class="container-fluid">
-			<h1>welcome!</h1>
-
-			<p>
-				Thank you in advance for creating the "in your neighborhood" part of Maker Camp. We will do our best to
-				make sure that the "online" part is amazing!
-			</p>
+      <h1><?php the_title(); ?></h1>
+      <?php
+        while (have_posts()) : the_post();
+          the_content();
+        endwhile;
+      ?>
 		</div>
 	</section>
 
 	<section class="affiliates-todo">
 		<div class="container-fluid">
-			<h1><?php echo get_theme_mod( 'hidden_first_section_title' ); ?></h1>
+      <?php $hidden_first_section_title = get_theme_mod('hidden_first_section_title');
+        if (!empty($hidden_first_section_title)) :
+      ?>
+			<h1><?php echo $hidden_first_section_title; ?></h1>
+      <?php endif; ?>
 
 			<ul class="affiliates-todo-list">
 				<li>
 					<span class="first-todo">1</span>
-					<p><?php echo get_theme_mod( 'hidden_first_section_first_text' ); ?></p>
+          <?php $hidden_first_section_first_text = get_theme_mod('hidden_first_section_first_text');
+            if (!empty($hidden_first_section_first_text)) :
+          ?>
+					<p><?php echo get_theme_mod( 'hidden_first_section_first_text', '' ); ?></p>
+          <?php endif; ?>
 				</li>
+
 				<li>
 					<span class="second-todo">2</span>
-					<p><?php echo get_theme_mod( 'hidden_first_section_second_text' ); ?></p>
-				</li>
+          <?php $hidden_first_section_second_text = get_theme_mod('hidden_second_section_second_text');
+            if (!empty($hidden_first_section_second_text)) :
+          ?>
+          <p><?php echo get_theme_mod( 'hidden_first_section_second_text', '' ); ?></p>
+          <?php endif; ?>
+        </li>
+
 				<li>
 					<span class="third-todo">3</span>
-					<p><?php echo get_theme_mod( 'hidden_first_section_third_text' ); ?></p>
-				</li>
+          <?php $hidden_first_section_third_text = get_theme_mod('hidden_first_section_third_text');
+            if (!empty($hidden_first_section_third_text)) :
+          ?>
+          <p><?php echo get_theme_mod( 'hidden_first_section_third_text', '' ); ?></p>
+          <?php endif; ?>
+        </li>
+
 				<li>
 					<span class="fourth-todo">4</span>
-					<p><?php echo get_theme_mod( 'hidden_first_section_fourth_text' ); ?></p>
-				</li>
+          <?php $hidden_first_section_fourth_text = get_theme_mod('hidden_first_section_fourth_text');
+            if (!empty($hidden_first_section_fourth_text)) :
+          ?>
+          <p><?php echo get_theme_mod( 'hidden_first_section_fourth_text', '' ); ?></p>
+          <?php endif; ?>
+        </li>
+
 				<li class="link">
-					<a href="<?php echo get_theme_mod( 'hidden_first_section_link' ); ?>" class="read-more">visit google+ community </a>
-				</li>
+          <?php $hidden_first_section_link = get_theme_mod('hidden_first_section_link');
+            if (!empty($hidden_first_section_link)) :
+          ?>
+					<a href="<?php echo $hidden_first_section_link; ?>" class="read-more">visit google+ community </a>
+          <?php endif; ?>
+          </li>
 			</ul>
 
 		</div>
@@ -46,8 +74,16 @@
 		<div class="container-fluid">
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>pensils.png" alt="Section logo, pensils">
 
-			<h1><?php echo get_theme_mod( 'hidden_second_section_title' ); ?></h1>
-			<p><?php echo get_theme_mod( 'hidden_second_section_text' ); ?></p>
+      <?php $hidden_second_section_title = get_theme_mod( 'hidden_second_section_title');
+        $hidden_second_section_title = get_theme_mod( 'hidden_second_section_text');
+        if (!empty($hidden_second_section_title)) :
+      ?>
+			<h1><?php echo $hidden_second_section_title; ?></h1>
+      <?php endif;
+        if (!empty($hidden_second_section_title)) :
+      ?>
+			<p><?php echo $hidden_second_section_title; ?></p>
+      <?php endif; ?>
 
 			<ul class="weeks-section">
 				<li>
@@ -117,38 +153,106 @@
 
 	<section class="digital-assets">
 		<div class="container-fluid">
-			<h1><?php echo get_theme_mod( 'hidden_third_section_title' ); ?></h1>
+      <?php $hidden_third_section_title = get_theme_mod('hidden_third_section_title');
+        if (!empty($hidden_third_section_title)) :
+      ?>
+			<h1><?php echo $hidden_third_section_title; ?></h1>
+      <?php endif; ?>
 
 			<ul class="assets-download">
 				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_one.jpg" alt="Maker Camp Affiliate Badges">
+          <?php $hidden_third_section_first_block_picture = get_theme_mod('hidden_third_section_first_block_picture');
+          $hidden_third_section_first_block_title = get_theme_mod('hidden_third_section_first_block_title');
+          $hidden_third_section_first_block_link = get_theme_mod('hidden_third_section_first_block_link');
 
-					<p><?php echo get_theme_mod( 'hidden_third_section_first_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'hidden_third_section_first_block_link' ); ?>" class="read-more">Download</a>
+          if (!empty($hidden_third_section_first_block_picture)) :
+          ?>
+					<img src="<?php echo $hidden_third_section_first_block_picture; ?> " alt="Maker Camp Affiliate Badges">
+          <?php endif;
+            if (!empty($hidden_third_section_first_block_title)) :
+          ?>
+					<p><?php echo $hidden_third_section_first_block_title; ?></p>
+          <?php endif;
+            if (!empty($hidden_third_section_first_block_link)) :
+          ?>
+					<a href="<?php echo $hidden_third_section_first_block_link; ?>" class="read-more">Download</a>
+          <?php endif; ?>
 				</li>
-				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_two.jpg" alt="Maker Camp Robot Logo ">
 
-					<p><?php echo get_theme_mod( 'hidden_third_section_second_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'hidden_third_section_second_block_link' ); ?>" class="read-more">Download</a>
+				<li>
+          <?php $hidden_third_section_second_block_picture = get_theme_mod('hidden_third_section_second_block_picture');
+            $hidden_third_section_second_block_title = get_theme_mod('hidden_third_section_second_block_title');
+            $hidden_third_section_second_block_link = get_theme_mod('hidden_third_section_second_block_link');
+
+            if (!empty($hidden_third_section_second_block_picture)) :
+          ?>
+          <img src="<?php echo $hidden_third_section_second_block_picture; ?> " alt="Maker Camp Robot Logo">
+          <?php endif;
+            if (!empty($hidden_third_section_second_block_title)) :
+          ?>
+          <p><?php echo $hidden_third_section_second_block_title; ?></p>
+          <?php endif;
+            if (!empty($hidden_third_section_second_block_link)) :
+          ?>
+          <a href="<?php echo $hidden_third_section_second_block_link; ?>" class="read-more">Download</a>
+          <?php endif; ?>
 				</li>
-				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_three.jpg" alt="Maker Camp Logo ">
 
-					<p><?php echo get_theme_mod( 'hidden_third_section_third_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'hidden_third_section_third_block_link' ); ?>" class="read-more">Download</a>
+				<li>
+          <?php $hidden_third_section_third_block_picture = get_theme_mod('hidden_third_section_third_block_picture');
+            $hidden_third_section_third_block_title = get_theme_mod('hidden_third_section_third_block_title');
+            $hidden_third_section_third_block_link = get_theme_mod('hidden_third_section_third_block_link');
+
+            if (!empty($hidden_third_section_third_block_picture)) :
+          ?>
+          <img src="<?php echo $hidden_third_section_third_block_picture; ?> " alt="Maker Camp Logo">
+          <?php endif;
+            if (!empty($hidden_third_section_third_block_title)) :
+          ?>
+          <p><?php echo $hidden_third_section_third_block_title; ?></p>
+          <?php endif;
+            if (!empty($hidden_third_section_third_block_link)) :
+          ?>
+          <a href="<?php echo $hidden_third_section_third_block_link; ?>" class="read-more">Download</a>
+          <?php endif; ?>
 				</li>
-				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_four.jpg" alt="Maker Camp Affiliate Playbook">
 
-					<p><?php echo get_theme_mod( 'hidden_third_section_fourth_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'hidden_third_section_fourth_block_link' ); ?>" class="read-more">Download</a>
+				<li>
+          <?php $hidden_third_section_fourth_block_picture = get_theme_mod('hidden_third_section_fourth_block_picture');
+            $hidden_third_section_fourth_block_title = get_theme_mod('hidden_third_section_fourth_block_title');
+            $hidden_third_section_fourth_block_link = get_theme_mod('hidden_third_section_fourth_block_link');
+
+            if (!empty($hidden_third_section_fourth_block_picture)) :
+          ?>
+          <img src="<?php echo $hidden_third_section_fourth_block_picture; ?> " alt="Maker Camp Affiliate Playbook">
+          <?php endif;
+            if (!empty($hidden_third_section_fourth_block_title)) :
+          ?>
+          <p><?php echo $hidden_third_section_fourth_block_title; ?></p>
+          <?php endif;
+            if (!empty($hidden_third_section_fourth_block_link)) :
+          ?>
+          <a href="<?php echo $hidden_third_section_fourth_block_link; ?>" class="read-more">Download</a>
+          <?php endif; ?>
 				</li>
-				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>download_five.jpg" alt="Maker Camp Affiliate Kit">
 
-					<p><?php echo get_theme_mod( 'hidden_third_section_fifth_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'hidden_third_section_fifth_block_link' ); ?>" class="read-more">Download </a>
+				<li>
+          <?php $hidden_third_section_fifth_block_picture = get_theme_mod('hidden_third_section_fifth_block_picture');
+            $hidden_third_section_fifth_block_title = get_theme_mod('hidden_third_section_fifth_block_title');
+            $hidden_third_section_fifth_block_link = get_theme_mod('hidden_third_section_fifth_block_link');
+
+            if (!empty($hidden_third_section_fifth_block_picture)) :
+          ?>
+          <img src="<?php echo $hidden_third_section_fifth_block_picture; ?> " alt="Maker Camp Affiliate Kit">
+          <?php endif;
+            if (!empty($hidden_third_section_fifth_block_title)) :
+          ?>
+          <p><?php echo $hidden_third_section_fifth_block_title; ?></p>
+          <?php endif;
+            if (!empty($hidden_third_section_fifth_block_link)) :
+          ?>
+          <a href="<?php echo $hidden_third_section_fifth_block_link; ?>" class="read-more">Download</a>
+          <?php endif; ?>
 				</li>
 			</ul>
 
@@ -158,16 +262,46 @@
 	<section class="castle">
 		<div class="container-fluid">
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>castle.png" alt="Castle section logo">
-
-			<p><?php echo get_theme_mod( 'hidden_fourth_section_text' ); ?></p>
+      <?php $hidden_fourth_section_text = get_theme_mod('hidden_fourth_section_text');
+        if (!empty($hidden_fourth_section_text)) :
+      ?>
+			<p><?php echo $hidden_fourth_section_text; ?></p>
+      <?php endif; ?>
 		</div>
 	</section>
 
 	<section class="contacts">
 		<div class="container-fluid">
-			<p><?php echo get_theme_mod( 'hidden_fifth_section_text_first' ); ?></p>
-			<p><?php echo get_theme_mod( 'hidden_fifth_section_text_second' ); ?></p>
+
+      <?php $hidden_fifth_section_text_first = get_theme_mod( 'hidden_fifth_section_text_first' );
+        $hidden_fifth_section_text_second = get_theme_mod( 'hidden_fifth_section_text_second' );
+
+        if (!empty($hidden_fifth_section_text_first)) :
+      ?>
+			<p><?php echo $hidden_fifth_section_text_first; ?></p>
+      <?php endif;
+        if (!empty($hidden_fifth_section_text_second)) :
+      ?>
+			<p><?php echo $hidden_fifth_section_text_second; ?></p>
+      <?php endif; ?>
 		</div>
 	</section>
 
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,36 +4,66 @@
 
 	<section class="host-a-camp-hero">
 		<article>
-			<h1>Host a Camp</h1>
+      <h1><?php the_title(); ?></h1>
+      <?php
+        while (have_posts()) : the_post();
+          the_content();
+        endwhile; ?>
 
-			<p>Thank you in advance for creating the "in your neighborhood" part of Maker Camp. We will do our
-				best to make sure that the "online" part is amazing!
-			</p>
 			<a class="apply-now" href="https://docs.google.com/forms/d/15RlD9GtqEWd03wEKDqOuiIOroO6Amvw3sFBwQn3ilCg/viewform">Apply now</a>
 		</article>
 	</section>
 
 	<section class="plane-future">
 		<div class="container-fluid">
-			<h1><?php echo get_theme_mod( 'host_first_section_title' ); ?></h1>
+      <?php $host_first_section_title = get_theme_mod( 'host_first_section_title' );
+        if (!empty($host_first_section_title)) :
+      ?>
+			<h1><?php echo $host_first_section_title; ?></h1>
+      <?php endif; ?>
+
 			<ul class="plane-future-steps">
 				<li>
 					<span class="first-step">1</span>
-					<p><?php echo get_theme_mod( 'host_first_section_first_text' ); ?></p>
+
+          <?php $host_first_section_first_text = get_theme_mod( 'host_first_section_first_text' );
+            if (!empty($host_first_section_first_text)) :
+          ?>
+					<p><?php echo $host_first_section_first_text; ?></p>
+          <?php endif; ?>
+
 				</li>
 				<li>
 					<span class="second-step">2</span>
-					<p><?php echo get_theme_mod( 'host_first_section_second_text' ); ?></p>
+
+          <?php $host_first_section_second_text = get_theme_mod( 'host_first_section_second_text' );
+          if (!empty($host_first_section_second_text)) :
+            ?>
+            <p><?php echo $host_first_section_second_text; ?></p>
+          <?php endif; ?>
+
 				</li>
 			</ul>
 			<ul class="plane-future-steps">
 				<li>
 					<span class="third-step">3</span>
-					<p><?php echo get_theme_mod( 'host_first_section_third_text' ); ?></p>
+
+          <?php $host_first_section_third_text = get_theme_mod( 'host_first_section_third_text' );
+          if (!empty($host_first_section_third_text)) :
+            ?>
+            <p><?php echo $host_first_section_third_text; ?></p>
+          <?php endif; ?>
+
 				</li>
 				<li>
 					<span class="fourth-step">4</span>
-					<p><?php echo get_theme_mod( 'host_first_section_fourth_text' ); ?></p>
+
+          <?php $host_first_section_fourth_text = get_theme_mod( 'host_first_section_fourth_text' );
+          if (!empty($host_first_section_fourth_text)) :
+            ?>
+            <p><?php echo $host_first_section_fourth_text; ?></p>
+          <?php endif; ?>
+
 				</li>
 			</ul>
 		</div>
@@ -41,39 +71,125 @@
 
 	<section class="discover">
 		<div class="container-fluid">
-			<h1><?php echo get_theme_mod( 'host_second_section_title' ); ?></h1>
+
+      <?php $host_second_section_title = get_theme_mod( 'host_second_section_title' );
+        if (!empty($host_second_section_title)) :
+      ?>
+			<h1><?php echo $host_second_section_title; ?></h1>
+      <?php endif ?>
+
 
 			<ul class="projects-and-video">
 				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>project_1.png" alt="Projects ideas" class="first">
+          <?php
+            $host_second_section_first_block_picture = get_theme_mod('host_second_section_first_block_picture');
+            $host_second_section_first_block_title = get_theme_mod('host_second_section_first_block_title');
+            $host_second_section_first_block_link = get_theme_mod('host_second_section_first_block_link');
 
-					<p><?php echo get_theme_mod( 'host_second_section_first_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'host_second_section_first_block_link' ); ?>" class="read-more">Go</a>
+            if (!empty($host_second_section_first_block_picture)) :
+          ?>
+					<img src="<?php echo $host_second_section_first_block_picture; ?>" alt="Projects ideas" class="first">
+          <?php
+            endif;
+            if (!empty($host_second_section_first_block_title)) :
+          ?>
+					<p><?php echo $host_second_section_first_block_title; ?></p>
+          <?php
+            endif;
+            if (!empty($host_second_section_first_block_link)) :
+          ?>
+					<a href="<?php echo $host_second_section_first_block_link; ?>" class="read-more">Go</a>
+          <?php endif; ?>
 				</li>
+
 				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>project_2.jpg" alt="Maker camp 2013 on YouTube" class="first">
+          <?php
+            $host_second_section_second_block_picture = get_theme_mod('host_second_section_second_block_picture');
+            $host_second_section_second_block_title = get_theme_mod('host_second_section_second_block_title');
+            $host_second_section_second_block_link = get_theme_mod('host_second_section_second_block_link');
 
-					<p><?php echo get_theme_mod( 'host_second_section_second_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'host_second_section_second_block_link' ); ?>" class="read-more">Go</a>
-				</li>
+            if (!empty($host_second_section_second_block_picture)) :
+          ?>
+            <img src="<?php echo $host_second_section_second_block_picture; ?>" alt="Maker camp 2013 on YouTube" class="first">
+          <?php
+            endif;
+            if (!empty($host_second_section_second_block_title)) :
+          ?>
+            <p><?php echo $host_second_section_second_block_title; ?></p>
+          <?php
+            endif;
+            if (!empty($host_second_section_second_block_link)) :
+          ?>
+            <a href="<?php echo $host_second_section_second_block_link; ?>" class="read-more">Go</a>
+          <?php endif; ?>
+        </li>
+
 				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>project_3.jpg" alt="Maker camp 2014 YouTube">
+          <?php
+            $host_second_section_third_block_picture = get_theme_mod('host_second_section_third_block_picture');
+            $host_second_section_third_block_title = get_theme_mod('host_second_section_third_block_title');
+            $host_second_section_third_block_link = get_theme_mod('host_second_section_third_block_link');
 
-					<p><?php echo get_theme_mod( 'host_second_section_third_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'host_second_section_third_block_link' ); ?>" class="read-more">Go</a>
+            if (!empty($host_second_section_third_block_picture)) :
+          ?>
+            <img src="<?php echo $host_second_section_third_block_picture; ?>" alt="Maker camp 2014 YouTube">
+          <?php
+            endif;
+            if (!empty($host_second_section_third_block_title)) :
+          ?>
+            <p><?php echo $host_second_section_third_block_title; ?></p>
+          <?php
+            endif;
+            if (!empty($host_second_section_third_block_link)) :
+          ?>
+            <a href="<?php echo $host_second_section_third_block_link; ?>" class="read-more">Go</a>
+          <?php endif; ?>
 				</li>
+
 				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>project_4.jpg" alt="Google+ community">
+          <?php
+          $host_second_section_fourth_block_picture = get_theme_mod('host_second_section_fourth_block_picture');
+          $host_second_section_fourth_block_title = get_theme_mod('host_second_section_fourth_block_title');
+          $host_second_section_fourth_block_link = get_theme_mod('host_second_section_fourth_block_link');
 
-					<p><?php echo get_theme_mod( 'host_second_section_fourth_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'host_second_section_fourth_block_link' ); ?>" class="read-more">Go</a>
+          if (!empty($host_second_section_fourth_block_picture)) :
+            ?>
+            <img src="<?php echo $host_second_section_fourth_block_picture; ?>" alt="Google+ community">
+          <?php
+          endif;
+          if (!empty($host_second_section_fourth_block_title)) :
+            ?>
+            <p><?php echo $host_second_section_fourth_block_title; ?></p>
+          <?php
+          endif;
+          if (!empty($host_second_section_fourth_block_link)) :
+            ?>
+            <a href="<?php echo $host_second_section_fourth_block_link; ?>" class="read-more">Go</a>
+          <?php endif; ?>
 				</li>
+
 				<li>
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>project_5.png" alt="More project ideas in the Maker Camp">
+          <?php
+          $host_second_section_fifth_block_picture = get_theme_mod('host_second_section_fifth_block_picture');
+          $host_second_section_fifth_block_title = get_theme_mod('host_second_section_fifth_block_title');
+          $host_second_section_fifth_block_link = get_theme_mod('host_second_section_fifth_block_link');
 
-					<p><?php echo get_theme_mod( 'host_second_section_fifth_block_title' ); ?></p>
-					<a href="<?php echo get_theme_mod( 'host_second_section_fifth_block_link' ); ?>" class="read-more">Go</a>
+          if (!empty($host_second_section_fifth_block_picture)) :
+            ?>
+            <img src="<?php echo $host_second_section_fifth_block_picture; ?>" alt="More project ideas in the Maker Camp">
+          <?php
+          endif;
+          if (!empty($host_second_section_fifth_block_title)) :
+            ?>
+            <p><?php echo $host_second_section_fifth_block_title; ?></p>
+          <?php
+          endif;
+          if (!empty($host_second_section_fifth_block_link)) :
+            ?>
+            <a href="<?php echo $host_second_section_fifth_block_link; ?>" class="read-more">Go</a>
+          <?php endif; ?>
 				</li>
+
 			</ul>
 
 		</div>

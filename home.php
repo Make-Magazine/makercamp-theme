@@ -237,26 +237,48 @@
 		<div class="container-fluid">
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>welcome_rocket.png" class="welcome-icon" alt="Welcome Maker Camp">
 
-		  <h1><?php echo get_theme_mod( 'first_section_title'); ?></h1>
+      <?php $first_section_title = get_theme_mod( 'first_section_title' );
+        $first_section_subtitle = get_theme_mod( 'first_section_subtitle' );
 
-      <h2><?php echo get_theme_mod( 'first_section_subtitle' ); ?></h2>
+        if (!empty($first_section_title)) :
+      ?>
+		  <h1><?php echo $first_section_title; ?></h1>
+      <?php endif;
+
+        if (!empty($first_section_subtitle)) :
+      ?>
+      <h2><?php echo $first_section_subtitle; ?></h2>
+      <?php endif; ?>
 
 			<div class="row">
 				<div class="col-sm-4">
-					<a class="fancybox" data-fancybox-type="iframe" href="<?php echo get_theme_mod( 'first_section_video'); ?>">
+
+          <?php $first_section_video = get_theme_mod('first_section_video');
+            if (!empty($first_section_video)) :
+          ?>
+					<a class="fancybox" data-fancybox-type="iframe" href="<?php echo $first_section_video; ?>">
 						<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>video_pic_with_button.png" alt="Video from the camp" class="pic-for-vid">
-					</a>
+          </a>
+          <?php endif; ?>
+
 				</div>
 				<div class="col-sm-4">
-					<p>
-            <?php echo get_theme_mod('first_section_central_description'); ?>
-					</p>
+
+          <?php $first_section_central_description = get_theme_mod('first_section_central_description');
+            if (!empty($first_section_central_description)) :
+          ?>
+					<p><?php echo $first_section_central_description; ?></p>
+          <?php endif; ?>
+
 					<a href="#hero" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual" class="read-more sign-in-trigger">Sign up!</a>
 				</div>
 				<div class="col-sm-4">
-					<p>
-            <?php echo get_theme_mod('first_section_right_description'); ?>
-					</p>
+
+          <?php $first_section_right_description = get_theme_mod('first_section_right_description');
+            if (!empty($first_section_right_description)) :
+          ?>
+          <p><?php echo $first_section_right_description; ?></p>
+          <?php endif; ?>
 
 					<a href="<?php bloginfo( 'url' ); ?>/affiliate-program" class="read-more">Host a camp</a>
 				</div>
@@ -266,25 +288,61 @@
 
 	<section class="how-it-works" id="how-it-works">
 		<div class="container-fluid">
-			<h1><?php echo get_theme_mod( 'second_section_title' ); ?></h1>
 
-			<h2><?php echo get_theme_mod( 'second_section_subtitle' ); ?></h2>
+      <?php $second_section_title = get_theme_mod('second_section_title');
+        $second_section_subtitle = get_theme_mod('second_section_subtitle');
+
+        if (!empty($second_section_title)) :
+      ?>
+			<h1><?php echo $second_section_title; ?></h1>
+      <?php endif;
+
+        if (!empty($second_section_subtitle)) :
+      ?>
+			<h2><?php echo $second_section_subtitle; ?></h2>
+      <?php endif; ?>
 
 			<div class="row">
 				<div class="col-sm-6">
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>how_it_works.png" alt="Childrens in camp" class="img-circle photo">
 
-					<h3><?php echo get_theme_mod( 'second_section_left_title' ); ?></h3>
-					<p><?php echo get_theme_mod( 'second_section_left_text' ); ?></p>
+          <?php $second_section_left_picture = get_theme_mod('second_section_left_picture');
+            $second_section_left_title = get_theme_mod('second_section_left_title');
+            $second_section_left_text = get_theme_mod('second_section_left_text');
+            if (!empty($second_section_left_picture)) :
+          ?>
+          <img src="<?php echo $second_section_left_picture; ?>" alt="Childrens in camp" class="img-circle photo">
+          <?php endif;
+
+            if (!empty($second_section_left_title)) :
+          ?>
+					<h3><?php echo $second_section_left_title; ?></h3>
+          <?php endif;
+
+            if (!empty($second_section_left_text)) :
+          ?>
+					<p><?php echo $second_section_left_text; ?></p>
+          <?php endif; ?>
 
 					<a href="#hero" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual" class="read-more sign-in-trigger">Sign up for fun alerts</a>
 				</div>
 				<div class="col-sm-6">
-					<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>how_camp_works.png" alt="Childrens in camp" class="img-circle photo">
+          <?php $second_section_right_picture = get_theme_mod('second_section_right_picture');
+            $second_section_right_title = get_theme_mod('second_section_right_title');
+            $second_section_right_text = get_theme_mod('second_section_right_text');
+            if (!empty($second_section_right_picture)) :
+          ?>
+					<img src="<?php echo $second_section_right_picture; ?>" alt="Childrens in camp" class="img-circle photo">
+          <?php endif;
 
-					<h3><?php echo get_theme_mod( 'second_section_right_title' ); ?></h3>
+            if (!empty($second_section_right_title)) :
+          ?>
+					<h3><?php echo $second_section_right_title; ?></h3>
+          <?php endif;
 
-					<p><?php echo get_theme_mod( 'second_section_right_text' ); ?></p>
+            if (!empty($second_section_right_text)) :
+          ?>
+					<p><?php echo $second_section_right_text; ?></p>
+          <?php endif; ?>
 
 					<a href="<?php bloginfo( 'url' ); ?>/map" class="show-in-mobile read-more">Find a campsite</a>
 
@@ -303,8 +361,18 @@
 
 	<section class="camp-themes" id="themes">
 		<div class="container-fluid">
-			<h1><?php echo get_theme_mod( 'third_section_title' ); ?></h1>
-			<h2><?php echo get_theme_mod( 'third_section_subtitle' ); ?></h2>
+      <?php $third_section_title = get_theme_mod('third_section_title');
+        $third_section_subtitle = get_theme_mod('third_section_subtitle');
+
+        if (!empty($third_section_title)) :
+      ?>
+      <h1><?php echo $third_section_title; ?></h1>
+      <?php endif;
+
+        if (!empty($third_section_subtitle)) :
+      ?>
+			<h2><?php echo $third_section_subtitle; ?></h2>
+      <?php endif; ?>
 
 			<ul class="weeks-section">
 				<li>
@@ -374,22 +442,56 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-offset-6 col-sm-6">
-					<h1><?php echo get_theme_mod( 'fourth_section_title' ); ?></h1>
-					<h2><?php echo get_theme_mod( 'fourth_section_subtitle' ); ?></h2>
-					<h3><?php echo get_theme_mod( 'fourth_section_subsubtitle' ); ?></h3>
+
+          <?php $fourth_section_title = get_theme_mod('fourth_section_title');
+            $fourth_section_subtitle = get_theme_mod('fourth_section_subtitle');
+            $fourth_section_sububtitle = get_theme_mod('fourth_section_subsubtitle');
+
+            if (!empty($fourth_section_title)) :
+          ?>
+					<h1><?php echo $fourth_section_title; ?></h1>
+          <?php endif;
+
+            if (!empty($fourth_section_subtitle)) :
+          ?>
+					<h2><?php echo $fourth_section_subtitle; ?></h2>
+          <?php endif;
+
+            if (!empty($fourth_section_subsubtitle)) :
+          ?>
+					<h3><?php echo get_theme_mod( 'fourth_section_subsubtitle', '' ); ?></h3>
+          <?php endif; ?>
 
 					<ul class="sponsors-logo">
+
+            <?php $fourth_section_first_picture = get_theme_mod('fourth_section_first_picture');
+              $fourth_section_second_picture = get_theme_mod('fourth_section_second_picture');
+              $fourth_section_third_picture = get_theme_mod('fourth_section_third_picture');
+              $fourth_section_fourth_picture = get_theme_mod('fourth_section_fourth_picture');
+            ?>
+
 						<li class="smaller">
-							<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>sponsors_ALA_logo.png" class="smaller">
+              <?php if (!empty($fourth_section_first_picture)) :?>
+							<img src="<?php echo $fourth_section_first_picture; ?>"  class="smaller">
+              <?php endif; ?>
 						</li>
+
 						<li class="smaller">
-							<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>sponsors_Intel_Cubhouse_logo.png" class="smaller">
+              <?php if (!empty($fourth_section_second_picture)) :?>
+							<img src="<?php echo $fourth_section_second_picture; ?>" class="smaller">
+              <?php endif; ?>
 						</li>
+
 						<li>
-							<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>sponsors_4H_logo.png">
+              <?php if (!empty($fourth_section_third_picture)) :?>
+							<img src="<?php echo $fourth_section_third_picture; ?>">
+              <?php endif; ?>
 						</li>
+
 						<li>
-							<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>sponsors_Boys_Girls_CLub_logo.png">
+              <?php if (!empty($fourth_section_fourth_picture)) :?>
+							<img src="<?php echo $fourth_section_fourth_picture; ?>">
+              <?php endif; ?>
 						</li>
 					</ul>
 
@@ -401,13 +503,36 @@
 	<section class="physical-campsites-description">
 		<div class="container-fluid">
 			<ul class="physical-campsites-description-list">
+
+        <?php $fourth_section_first_paragraph = get_theme_mod('fourth_section_first_paragraph');
+          $fourth_section_second_paragraph = get_theme_mod('fourth_section_second_paragraph');
+          $fourth_section_first_link = get_theme_mod('fourth_section_first_link');
+          $fourth_section_second_link = get_theme_mod('fourth_section_second link');
+        ?>
+
 				<li>
-					<p><?php echo get_theme_mod( 'fourth_section_first_paragraph' ); ?></p>
-					<p><?php echo get_theme_mod( 'fourth_section_second_paragraph' ); ?></p>
+
+          <?php if (!empty($fourth_section_first_paragraph)) : ?>
+					<p><?php echo $fourth_section_first_paragraph; ?></p>
+          <?php endif;
+
+            if (!empty($fourth_section_second_paragraph)) :
+          ?>
+					<p><?php echo $fourth_section_second_paragraph; ?></p>
+          <?php endif; ?>
+
 				</li>
 				<li>
-					<a href="<?php bloginfo( 'url' ); echo get_theme_mod( 'fourth_section_first_link' ); ?>" class="read-more">Find out if there’s one close to you, and join the fun</a>
-					<a href="<?php bloginfo( 'url' ); echo get_theme_mod( 'fourth_section_second_link' ); ?>" class="read-more">Host a camp</a>
+
+          <?php if (!empty($fourth_section_first_link)) : ?>
+					<a href="<?php bloginfo( 'url' ); echo $fourth_section_first_link; ?>" class="read-more">Find out if there’s one close to you, and join the fun</a>
+          <?php endif;
+
+            if (!empty($fourth_section_second_link)) :
+          ?>
+					<a href="<?php bloginfo( 'url' ); echo $fourth_section_second_link; ?>" class="read-more">Host a camp</a>
+          <?php endif; ?>
+
 				</li>
 			</ul>
 		</div>
@@ -415,46 +540,151 @@
 
 	<section class="day-at-camp" id="day-at-camp">
 		<div class="container-fluid">
-			<h1><?php echo get_theme_mod( 'fifth_section_title' ); ?></h1>
+
+      <?php $fifth_section_title = get_theme_mod('fifth_section_title');
+        $fifth_section_left_title = get_theme_mod('fifth_section_left_title');
+        $fifth_section_left_text = get_theme_mod('fifth_section_left_text');
+        $fifth_section_central_title = get_theme_mod('fifth_section_central_title');
+        $fifth_section_central_text = get_theme_mod('fifth_section_central_text');
+        $fifth_section_right_title = get_theme_mod('fifth_section_right_title');
+        $fifth_section_right_text = get_theme_mod('fifth_section_right_text');
+
+        if (!empty($fifth_section_title)) :
+      ?>
+			<h1><?php echo $fifth_section_title; ?></h1>
+      <?php endif; ?>
 
 			<div class="col-sm-4">
-				<h2><?php echo get_theme_mod( 'fifth_section_left_title' ); ?></h2>
-				<p><?php echo get_theme_mod( 'fifth_section_left_text' ); ?></p>
+
+        <?php if (!empty($fifth_section_left_title)) : ?>
+				<h2><?php echo $fifth_section_left_title; ?></h2>
+        <?php endif;
+
+          if (!empty($fifth_section_left_text)) :
+        ?>
+				<p><?php echo $fifth_section_left_text; ?></p>
+        <?php endif; ?>
+
 			</div>
 			<div class="col-sm-4">
-        <h2><?php echo get_theme_mod( 'fifth_section_central_title' ); ?></h2>
-        <p><?php echo get_theme_mod( 'fifth_section_central_text' ); ?></p>
+
+        <?php if (!empty($fifth_section_central_title)) : ?>
+        <h2><?php echo $fifth_section_central_title; ?></h2>
+        <?php endif;
+
+          if (!empty($fifth_section_central_text)) :
+        ?>
+        <p><?php echo $fifth_section_central_text; ?></p>
+        <?php endif; ?>
+
 			</div>
 			<div class="col-sm-4">
-        <h2><?php echo get_theme_mod( 'fifth_section_right_title' ); ?></h2>
-        <p><?php echo get_theme_mod( 'fifth_section_right_text' ); ?></p>
+
+        <?php if (!empty($fifth_section_right_title)) : ?>
+        <h2><?php echo $fifth_section_right_title; ?></h2>
+        <?php endif;
+
+          if (!empty($fifth_section_right_text)) :
+        ?>
+        <p><?php echo $fifth_section_right_text; ?></p>
+        <?php endif; ?>
+
 			</div>
 		</div>
 	</section>
 
 	<section class="stock-up" id="stock-up">
 		<div class="container-fluid">
-			<h1><?php echo get_theme_mod( 'sixth_section_title' ); ?></h1>
+      <?php $sixth_section_title = get_theme_mod('sixth_section_title');
+        if (!empty($sixth_section_title)) :
+      ?>
+			<h1><?php echo $sixth_section_title; ?></h1>
+      <?php endif; ?>
+
 			<ul class="stor-up-links">
+
+        <?php $sixth_section_first_link = get_theme_mod('sixth_section_first_link');
+          $sixth_section_second_link = get_theme_mod('sixth_section_second_link');
+          $sixth_section_third_link = get_theme_mod('sixth_section_third_link');
+          $sixth_section_fourth_link = get_theme_mod('sixth_section_fourth_link');
+          $sixth_section_fifth_link = get_theme_mod('sixth_section_fifth_link');
+          $sixth_section_first_picture = get_theme_mod('sixth_section_first_picture');
+          $sixth_section_second_picture = get_theme_mod('sixth_section_second_picture');
+          $sixth_section_third_picture = get_theme_mod('sixth_section_third_picture');
+          $sixth_section_fourth_picture = get_theme_mod('sixth_section_fourth_picture');
+          $sixth_section_fifth_picture = get_theme_mod('sixth_section_fifth_picture');
+        ?>
+
 				<li>
-					<a href="<?php echo get_theme_mod( 'sixth_section_first_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_1.png" alt="Change this later" class="img-circle"></a>
+
+          <?php if (!empty($sixth_section_first_link)) :?>
+					<a href="<?php echo $sixth_section_first_link; ?>">
+          <?php if (!empty($sixth_section_first_picture)) : ?>
+            <img src="<?php echo $sixth_section_first_picture; ?>" alt="Collection Maker Camp 2015" class="img-circle">
+            <?php endif; ?>
+          </a>
+          <?php endif; ?>
+
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'sixth_section_second_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_2.png" alt="Change this later" class="img-circle"></a>
+
+          <?php if (!empty($sixth_section_second_link)) :?>
+            <a href="<?php echo $sixth_section_second_link; ?>">
+              <?php if (!empty($sixth_section_second_picture)) : ?>
+                <img src="<?php echo $sixth_section_second_picture; ?>" alt="Collection Maker Camp 2015" class="img-circle">
+              <?php endif; ?>
+            </a>
+          <?php endif; ?>
+
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'sixth_section_third_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_3.png" alt="Change this later" class="img-circle"></a>
+
+          <?php if (!empty($sixth_section_third_link)) :?>
+            <a href="<?php echo $sixth_section_third_link; ?>">
+              <?php if (!empty($sixth_section_third_picture)) : ?>
+                <img src="<?php echo $sixth_section_third_picture; ?>" alt="Collection Maker Camp 2015" class="img-circle">
+              <?php endif; ?>
+            </a>
+          <?php endif; ?>
+
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'sixth_section_fourth_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_4.png" alt="Change this later" class="img-circle"></a>
+
+          <?php if (!empty($sixth_section_fourth_link)) :?>
+            <a href="<?php echo $sixth_section_fourth_link; ?>">
+              <?php if (!empty($sixth_section_fourth_picture)) : ?>
+                <img src="<?php echo $sixth_section_fourth_picture; ?>" alt="Collection Maker Camp 2015" class="img-circle">
+              <?php endif; ?>
+            </a>
+          <?php endif; ?>
+
 				</li>
 				<li>
-					<a href="<?php echo get_theme_mod( 'sixth_section_fifth_link' ); ?>"><img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>stock_camp_5.png" alt="Change this later" class="img-circle"></a>
-				</li>
+
+          <?php if (!empty($sixth_section_fifth_link)) :?>
+            <a href="<?php echo $sixth_section_fifth_link; ?>">
+              <?php if (!empty($sixth_section_fifth_picture)) : ?>
+                <img src="<?php echo $sixth_section_fifth_picture; ?>" alt="Collection Maker Camp 2015" class="img-circle">
+              <?php endif; ?>
+            </a>
+          <?php endif; ?>
+
+        </li>
 			</ul>
 
-			<p><?php echo get_theme_mod( 'sixth_section_first_paragraph' ); ?></p>
-			<p><?php echo get_theme_mod( 'sixth_section_second_paragraph' ); ?></p>
+      <?php $sixth_section_first_paragraph = get_theme_mod('sixth_section_first_paragraph');
+        $sixth_section_second_paragraph = get_theme_mod('sixth_section_second_paragraph');
+
+        if (!empty($sixth_section_first_paragraph)) :
+      ?>
+			<p><?php echo $sixth_section_first_paragraph; ?></p>
+      <?php endif;
+
+        if (!empty($sixth_section_second_paragraph)) :
+      ?>
+			<p><?php echo $sixth_section_second_paragraph; ?></p>
+      <?php endif; ?>
+
 		</div>
 	</section>
 

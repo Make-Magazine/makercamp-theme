@@ -4,22 +4,42 @@
 
 	<section class="banner">
 		<div class="container-fluid">
-			<h1>Find a camp</h1>
-
-			<p>Maker Camp is an online summer camp that happens everywhere around the world. But you can meet your neighbors
-				who are taking part in Maker Camp too! Many libraries, makerspaces, and community centers are hosting Maker
-				Camps for the kids in their communities.
-			</p>
+      <h1><?php the_title(); ?></h1>
+      <p><?php
+        while (have_posts()) : the_post();
+          the_content();
+        endwhile; ?>
+      </p>
 		</div>
 	</section>
 
 	<section class="camps-map">
-		<h1 class="container-fluid"><?php echo get_theme_mod( 'title_before_map' ); ?></h1>
+    <?php
+      $title_before_map = get_theme_mod( 'title_before_map' );
+      if (!empty($title_before_map)): ?>
+        <h1 class="container-fluid">
+          <?php echo $title_before_map; ?>
+        </h1>
+    <?php endif; ?>
+
 		<iframe src="https://www.google.com/maps/d/embed?mid=znSdL4uF4CiE.k7sHDldZCKys"></iframe>
 		<div class="container-fluid">
-			<h1 class="hide-in-mobile container-fluid"><?php echo get_theme_mod( 'title_after_map' ); ?></h1>
 
-			<p><?php echo get_theme_mod( 'description_after_map' ); ?></p>
+      <?php
+        $title_after_map = get_theme_mod( 'title_after_map' );
+        if (!empty($title_after_map)) :
+      ?>
+			<h1 class="hide-in-mobile container-fluid">
+        <?php echo $title_after_map; ?>
+      </h1>
+      <?php endif; ?>
+
+      <?php $description_after_map = get_theme_mod( 'description_after_map' );
+        if (!empty($description_after_map)):
+      ?>
+			<p><?php echo $description_after_map; ?></p>
+      <?php endif; ?>
+
 		</div>
 	</section>
 

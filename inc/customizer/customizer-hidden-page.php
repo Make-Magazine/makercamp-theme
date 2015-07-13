@@ -54,8 +54,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(     // Title
       'hidden_first_section_title',
       array(
-          'default' => 'With lively, daily videos, fun projects, and an active online community, there\'s no shortage of ways
-				to participate! We ask affiliates to do just a few things',
+          'default' => 'With lively, daily videos, fun projects, and an active online community, there\'s no shortage of ways to participate! We ask affiliates to do just a few things',
       )
   );
 
@@ -119,8 +118,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(     // 4-th text
       'hidden_first_section_fourth_text',
       array(
-          'default' => 'Be available and willing to speak with press/media about your campers\'
-						participation and projects.',
+          'default' => 'Be available and willing to speak with press/media about your campers\' participation and projects.',
       )
   );
 
@@ -171,8 +169,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Text
       'hidden_second_section_text',
       array(
-          'default' => 'Remember you are welcome to do any making activity on any day, even if you do not
-				follow our schedule or recommendations. The content for each week is released weekly.',
+          'default' => 'Remember you are welcome to do any making activity on any day, even if you do not follow our schedule or recommendations. The content for each week is released weekly.',
       )
   );
 
@@ -193,8 +190,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_title',
       array(
-          'default' => 'These digital assets are for stand-alone use on your website or in promotional
-				materials Please do not modify them. ',
+          'default' => 'These digital assets are for stand-alone use on your website or in promotional materials Please do not modify them. ',
       )
   );
 
@@ -264,7 +260,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_second_block_title',
       array(
-          'default' => 'Maker Camp Robot Logo. Get it in white, single and full color.',
+          'default' => 'Maker Camp Robot Logo. Get it in white, single and full color',
       )
   );
 
@@ -315,7 +311,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_third_block_title',
       array(
-          'default' => 'Maker Camp Logo. Get it in white, single and full color. ',
+          'default' => 'Maker Camp Logo. Get it in white, single and full color.',
       )
   );
 
@@ -416,7 +412,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Title
       'hidden_third_section_fifth_block_title',
       array(
-          'default' => 'Maker Camp Affiliate Kit. Get a PDF with all the items you need. ',
+          'default' => 'Maker Camp Affiliate Kit. Get a PDF with all the items you need.',
       )
   );
 
@@ -467,9 +463,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Text
       'hidden_fourth_section_text',
       array(
-          'default' => 'We’re interested in reaching and inspiring young women, as well as kids who couldn’t otherwise
-				attend a camp. If your recruitment and outreach focuses on girls, low-income families, or any
-				other groups who are not well-represented in technology, we’d love to hear about it!',
+          'default' => 'We’re interested in reaching and inspiring young women, as well as kids who couldn’t otherwise attend a camp. If your recruitment and outreach focuses on girls, low-income families, or any other groups who are not well-represented in technology, we’d love to hear about it!',
       )
   );
 
@@ -488,11 +482,7 @@ function makercamp_hidden_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 1-st text
       'hidden_fifth_section_text_first',
       array(
-          'default' => 'Please
-				<strong>do not</strong> share this list with the general Maker Camp community. We share projects with use
-				the affiliates early to allow more time for you to prepare for the groups of campers who come
-				to your site. Hearing news of the next daily project is exciting for our makers or campers, so
-				please help us maintain that shared experience in our online community period.',
+          'default' => 'Please <strong>do not</strong> share this list with the general Maker Camp community. We share projects with use the affiliates early to allow more time for you to prepare for the groups of campers who come to your site. Hearing news of the next daily project is exciting for our makers or campers, so please help us maintain that shared experience in our online community period.',
       )
   );
 

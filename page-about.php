@@ -4,30 +4,56 @@
 
 	<section class="about-us">
 		<div class="container-fluid">
-			<h1>About us</h1>
-
-			<p>Maker Camp is designed to get more kids making more, and to support the adults who want to introduce the joy of
-				making to a million makers. We aspire to become a community-built collection of project tutorials by, for, and
-				with the kids who are making the world of the future.
-			</p>
+    <h1><?php the_title(); ?></h1>
+      <?php
+        while (have_posts()) : the_post();
+          the_content();
+        endwhile;
+      ?>
 		</div>
 	</section>
 
 	<section class="our-mission">
 		<div class="container-fluid">
-			<h1><?php echo get_theme_mod( 'section_first_title' ); ?></h1>
-			<p><?php echo get_theme_mod( 'section_first_text_first' ); ?></p>
-			<p><?php echo get_theme_mod( 'section_first_text_second' ); ?></p>
-			<p><?php echo get_theme_mod( 'section_first_text_third' ); ?></p>
+      <?php $section_first_title = get_theme_mod( 'section_first_title' );
+        if (!empty($section_first_title)) :
+      ?>
+			<h1><?php echo $section_first_title; ?></h1>
+      <?php endif; ?>
+
+      <?php $section_first_text_first = get_theme_mod( 'section_first_text_first' );
+        if (!empty($section_first_text_first)) :
+      ?>
+			<p><?php echo $section_first_text_first; ?></p>
+      <?php endif; ?>
+
+      <?php $section_first_text_second = get_theme_mod( 'section_first_text_second' );
+        if (!empty($section_first_text_second)) :
+      ?>
+			<p><?php echo $section_first_text_second; ?></p>
+      <?php endif; ?>
+
+      <?php $section_first_text_third = get_theme_mod( 'section_first_text_third' );
+        if (!empty($section_first_text_third)) :
+      ?>
+			<p><?php echo $section_first_text_third; ?></p>
+      <?php endif; ?>
+
+
 			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>about_robot.png" alt="virtual trips">
 		</div>
 	</section>
 
 	<section class="presenters container-fluid">
-		<h1>
-			<span class="presenters-desctop"><?php echo get_theme_mod( 'about_second_section_title' ); ?></span>
+    <?php $about_second_section_title = get_theme_mod( 'about_second_section_title' );
+      if (!empty($about_second_section_title)) :
+    ?>
+  	<h1>
+			<span class="presenters-desctop"><?php echo $about_second_section_title; ?></span>
 		</h1>
-		<ul class="presenters-section">
+    <?php endif; ?>
+
+    <ul class="presenters-section">
 			<li>
 				<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>team_courtney.png" alt="Presenter's photo" class="img-circle">
 

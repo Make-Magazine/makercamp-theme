@@ -48,11 +48,7 @@ function makercamp_map_customizer( $wp_customize ) {
   $wp_customize->add_setting(
       'description_after_map',
       array(
-          'default' => 'If you can’t find a nearby site in the list or the map, talk to your local library, makerspace, Boys & Girls Club,
-				or community center about hosting Maker Camp for the kids in your community. Maker Camp Affiliate
-				Sites receive a package of materials for making and for promoting the camp, while supplies last. Remember that
-				whether or not you are able to find an organization to host Maker Camp, you can still be a part of Maker Camp no
-				matter where you are, because it is online and free!',
+          'default' => 'If you can’t find a nearby site in the list or the map, talk to your local library, makerspace, Boys & Girls Club, or community center about hosting Maker Camp for the kids in your community. Maker Camp Affiliate Sites receive a package of materials for making and for promoting the camp, while supplies last. Remember that whether or not you are able to find an organization to host Maker Camp, you can still be a part of Maker Camp no matter where you are, because it is online and free!',
       )
   );
 

@@ -43,8 +43,7 @@ function makercamp_host_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // 1-st text
       'host_first_section_first_text',
       array(
-          'default' => 'Integrate the Maker Camp projects, guest makers and virtual field trips into your existing
-						summer program for kids',
+          'default' => 'Integrate the Maker Camp projects, guest makers and virtual field trips into your existing summer program for kids',
       )
   );
 
@@ -210,7 +209,7 @@ function makercamp_host_customizer( $wp_customize ) {
       )
   );
 
-  $wp_customize->add_setting(   // Link
+  $wp_customize->add_setting(   // Picture
       'host_second_section_second_block_picture'
   );
 
@@ -261,7 +260,7 @@ function makercamp_host_customizer( $wp_customize ) {
       )
   );
 
-  $wp_customize->add_setting(   // Link
+  $wp_customize->add_setting(   // Picture
       'host_second_section_third_block_picture'
   );
 
@@ -311,7 +310,7 @@ function makercamp_host_customizer( $wp_customize ) {
       )
   );
 
-  $wp_customize->add_setting(   // Link
+  $wp_customize->add_setting(   // Picture
       'host_second_section_fourth_block_picture'
   );
 
@@ -362,7 +361,7 @@ function makercamp_host_customizer( $wp_customize ) {
       )
   );
 
-  $wp_customize->add_setting(   // Link
+  $wp_customize->add_setting(   // picture
       'host_second_section_fifth_block_picture'
   );
 
