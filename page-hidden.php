@@ -85,6 +85,41 @@
 			<p><?php echo $hidden_second_section_title; ?></p>
       <?php endif; ?>
 
+<!--      <ul class="weeks-section">-->
+<!--        --><?php
+//        foreach ($all_weeks as $week) {
+//          $camp_days = get_posts(array(
+//              'post_type' => 'camp_day',
+//              'numberposts' => -1,
+//              'order' => 'ASC',
+//              'meta_key' => '_week_day',
+//              'orderby' => 'meta_value_num',
+//              'tax_query' => array(
+//                  array(
+//                      'taxonomy' => 'week',
+//                      'field' => 'id',
+//                      'terms' => $week->term_id,
+//                      'include_children' => FALSE
+//                  )
+//              )
+//          ));
+//
+//          $week_mobile_image = get_option("week_mobile_image_{$week->term_id}");
+//          $week_title = $week->name;
+//          $week_subtitle = $week->description;
+//          $week_description = get_option("week_long_description_{$week->term_id}");
+//
+//          echo '<li>';
+//          echo '<h3>' . $week_title . '</h3>';
+//          echo '<img src="' . $week_mobile_image . '">';
+//          echo '<h2>' . $week_subtitle . '</h2>';
+//          echo '<p>' . $week_description . '<p>';
+//          echo '</li>';
+//
+//        }
+//        ?>
+<!--      </ul>-->
+
 			<ul class="weeks-section">
 				<li>
 					<h3>Week 1: </h3>
