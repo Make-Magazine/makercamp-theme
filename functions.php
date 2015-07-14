@@ -214,10 +214,3 @@ function crew_post_types() {
 
   register_taxonomy("Crew list", $args);
 }
-
-
-
-function add_menu_anchor_class($second_nav) {
-  return preg_replace('/rel="anchors-to-section"/', 'class="anchors-to-section"', $second_nav, -1);
-}
-add_filter('wp_nav_menu','add_menu_anchor_class');

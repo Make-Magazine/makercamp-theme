@@ -260,9 +260,11 @@ foreach ($all_weeks as $week) {
         if (!empty($first_section_central_description)) :
           ?>
           <p><?php echo $first_section_central_description; ?></p>
-        <?php endif; ?>
+        <?php endif;
 
-        <a href="#hero" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual"
+          $first_section_central_link = makercamp_defaults_customizer('first_section_central_link');
+        ?>
+        <a href="" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual"
            class="read-more sign-in-trigger">Sign up!</a>
       </div>
       <div class="col-sm-4">

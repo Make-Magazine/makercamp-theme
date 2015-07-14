@@ -48,6 +48,20 @@ $(document).ready(function () {
 
   });
 
+  $("ul > li > a").click(function () {
+    var elementClick = $(this).attr("href");
+    var destination = $(elementClick).offset().top;
+
+    if (navigator.userAgent.indexOf('Safari')) {
+      $('body').animate({scrollTop: destination}, 1100);
+    } else {
+      $('html').animate({scrollTop: destination}, 1100);
+    }
+
+    return false;
+
+  });
+
   /**
    * Hero element
    *
