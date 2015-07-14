@@ -284,11 +284,12 @@
 		<div class="container-fluid">
 
 			<?php $second_section_title = makercamp_defaults_customizer( 'second_section_title' );
-			$second_section_subtitle    = makercamp_defaults_customizer( 'second_section_subtitle' );
 			if ( ! empty( $second_section_title ) ) :
 				?>
 				<h1><?php echo $second_section_title; ?></h1>
 			<?php endif;
+
+            $second_section_subtitle = makercamp_defaults_customizer( 'second_section_subtitle_h' );
 			if ( ! empty( $second_section_subtitle ) ) :
 				?>
 				<h2><?php echo $second_section_subtitle; ?></h2>
@@ -361,7 +362,20 @@
 					<?php endif; ?>
 
 					<ul class="read-more-list">
-
+                        <li><?php
+                            $second_section_first_right_link = makercamp_defaults_customizer( 'second_section_first_right_link' );
+                            if ( ! empty( $second_section_first_right_link ) ) :
+                                ?>
+                                <a href="<?php echo $second_section_first_right_link; ?>" class="hide-in-mobile read-more">
+                                    <?php
+                                    $second_section_first_right_link_title = makercamp_defaults_customizer( 'second_section_first_right_link_title' );
+                                    if ( ! empty( $second_section_first_right_link_title ) ) :
+                                        echo $second_section_first_right_link_title;
+                                    endif;
+                                    ?>
+                                </a>
+                            <?php endif; ?>
+                        </li>
 						<li>
 							<?php
 							$second_section_second_right_link = makercamp_defaults_customizer( 'second_section_second_right_link' );
@@ -377,21 +391,6 @@
 								</a>
 							<?php endif; ?>
 						</li>
-						<li><?php
-							$second_section_first_right_link = makercamp_defaults_customizer( 'second_section_first_right_link' );
-							if ( ! empty( $second_section_first_right_link ) ) :
-								?>
-								<a href="<?php echo $second_section_first_right_link; ?>" class="hide-in-mobile read-more">
-									<?php
-									$second_section_first_right_link_title = makercamp_defaults_customizer( 'second_section_first_right_link_title' );
-									if ( ! empty( $second_section_first_right_link_title ) ) :
-										echo $second_section_first_right_link_title;
-									endif;
-									?>
-								</a>
-							<?php endif; ?>
-						</li>
-
 					</ul>
 				</div>
 			</div>

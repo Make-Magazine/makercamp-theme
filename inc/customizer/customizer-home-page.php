@@ -5,7 +5,6 @@
 function makercamp_home_customizer( $wp_customize ) {
 	global $makercamp_defaults_customizer_values;
 
-
 	// 1st section in Home page
 	$wp_customize->add_section(
 		'makercamp_first_section_home_page',
@@ -210,13 +209,13 @@ function makercamp_home_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_setting(   // Subtitle
-		'second_section_subtitle',
+		'second_section_subtitle_h',
 		array(
-			'default' => $makercamp_defaults_customizer_values[ 'second_section_subtitle' ],
+			'default' => $makercamp_defaults_customizer_values[ 'second_section_subtitle_h' ],
 		)
 	);
 	$wp_customize->add_control(
-		'second_section_subtitle',
+		'second_section_subtitle_h',
 		array(
 			'label'   => 'Subtitle for 2nd section',
 			'section' => 'makercamp_second_section_home_page',
@@ -224,19 +223,19 @@ function makercamp_home_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_setting(   // Left column picture
-		'second_section_left_picture',
+		'second_section_left_picture_h',
 		array(
-			'default' => $makercamp_defaults_customizer_values[ 'second_section_left_picture' ],
+			'default' => $makercamp_defaults_customizer_values[ 'second_section_left_picture_h' ],
 		)
 	);
 	$wp_customize->add_control(
 		new WP_Customize_Image_Control(
 			$wp_customize,
-			'second_section_left_picture',
+			'second_section_left_picture_h',
 			array(
-				'label'    => 'Right column picture',
+				'label'    => 'Left column picture',
 				'section'  => 'makercamp_second_section_home_page',
-				'settings' => 'second_section_left_picture'
+				'settings' => 'second_section_left_picture_h'
 			)
 		)
 	);
