@@ -3331,7 +3331,7 @@
   },
   {
     "Company":"Hereford Branch, Baltimore County Public Library",
-    "Website":"www.bcpl.info",
+    "Website":"http://www.bcpl.info/events/datelines-hereford",
     "City":"Monkton",
     "State":"MD",
     "Postal Code":"21111",
@@ -4708,16 +4708,6 @@
     "Country":"United States",
     "Continent":"North America",
     "Accepting":"No"
-  },
-  {
-    "Company":"Dodge YMCA of Greater New York (Virtual Y afterschool @ PS 11)",
-    "Website":"www.ymcanyc.org/dodge",
-    "City":"Brooklyn",
-    "State":"NY",
-    "Postal Code":"11201",
-    "Country":"United States",
-    "Continent":"North America",
-    "Accepting":"Yes"
   },
   {
     "Company":"Boys & Girls Clubs of Metrowest- Framingham Clubhouse",
