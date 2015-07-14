@@ -212,26 +212,14 @@ foreach ($all_weeks as $week) {
 
 <section class="navbar-second" id="second-navbar">
   <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li>
-        <a href="#welcome" class="anchors-to-section">Welcome</a>
-      </li>
-      <li>
-        <a href="#how-it-works" class="anchors-to-section">How it works</a>
-      </li>
-      <li>
-        <a href="#themes" class="anchors-to-section">2015 Themes</a>
-      </li>
-      <li>
-        <a href="#physical" class="anchors-to-section">Physical camps</a>
-      </li>
-      <li>
-        <a href="#day-at-camp" class="anchors-to-section">A day at camp</a>
-      </li>
-      <li>
-        <a href="#stock-up" class="anchors-to-section">Stock up for camp</a>
-      </li>
-    </ul>
+
+<!--    Added second nav from admin menu-->
+    <?php wp_nav_menu( array(
+        'menu' => 'Second nav',
+        'menu_class' => 'nav navbar-nav'
+    ));
+    ?>
+
   </div>
 </section>
 
