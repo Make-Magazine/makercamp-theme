@@ -53,6 +53,7 @@ $makercamp_defaults_customizer_values = array(
   'second_section_right_text' => 'Maker Camp affiliates host physical campsites where campers work with other kids and adults to guide you. Affiliates can be Boys & Girls Clubs, community centers and many more!',
   'second_section_first_right_link' =>'/map',
   'second_section_first_right_link_title' => 'Find a camp',
+  'second_section_first_right_link_title_modile' => 'Find a camp',
   'second_section_second_right_link' => '/affiliate-program',
   'second_section_second_right_link_title' => 'Find a campsite in your neighborhood',
   'third_section_title' => '2015 Maker Camp Themes',

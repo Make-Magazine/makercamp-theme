@@ -38,11 +38,11 @@ function makercamp_about_customizer( $wp_customize ) {
   $wp_customize->add_setting(   // Hero
       'about_hero_title',
       array(
-          'default' => $makercamp_defaults_customizer_values['section_first_title'],
+          'default' => $makercamp_defaults_customizer_values['about_hero_title'],
       )
   );
   $wp_customize->add_control(
-      'section_first_title',
+      'about_hero_title',
       array(
           'label' => 'About us hero',
           'section' => 'makercamp__about_hero',

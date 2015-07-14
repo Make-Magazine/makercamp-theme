@@ -423,7 +423,7 @@ function makercamp_home_customizer( $wp_customize ) {
       )
   );
   $wp_customize->add_control(
-      'second_section_first_right_link_title_modile',
+        'second_section_first_right_link_title_modile',
       array(
           'label' => '1st link title for right column in mobile',
           'section' => 'makercamp_second_section_home_page',
