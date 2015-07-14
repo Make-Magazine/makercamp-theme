@@ -4,17 +4,33 @@
 
   <section class="host-a-camp-hero">
     <article>
-      <h1><?php the_title(); ?></h1>
       <?php
-      if (have_posts()) :
-        while (have_posts()) : the_post();
-          the_content();
-        endwhile;
-      endif;
+        $host_hero_title = makercamp_defaults_customizer('host_hero_title');
+        if (!empty($host_hero_title)) :
       ?>
+      <h1><?php echo $host_hero_title ?></h1>
+      <?php
+        endif;
 
-      <a class="apply-now" href="https://docs.google.com/forms/d/15RlD9GtqEWd03wEKDqOuiIOroO6Amvw3sFBwQn3ilCg/viewform">Apply
-        now</a>
+        $host_hero_text = makercamp_defaults_customizer('host_hero_text');
+        if (!empty($host_hero_text)) :
+      ?>
+      <p><?php echo $host_hero_text ?></p>
+      <?php
+          endif;
+
+        $host_hero_link = makercamp_defaults_customizer('host_hero_link');
+        if (!empty($host_hero_link)) :
+      ?>
+      <a class="apply-now" href="<?php echo $host_hero_link ?>">
+        <?php
+          $host_hero_link_title = makercamp_defaults_customizer('host_hero_link_title');
+          if (!empty($host_hero_link_title)) :
+            echo $host_hero_link_title;
+          endif;
+        ?>
+      </a>
+      <?php endif; ?>
     </article>
   </section>
 
@@ -89,7 +105,6 @@
           $host_second_section_first_block_picture = makercamp_defaults_customizer('host_second_section_first_block_picture');
           $host_second_section_first_block_title = makercamp_defaults_customizer('host_second_section_first_block_title');
           $host_second_section_first_block_link = makercamp_defaults_customizer('host_second_section_first_block_link');
-
           if (!empty($host_second_section_first_block_picture)) :
             ?>
             <img src="<?php echo $host_second_section_first_block_picture; ?>" alt="Projects ideas" class="first">
@@ -111,7 +126,6 @@
           $host_second_section_second_block_picture = makercamp_defaults_customizer('host_second_section_second_block_picture');
           $host_second_section_second_block_title = makercamp_defaults_customizer('host_second_section_second_block_title');
           $host_second_section_second_block_link = makercamp_defaults_customizer('host_second_section_second_block_link');
-
           if (!empty($host_second_section_second_block_picture)) :
             ?>
             <img src="<?php echo $host_second_section_second_block_picture; ?>" alt="Maker camp 2013 on YouTube"
@@ -134,7 +148,6 @@
           $host_second_section_third_block_picture = makercamp_defaults_customizer('host_second_section_third_block_picture');
           $host_second_section_third_block_title = makercamp_defaults_customizer('host_second_section_third_block_title');
           $host_second_section_third_block_link = makercamp_defaults_customizer('host_second_section_third_block_link');
-
           if (!empty($host_second_section_third_block_picture)) :
             ?>
             <img src="<?php echo $host_second_section_third_block_picture; ?>" alt="Maker camp 2014 YouTube">
@@ -156,7 +169,6 @@
           $host_second_section_fourth_block_picture = makercamp_defaults_customizer('host_second_section_fourth_block_picture');
           $host_second_section_fourth_block_title = makercamp_defaults_customizer('host_second_section_fourth_block_title');
           $host_second_section_fourth_block_link = makercamp_defaults_customizer('host_second_section_fourth_block_link');
-
           if (!empty($host_second_section_fourth_block_picture)) :
             ?>
             <img src="<?php echo $host_second_section_fourth_block_picture; ?>" alt="Google+ community">
@@ -178,7 +190,6 @@
           $host_second_section_fifth_block_picture = makercamp_defaults_customizer('host_second_section_fifth_block_picture');
           $host_second_section_fifth_block_title = makercamp_defaults_customizer('host_second_section_fifth_block_title');
           $host_second_section_fifth_block_link = makercamp_defaults_customizer('host_second_section_fifth_block_link');
-
           if (!empty($host_second_section_fifth_block_picture)) :
             ?>
             <img src="<?php echo $host_second_section_fifth_block_picture; ?>"
