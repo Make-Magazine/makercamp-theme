@@ -149,7 +149,7 @@ require_once('wp_bootstrap_navwalker.php');
 add_action( 'init', 'crew_post_types' );
 function crew_post_types() {
   $labels = array(
-      'name'                => _x('Crews list', 'post type general name'),
+      'name'                => _x('Crew list', 'post type general name'),
       'singular_name'       => _x('Crew', 'post type singular name'),
       'add_new'             => _x('Add New', 'new crew'),
       'add_new_item'        => __('Add New Crew'),
