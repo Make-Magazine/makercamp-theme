@@ -62,7 +62,7 @@
 /**
  * Get all addresses from json file
  */
-$upload_json_file = makercamp_defaults_customizer( 'upload_json_file' );
+$upload_json_file = get_theme_mod( 'upload_json_file' );;
 $addresses        = array();
 if ( ! empty( $upload_json_file ) ) :
 	$addresses = json_decode( $upload_json_file, TRUE );
