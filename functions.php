@@ -174,5 +174,4 @@ function crew_post_types() {
       'supports'            => array('title','editor','thumbnail')
   );
   register_post_type( 'crew', $args );
-  register_taxonomy("Crew list", $args);
 }
