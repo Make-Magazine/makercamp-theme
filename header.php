@@ -61,39 +61,34 @@ document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('on
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-collapse">
-				<ul class="nav navbar-nav main-nav">
-					<?php if ( is_home() ) {?>
-						<li class="button mobile-dropdown">
-							<a href="#">Basecamp<span class="fa fa-chevron-down"></span><span class="fa fa-chevron-up"></span></a>
-							<ul class="nav navbar-nav dropdown">
-								<li><a href="#welcome" class="anchors-to-section">Welcome</a></li>
-								<li><a href="#how-it-works" class="anchors-to-section">How it works</a></li>
-								<li><a href="#themes" class="anchors-to-section">2015 Themes</a></li>
-								<li><a href="#physical" class="anchors-to-section">Physical camps</a></li>
-								<li><a href="#day-at-camp" class="anchors-to-section">A day at camp</a></li>
-								<li><a href="#stock-up" class="anchors-to-section">Stock up for camp</a></li>
-							</ul>
-						</li>
-					<?php } else { ?>
-						<li class="button mobile-dropdown">
-							<a href="#">Basecamp<span class="fa fa-chevron-down"></span><span class="fa fa-chevron-up"></span></a>
-							<ul class="nav navbar-nav dropdown">
-								<li><a href="/#welcome" class="anchors-to-section">Welcome</a></li>
-								<li><a href="/#how-it-works" class="anchors-to-section">How it works</a></li>
-								<li><a href="/#themes" class="anchors-to-section">2015 Themes</a></li>
-								<li><a href="/#physical" class="anchors-to-section">Physical camps</a></li>
-								<li><a href="/#day-at-camp" class="anchors-to-section">A day at camp</a></li>
-								<li><a href="/#stock-up" class="anchors-to-section">Stock up for camp</a></li>
-							</ul>
-						</li>
-					<?php } ?>
-
-					<li><a href="<?php bloginfo( 'url' ); ?>/map">Find a camp</a></li>
-					<li><a href="<?php bloginfo( 'url' ); ?>/affiliate-program">Host a camp</a></li>
-					<li><a href="https://plus.google.com/communities/107377046073638428310">Share</a></li>
-					<li><a href="<?php bloginfo( 'url' ); ?>/about">About</a></li>
-				</ul>
-
+                <ul class="nav navbar-nav main-nav">
+                    <li class="button mobile-dropdown">
+                        <a href="#">Basecamp<span class="fa fa-chevron-down"></span><span class="fa fa-chevron-up"></span></a>
+                        <?php
+                        if (is_home()) {
+                            wp_nav_menu( array (
+                                'menu'        => 'Second nav',
+                                'menu_class'  => 'nav navbar-nav dropdown',
+                                'container'   => ''
+                            ) );
+                        } else {
+                            wp_nav_menu( array (
+                                    'menu'        => 'Header dropdown menu',
+                                    'menu_class'  => 'nav navbar-nav dropdown',
+                                    'container'   => ''
+                            ) );
+                        };
+                        ?>
+                    </li>
+                <?php wp_nav_menu( array(
+                        'theme_location'  => 'primary_menu',
+                        'menu'       => 'Header main menu',
+                        'menu_class' => 'nav navbar-nav main-nav',
+                        'items_wrap' => '%3$s',
+                        'container'  => ''
+                ) );
+                ?>
+                </ul>
 			</div>
 
 			<!-- /.navbar-collapse -->
