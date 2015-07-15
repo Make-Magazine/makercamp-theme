@@ -108,12 +108,15 @@ function makercamp_map_customizer( $wp_customize ) {
 		'upload_json_file'
 	);
 	$wp_customize->add_control(
-            'upload_json_file',
-            array(
-                    'label'   => 'Upload JSON',
-                    'section' => 'makercamp_section_find_camp',
-                    'type'    => 'textarea',
-            )
+		new WP_Customize_Upload_Control(
+			$wp_customize,
+			'upload_json_file',
+			array(
+				'label'    => 'Upload JSON file (with .txt extension)',
+				'section'  => 'makercamp_section_find_camp',
+				'settings' => 'upload_json_file'
+			)
+		)
     );
 }
 

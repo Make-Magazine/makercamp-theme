@@ -62,10 +62,10 @@
 /**
  * Get all addresses from json file
  */
-$upload_json_file = get_theme_mod( 'upload_json_file' );;
+$upload_json_file = get_theme_mod( 'upload_json_file' );
 $addresses        = array();
 if ( ! empty( $upload_json_file ) ) :
-	$addresses = json_decode( $upload_json_file, TRUE );
+	$addresses = json_decode( file_get_contents( $upload_json_file ), TRUE );
 endif;
 /**
  * Sort the JSON array by country
