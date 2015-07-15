@@ -117,7 +117,14 @@
           endif;
           if (!empty($host_second_section_first_block_link)) :
             ?>
-            <a href="<?php echo $host_second_section_first_block_link; ?>" class="read-more">Go</a>
+            <a href="<?php echo $host_second_section_first_block_link; ?>" class="read-more">
+            <?php
+                $host_second_section_first_block_link_title = makercamp_defaults_customizer('host_second_section_first_block_link_title');
+                if ( ! empty( $host_second_section_first_block_link_title )) :
+                    echo $host_second_section_first_block_link_title;
+                endif;
+            ?>
+            </a>
           <?php endif; ?>
         </li>
 
@@ -139,7 +146,14 @@
           endif;
           if (!empty($host_second_section_second_block_link)) :
             ?>
-            <a href="<?php echo $host_second_section_second_block_link; ?>" class="read-more">Go</a>
+            <a href="<?php echo $host_second_section_second_block_link; ?>" class="read-more">
+                <?php
+                $host_second_section_second_block_link_title = makercamp_defaults_customizer('host_second_section_second_block_link_title');
+                if ( ! empty( $host_second_section_second_block_link_title )) :
+                    echo $host_second_section_second_block_link_title;
+                endif;
+                ?>
+            </a>
           <?php endif; ?>
         </li>
 
@@ -160,7 +174,14 @@
           endif;
           if (!empty($host_second_section_third_block_link)) :
             ?>
-            <a href="<?php echo $host_second_section_third_block_link; ?>" class="read-more">Go</a>
+            <a href="<?php echo $host_second_section_third_block_link; ?>" class="read-more">
+                <?php
+                $host_second_section_third_block_link_title = makercamp_defaults_customizer('host_second_section_third_block_link_title');
+                if ( ! empty( $host_second_section_third_block_link_title )) :
+                    echo $host_second_section_third_block_link_title;
+                endif;
+                ?>
+            </a>
           <?php endif; ?>
         </li>
 
@@ -181,7 +202,14 @@
           endif;
           if (!empty($host_second_section_fourth_block_link)) :
             ?>
-            <a href="<?php echo $host_second_section_fourth_block_link; ?>" class="read-more">Go</a>
+            <a href="<?php echo $host_second_section_fourth_block_link; ?>" class="read-more">
+                <?php
+                $host_second_section_fourth_block_link_title = makercamp_defaults_customizer('host_second_section_fourth_block_link_title');
+                if ( ! empty( $host_second_section_fourth_block_link_title )) :
+                    echo $host_second_section_fourth_block_link_title;
+                endif;
+                ?>
+            </a>
           <?php endif; ?>
         </li>
 
@@ -203,7 +231,14 @@
           endif;
           if (!empty($host_second_section_fifth_block_link)) :
             ?>
-            <a href="<?php echo $host_second_section_fifth_block_link; ?>" class="read-more">Go</a>
+            <a href="<?php echo $host_second_section_fifth_block_link; ?>" class="read-more">
+                <?php
+                $host_second_section_fifth_block_link_title = makercamp_defaults_customizer('host_second_section_fifth_block_link_title');
+                if ( ! empty( $host_second_section_fifth_block_link_title )) :
+                    echo $host_second_section_fifth_block_link_title;
+                endif;
+                ?>
+            </a>
           <?php endif; ?>
         </li>
 
