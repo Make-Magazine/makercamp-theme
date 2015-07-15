@@ -348,18 +348,20 @@
 						<p><?php echo $second_section_right_text; ?></p>
 					<?php endif;
 
-					$second_section_first_right_link = makercamp_defaults_customizer( 'second_section_first_right_link' );
-					if ( ! empty( $second_section_first_right_link ) ) :
-						?>
-						<a href="<?php echo $second_section_first_right_link; ?>" class="show-in-mobile read-more">
-							<?php
-							$second_section_first_right_link_title = makercamp_defaults_customizer( 'second_section_first_right_link_title' );
-							if ( ! empty( $second_section_first_right_link_title ) ) :
-								echo $second_section_first_right_link_title;
-							endif;
-							?>
-						</a>
-					<?php endif; ?>
+                    $second_section_first_right_link = makercamp_defaults_customizer( 'second_section_first_right_link' );
+                    if ( ! empty( $second_section_first_right_link ) ) :
+                        ?>
+                        <a href="<?php echo $second_section_first_right_link; ?>" class="show-in-mobile read-more">
+                            <?php
+                            $second_section_first_right_link_title_mobile = makercamp_defaults_customizer( 'second_section_first_right_link_title_mobile' );
+                            if ( ! empty( $second_section_first_right_link_title_mobile ) ) :
+                                echo $second_section_first_right_link_title_mobile;
+                            endif;
+                            ?>
+                        </a>
+                    <?php endif; ?>
+
+
 
 					<ul class="read-more-list">
                         <li><?php

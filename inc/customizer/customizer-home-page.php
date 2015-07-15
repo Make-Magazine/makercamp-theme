@@ -399,13 +399,13 @@ function makercamp_home_customizer( $wp_customize ) {
 		)
 	);
 	$wp_customize->add_setting(   // Right column 1st link title mobile
-		'second_section_first_right_link_title_modile',
+		'second_section_first_right_link_title_mobile',
 		array(
-			'default' => $makercamp_defaults_customizer_values[ 'second_section_first_right_link_title_modile' ],
+			'default' => $makercamp_defaults_customizer_values[ 'second_section_first_right_link_title_mobile' ],
 		)
 	);
 	$wp_customize->add_control(
-		'second_section_first_right_link_title_modile',
+		'second_section_first_right_link_title_mobile',
 		array(
 			'label'   => '1st link title for right column in mobile',
 			'section' => 'makercamp_second_section_home_page',
