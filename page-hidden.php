@@ -100,7 +100,7 @@
 
 			<ul class="weeks-section">
 				<?php
-				$all_weeks    = get_terms( 'week' );
+				$all_weeks = get_terms( 'week' );
 				foreach ( $all_weeks as $week ) {
 					$week_mobile_image = get_option( "week_mobile_image_{$week->term_id}" );
 					$week_title        = $week->name;
@@ -110,7 +110,7 @@
 
 					echo '<li>';
 					echo '<h3>' . $week_title . '</h3>';
-					echo !empty($week_mobile_image) ? '<img src="' . $week_mobile_image . '" alt="' . $week_title . '" class="img-circle" />' : '';
+					echo ! empty( $week_mobile_image ) ? '<img src="' . $week_mobile_image . '" alt="' . $week_title . '" class="img-circle" />' : '';
 					echo '<h2>' . $week_subtitle . '</h2>';
 					echo '<p>' . $week_description . '<p>';
 					echo ! empty( $pdf_asset ) ? '<a href="' . $pdf_asset . '" class="read-more">Download pdf</a>' : '';
@@ -146,7 +146,14 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_first_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_first_block_link; ?>" class="read-more">Download</a>
+						<a href="<?php echo $hidden_third_section_first_block_link; ?>" class="read-more">
+							<?php
+							$hidden_third_section_first_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_first_block_link_title' );
+							if ( ! empty( $hidden_third_section_first_block_link_title ) ) :
+								echo $hidden_third_section_first_block_link_title;
+							endif;
+							?>
+						</a>
 					<?php endif; ?>
 				</li>
 
@@ -164,7 +171,14 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_second_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_second_block_link; ?>" class="read-more">Download</a>
+						<a href="<?php echo $hidden_third_section_second_block_link; ?>" class="read-more">
+							<?php
+							$hidden_third_section_second_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_second_block_link_title' );
+							if ( ! empty( $hidden_third_section_second_block_link_title ) ) :
+								echo $hidden_third_section_second_block_link_title;
+							endif;
+							?>
+						</a>
 					<?php endif; ?>
 				</li>
 
@@ -182,7 +196,14 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_third_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_third_block_link; ?>" class="read-more">Download</a>
+						<a href="<?php echo $hidden_third_section_third_block_link; ?>" class="read-more">
+							<?php
+							$hidden_third_section_third_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_third_block_link_title' );
+							if ( ! empty( $hidden_third_section_third_block_link_title ) ) :
+								echo $hidden_third_section_third_block_link_title;
+							endif;
+							?>
+						</a>
 					<?php endif; ?>
 				</li>
 
@@ -200,7 +221,14 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_fourth_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_fourth_block_link; ?>" class="read-more">Download</a>
+						<a href="<?php echo $hidden_third_section_fourth_block_link; ?>" class="read-more">
+							<?php
+							$hidden_third_section_fourth_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_fourth_block_link_title' );
+							if ( ! empty( $hidden_third_section_fourth_block_link_title ) ) :
+								echo $hidden_third_section_fourth_block_link_title;
+							endif;
+							?>
+						</a>
 					<?php endif; ?>
 				</li>
 
@@ -218,7 +246,14 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_fifth_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_fifth_block_link; ?>" class="read-more">Download</a>
+						<a href="<?php echo $hidden_third_section_fifth_block_link; ?>" class="read-more">
+							<?php
+							$hidden_third_section_fifth_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_fifth_block_link_title' );
+							if ( ! empty( $hidden_third_section_fifth_block_link_title ) ) :
+								echo $hidden_third_section_fifth_block_link_title;
+							endif;
+							?>
+						</a>
 					<?php endif; ?>
 				</li>
 			</ul>

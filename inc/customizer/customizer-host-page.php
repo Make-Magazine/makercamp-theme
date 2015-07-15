@@ -212,6 +212,20 @@ function makercamp_host_customizer( $wp_customize ) {
 			'type'    => 'text',
 		)
 	);
+    $wp_customize->add_setting(   // Link title
+            'host_second_section_first_block_link_title',
+            array(
+                    'default' => $makercamp_defaults_customizer_values[ 'host_second_section_first_block_link_title' ],
+            )
+    );
+    $wp_customize->add_control(
+            'host_second_section_first_block_link_title',
+            array(
+                    'label'   => '1st block link title',
+                    'section' => 'makercamp_host_second_section',
+                    'type'    => 'text',
+            )
+    );
 	$wp_customize->add_setting(   // Picture
 		'host_second_section_first_block_picture',
 		array(
@@ -260,6 +274,20 @@ function makercamp_host_customizer( $wp_customize ) {
 			'type'    => 'text',
 		)
 	);
+    $wp_customize->add_setting(   // Link title
+            'host_second_section_second_block_link_title',
+            array(
+                    'default' => $makercamp_defaults_customizer_values[ 'host_second_section_second_block_link_title' ],
+            )
+    );
+    $wp_customize->add_control(
+            'host_second_section_second_block_link_title',
+            array(
+                    'label'   => '2nd block link title',
+                    'section' => 'makercamp_host_second_section',
+                    'type'    => 'text',
+            )
+    );
 	$wp_customize->add_setting(   // Picture
 		'host_second_section_second_block_picture',
 		array(
@@ -308,6 +336,20 @@ function makercamp_host_customizer( $wp_customize ) {
 			'type'    => 'text',
 		)
 	);
+    $wp_customize->add_setting(   // Link title
+            'host_second_section_third_block_link_title',
+            array(
+                    'default' => $makercamp_defaults_customizer_values[ 'host_second_section_third_block_link_title' ],
+            )
+    );
+    $wp_customize->add_control(
+            'host_second_section_third_block_link_title',
+            array(
+                    'label'   => '3rd block link title',
+                    'section' => 'makercamp_host_second_section',
+                    'type'    => 'text',
+            )
+    );
 	$wp_customize->add_setting(   // Picture
 		'host_second_section_third_block_picture',
 		array(
@@ -356,6 +398,20 @@ function makercamp_host_customizer( $wp_customize ) {
 			'type'    => 'text',
 		)
 	);
+    $wp_customize->add_setting(   // Link title
+        'host_second_section_fourth_block_link_title',
+        array(
+            'default' => $makercamp_defaults_customizer_values[ 'host_second_section_fourth_block_link_title' ],
+        )
+    );
+    $wp_customize->add_control(
+        'host_second_section_fourth_block_link_title',
+        array(
+            'label'   => '4th block link title',
+            'section' => 'makercamp_host_second_section',
+            'type'    => 'text',
+        )
+    );
 	$wp_customize->add_setting(   // Picture
 		'host_second_section_fourth_block_picture',
 		array(
@@ -404,6 +460,20 @@ function makercamp_host_customizer( $wp_customize ) {
 			'type'    => 'text',
 		)
 	);
+    $wp_customize->add_setting(   // Link
+        'host_second_section_fifth_block_link_title',
+        array(
+            'default' => $makercamp_defaults_customizer_values[ 'host_second_section_fifth_block_link_title' ],
+        )
+    );
+    $wp_customize->add_control(
+        'host_second_section_fifth_block_link_title',
+        array(
+            'label'   => '5th block link title',
+            'section' => 'makercamp_host_second_section',
+            'type'    => 'text',
+        )
+    );
 	$wp_customize->add_setting(   // picture
 		'host_second_section_fifth_block_picture',
 		array(
