@@ -2382,7 +2382,7 @@ $(document).ready(function () {
 
   });
 
-  $("ul > li > a").click(function () {
+  $(".mobile-dropdown li a").click(function () {
     var elementClick = $(this).attr("href");
     var destination = $(elementClick).offset().top;
 
