@@ -2441,6 +2441,10 @@ $(document).ready(function () {
     $.post("http://whatcounts.com/bin/listctrl", $('.whatcounts-signup').serialize());
     $('.sign-up-screen').hide();
     $('.thank-you-screen').show();
+    
+    userSignUp = true; // User signed up with whatcounts
+    $.cookie('user_sign_up', true);
+
   });
 
   /**
