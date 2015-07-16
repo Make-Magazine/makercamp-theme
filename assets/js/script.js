@@ -48,7 +48,7 @@ $(document).ready(function () {
 
   });
 
-  $(".mobile-dropdown li a").click(function () {
+  $(".mobile-dropdown li a, .navbar-second li a").click(function () {
     var elementClick = $(this).attr("href");
     var destination = $(elementClick).offset().top;
 
@@ -107,6 +107,10 @@ $(document).ready(function () {
     $.post("http://whatcounts.com/bin/listctrl", $('.whatcounts-signup').serialize());
     $('.sign-up-screen').hide();
     $('.thank-you-screen').show();
+    
+    userSignUp = true; // User signed up with whatcounts
+    $.cookie('user_sign_up', true);
+
   });
 
   /**
