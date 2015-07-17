@@ -399,6 +399,10 @@
 		</div>
 	</section>
 
+	<section class="twitter-instagram">
+		<?php echo do_shortcode('[show_twitter_instagram]'); ?>
+	</section>
+
 	<section class="camp-themes" id="themes">
 		<div class="container-fluid">
 			<?php $third_section_title = makercamp_defaults_customizer( 'third_section_title' );
