@@ -50,7 +50,7 @@
 			</article>
 
 			<article class="thank-you-screen">
-				<div class="watch-video-click-screen col-sm-6 col-sm-offset-3">
+				<div class="watch-video-click-screen col-sm-6 col-lg-4 col-sm-offset-3 col-lg-offset-4">
 					<div>
 						<a href="/current-day">
 							<img class="img-responsive" src="/video-screen-shot.jpq" alt="video still image of next camp video" />
