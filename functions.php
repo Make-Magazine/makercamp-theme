@@ -263,7 +263,7 @@ class Make_Instagram {
     <?php
     // Twitter post
     $output ="<div class=\"item-holder\"><div class=\"container\"><h1>Connect with Maker Camp</h1><h2>Find like-minded campers and discover projects from around the world!</h2><div class=\"row\"><div class=\"col-xs-12 col-sm-4\"><div class=\"social-holder twitter\"><div class=\"title\"><h1><a href=\"http://twitter.com/makercamp\" target=\"_blank\">#makercamp</a></h1></div><a class='twitter-timeline' href='https://twitter.com/MakerCamp' data-widget-id='621839689129967616'>Tweets by @MakerCamp</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script></div></div>";
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script></div></div>";
     
     // Instagram photos
     $output .="<div class=\"col-xs-12 col-sm-8\">
