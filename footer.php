@@ -163,8 +163,7 @@
 								<li><a href="//makezine.com/projects">Make: Projects</a></li>
 								<li><a href="//makezine.com/category/workshop/3d-printing-workshop/">3D Printing Projects</a></li>
 								<li><a href="//makezine.com/category/electronics/arduino/">Arduino Projects</a></li>
-								<li><a href="https://help.makercamp.com/hc/en-us">Maker Camp Help Page</a></li>
-							</ul>
+								<li><a href="//makezine.com/category/electronics/raspberry-pi/">Raspberry Pi Projects</a></li>							</ul>
 						</div>
 					</div>
 				</div>
@@ -182,7 +181,7 @@
 								<li><a href="//makerfaire.com">Maker Faire</a></li>
 								<li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
 								<li><a href="//makercon.com" target="_blank">MakerCon</a></li>
-								<li><a href="//makercamp.com" target="_blank">Maker Camp</a></li>
+								<li><a href="https://help.makercamp.com/hc/en-us">Maker Camp Help Page</a></li>
 							</ul>
 						</div>
 					</div>
