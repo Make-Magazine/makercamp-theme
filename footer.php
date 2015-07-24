@@ -160,10 +160,10 @@
 							<ul class="nav nav-pills nav-stacked">
 								<li><a href="//www.pubservice.com/MK/subscribe.aspx?PC=MK&PK=M3AMZB" target="_blank">Subscribe to
 										Make:</a></li>
-								<li><a href="//makezine.com/projects">Make: Projects</a></li>
-								<li><a href="//makezine.com/category/workshop/3d-printing-workshop/">3D Printing Projects</a></li>
-								<li><a href="//makezine.com/category/electronics/arduino/">Arduino Projects</a></li>
-								<li><a href="//makezine.com/category/electronics/raspberry-pi/">Raspberry Pi Projects</a></li>							</ul>
+								<li><a href="//makezine.com/projects" target="_blank">Make: Projects</a></li>
+								<li><a href="//makezine.com/category/workshop/3d-printing-workshop/" target="_blank">3D Printing Projects</a></li>
+								<li><a href="//makezine.com/category/electronics/arduino/" target="_blank">Arduino Projects</a></li>
+								<li><a href="//makezine.com/category/electronics/raspberry-pi/" target="_blank">Raspberry Pi Projects</a></li>							</ul>
 						</div>
 					</div>
 				</div>
@@ -178,7 +178,7 @@
 						<div class="panel-body">
 							<ul class="nav nav-pills nav-stacked">
 								<li><a href="//makezine.com/blog" target="_blank">Make: News</a></li>
-								<li><a href="//makerfaire.com">Maker Faire</a></li>
+								<li><a href="//makerfaire.com" target="_blank">Maker Faire</a></li>
 								<li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
 								<li><a href="//makercon.com" target="_blank">MakerCon</a></li>
 								<li><a href="https://help.makercamp.com/hc/en-us">Maker Camp Help Page</a></li>
