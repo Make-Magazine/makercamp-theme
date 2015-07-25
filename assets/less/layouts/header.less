@@ -67,6 +67,32 @@
   }
 }
 
+.nav .calendar-button {
+  display: none;
+}
+.nav-calendar-icon {
+  background-color: #3ec075;
+  background-image: url("../../assets/img/calendar_icon.png");
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  top: -37px;
+  border-radius: 50%;
+  margin: 0 0 0 25px;
+}
+.single-camp_day {
+  .nav .calendar-button {
+    display: block;
+  }
+  .navbar-default .navbar-collapse .main-nav li {
+      margin: 6px 5px 6px 0;
+  }
+}
+
 @media (max-width: 998px) {
   .navbar-default {
     .navbar-header {
@@ -84,7 +110,7 @@
         }
 
         li {
-          margin: 6px 0 6px 0;
+          margin: 10px 0 6px 0;
 
           a {
             padding: 10px 13.5px;
@@ -96,6 +122,16 @@
     .sponsors-header {
       right: 10px;
     }
+  }
+  .single-camp_day .navbar-default .navbar-collapse .main-nav li {
+    margin: 10px 0 6px 0;
+  }
+}
+
+@media (max-width: 890px) {
+  .single-camp_day .navbar-default .navbar-collapse .main-nav li a {
+    padding: 11px 10px;
+    font-size: 11px;
   }
 }
 
