@@ -15,14 +15,25 @@
   .navbar-nav > li > a {
     padding: 34px 15px 33px 15px;
     color: #1a1a1a;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 20px;
     text-align: left;
     text-transform: uppercase;
   }
 }
-
+@media all and (max-width: 1199px) and (min-width: 992px) {
+  .navbar-second .navbar-nav > li > a {
+    padding: 34px 10px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 991) {
+  .navbar-second .navbar-nav > li > a {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+}
 @media (max-width: @container-sm) {
   .navbar-second {
     display: none;

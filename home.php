@@ -399,7 +399,7 @@
 		</div>
 	</section>
 
-	<section class="twitter-instagram">
+	<section class="twitter-instagram" id="connect">
 		<?php echo do_shortcode('[show_twitter_instagram]'); ?>
 	</section>
 
