@@ -88,6 +88,12 @@
   .nav .calendar-button {
     display: block;
   }
+  .nav .calendar-button:before {
+    content:url("../../assets/img/calendar-icon.png");
+    position: absolute;
+    left: -17px;
+    top: 12px;
+  }
   .navbar-default .navbar-collapse .main-nav li {
       margin: 6px 5px 6px 0;
   }
@@ -125,6 +131,10 @@
   }
   .single-camp_day .navbar-default .navbar-collapse .main-nav li {
     margin: 10px 0 6px 0;
+  }
+  .single-camp_day .nav .calendar-button:before {
+    left: -20px;
+    top: 7px;
   }
 }
 
@@ -283,5 +293,8 @@
       background-size: 90px;
       background-position: right center;
     }
+  }
+  .single-camp_day .nav .calendar-button:before {
+    display: none;
   }
 }
