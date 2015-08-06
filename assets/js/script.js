@@ -93,10 +93,7 @@ $(document).ready(function () {
     userSignUp = true; // User already have account
     $.cookie('user_sign_up', true);
 
-    if ($(document).width() < 769) {
-      hero_section.addClass('show-content');
-      $('.week-modal-wrapper').show();
-    }
+    $('.week-modal-wrapper').hide();
   });
 
   /**
