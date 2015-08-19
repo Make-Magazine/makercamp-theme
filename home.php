@@ -1,54 +1,56 @@
 <?php get_header(); ?>
 
 	<section class="hero show-content" id="hero">
-		<div class="animation-wrapper">
+
+		<!-- SAVE THIS IF WE DECIDE TO USE IT NEXT CAMP -->
+		<!--div class="animation-wrapper">
 			<div class="align">
 				<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>animation.png"
 					 alt="Maker Camp animation" usemap="#animation" class="transparent-hero">
 			</div>
-		</div>
+		</div-->
 
 		<div class="content">
-
-			<article class="start-screen">
-				<h1>Go to camp!</h1>
-
-				<a class="sign-up" href="#">Sign up to get started, It’s Free!</a>
-				<a class="sign-in" href="#">I’ve already signed up. Get me started!</a>
+			<!-- POST CAMP MESSAGE -->
+			<article class="post-camp-message">
+				<h1>Thanks for joining us for Maker Camp Summer 2015!</h1>
+				<h2>But it's not over - camp content is still live! You can watch, re-watch, and participate anytime!</h2>
+				<h2>Keep sharing your projects with the Maker Camp Community, and stay tuned for exciting Maker Camp news!</h2>
+				<div class="col-xs-12">
+					<a class="blue-button clearfix" href="/#themes">Explore Camp Content</a>
+				</div>
 			</article>
 
-			<article class="sign-up-screen">
+			<!-- WELCOME MESSAGE -->
+			<!--article class="start-screen">
+				<h1>Go to camp!</h1>
+				<a class="sign-up" href="#">Sign up to get started, It’s Free!</a>
+				<a class="sign-in" href="#">I’ve already signed up. Get me started!</a>
+			</article-->
+
+			<!-- EMAIL ACQUISITION SCREEN -->
+			<!--article class="sign-up-screen">
 				<h1>Welcome to Maker Camp!</h1>
-
-				<p>
-					Maker Camp starts right here on makercamp.com on July 6.
-				</p>
-
-				<p>
-					Sign up to get updates and fun alerts!
-				</p>
-
+				<p>Maker Camp starts right here on makercamp.com on July 6.</p>
+				<p>Sign up to get updates and fun alerts!</p>
 				<form action="http://whatcounts.com/bin/listctrl" method="POST" id="home-page-sign-up-form"
 					  class="whatcounts-signup">
 					<input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
 					<input type="hidden" name="cmd" value="subscribe" />
 					<input type="hidden" name="goto" value="http://makercamp.com" />
 					<input type="hidden" name="errors_to" value="http://makercamp.com" />
-
 					<input type="hidden" name="custom_source" value="Home Page" />
 					<input type="hidden" name="custom_incentive" value="none" />
 					<input type="hidden" name="custom_host" value="makercamp.com" />
 					<input type="hidden" name="custom_url" value="Makercamp" />
-
 					<input type="text" id="first" name="name" required="" placeholder="Your Name..." />
 					<input type="email" id="email" name="email" required="" placeholder="Your E-mail..." />
-
 					<input type="hidden" id="format_plain" name="format" value="plain">
-
 					<input type="submit" value="Subscribe" />
 				</form>
-			</article>
+			</article-->
 
+			<!-- THANK YOU SCREEN- WATCH VIDEO/EXPLORE MAP -->
 			<article class="thank-you-screen">
 				<div class="watch-video-click-screen col-xs-10 col-sm-6 col-lg-4 col-xs-offset-1 col-sm-offset-3 col-lg-offset-4">
 					<div>
@@ -69,7 +71,7 @@
 		$all_weeks = get_terms( 'week' );
 		?>
 
-		<map id="animation" name="animation" class="animated-areas">
+		<!--map id="animation" name="animation" class="animated-areas">
 			<?php foreach ( $all_weeks as $week ) {
 				/**
 				 * Week's slug
@@ -84,7 +86,7 @@
 					  alt="<?php echo $week_slug; ?>" title="" href="#" shape="poly"
 					  coords="<?php echo $week_anim_coords; ?>" />
 			<?php } ?>
-		</map>
+		</map-->
 
 		<?php
 		/**
@@ -152,7 +154,7 @@
 			 */
 			$week_description = get_option( "week_long_description_{$week->term_id}" ); ?>
 
-			<div class="week <?php echo $__is_current ? 'current-week' : ''; ?> <?php echo $week_slug; ?>"></div>
+			<!--div class="week <?php echo $__is_current ? 'current-week' : ''; ?> <?php echo $week_slug; ?>"></div>
 
 			<div class="week-modal-wrapper week-<?php echo $week_slug; ?>">
 				<div class="week-modal">
@@ -178,12 +180,12 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div-->
 			<?php
 		}
 		?>
 
-		<a href="#second-navbar" class="anchors-to-section read-more"></a>
+		<!--a href="#second-navbar" class="anchors-to-section read-more"></a>
 
 		<a href="#second-navbar" class="anchors-to-section">
 			<div class="arrows">
@@ -191,7 +193,7 @@
 					<div class="arrow-background"></div>
 				</div>
 			</div>
-		</a>
+		</a-->
 	</section>
 
 	<section class="navbar-second" id="second-navbar">
@@ -438,11 +440,28 @@
 					$week_title        = $week->name;
 					$week_subtitle     = $week->description;
 					$week_description  = get_option( "week_long_description_{$week->term_id}" );
+					$week_slug = $week->slug;
+					// $posts_unlocked = get_posts( array(
+					// 	'post_type'  => 'camp_day',
+					// 	'meta_key'   => '_lock_status',
+					// 	'meta_value' => 1,
+					// 	'showposts'  => -1,
+					// 	'tax_query'  => array(
+					// 		array(
+					// 			'taxonomy'         => 'week',
+					// 			'field'            => 'id',
+					// 			'terms'            => $week->term_id,
+					// 			'include_children' => FALSE
+					// 		)
+					// 	)
+					// ) );
+					// $week_permalink = get_permalink( $posts_unlocked[ 0 ]->ID );
 					echo '<li>';
 					echo '<h4>' . $week_title . '</h4>';
-					echo '<img src="' . $week_mobile_image . '" alt="week title">';
+					echo '<a href="/' . $week_slug . '/day-1"><img src="' . $week_mobile_image . '" alt="week title"></a>';
 					echo '<h3>' . $week_subtitle . '</h3>';
 					echo '<p>' . $week_description . '<p>';
+					echo '<a href="/' . $week_slug . '/day-1" class="read-more">Start ' . $week_title . '</a>';
 					echo '</li>';
 				}
 				?>

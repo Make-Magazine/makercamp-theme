@@ -1,8 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
-
-  background-image: url("../../assets/img/animation/static.gif");
+  background-image: url("../../assets/img/animation/static-background.jpg");
   text-align: center;
 
   &.show-content:before {
@@ -10,12 +9,9 @@
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background: rgba(0, 0, 0, 0.5);
-
     z-index: 2;
   }
 
@@ -103,9 +99,7 @@
   .content {
     position: absolute;
     top: 0;
-
     width: 100%;
-
     z-index: 5;
 
     article {
@@ -113,8 +107,9 @@
     }
 
     .start-screen {
-      display: block;
-      padding: 170px 0 40px;
+      padding: 70px 0 40px;
+      width: 900px;
+      margin: 0 auto;
 
       @media (max-width: @container-sm) {
         padding: 100px 25.5px 40px;
@@ -122,8 +117,7 @@
 
       h1 {
         margin-bottom: 68px;
-
-        font-size: 80px;
+        font-size: 50px;
 
         @media (max-width: @container-sm) {
           font-size: 48px;
@@ -139,6 +133,60 @@
         color: #ffffff;
         font-size: 16px;
         font-weight: 600;
+      }
+    }
+
+    .post-camp-message {
+      display: block;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 60px 0 0 0;
+
+      h1 {
+        color: #fff;
+        font-size: 50px;
+        @media (max-width: @container-sm) {
+          font-size: 40px;
+          padding: 0 15px;
+        }
+      }
+
+      h2 {
+        color: #fff;
+        @media (max-width: @container-sm) {
+          font-size: 20px;
+          padding: 0 15px;
+        }
+      }
+
+      a {
+        color:#00bff3;
+      }
+
+      a:hover {
+        color:#00bff3;
+      }
+
+      .blue-button {
+        display: inline-block;
+        padding: 15px 30px;
+        border-radius: 40px;
+        overflow: hidden;
+        color: #ffffff;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #00bff3;
+        margin-top: 20px;
+        font-weight: 600;
+        border: 3px solid #00bff3;
+        background-color: transparent!important;
+
+        @media (max-width: @container-sm) {
+          padding: 15px;
+          font-size: 17px;
+          max-width: 220px;
+        }
       }
     }
 
@@ -209,7 +257,6 @@
     .thank-you-screen {
       h1 {
         margin-bottom: 35px;
-
         font-size: 60px;
 
         @media (max-width: @container-sm) {
@@ -232,7 +279,6 @@
     .thank-you-screen {
       p {
         max-width: 655px;
-
         display: inline-block;
       }
       .watch-video-click-screen {
@@ -286,15 +332,12 @@
       input[type="submit"] {
         display: inline-block;
         padding: 15px 30px;
-
         border-radius: 40px;
         overflow: hidden;
-
         color: #ffffff;
         font-size: 20px;
         text-transform: uppercase;
         text-decoration: none;
-
         background: #00bff3;
 
         @media (max-width: @container-sm) {
@@ -311,21 +354,17 @@
     display: none;
     position: absolute;
     top: 170px;
-
     min-height: 185px;
     width: 100%;
-
     z-index: 5;
 
     .week-modal {
       max-width: 670px;
       margin: 0 auto;
-
       background: rgba(60, 85, 118, 0.9);
       border-radius: 160px;
       border-top-right-radius: 25px;
       border-bottom-right-radius: 25px;
-
       text-align: left;
 
       .week-modal-inner {
