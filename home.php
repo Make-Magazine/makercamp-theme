@@ -13,9 +13,9 @@
 		<div class="content">
 			<!-- POST CAMP MESSAGE -->
 			<article class="post-camp-message">
-				<h1>Thanks for joining us for Maker Camp Summer 2015!</h1>
-				<h2>But it's not over - camp content is still live! You can watch, re-watch, and participate anytime!</h2>
-				<h2>Keep sharing your projects with the Maker Camp Community, and stay tuned for exciting Maker Camp news!</h2>
+				<h1>Maker Camp Continues!</h1>
+				<!--h2>You can watch, re-watch, and participate anytime!</h2-->
+				<h2>Keep sharing your projects with the Maker Camp Community, and stay tuned for exciting news!</h2>
 				<div class="col-xs-12">
 					<a class="blue-button clearfix" href="/#themes">Explore Camp Content</a>
 				</div>
