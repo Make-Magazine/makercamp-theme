@@ -13,11 +13,11 @@
 		<div class="content">
 			<!-- POST CAMP MESSAGE -->
 			<article class="post-camp-message">
-				<h1>Maker Camp Continues!</h1>
-				<!--h2>You can watch, re-watch, and participate anytime!</h2-->
-				<h2>Keep sharing your projects with the Maker Camp Community, and stay tuned for exciting news!</h2>
+				<h1>Announcing Maker Camp<br />After-School!</h1>
+				<h2>Keep making year round with the Maker Camp team! On Monday, October 5th we kick off our 10-week Fall session of our After-School program.</h2>
 				<div class="col-xs-12">
-					<a class="blue-button clearfix" href="/#themes">Explore Camp Content</a>
+					<a class="sign-up" href="#">Sign up for the After-School program!</a>
+					<a class="blue-button clearfix" href="/#themes">Explore Previous Camp Programming</a>
 				</div>
 			</article>
 
@@ -29,10 +29,10 @@
 			</article-->
 
 			<!-- EMAIL ACQUISITION SCREEN -->
-			<!--article class="sign-up-screen">
-				<h1>Welcome to Maker Camp!</h1>
-				<p>Maker Camp starts right here on makercamp.com on July 6.</p>
-				<p>Sign up to get updates and fun alerts!</p>
+			<article class="sign-up-screen">
+				<h1>Sign up for the After-School program!</h1>
+				<p>Keep making year round with the Maker Camp team!</p>
+				<p>On Monday, October 5th we kick off our 10-week Fall session of our After-School program.</p>
 				<form action="http://whatcounts.com/bin/listctrl" method="POST" id="home-page-sign-up-form"
 					  class="whatcounts-signup">
 					<input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
@@ -48,20 +48,14 @@
 					<input type="hidden" id="format_plain" name="format" value="plain">
 					<input type="submit" value="Subscribe" />
 				</form>
-			</article-->
+			</article>
 
 			<!-- THANK YOU SCREEN- WATCH VIDEO/EXPLORE MAP -->
 			<article class="thank-you-screen">
-				<div class="watch-video-click-screen col-xs-10 col-sm-6 col-lg-4 col-xs-offset-1 col-sm-offset-3 col-lg-offset-4">
-					<div>
-						<a href="/current-day">
-							<img class="img-responsive" src="/video-screen-shot.jpq" alt="video still image of next camp video" />
-						</a>
-					</div>
-					<a class="go-to-camp" href="/current-day">WATCH TODAY&#39;S VIDEO!</a>
-				</div>
+
+				<h1>Thanks for signing up for the After-School program!</h1>
 				<div class="col-xs-12">
-					<a class="start-now clearfix" href="#">OR EXPLORE THE MAP</a>
+					<a class="blue-button clearfix" href="/#themes">Explore Previous Camp Programming</a>
 				</div>
 
 			</article>

@@ -2411,6 +2411,7 @@ $(document).ready(function () {
 
     $('.start-screen').hide();
     $('.arrow-background').hide();
+    $('.post-camp-message').hide();
     $('.sign-up-screen').show();
   });
 
@@ -2792,7 +2793,7 @@ $(document).ready(function () {
   }
 
   /**
-   * Scroll up to sign up form or Show message You are already Sig Up!
+   * Scroll up to sign up form or Show message You are already Signed Up!
    */
   $(document).on('click', '.sign-in-trigger', function (e) {
     // e.preventDefault();

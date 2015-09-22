@@ -19,7 +19,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <!-- Begin Inspectlet Embed Code -->
-<script type="text/javascript" id="inspectletjs">
+<!--script type="text/javascript" id="inspectletjs">
 window.__insp = window.__insp || [];
 __insp.push(['wid', 1210603604]);
 (function() {
@@ -27,7 +27,7 @@ function __ldinsp(){var insp = document.createElement('script'); insp.type = 'te
 document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', __ldinsp) : window.addEventListener('load', __ldinsp, false)) : __ldinsp();
 
 })();
-</script>
+</script-->
 <!-- End Inspectlet Embed Code -->
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">

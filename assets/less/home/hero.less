@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
-  background-image: url("../../assets/img/animation/static-background.jpg");
+  background-image: url("../../assets/img/campfire-banner.jpg");
   text-align: center;
 
   &.show-content:before {
@@ -159,12 +159,20 @@
         }
       }
 
+      .col-xs-12 {
+        padding-top: 15px;
+      }
+
       a {
         color:#00bff3;
       }
 
       a:hover {
         color:#00bff3;
+      }
+
+      .sign-up:hover {
+        color:#fff;
       }
 
       .blue-button {
@@ -185,7 +193,6 @@
         @media (max-width: @container-sm) {
           padding: 15px;
           font-size: 17px;
-          max-width: 220px;
         }
       }
     }
@@ -242,7 +249,9 @@
     }
 
     .thank-you-screen {
-      padding: 40px;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 60px 0 0 0;
 
       @media (max-width: @container-sm) {
         padding: 50px 10px 40px;
@@ -250,6 +259,27 @@
 
       .start-now {
         margin-top: 40px;
+      }
+
+      .blue-button {
+        display: inline-block;
+        padding: 15px 30px;
+        border-radius: 40px;
+        overflow: hidden;
+        color: #ffffff;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #00bff3;
+        margin-top: 20px;
+        font-weight: 600;
+        border: 3px solid #00bff3;
+        background-color: transparent!important;
+
+        @media (max-width: @container-sm) {
+          padding: 15px;
+          font-size: 17px;
+        }
       }
     }
 
@@ -263,6 +293,10 @@
           margin-bottom: 15px;
           font-size: 48px;
         }
+      }
+
+      h2 {
+        color: #fff;
       }
 
       p {
@@ -318,7 +352,8 @@
 
     .start-screen,
     .sign-up-screen,
-    .thank-you-screen {
+    .thank-you-screen,
+    .post-camp-message {
       text-align: center;
 
       h1 {
@@ -343,11 +378,9 @@
         @media (max-width: @container-sm) {
           padding: 15px;
           font-size: 17px;
-          max-width: 220px;
         }
       }
     }
-
   }
 
   .week-modal-wrapper {
