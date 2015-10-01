@@ -33,10 +33,7 @@ document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('on
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src="//use.typekit.net/zaa4pqy.js"></script>
 
-<script>try {
-		Typekit.load();
-	} catch (e) {
-	}</script>
+<script>try {Typekit.load();} catch (e) {}</script>
 
 <?php wp_head(); ?>
 
@@ -59,56 +56,64 @@ document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('on
       </div>   
     </div>
 
-	<header class="navbar navbar-default">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#navbar-collapse" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="fa fa-close"></span>
-				</button>
-				<a href="<?php bloginfo( 'url' ); ?>" class="logo"><img src="<?php echo get_template_directory_uri() . '/assets/img/Logo.jpg' ?>" alt="Maker Camp"></a>
-			</div>
+    <!-- Header area -->
+    <header class="container">
+      <div class="row">
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav main-nav">
-                    <li class="button mobile-dropdown">
-                        <a href="#">Basecamp<span class="fa fa-chevron-down"></span><span class="fa fa-chevron-up"></span></a>
-                        <?php
-                        if (is_home()) {
-                            wp_nav_menu( array (
-                                'menu'        => 'Second nav',
-                                'menu_class'  => 'nav navbar-nav dropdown',
-                                'container'   => ''
-                            ) );
-                        } else {
-                            wp_nav_menu( array (
-                                    'menu'        => 'Header dropdown menu',
-                                    'menu_class'  => 'nav navbar-nav dropdown',
-                                    'container'   => ''
-                            ) );
-                        };
-                        ?>
-                    </li>
-                <?php wp_nav_menu( array(
-                        'theme_location'  => 'primary_menu',
-                        'menu'       => 'Header main menu',
-                        'menu_class' => 'nav navbar-nav main-nav',
-                        'items_wrap' => '%3$s',
-                        'container'  => ''
-                ) );
-                ?>
-                </ul>
-			</div>
+        <!-- LOGO & TAG LINE -->
+        <div class="col-md-2 col-sm-3 col-xs-7 text-center">
+          <a href="/">
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/Logo.jpg' ?>" class="header-logo img-responsive" />
+          </a>
+        </div>
 
-			<!-- /.navbar-collapse -->
-			<span class="sponsors-header"></span>
-		</div>
+        <!-- MENUS -->
+        <nav class="header-top-nav col-md-7 col-sm-9 col-xs-5">
+          <div class="row">
+            <a class="menu-bar visible-xs-block" data-toggle="collapse" href="#mc-menu">
+              <span class="bars"></span>            
+            </a> 
+            <!-- Main Menu -->
+            <?php
+              wp_nav_menu( array(
+                  'menu'              => 'Header main menu',
+                  'theme_location'    => 'primary_menu',
+                  'depth'             => 2,
+                  'container'         => 'div',
+                  'container_class'   => 'collapse navbar-collapse',
+                  'menu_class'        => 'nav navbar-nav',
+                  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                  'walker'            => new wp_bootstrap_navwalker())
+              );
+            ?>
+            <!-- Mobile Menu -->
+            <div class="hidden-sm hidden-md hidden-lg" id="mc-menu-container">
+              <?php
+                wp_nav_menu( array(
+                    'menu'              => 'Mobile',
+                    'theme_location'    => 'primary',
+                    'depth'             => 1,
+                    'container'         => 'div',
+                    'container_class'   => 'collapse navbar-collapse',
+                    'container_id'      => 'mc-menu',
+                    'menu_class'        => 'nav navbar-nav',
+                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                    'walker'            => new wp_bootstrap_navwalker())
+                );
+              ?>
+            </div>
+          </div>
+        </nav>
 
-		<!-- /.container-fluid -->
-	</header>
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="social-network-container col-md-3 hidden-sm hidden-xs text-center">
+          <ul class="social-network social-circle">
+              <li><a href="https://www.facebook.com/makemagazine?_rdr" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/make" class="icoTwitter" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
+              <li><a href="https://instagram.com/makemagazine/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" target="_blank"></i></a></li>
+              <li><a href="https://plus.google.com/communities/107377046073638428310" class="icoGoogle-plus" title="Google+"><i class="fa fa-google-plus" target="_blank"></i></a></li>
+          </ul>    
+        </div>
+
+      </div> <!-- row -->  
+    </header>

@@ -144,6 +144,11 @@ $makercamp_defaults_customizer_values = array(
 	'section_first_text_second'                    => 'Campers make projects, go on virtual field trips, and interact with our counselors wherever they are including: from home, on the road, or at local community spaces like public libraries, Boys and Girls Clubs, Computer Clubhouses, 4-H Clubs, scouting groups, and more. Past field trips have included virtual visits to NASA, Disney, LEGO, the White House, Blue Man Group, and Pixar.',
 	'section_first_text_third'                     => 'Maker Camp is produced by Maker Media, the people behind Maker Faire and Make: magazine.',
 	'about_second_section_title'                   => 'Our Camp Crew',
+	'sponsor_thanks_title'                   			 => 'Sponsor Thanks',
+	'sponsor_thanks_first_link'                    => '/',
+	'sponsor_thanks_first_picture'                 => get_template_directory_uri() . '/public/assets/img/project_1.png',
+	'sponsor_thanks_second_link'                   => '/',
+	'sponsor_thanks_second_picture'                => get_template_directory_uri() . '/public/assets/img/project_1.png',
 	/**
 	 * hidden page
 	 */

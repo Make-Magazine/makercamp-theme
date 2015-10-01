@@ -24,7 +24,18 @@
 		</div>
 	</section>
 
-	<section class="camps-map">
+<section class="navbar-second" id="second-navbar">
+	<div class="container-fluid">
+		<div class="menu-second-nav-container">
+			<ul class="nav navbar-nav">
+				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#find-a-campsite">Find A Campsite</a></li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#host-a-campsite">Host A Campsite</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+	<section class="camps-map" id="find-a-campsite">
 		<?php
 		$title_before_map = makercamp_defaults_customizer( 'title_before_map' );
 		if ( ! empty( $title_before_map ) ): ?>
@@ -38,24 +49,6 @@
 			?>
 			<iframe src="<?php echo $map_embed_link; ?>"></iframe>
 		<?php endif; ?>
-		<div class="container-fluid">
-
-			<?php
-			$title_after_map = makercamp_defaults_customizer( 'title_after_map' );
-			if ( ! empty( $title_after_map ) ) :
-				?>
-				<h1 class="hide-in-mobile container-fluid">
-					<?php echo $title_after_map; ?>
-				</h1>
-			<?php endif; ?>
-
-			<?php $description_after_map = makercamp_defaults_customizer( 'description_after_map' );
-			if ( ! empty( $description_after_map ) ):
-				?>
-				<p><?php echo $description_after_map; ?></p>
-			<?php endif; ?>
-
-		</div>
 	</section>
 
 <?php
@@ -178,14 +171,122 @@ usort( $addresses, function ( $a, $b ) {
 		</div>
 	</section>
 
+	<section class="camps-map">
+		<div class="container-fluid">
+
+			<?php
+			$title_after_map = makercamp_defaults_customizer( 'title_after_map' );
+			if ( ! empty( $title_after_map ) ) :
+				?>
+				<h1 class="container-fluid">
+					<?php echo $title_after_map; ?>
+				</h1>
+			<?php endif; ?>
+
+			<?php $description_after_map = makercamp_defaults_customizer( 'description_after_map' );
+			if ( ! empty( $description_after_map ) ):
+				?>
+				<p><?php echo $description_after_map; ?></p>
+			<?php endif; ?>
+
+		</div>
+	</section>
+
+  <section class="host-a-camp-hero" id="host-a-campsite">
+    <article>
+      <?php
+        $host_hero_title = makercamp_defaults_customizer('host_hero_title');
+        if (!empty($host_hero_title)) :
+      ?>
+      <h1><?php echo $host_hero_title ?></h1>
+      <?php
+        endif;
+
+        $host_hero_text = makercamp_defaults_customizer('host_hero_text');
+        if (!empty($host_hero_text)) :
+      ?>
+      <p><?php echo $host_hero_text ?></p>
+      <?php
+          endif;
+
+        $host_hero_link = makercamp_defaults_customizer('host_hero_link');
+        if (!empty($host_hero_link)) :
+      ?>
+      <a class="apply-now" href="<?php echo $host_hero_link ?>">
+        <?php
+          $host_hero_link_title = makercamp_defaults_customizer('host_hero_link_title');
+          if (!empty($host_hero_link_title)) :
+            echo $host_hero_link_title;
+          endif;
+        ?>
+      </a>
+      <?php endif; ?>
+    </article>
+  </section>
+
+  <section class="plane-future">
+    <div class="container-fluid">
+      <?php $host_first_section_title = makercamp_defaults_customizer('host_first_section_title');
+      if (!empty($host_first_section_title)) :
+        ?>
+        <h1><?php echo $host_first_section_title; ?></h1>
+      <?php endif; ?>
+
+      <ul class="plane-future-steps">
+        <li>
+          <span class="first-step">1</span>
+
+          <?php $host_first_section_first_text = makercamp_defaults_customizer('host_first_section_first_text');
+          if (!empty($host_first_section_first_text)) :
+            ?>
+            <p><?php echo $host_first_section_first_text; ?></p>
+          <?php endif; ?>
+
+        </li>
+        <li>
+          <span class="second-step">2</span>
+
+          <?php $host_first_section_second_text = makercamp_defaults_customizer('host_first_section_second_text');
+          if (!empty($host_first_section_second_text)) :
+            ?>
+            <p><?php echo $host_first_section_second_text; ?></p>
+          <?php endif; ?>
+
+        </li>
+      </ul>
+      <ul class="plane-future-steps">
+        <li>
+          <span class="third-step">3</span>
+
+          <?php $host_first_section_third_text = makercamp_defaults_customizer('host_first_section_third_text');
+          if (!empty($host_first_section_third_text)) :
+            ?>
+            <p><?php echo $host_first_section_third_text; ?></p>
+          <?php endif; ?>
+
+        </li>
+        <li>
+          <span class="fourth-step">4</span>
+
+          <?php $host_first_section_fourth_text = makercamp_defaults_customizer('host_first_section_fourth_text');
+          if (!empty($host_first_section_fourth_text)) :
+            ?>
+            <p><?php echo $host_first_section_fourth_text; ?></p>
+          <?php endif; ?>
+
+        </li>
+      </ul>
+    </div>
+  </section>
+
 	<!-- Quick fix for URLs that are missing the http and become 404s -->
-	<script>
-		$(document).ready(function () {
-			$('a:not([href^="http://"]):not([href^="https://"])').each(function () {
-				$(this).attr('href', 'http://' + $(this).attr('href'));
-			})
-		})
-	</script>
+	// <script>
+	// 	$(document).ready(function () {
+	// 		$('a:not([href^="http://"]):not([href^="https://"])').each(function () {
+	// 			$(this).attr('href', 'http://' + $(this).attr('href'));
+	// 		})
+	// 	})
+	// </script>
 	<!-- End Quick fix for URLs that are missing the http and become 404s -->
 
 <?php get_footer(); ?>
