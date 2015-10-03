@@ -8,8 +8,8 @@ function makercamp_map_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'makercamp_section_find_camp',
 		array(
-			'title'       => 'Find a Camp page settings',
-			'description' => 'This is a settings for Map page.',
+			'title'       => 'Find a Camp, settings',
+			'description' => 'Top part of the Campsites page',
 			'priority'    => 206,
 		)
 	);

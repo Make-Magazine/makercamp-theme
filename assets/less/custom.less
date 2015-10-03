@@ -1005,3 +1005,19 @@ Helper classes and others
 .no-margins {
   margin: 0 !important;
 }
+// Youtube, Vimeo, and Google Maps responsiveness 
+// To use: place div around iframe with one of these classes
+.embed-youtube, .embed-vimeo, .googlemaps {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  margin-bottom: 15px;
+  position: relative;
+  height: 0;
+}
+.embed-youtube iframe, .embed-vimeo iframe, .googlemaps iframe, .embed-resp object {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

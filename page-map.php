@@ -280,7 +280,7 @@ usort( $addresses, function ( $a, $b ) {
   </section>
 
 	<!-- Quick fix for URLs that are missing the http and become 404s -->
-	// <script>
+	<script>
 	// 	$(document).ready(function () {
 	// 		$('a:not([href^="http://"]):not([href^="https://"])').each(function () {
 	// 			$(this).attr('href', 'http://' + $(this).attr('href'));

@@ -1,4 +1,6 @@
-/* TOP BRAND BAR */
+/*=========================
+  TOP BRAND BAR
+ ======================= */
 .top-header-bar-brand {
   background-color: #F0F0F0;
   .container {
@@ -36,69 +38,34 @@
   }
 }
 
-.navbar-default {
-  margin: 0;
-  border-radius: 0;
-  border: none;
-  background: #223b6d;
 
-  .navbar-header {
-    .logo {
-      float: left;
-      width: 171px;
-      height: 53px;
-      margin: 5px 0 5px 20px;
-
-      img {
-        max-width: 100%;
-      }
-    }
+/*=========================
+  NEW HEDADER
+ ======================= */
+header {
+  margin-top: 20px;
+}
+.red {
+  color: #ff0000;
+}
+.header-top-nav {
+  margin-top: 20px;
+  a {
+    color: #4F4F4F;
   }
-
-  .navbar-collapse {
-    float: right;
-
-    .main-nav {
-      margin-right: 190px;
-
-      .mobile-dropdown {
-        display: none;
-      }
-
-      li {
-        margin: 6px 30px 6px 0;
-
-        a {
-          font-weight: 600;
-          font-size: 14px;
-          color: #ffffff;
-          text-transform: uppercase;
-          &:hover {
-            color: #67cff4;
-          }
-        }
-      }
-    }
-  }
-
-  .sponsors-header {
-    background-image: url("../assets/img/sponsors_nav.png");
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 153px;
-    float: right;
-    width: 171px;
-    height: 53px;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 30px;
-
-  }
-  .container-fluid {
-    position: relative;
-    overflow: hidden;
-  }
+}
+#menu-header-main-menu li a {
+  border-bottom: 3px solid transparent;
+  padding-bottom: 12px;
+  transition: border-color 0.2s ease;
+  text-transform: uppercase;
+}
+#menu-header-main-menu li a:hover,
+#menu-header-main-menu li a:focus {
+  background-color: transparent;
+  border-bottom: 3px solid #F40B0B;
+  padding-bottom: 12px;
+  transition: border-color 0.2s ease;
 }
 
 .nav .calendar-button {
@@ -133,220 +100,36 @@
   }
 }
 
-@media (max-width: 998px) {
-  .navbar-default {
-    .navbar-header {
-      .logo {
-        margin-left: 0;
-      }
-    }
 
-    .navbar-collapse {
-      .main-nav {
-        margin-right: 130px;
-
-        .mobile-dropdown {
-          display: none;
-        }
-
-        li {
-          margin: 10px 0 6px 0;
-
-          a {
-            padding: 10px 13.5px;
-          }
-        }
-      }
-    }
-
-    .sponsors-header {
-      right: 10px;
-    }
-  }
-  .single-camp_day .navbar-default .navbar-collapse .main-nav li {
-    margin: 10px 0 6px 0;
-  }
-  .single-camp_day .nav .calendar-button:before {
-    left: -20px;
-    top: 7px;
-  }
+/* TEMP MOBILE NAV */
+header .bars {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+    box-shadow: 0 5px 0 #333, 0 10px 0 #333;
 }
-
-@media (max-width: 890px) {
-  .single-camp_day .navbar-default .navbar-collapse .main-nav li a {
-    padding: 11px 10px;
-    font-size: 11px;
-  }
+header .menu-bar {
+    position: absolute;
+    right: 20px;
+    height: auto;
+    padding: 10px 10px 20px 10px;
 }
-
-@media (max-width: 767px) {
-  .navbar-default {
-    position: relative;
-
-    .navbar-header {
-      .navbar-toggle {
-        position: absolute;
-        left: 0;
-
-        background: none;
-        border: none;
-
-        .icon-bar {
-          display: none;
-          height: 3px;
-
-          background-color: #ffffff;
-        }
-
-        .fa-close {
-          color: #ffffff;
-          font-size: 26px;
-          line-height: 0;
-        }
-
-        &.collapsed {
-          .icon-bar {
-            display: block;
-          }
-
-          .fa-close {
-            display: none;
-          }
-        }
-
-        &:hover,
-        &:focus,
-        &:active {
-          background: none;
-          box-shadow: none;
-        }
-      }
-
-      .logo {
-        float: none;
-        display: block;
-        width: 100%;
-        height: 44px;
-        margin: 5px 0;
-        text-align: center;
-        img {
-          width: 141px;
-        }
-      }
-    }
-
-    .navbar-collapse {
-      float: none;
-      padding: 9px;
-      .main-nav {
-        margin: 0;
-        li {
-          margin: 0;
-          a {
-            margin-bottom: 6px;
-            font-size: 16px;
-            background-color: #3299c2;
-            &:hover {
-              color: #fff;
-            }
-
-          }
-        }
-
-        .mobile-dropdown {
-          display: block;
-
-          & > a {
-            .fa {
-              float: right;
-              margin: 4px 0;
-              font-size: 11px;
-            }
-
-            .fa-chevron-up {
-              display: none;
-            }
-
-            &.active {
-              .fa-chevron-down {
-                display: none;
-              }
-              .fa-chevron-up {
-                display: block;
-              }
-            }
-          }
-
-          .dropdown {
-            display: none;
-            margin: 0;
-
-            li a {
-              font-weight: 700;
-              color: #223b6d;
-              text-transform: capitalize;
-              background-color: #d0ecf4;
-            }
-          }
-        }
-      }
-
-      .social {
-        margin: 15px 0 0;
-        text-align: center;
-        li {
-          background: none;
-          margin: 0 12px;
-
-          a {
-            font-size: 20px;
-
-            .fa {
-              color: white;
-            }
-          }
-        }
-      }
-    }
-
-    .sponsors-header {
-      right: 0px;
-      background-image: url("../assets/img/Sponsors_Mobile.png");
-      background-size: 90px;
-      background-position: right center;
-    }
-  }
-  .single-camp_day .nav .calendar-button:before {
-    display: none;
-  }
-}
-
-
-/* NEW HEDADER */
-header {
-  margin-top: 20px;
-}
-.red {
-  color: #ff0000;
-}
-.header-top-nav {
-  margin-top: 20px;
-  a {
-    color: #4F4F4F;
-  }
-}
-.masthead-banner {
-  margin-bottom: 40px;
+header #mc-menu-container {
+    clear: both;
+    margin-top: 50px;
+    position: absolute;
+    right: 0;
+    background-color: #f0f0f0;
+    z-index: 1000;
 }
 
 /*=========================
   Icons
- ================= */
+ ======================= */
 .social-network-container {
   margin-top: 25px;
 }
-
-/* footer social icons */
 ul.social-network {
   list-style: none;
   display: inline;
@@ -358,9 +141,6 @@ ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
-
-
-/* footer social icons */
 .social-network a.icoRss:hover {
   background-color: #F56505;
 }
@@ -440,14 +220,14 @@ a.socialIcon:hover, .socialHoverClass {
 }
 @media (max-width: 767px) {
   header {
-    margin-top: 15px;
-      margin-bottom: 15px;
+    padding: 10px 0;
+    margin-top: 0;
     border-bottom: 1px solid #999;
   }
   .header-top-nav {
     margin-top: 1px;
   }
   .header-logo {
-    max-width: 180px;
+    max-height: 40px;
   }
 }

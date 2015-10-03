@@ -223,32 +223,32 @@
 
   <section class="stock-up" id="stock-up">
     <div class="container-fluid">
-      <?php $sixth_section_title = makercamp_defaults_customizer( 'sixth_section_title' );
-      if ( ! empty( $sixth_section_title ) ) :
+      <?php $fourth_section_title = makercamp_defaults_customizer( 'fourth_section_title' );
+      if ( ! empty( $fourth_section_title ) ) :
         ?>
-        <h1><?php echo $sixth_section_title; ?></h1>
+        <h1><?php echo $fourth_section_title; ?></h1>
       <?php endif; ?>
 
       <ul class="stor-up-links">
 
-        <?php $sixth_section_first_link = makercamp_defaults_customizer( 'sixth_section_first_link' );
-        $sixth_section_second_link      = makercamp_defaults_customizer( 'sixth_section_second_link' );
-        $sixth_section_third_link       = makercamp_defaults_customizer( 'sixth_section_third_link' );
-        $sixth_section_fourth_link      = makercamp_defaults_customizer( 'sixth_section_fourth_link' );
-        $sixth_section_fifth_link       = makercamp_defaults_customizer( 'sixth_section_fifth_link' );
-        $sixth_section_first_picture    = makercamp_defaults_customizer( 'sixth_section_first_picture' );
-        $sixth_section_second_picture   = makercamp_defaults_customizer( 'sixth_section_second_picture' );
-        $sixth_section_third_picture    = makercamp_defaults_customizer( 'sixth_section_third_picture' );
-        $sixth_section_fourth_picture   = makercamp_defaults_customizer( 'sixth_section_fourth_picture' );
-        $sixth_section_fifth_picture    = makercamp_defaults_customizer( 'sixth_section_fifth_picture' );
+        <?php $fourth_section_first_link = makercamp_defaults_customizer( 'fourth_section_first_link' );
+        $fourth_section_second_link      = makercamp_defaults_customizer( 'fourth_section_second_link' );
+        $fourth_section_third_link       = makercamp_defaults_customizer( 'fourth_section_third_link' );
+        $fourth_section_fourth_link      = makercamp_defaults_customizer( 'fourth_section_fourth_link' );
+        $fourth_section_fifth_link       = makercamp_defaults_customizer( 'fourth_section_fifth_link' );
+        $fourth_section_first_picture    = makercamp_defaults_customizer( 'fourth_section_first_picture' );
+        $fourth_section_second_picture   = makercamp_defaults_customizer( 'fourth_section_second_picture' );
+        $fourth_section_third_picture    = makercamp_defaults_customizer( 'fourth_section_third_picture' );
+        $fourth_section_fourth_picture   = makercamp_defaults_customizer( 'fourth_section_fourth_picture' );
+        $fourth_section_fifth_picture    = makercamp_defaults_customizer( 'fourth_section_fifth_picture' );
         ?>
 
         <li>
 
-          <?php if ( ! empty( $sixth_section_first_link ) ) : ?>
+          <?php if ( ! empty( $fourth_section_first_link ) ) : ?>
             <a href="<?php echo $sixth_section_first_link; ?>">
-              <?php if ( ! empty( $sixth_section_first_picture ) ) : ?>
-                <img src="<?php echo $sixth_section_first_picture; ?>" alt="Collection Maker Camp 2015"
+              <?php if ( ! empty( $fourth_section_first_picture ) ) : ?>
+                <img src="<?php echo $fourth_section_first_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
               <?php endif; ?>
             </a>
@@ -257,10 +257,10 @@
         </li>
         <li>
 
-          <?php if ( ! empty( $sixth_section_second_link ) ) : ?>
-            <a href="<?php echo $sixth_section_second_link; ?>">
-              <?php if ( ! empty( $sixth_section_second_picture ) ) : ?>
-                <img src="<?php echo $sixth_section_second_picture; ?>" alt="Collection Maker Camp 2015"
+          <?php if ( ! empty( $fourth_section_second_link ) ) : ?>
+            <a href="<?php echo $fourth_section_second_link; ?>">
+              <?php if ( ! empty( $fourth_section_second_picture ) ) : ?>
+                <img src="<?php echo $fourth_section_second_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
               <?php endif; ?>
             </a>
@@ -269,10 +269,10 @@
         </li>
         <li>
 
-          <?php if ( ! empty( $sixth_section_third_link ) ) : ?>
-            <a href="<?php echo $sixth_section_third_link; ?>">
-              <?php if ( ! empty( $sixth_section_third_picture ) ) : ?>
-                <img src="<?php echo $sixth_section_third_picture; ?>" alt="Collection Maker Camp 2015"
+          <?php if ( ! empty( $fourth_section_third_link ) ) : ?>
+            <a href="<?php echo $fourth_section_third_link; ?>">
+              <?php if ( ! empty( $fourth_section_third_picture ) ) : ?>
+                <img src="<?php echo $fourth_section_third_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
               <?php endif; ?>
             </a>
@@ -281,10 +281,10 @@
         </li>
         <li>
 
-          <?php if ( ! empty( $sixth_section_fourth_link ) ) : ?>
-            <a href="<?php echo $sixth_section_fourth_link; ?>">
-              <?php if ( ! empty( $sixth_section_fourth_picture ) ) : ?>
-                <img src="<?php echo $sixth_section_fourth_picture; ?>" alt="Collection Maker Camp 2015"
+          <?php if ( ! empty( $fourth_section_fourth_link ) ) : ?>
+            <a href="<?php echo $fourth_section_fourth_link; ?>">
+              <?php if ( ! empty( $fourth_section_fourth_picture ) ) : ?>
+                <img src="<?php echo $fourth_section_fourth_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
               <?php endif; ?>
             </a>
@@ -293,10 +293,10 @@
         </li>
         <li>
 
-          <?php if ( ! empty( $sixth_section_fifth_link ) ) : ?>
-            <a href="<?php echo $sixth_section_fifth_link; ?>">
-              <?php if ( ! empty( $sixth_section_fifth_picture ) ) : ?>
-                <img src="<?php echo $sixth_section_fifth_picture; ?>" alt="Collection Maker Camp 2015"
+          <?php if ( ! empty( $fourth_section_fifth_link ) ) : ?>
+            <a href="<?php echo $fourth_section_fifth_link; ?>">
+              <?php if ( ! empty( $fourth_section_fifth_picture ) ) : ?>
+                <img src="<?php echo $fourth_section_fifth_picture; ?>" alt="Collection Maker Camp 2015"
                    class="img-circle">
               <?php endif; ?>
             </a>
@@ -305,15 +305,15 @@
         </li>
       </ul>
 
-      <?php $sixth_section_first_paragraph = makercamp_defaults_customizer( 'sixth_section_first_paragraph' );
-      $sixth_section_second_paragraph      = makercamp_defaults_customizer( 'sixth_section_second_paragraph' );
-      if ( ! empty( $sixth_section_first_paragraph ) ) :
+      <?php $fourth_section_first_paragraph = makercamp_defaults_customizer( 'fourth_section_first_paragraph' );
+      $fourth_section_second_paragraph      = makercamp_defaults_customizer( 'fourth_section_second_paragraph' );
+      if ( ! empty( $fourth_section_first_paragraph ) ) :
         ?>
-        <p><?php echo $sixth_section_first_paragraph; ?></p>
+        <p><?php echo $fourth_section_first_paragraph; ?></p>
       <?php endif;
-      if ( ! empty( $sixth_section_second_paragraph ) ) :
+      if ( ! empty( $fourth_section_second_paragraph ) ) :
         ?>
-        <p><?php echo $sixth_section_second_paragraph; ?></p>
+        <p><?php echo $fourth_section_second_paragraph; ?></p>
       <?php endif; ?>
 
     </div>
@@ -323,31 +323,18 @@
     <div class="container-fluid">
       <?php 
       $sponsor_thanks_first_link       = makercamp_defaults_customizer( 'sponsor_thanks_first_link' );
-      $sponsor_thanks_second_link      = makercamp_defaults_customizer( 'sponsor_thanks_second_link' );
       $sponsor_thanks_first_picture    = makercamp_defaults_customizer( 'sponsor_thanks_first_picture' );
-      $sponsor_thanks_second_picture   = makercamp_defaults_customizer( 'sponsor_thanks_second_picture' );
-      ?>
-      <?php $sponsor_thanks_title = makercamp_defaults_customizer( 'sponsor_thanks_title' );
+      $sponsor_thanks_title            = makercamp_defaults_customizer( 'sponsor_thanks_title' );
       if ( ! empty( $sponsor_thanks_title ) ) :
         ?>
         <h1 class="text-center"><?php echo $sponsor_thanks_title; ?></h1>
       <?php endif; ?>
       <div class="row">
-        <div class="col-xs-6 text-center">
+        <div class="col-xs-12 text-center">
           <?php if ( ! empty( $sponsor_thanks_first_link ) ) : ?>
             <a href="<?php echo $sponsor_thanks_first_link; ?>">
               <?php if ( ! empty( $sponsor_thanks_first_picture ) ) : ?>
                 <img src="<?php echo $sponsor_thanks_first_picture; ?>" alt="Maker Camp Sponsor" class="img-responsive" />
-              <?php endif; ?>
-            </a>
-          <?php endif; ?>
-        </div>
-
-        <div class="col-xs-6 text-center">
-          <?php if ( ! empty( $sponsor_thanks_second_link ) ) : ?>
-            <a href="<?php echo $sponsor_thanks_second_link; ?>">
-              <?php if ( ! empty( $sponsor_thanks_second_picture ) ) : ?>
-                <img src="<?php echo $sponsor_thanks_second_picture; ?>" alt="Maker Camp Sponsor" class="img-responsive" />
               <?php endif; ?>
             </a>
           <?php endif; ?>
@@ -358,11 +345,11 @@
 
   <section class="presenters">
     <div class="container-fluid">
-      <?php $about_second_section_title = makercamp_defaults_customizer( 'about_second_section_title' );
-      if (!empty($about_second_section_title)) :
+      <?php $about_sixth_section_title = makercamp_defaults_customizer( 'about_sixth_section_title' );
+      if (!empty($about_sixth_section_title)) :
         ?>
         <h1>
-          <span class="presenters-desctop"><?php echo $about_second_section_title; ?></span>
+          <span class="presenters-desctop"><?php echo $about_sixth_section_title; ?></span>
         </h1>
       <?php endif; ?>
 

@@ -43,12 +43,6 @@
   .stay-connected {
     margin-bottom: 14px;
   }
-  .social-profile-icons {
-    height: 33px;
-    margin-bottom: 20px;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 700;
-  }
   form {
     margin: 0 0 20px;
     input[name=email] {
@@ -70,12 +64,36 @@
       color:rgb(85, 85, 85)!important;
     }
   }
-
-  .btn-cyan {
-    padding: 10px 8px;
-    font-size: 15px;
-    line-height: 1em;
-    width: 100%;
+  .mz-form-horizontal {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    max-width: 295px;
+    input[name=email] {
+      padding: 8px;
+      margin-bottom: 0;
+      font-size: 15px;
+      line-height: 1em;
+      height: auto;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      border-radius-top-left: 4px;
+      border-radius-bottom-left: 4px;
+      border: none;
+    }
+    .btn-cyan {
+      border-radius: 3px;
+      padding: 8px;
+    }
   }
   .social-foot-mobile{
     .accordion-heading .accordion-toggle {
@@ -93,10 +111,6 @@
       margin-top: 15px;
     }
   }
-  .text-center {
-    text-align: center;
-  }
-
   .copyright {
     margin: 15px 0 0 0;
 
@@ -115,79 +129,20 @@
     }
   }
 }
-// SOCIAL MEDIA SPRITES
-.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
-  background-position: @x @y;
-}
-
-.social-profile-icons {
-  a {
-    display: block;
+// SOCIAL MEDIA
+#footer {
+  .social-network-container {
+    margin-top: 0;
+  }
+  ul.social-network {
     float: left;
-    text-align: center;
-    width: 23.75%;
-    height: 33px;
-    .social-profile-cont {
-      background-position: center;
-      display: inline-block;
-      width: 32px;
-    }
-    &.sprite-facebook-32 {
-      span {
-        .stitches-sprite(-5px, -5px, 17px, 32px);
-      }
-      background-color: #335A8E;
-      transition: background-color 0.2s ease;
-      margin-right: 1.25%;
-    }
-    &.sprite-facebook-32:hover {
-      background-color: #1d3250;
-      transition: background-color 0.2s ease;
-    }
-    &.sprite-googleplus-32 {
-      span {
-        .stitches-sprite(-5px, -47px, 32px, 32px);
-      }
-      background-color: #C04B36;
-      transition: background-color 0.2s ease;
-    }
-    &.sprite-googleplus-32:hover {
-      background-color: #7e3123;
-      transition: background-color 0.2s ease;
-    }
-    &.sprite-pinterest-32 {
-      span {
-        .stitches-sprite(-5px, -89px, 32px, 32px);
-      }
-      background-color: #BA4236;
-      transition: background-color 0.2s ease;
-      margin-right: 1.25%;
-    }
-    &.sprite-pinterest-32:hover {
-      background-color: #782b23;
-      transition: background-color 0.2s ease;
-    }
-    &.sprite-twitter-32 {
-      span {
-        .stitches-sprite(-5px, -131px, 32px, 32px);
-      }
-      background-color: #75ADCF;
-      transition: background-color 0.2s ease;
-      margin-right: 1.25%;
-    }
-    &.sprite-twitter-32:hover {
-      background-color: #3e86b1;
-      transition: background-color 0.2s ease;
+    margin-bottom: 0;
+    li:first-child {
+      margin-left: 0;
     }
   }
 }
 
-.sprite {
-  background-image: url(../../assets/img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block;
-  height: 33px;
-}
 
 // Primary Call to Action button
 .btn-cyan {
@@ -248,6 +203,12 @@ form {
 
 @media (max-width: @container-sm) {
   .custom-center {
+    text-align: center;
+  }
+  .uni-footer .mz-form-horizontal {
+    max-width: initial;
+  }
+  .panel-body {
     text-align: center;
   }
 }

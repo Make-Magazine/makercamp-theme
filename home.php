@@ -2,6 +2,30 @@
 
 	<section class="hero show-content" id="hero">
 
+		<!-- FALL 2015 HOME PAGE TAKEOVER -->
+		<div class="content">
+			<div class="container home-fall2015">
+				<div class="row">
+		      <?php 
+		      $hero_section_yt 		= makercamp_defaults_customizer( 'hero_section_yt' );
+		      $hero_section_title	= makercamp_defaults_customizer( 'hero_section_title' );
+		      $hero_section_subtitle 	= makercamp_defaults_customizer( 'hero_section_subtitle' );
+		      ?>
+					<div class="col-xs-12 col-sm-push-6 col-sm-6">
+						<h1><?php if( ! empty( $hero_section_title ) ) : echo $hero_section_title; endif; ?></h1>
+						<hr />
+						<p><?php if( ! empty( $hero_section_subtitle ) ) : echo $hero_section_subtitle; endif; ?></p>
+					</div>
+					<div class="col-xs-12 col-sm-pull-6 col-sm-6">
+						<div class="embed-youtube">
+							<iframe src="https://www.youtube.com/embed/<?php if( ! empty( $hero_section_yt ) ) : echo $hero_section_yt; endif; ?>?rel=0&showinfo=0&theme=light&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 		<!-- SAVE THIS IF WE DECIDE TO USE IT NEXT CAMP -->
 		<!--div class="animation-wrapper">
 			<div class="align">
@@ -10,7 +34,7 @@
 			</div>
 		</div-->
 
-		<div class="content">
+		<div class="content" style="display:none">
 			<!-- POST CAMP MESSAGE -->
 			<article class="post-camp-message">
 				<h1>Announcing Maker Camp<br />After-School!</h1>
@@ -203,154 +227,244 @@
   <section class="discover">
     <div class="container-fluid">
 
-      <?php $host_second_section_title = makercamp_defaults_customizer('host_second_section_title');
-      if (!empty($host_second_section_title)) :
+      <?php $home_first_section_title = makercamp_defaults_customizer('home_first_section_title');
+      if (!empty($home_first_section_title)) :
         ?>
-        <h1><?php echo $host_second_section_title; ?></h1>
+        <h1><?php echo $home_first_section_title; ?></h1>
       <?php endif ?>
 
 
       <ul class="projects-and-video">
-        <li>
+        <li class="col-xs-12 col-sm-4 col-md-2 col-md-offset-1">
+          <div>
           <?php
-          $host_second_section_first_block_picture = makercamp_defaults_customizer('host_second_section_first_block_picture');
-          $host_second_section_first_block_title = makercamp_defaults_customizer('host_second_section_first_block_title');
-          $host_second_section_first_block_link = makercamp_defaults_customizer('host_second_section_first_block_link');
-          if (!empty($host_second_section_first_block_picture)) :
+          $home_first_section_first_block_picture = makercamp_defaults_customizer('home_first_section_first_block_picture');
+          $home_first_section_first_block_title = makercamp_defaults_customizer('home_first_section_first_block_title');
+          $home_first_section_first_block_link = makercamp_defaults_customizer('home_first_section_first_block_link');
+          $home_first_section_first2_block_title = makercamp_defaults_customizer('home_first_section_first2_block_link_title');
+          $home_first_section_first2_block_link = makercamp_defaults_customizer('home_first_section_first2_block_link');
+          if (!empty($home_first_section_first_block_picture)) :
             ?>
-            <img src="<?php echo $host_second_section_first_block_picture; ?>" alt="Projects ideas" class="first">
-          <?php
-          endif;
-          if (!empty($host_second_section_first_block_title)) :
-            ?>
-            <p><?php echo $host_second_section_first_block_title; ?></p>
+            <img src="<?php echo $home_first_section_first_block_picture; ?>" alt="Projects ideas" class="img-responsive">
           <?php
           endif;
-          if (!empty($host_second_section_first_block_link)) :
+          if (!empty($home_first_section_first_block_title)) :
             ?>
-            <a href="<?php echo $host_second_section_first_block_link; ?>" class="read-more">
+            <p><?php echo $home_first_section_first_block_title; ?></p>
+          <?php
+          endif;
+          // First Link
+          if (!empty($home_first_section_first_block_link)) :
+            ?>
+            <a href="<?php echo $home_first_section_first_block_link; ?>" class="read-more">
             <?php
-                $host_second_section_first_block_link_title = makercamp_defaults_customizer('host_second_section_first_block_link_title');
-                if ( ! empty( $host_second_section_first_block_link_title )) :
-                    echo $host_second_section_first_block_link_title;
+                $home_first_section_first_block_link_title = makercamp_defaults_customizer('home_first_section_first_block_link_title');
+                if ( ! empty( $home_first_section_first_block_link_title )) :
+                    echo $home_first_section_first_block_link_title;
                 endif;
             ?>
             </a>
-          <?php endif; ?>
+          <?php endif;
+          // Second Link
+          if (!empty($home_first_section_first2_block_link)) :
+            ?>
+            <a href="<?php echo $home_first_section_first2_block_link; ?>" class="read-more">
+            <?php
+                $home_first_section_first2_block_link_title = makercamp_defaults_customizer('home_first_section_first2_block_link_title');
+                if ( ! empty( $home_first_section_first2_block_link_title )) :
+                    echo $home_first_section_first2_block_link_title;
+                endif;
+            ?>
+            </a>
+          <?php endif; 
+          ?>
+        </div>
         </li>
 
-        <li>
+        <li class="col-xs-12 col-sm-4 col-md-2">
+          <div>
           <?php
-          $host_second_section_second_block_picture = makercamp_defaults_customizer('host_second_section_second_block_picture');
-          $host_second_section_second_block_title = makercamp_defaults_customizer('host_second_section_second_block_title');
-          $host_second_section_second_block_link = makercamp_defaults_customizer('host_second_section_second_block_link');
-          if (!empty($host_second_section_second_block_picture)) :
+          $home_first_section_second_block_picture = makercamp_defaults_customizer('home_first_section_second_block_picture');
+          $home_first_section_second_block_title = makercamp_defaults_customizer('home_first_section_second_block_title');
+          $home_first_section_second_block_link = makercamp_defaults_customizer('home_first_section_second_block_link');
+          $home_first_section_second2_block_title = makercamp_defaults_customizer('home_first_section_second2_block_link_title');
+          $home_first_section_second2_block_link = makercamp_defaults_customizer('home_first_section_second2_block_link');
+          if (!empty($home_first_section_second_block_picture)) :
             ?>
-            <img src="<?php echo $host_second_section_second_block_picture; ?>" alt="Maker camp 2013 on YouTube"
-                 class="first">
-          <?php
-          endif;
-          if (!empty($host_second_section_second_block_title)) :
-            ?>
-            <p><?php echo $host_second_section_second_block_title; ?></p>
+            <img src="<?php echo $home_first_section_second_block_picture; ?>" alt="Maker camp 2013 on YouTube"
+                 class="img-responsive">
           <?php
           endif;
-          if (!empty($host_second_section_second_block_link)) :
+          if (!empty($home_first_section_second_block_title)) :
             ?>
-            <a href="<?php echo $host_second_section_second_block_link; ?>" class="read-more">
+            <p><?php echo $home_first_section_second_block_title; ?></p>
+          <?php
+          endif;
+          // First link
+          if (!empty($home_first_section_second_block_link)) :
+            ?>
+            <a href="<?php echo $home_first_section_second_block_link; ?>" class="read-more">
                 <?php
-                $host_second_section_second_block_link_title = makercamp_defaults_customizer('host_second_section_second_block_link_title');
-                if ( ! empty( $host_second_section_second_block_link_title )) :
-                    echo $host_second_section_second_block_link_title;
+                $home_first_section_second_block_link_title = makercamp_defaults_customizer('home_first_section_second_block_link_title');
+                if ( ! empty( $home_first_section_second_block_link_title )) :
+                    echo $home_first_section_second_block_link_title;
                 endif;
                 ?>
             </a>
-          <?php endif; ?>
-        </li>
-
-        <li>
-          <?php
-          $host_second_section_third_block_picture = makercamp_defaults_customizer('host_second_section_third_block_picture');
-          $host_second_section_third_block_title = makercamp_defaults_customizer('host_second_section_third_block_title');
-          $host_second_section_third_block_link = makercamp_defaults_customizer('host_second_section_third_block_link');
-          if (!empty($host_second_section_third_block_picture)) :
+          <?php endif;
+          // Second link
+          if (!empty($home_first_section_second2_block_link)) :
             ?>
-            <img src="<?php echo $host_second_section_third_block_picture; ?>" alt="Maker camp 2014 YouTube">
-          <?php
-          endif;
-          if (!empty($host_second_section_third_block_title)) :
-            ?>
-            <p><?php echo $host_second_section_third_block_title; ?></p>
-          <?php
-          endif;
-          if (!empty($host_second_section_third_block_link)) :
-            ?>
-            <a href="<?php echo $host_second_section_third_block_link; ?>" class="read-more">
+            <a href="<?php echo $home_first_section_second2_block_link; ?>" class="read-more">
                 <?php
-                $host_second_section_third_block_link_title = makercamp_defaults_customizer('host_second_section_third_block_link_title');
-                if ( ! empty( $host_second_section_third_block_link_title )) :
-                    echo $host_second_section_third_block_link_title;
+                $home_first_section_second2_block_link_title = makercamp_defaults_customizer('home_first_section_second2_block_link_title');
+                if ( ! empty( $home_first_section_second2_block_link_title )) :
+                    echo $home_first_section_second2_block_link_title;
                 endif;
                 ?>
             </a>
-          <?php endif; ?>
+          <?php endif; 
+          ?>
+        </div>
         </li>
 
-        <li>
+        <li class="col-xs-12 col-sm-4 col-md-2">
+          <div>
           <?php
-          $host_second_section_fourth_block_picture = makercamp_defaults_customizer('host_second_section_fourth_block_picture');
-          $host_second_section_fourth_block_title = makercamp_defaults_customizer('host_second_section_fourth_block_title');
-          $host_second_section_fourth_block_link = makercamp_defaults_customizer('host_second_section_fourth_block_link');
-          if (!empty($host_second_section_fourth_block_picture)) :
+          $home_first_section_third_block_picture = makercamp_defaults_customizer('home_first_section_third_block_picture');
+          $home_first_section_third_block_title = makercamp_defaults_customizer('home_first_section_third_block_title');
+          $home_first_section_third_block_link = makercamp_defaults_customizer('home_first_section_third_block_link');
+          $home_first_section_third2_block_title = makercamp_defaults_customizer('home_first_section_third2_block_link_title');
+          $home_first_section_third2_block_link = makercamp_defaults_customizer('home_first_section_third2_block_link');
+          if (!empty($home_first_section_third_block_picture)) :
             ?>
-            <img src="<?php echo $host_second_section_fourth_block_picture; ?>" alt="Google+ community">
-          <?php
-          endif;
-          if (!empty($host_second_section_fourth_block_title)) :
-            ?>
-            <p><?php echo $host_second_section_fourth_block_title; ?></p>
+            <img class="img-responsive" src="<?php echo $home_first_section_third_block_picture; ?>" alt="Maker camp 2014 YouTube">
           <?php
           endif;
-          if (!empty($host_second_section_fourth_block_link)) :
+          if (!empty($home_first_section_third_block_title)) :
             ?>
-            <a href="<?php echo $host_second_section_fourth_block_link; ?>" class="read-more">
+            <p><?php echo $home_first_section_third_block_title; ?></p>
+          <?php
+          endif;
+          // First link
+          if (!empty($home_first_section_third_block_link)) :
+            ?>
+            <a href="<?php echo $home_first_section_third_block_link; ?>" class="read-more">
                 <?php
-                $host_second_section_fourth_block_link_title = makercamp_defaults_customizer('host_second_section_fourth_block_link_title');
-                if ( ! empty( $host_second_section_fourth_block_link_title )) :
-                    echo $host_second_section_fourth_block_link_title;
+                $home_first_section_third_block_link_title = makercamp_defaults_customizer('home_first_section_third_block_link_title');
+                if ( ! empty( $home_first_section_third_block_link_title )) :
+                    echo $home_first_section_third_block_link_title;
                 endif;
                 ?>
             </a>
-          <?php endif; ?>
+          <?php endif;
+          // Second link
+          if (!empty($home_first_section_third2_block_link)) :
+            ?>
+            <a href="<?php echo $home_first_section_third2_block_link; ?>" class="read-more">
+                <?php
+                $home_first_section_third2_block_link_title = makercamp_defaults_customizer('home_first_section_third2_block_link_title');
+                if ( ! empty( $home_first_section_third2_block_link_title )) :
+                    echo $home_first_section_third2_block_link_title;
+                endif;
+                ?>
+            </a>
+          <?php endif;
+          ?>
+        </div>
         </li>
 
-        <li>
+        <li class="col-xs-12 col-sm-4 col-md-2">
+          <div>
           <?php
-          $host_second_section_fifth_block_picture = makercamp_defaults_customizer('host_second_section_fifth_block_picture');
-          $host_second_section_fifth_block_title = makercamp_defaults_customizer('host_second_section_fifth_block_title');
-          $host_second_section_fifth_block_link = makercamp_defaults_customizer('host_second_section_fifth_block_link');
-          if (!empty($host_second_section_fifth_block_picture)) :
+          $home_first_section_fourth_block_picture = makercamp_defaults_customizer('home_first_section_fourth_block_picture');
+          $home_first_section_fourth_block_title = makercamp_defaults_customizer('home_first_section_fourth_block_title');
+          $home_first_section_fourth_block_link = makercamp_defaults_customizer('home_first_section_fourth_block_link');
+          $home_first_section_fourth2_block_title = makercamp_defaults_customizer('home_first_section_fourth2_block_link_title');
+          $home_first_section_fourth2_block_link = makercamp_defaults_customizer('home_first_section_fourth2_block_link');
+          if (!empty($home_first_section_fourth_block_picture)) :
             ?>
-            <img src="<?php echo $host_second_section_fifth_block_picture; ?>"
+            <img class="img-responsive" src="<?php echo $home_first_section_fourth_block_picture; ?>" alt="Google+ community">
+          <?php
+          endif;
+          if (!empty($home_first_section_fourth_block_title)) :
+            ?>
+            <p><?php echo $home_first_section_fourth_block_title; ?></p>
+          <?php
+          endif;
+          // First link
+          if (!empty($home_first_section_fourth_block_link)) :
+            ?>
+            <a href="<?php echo $home_first_section_fourth_block_link; ?>" class="read-more">
+                <?php
+                $home_first_section_fourth_block_link_title = makercamp_defaults_customizer('home_first_section_fourth_block_link_title');
+                if ( ! empty( $home_first_section_fourth_block_link_title )) :
+                    echo $home_first_section_fourth_block_link_title;
+                endif;
+                ?>
+            </a>
+          <?php endif;
+          // Second link
+          if (!empty($home_first_section_fourth2_block_link)) :
+            ?>
+            <a href="<?php echo $home_first_section_fourth2_block_link; ?>" class="read-more">
+                <?php
+                $home_first_section_fourth2_block_link_title = makercamp_defaults_customizer('home_first_section_fourth2_block_link_title');
+                if ( ! empty( $home_first_section_fourth2_block_link_title )) :
+                    echo $home_first_section_fourth2_block_link_title;
+                endif;
+                ?>
+            </a>
+          <?php endif;
+          ?>
+        </div>
+        </li>
+
+        <li class="col-xs-12 col-sm-4 col-md-2">
+          <div>
+          <?php
+          $home_first_section_fifth_block_picture = makercamp_defaults_customizer('home_first_section_fifth_block_picture');
+          $home_first_section_fifth_block_title = makercamp_defaults_customizer('home_first_section_fifth_block_title');
+          $home_first_section_fifth_block_link = makercamp_defaults_customizer('home_first_section_fifth_block_link');
+          $home_first_section_fifth2_block_title = makercamp_defaults_customizer('home_first_section_fifth2_block_link_title');
+          $home_first_section_fifth2_block_link = makercamp_defaults_customizer('home_first_section_fifth2_block_link');
+          if (!empty($home_first_section_fifth_block_picture)) :
+            ?>
+            <img class="img-responsive" src="<?php echo $home_first_section_fifth_block_picture; ?>"
                  alt="More project ideas in the Maker Camp">
           <?php
           endif;
-          if (!empty($host_second_section_fifth_block_title)) :
+          if (!empty($home_first_section_fifth_block_title)) :
             ?>
-            <p><?php echo $host_second_section_fifth_block_title; ?></p>
+            <p><?php echo $home_first_section_fifth_block_title; ?></p>
           <?php
           endif;
-          if (!empty($host_second_section_fifth_block_link)) :
+          // First link
+          if (!empty($home_first_section_fifth_block_link)) :
             ?>
-            <a href="<?php echo $host_second_section_fifth_block_link; ?>" class="read-more">
+            <a href="<?php echo $home_first_section_fifth_block_link; ?>" class="read-more">
                 <?php
-                $host_second_section_fifth_block_link_title = makercamp_defaults_customizer('host_second_section_fifth_block_link_title');
-                if ( ! empty( $host_second_section_fifth_block_link_title )) :
-                    echo $host_second_section_fifth_block_link_title;
+                $home_first_section_fifth_block_link_title = makercamp_defaults_customizer('home_first_section_fifth_block_link_title');
+                if ( ! empty( $home_first_section_fifth_block_link_title )) :
+                    echo $home_first_section_fifth_block_link_title;
                 endif;
                 ?>
             </a>
-          <?php endif; ?>
+          <?php endif;
+          // Second link
+          if (!empty($home_first_section_fifth2_block_link)) :
+            ?>
+            <a href="<?php echo $home_first_section_fifth2_block_link; ?>" class="read-more">
+                <?php
+                $home_first_section_fifth2_block_link_title = makercamp_defaults_customizer('home_first_section_fifth2_block_link_title');
+                if ( ! empty( $home_first_section_fifth2_block_link_title )) :
+                    echo $home_first_section_fifth2_block_link_title;
+                endif;
+                ?>
+            </a>
+          <?php endif;
+          ?>
+        </div>
         </li>
 
       </ul>

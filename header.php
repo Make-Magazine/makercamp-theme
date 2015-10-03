@@ -63,7 +63,7 @@ document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('on
         <!-- LOGO & TAG LINE -->
         <div class="col-md-2 col-sm-3 col-xs-7 text-center">
           <a href="/">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/Logo.jpg' ?>" class="header-logo img-responsive" />
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/makercamp-logo.png' ?>" class="header-logo img-responsive" />
           </a>
         </div>
 
@@ -90,8 +90,8 @@ document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('on
             <div class="hidden-sm hidden-md hidden-lg" id="mc-menu-container">
               <?php
                 wp_nav_menu( array(
-                    'menu'              => 'Mobile',
-                    'theme_location'    => 'primary',
+                    'menu'              => 'Header main menu',
+                    'theme_location'    => 'primary_menu',
                     'depth'             => 1,
                     'container'         => 'div',
                     'container_class'   => 'collapse navbar-collapse',
