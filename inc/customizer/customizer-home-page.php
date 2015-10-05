@@ -36,7 +36,7 @@ function makercamp_home_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'hero_section_yt',
 		array(
-			'label'   => 'Hero section Youtub ID, only place video ID here.',
+			'label'   => 'Youtube Video, only place video ID here. Or leave black to use video coming soon image',
 			'section' => 'makercamp_hero_section_home_page',
 			'type'    => 'text',
 		)

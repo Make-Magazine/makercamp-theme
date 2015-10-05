@@ -15,11 +15,18 @@
 						<h1><?php if( ! empty( $hero_section_title ) ) : echo $hero_section_title; endif; ?></h1>
 						<hr />
 						<p><?php if( ! empty( $hero_section_subtitle ) ) : echo $hero_section_subtitle; endif; ?></p>
+            <a class="blue-button fancybox2-trigger clearfix" href="#">Sign-up for updates!</a>
 					</div>
 					<div class="col-xs-12 col-sm-pull-6 col-sm-6">
-						<div class="embed-youtube">
-							<iframe src="https://www.youtube.com/embed/<?php if( ! empty( $hero_section_yt ) ) : echo $hero_section_yt; endif; ?>?rel=0&showinfo=0&theme=light&modestbranding=1" frameborder="0" allowfullscreen></iframe>
-						</div>
+            <?php
+            if (!empty( $hero_section_yt )) {
+                echo "<div class='embed-youtube'>
+                        <iframe src='https://www.youtube.com/embed/".$hero_section_yt."?rel=0&showinfo=0&theme=light&modestbranding=1' frameborder='0' allowfullscreen></iframe>
+                      </div>";
+            } else {
+                echo "<img class='img-responsive' src='".get_template_directory_uri() . '/assets/img/'."video-coming-soon.jpg' />";
+            }
+            ?>
 					</div>
 				</div>
 			</div>
@@ -224,7 +231,7 @@
 		</div>
 	</section> -->
 
-  <section class="discover">
+  <section id="discover" class="discover">
     <div class="container-fluid">
 
       <?php $home_first_section_title = makercamp_defaults_customizer('home_first_section_title');

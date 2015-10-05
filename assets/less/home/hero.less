@@ -472,6 +472,23 @@
     p {
       font-weight: 300;
     }
+    .blue-button {
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 40px;
+      overflow: hidden;
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #00bff3;
+      margin-top: 30px;
+
+      @media (max-width: @container-sm) {
+        padding: 15px;
+        font-size: 17px;
+      }
+    }
   }
 }
 @media (max-width: 767px) {

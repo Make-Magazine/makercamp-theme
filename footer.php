@@ -11,7 +11,7 @@
 <!-- /container -->
 
 <footer id="footer" class="uni-footer">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row social-foot-desktop hidden-xs">
 			<div class="col-sm-6 col-md-3 social-foot-col">
 				<a href="/"><img class="footer_logo" src="http://1abxf1rh6g01lhm2riyrt55k.wpengine.netdna-cdn.com/wp-content/themes/makeblog/img/make-logo.png"  alt="Make Logo"></a>
@@ -194,9 +194,98 @@
 </footer>
 <!-- END new-footer -->
 
-    </div> <!-- /container -->
+</div> <!-- /container -->
 
 <?php wp_footer(); ?>
+
+<!-- Newsletter Modal -->
+<script>
+function getCookie(name) {
+    var dc = document.cookie; 
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    } else {
+        begin += 2;
+        var end = document.cookie.indexOf(";", begin);
+        if (end == -1) {
+        end = dc.length;
+        }
+    }
+    return unescape(dc.substring(begin + prefix.length, end));
+} 
+
+$(function() {
+    if ( document.location.href.indexOf('campaign') > -1 ) {
+            var date = new Date();
+            date.setTime(date.getTime()+(60*24*60*60*1000));
+            date = date.toGMTString();
+            document.cookie="Newsletter-signup=; expires=" + date + "; path=/";
+    }
+});
+
+$(function() {
+    var news_close = getCookie("Newsletter-closed");
+    var news_signup = getCookie("Newsletter-signup");
+
+    if ( news_signup == null ) {
+      if ( news_close == null ) {
+        $(".fancybox2").fancybox({
+            autoSize : false,
+            width  : 465,
+            height  : 200,
+            afterLoad   : function() {
+                this.content = this.content.html();
+            }
+        });
+        // Launch fancyBox on first element
+        // setTimeout( function() {$(".fancybox2").trigger('click'); },2000);
+   			
+   			// On home page button click then launch
+				$( ".fancybox2-trigger" ).click(function() {
+				  $(".fancybox2").trigger('click');
+				});
+      }
+    }
+});
+</script>
+<script>
+// Cookie setting
+$(function() {
+	$( ".newsletter-set-cookie" ).click(function() {
+	    var date = new Date();
+	    date.setTime(date.getTime()+(60*24*60*60*1000));
+	    date = date.toGMTString();
+	    document.cookie="Newsletter-signup=; expires=" + date + "; path=/";
+	});
+
+	$( ".fancybox-item.fancybox-close" ).click(function() {
+	    var date = new Date();
+	    date.setTime(date.getTime()+(7*24*60*60*1000));
+	    date = date.toGMTString();
+	    document.cookie="Newsletter-closed=; expires=" + date + "; path=/";
+	});
+});
+</script>
+<div class="fancybox2" style="display:none;">
+  <h2>Sign-up for updates on Maker Camp projects!</h2>
+  <form name="MailingList" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
+		<input type=hidden name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
+		<input type="hidden" name="cmd" value="subscribe" />
+		<input type="hidden" name="custom_host" value="makershed.com" />
+		<input type="hidden" name="custom_incentive" value="none" />
+		<input type="hidden" name="custom_source" value="modal" />
+		<input type="hidden" name="goto" value="//www.makercamp.com/?thankyou" />
+		<input type="hidden" name="custom_url" value="" />
+		<input type="email" id="titllrt-titllrt" name="email" placeholder="Your E-mail" required>
+		<input type="submit" name="Submit" id="newsletter-set-cookie" value="Sign Me Up" class="btn-modal newsletter-set-cookie">
+		<input type="hidden" id="format_mime" name="format" value="mime" />
+	</form>
+</div>
+<!-- End Newsletter Modal -->
+
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -222,4 +311,3 @@
 </script>
 </body>
 </html>
-
