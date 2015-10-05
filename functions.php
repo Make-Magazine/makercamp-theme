@@ -262,7 +262,7 @@ class Make_Instagram {
     ?>
     <?php
     // Twitter post
-    $output ="<div class=\"item-holder\"><div class=\"container\"><h1>Check Out What Other Camper Are Making</h1><div class='text-center padtop padbottom'><a class='read-more text-center' target='_blank' href='http://bitly.com/makercampcommunity'>Join the Online Community here</a></div><div class=\"row\"><div class=\"col-xs-12 col-sm-4\"><div class=\"social-holder twitter\"><div class=\"title\"><h1><a href=\"http://twitter.com/makercamp\" target=\"_blank\">#makercamp</a></h1></div><a class='twitter-timeline' href='https://twitter.com/MakerCamp' data-widget-id='621839689129967616'>Tweets by @MakerCamp</a>
+    $output ="<div class=\"item-holder\"><div class=\"container\"><h1>Check Out What Other Campers Are Making</h1><div class='text-center padtop padbottom'><a class='read-more text-center' target='_blank' href='http://bitly.com/makercampcommunity'>Join the Online Community here</a></div><div class=\"row\"><div class=\"col-xs-12 col-sm-4\"><div class=\"social-holder twitter\"><div class=\"title\"><h1><a href=\"http://twitter.com/makercamp\" target=\"_blank\">#makercamp</a></h1></div><a class='twitter-timeline' href='https://twitter.com/MakerCamp' data-widget-id='621839689129967616'>Tweets by @MakerCamp</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script></div></div>";
     
     // Instagram photos
