@@ -17,10 +17,10 @@
 				<a href="/"><img class="footer_logo" src="http://1abxf1rh6g01lhm2riyrt55k.wpengine.netdna-cdn.com/wp-content/themes/makeblog/img/make-logo.png"  alt="Make Logo"></a>
 				<ul class="list-unstyled">
 					<li><a href="//makezine.com/projects">Make: Projects</a></li>
-					<li><a href="//makezine.com/category/workshop/3d-printing-workshop/">3D Printing Projects</a></li>
-					<li><a href="//makezine.com/category/electronics/arduino/">Arduino Projects</a></li>
-					<li><a href="//makezine.com/category/electronics/raspberry-pi/" target="_blank">Raspberry Pi Projects</a></li>
-					<li><a href="https://help.makercamp.com/hc/en-us">Maker Camp Help Page</a></li>
+					<li><a href="//makezine.com/category/workshop/3d-printing-workshop/?post_type=projects">3D Printing Projects</a></li>
+					<li><a href="//makezine.com/category/technology/arduino/?post_type=projects">Arduino Projects</a></li>
+					<li><a href="//makezine.com/category/technology/raspberry-pi/?post_type=projects">Raspberry Pi Projects</a></li>
+					<li><a href="//help.makercamp.com/hc/en-us" target="_blank">Maker Camp Help Page</a></li>
 				</ul>
 			</div>
 
@@ -28,9 +28,9 @@
 				<h4>Explore Making</h4>
 				<ul class="list-unstyled">
 					<li><a href="//makezine.com/blog" target="_blank">Make: News</a></li>
-					<li><a href="//makerfaire.com">Maker Faire</a></li>
 					<li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
-					<li><a href="//makercon.com" target="_blank">MakerCon</a></li>
+					<li><a href="//makerfaire.com">Maker Faire</a></li>
+					<li><a href="//makercon.com" target="_blank">Maker Con</a></li>
 					<li><a href="https://readerservices.makezine.com/mk/default.aspx?" target="_blank">Subscribe to Make:</a></li>											
 				</ul>
 			</div>
