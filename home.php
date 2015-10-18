@@ -231,6 +231,40 @@
 		</div>
 	</section> -->
 
+  <?php
+  $home_quick_message_section_checkbox = makercamp_defaults_customizer('home_quick_message_section_checkbox');
+  if(true === get_theme_mod('home_quick_message_section_checkbox')){
+  ?>
+    <section id="quick-message">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-9 padtop padbottom">
+            <?php 
+            $home_quick_message_section_title = makercamp_defaults_customizer('home_quick_message_section_title');
+            $home_quick_message_section_text = makercamp_defaults_customizer('home_quick_message_section_text');
+            $home_quick_message_section_picture = makercamp_defaults_customizer('home_quick_message_section_picture');
+            if (!empty($home_quick_message_section_title)) :?>
+              <h2><?php echo $home_quick_message_section_title; ?></h2>
+            <?php endif;
+            if (!empty($home_quick_message_section_text)) :?>
+              <p class="lead"><?php echo $home_quick_message_section_text; ?></p>
+            <?php endif; ?>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 padtop padbottom">
+            <?php
+            if (!empty($home_quick_message_section_picture)) :
+              ?>
+              <img src="<?php echo $home_quick_message_section_picture; ?>" alt="Message Image" class="img-responsive">
+            <?php
+            endif; ?>
+          </div>
+        </div>
+      </div>
+    </section>
+  <?php
+  }
+  ?>
+
   <section id="discover" class="discover">
     <div class="container-fluid">
 

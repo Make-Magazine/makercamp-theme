@@ -67,6 +67,10 @@ $makercamp_defaults_customizer_values = array(
 	'home_first_section_fifth2_block_link'         => "/",
   'home_first_section_fifth2_block_link_title'   => "PDF",
   'home_first_section_fifth_block_picture'      => get_template_directory_uri() . '/public/assets/img/project_5.png',
+	'home_quick_message_section_checkbox'					=> "",
+	'home_quick_message_section_title'						=> "Title goes here",
+	'home_quick_message_section_text'							=> "Text goes here",
+	'home_quick_message_section_picture'		      => get_template_directory_uri() . '/public/assets/img/project_5.png',
 	/**
 	 * Find a camp page
 	 */

@@ -10,17 +10,26 @@ function makercamp_home_customizer( $wp_customize ) {
 		'makercamp_hero_section_home_page',
 		array(
 			'title'       => 'Home page, Hero section',
-			'description' => 'This is settings for Hero section of Home page',
+			'description' => 'Hero section of Home page',
 			'priority'    => 200,
 		)
 	);
+  // Optional section above 1st section in Home page
+  $wp_customize->add_section(   // 1st section
+    'makercamp_home_optional_section',
+    array(
+      'title'       => 'Home page, optional section',
+      'description' => 'Optional info section above 1st section',
+      'priority'    => 201,
+    )
+  );
 	// 1st section in Home page
 	$wp_customize->add_section(   // 1st section
 		'makercamp_home_first_section',
 		array(
 			'title'       => 'Home page, 1st section',
-			'description' => 'This is settings for 1st section of Home page',
-			'priority'    => 201,
+			'description' => '1st section of Home page',
+			'priority'    => 202,
 		)
 	);
 
@@ -537,6 +546,71 @@ function makercamp_home_customizer( $wp_customize ) {
 			)
 		)
 	);
+
+  /**
+   * Optional Quick Message Section
+   */
+  $wp_customize->add_setting( // Checkbox for Quick Message ON/OFF
+      'home_quick_message_section_checkbox',
+      array(
+          'default' => $makercamp_defaults_customizer_values[ 'home_quick_message_section_checkbox' ],
+      )
+  );
+  $wp_customize->add_control( 
+      'home_quick_message_section_checkbox', 
+      array(
+        'settings' => 'home_quick_message_section_checkbox',
+        'label'    => 'When checked, this section is shown',
+        'section'  => 'makercamp_home_optional_section',
+        'type'     => 'checkbox',
+      ) 
+  );
+
+  $wp_customize->add_setting(   // Title
+      'home_quick_message_section_title',
+      array(
+          'default' => $makercamp_defaults_customizer_values[ 'home_quick_message_section_title' ],
+      )
+  );
+  $wp_customize->add_control(
+      'home_quick_message_section_title',
+      array(
+          'label'   => 'Title',
+          'section' => 'makercamp_home_optional_section',
+          'type'    => 'text',
+      )
+  );
+  $wp_customize->add_setting(   // Text
+      'home_quick_message_section_text',
+      array(
+          'default' => $makercamp_defaults_customizer_values[ 'home_quick_message_section_text' ],
+      )
+  );
+  $wp_customize->add_control(
+      'home_quick_message_section_text',
+      array(
+          'label'   => 'Text',
+          'section' => 'makercamp_home_optional_section',
+          'type'    => 'text',
+      )
+  );
+  $wp_customize->add_setting(   // picture
+    'home_quick_message_section_picture',
+    array(
+      'default' => $makercamp_defaults_customizer_values[ 'home_quick_message_section_picture' ],
+    )
+  );
+  $wp_customize->add_control(
+    new WP_Customize_Image_Control(
+      $wp_customize,
+      'home_quick_message_section_picture',
+      array(
+        'label'    => 'Image or gif',
+        'section'  => 'makercamp_home_optional_section',
+        'settings' => 'home_quick_message_section_picture'
+      )
+    )
+  );
 }
 
 add_action( 'customize_register', 'makercamp_home_customizer' );
