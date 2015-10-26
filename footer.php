@@ -274,7 +274,7 @@ $(function() {
   <form name="MailingList" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
 		<input type=hidden name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
 		<input type="hidden" name="cmd" value="subscribe" />
-		<input type="hidden" name="custom_host" value="makershed.com" />
+		<input type="hidden" name="custom_host" value="makercamp.com" />
 		<input type="hidden" name="custom_incentive" value="none" />
 		<input type="hidden" name="custom_source" value="modal" />
 		<input type="hidden" name="goto" value="//www.makercamp.com/?thankyou" />
@@ -285,6 +285,9 @@ $(function() {
 	</form>
 </div>
 <!-- End Newsletter Modal -->
+
+<!-- Subscribe return path overlay -->
+<?php echo subscribe_return_path_overlay(); ?>
 
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

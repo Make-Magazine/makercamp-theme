@@ -1,0 +1,122 @@
+/* overlay-div style */
+.overlay-div {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(243, 243, 243, 0.0);
+  z-index: 500;
+
+  .container-fluid-overlay {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 5px solid #f40b0b;
+    border-top: 1px solid #4a4a4a;
+    background-color: #f3f3f3;
+    margin-top: 34px;
+    z-index: 501;
+  }
+
+  .container {
+    padding-top: 20px;
+  }
+
+  .overlay-1 {
+    height: 230px;
+  }
+
+  .overlay-1 img {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    width: 370px;
+  }
+
+  h2 {
+    color: #585858;
+    font-size: 30px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #4a4a4a;
+    font-size: 15px;
+    font-family: 'Roboto', arial, sans-serif;
+    margin-bottom: 15px;
+  }
+
+  .black-overlay-btn {
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #111;
+    font-size: 15px;
+    border: none;
+    line-height: 1em;
+  }
+
+  .black-overlay-btn:hover,
+  .black-overlay-btn:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .overlay-input {
+    border: none;
+    border-bottom: 1px solid #868686;
+    width: 60%;
+    background-color: #f3f3f3;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 0 !important;
+    padding: 1px;
+  }
+  .overlay-input:focus { 
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #424242;
+    margin-bottom: 9px;
+  }
+}
+
+/* Effects */
+.overlay-slidedown {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+  transition: transform 0.4s ease-in-out, visibility 0s 0.4s, opacity .4s ease-in-out;
+}
+
+.overlay-slidedown.open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, opacity .4s ease-in-out;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .overlay-div .overlay-1 img {
+    width: 300px;
+  }
+  .overlay-div .overlay-1 {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .overlay-div .overlay-1 {
+    height: 285px;
+  }
+  .overlay-div .overlay-1 img {
+    width: 220px;
+  }
+  .overlay-div .overlay-input {
+    width: 80%;
+  }
+}

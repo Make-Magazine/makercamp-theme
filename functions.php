@@ -262,7 +262,7 @@ class Make_Instagram {
     ?>
     <?php
     // Twitter post
-    $output ="<div class=\"item-holder\"><div class=\"container\"><h1>Check Out What Other Campers Are Making</h1><div class='text-center padtop padbottom'><a class='read-more text-center' target='_blank' href='http://bitly.com/makercampcommunity'>Join the Online Community here</a></div><div class=\"row\"><div class=\"col-xs-12 col-sm-4\"><div class=\"social-holder twitter\"><div class=\"title\"><h1><a href=\"http://twitter.com/makercamp\" target=\"_blank\">#makercamp</a></h1></div><a class='twitter-timeline' href='https://twitter.com/MakerCamp' data-widget-id='621839689129967616'>Tweets by @MakerCamp</a>
+    $output ="<div class=\"item-holder\"><div class=\"container\"><h1>Let’s see what other campers make!</h1><div class='text-center padtop padbottom'><a class='read-more text-center' target='_blank' href='http://bitly.com/makercampcommunity'>Join the Online Community here</a></div><div class=\"row\"><div class=\"col-xs-12 col-sm-4\"><div class=\"social-holder twitter\"><div class=\"title\"><h1><a href=\"http://twitter.com/makercamp\" target=\"_blank\">#makercamp</a></h1></div><a class='twitter-timeline' href='https://twitter.com/MakerCamp' data-widget-id='621839689129967616'>Tweets by @MakerCamp</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script></div></div>";
     
     // Instagram photos
@@ -296,3 +296,54 @@ function make_show_images() {
 }
 
 add_shortcode( 'show_twitter_instagram', 'make_show_images' );
+
+/**
+ * Adds the subscribe header return path overlay
+ */
+function subscribe_return_path_overlay() { ?>
+  <div class="overlay-div overlay-slidedown hidden-xs">
+    <div class="container-fluid-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 overlay-1">
+            <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/assets/img/Magazine-cover-44-for-overlay.jpg' ?>" alt="Make Magazine Volume 44 Cover" />
+          </div>
+          <div class="col-sm-4 overlay-2">
+            <h2>Get the Magazine</h2>
+            <p>Make: is the voice of the Maker Movement, empowering, inspiring, and connecting Makers worldwide to tinker and hack. Subscribe to Make Magazine Today!</p>
+            <a class="black-overlay-btn" target="_blank" href="//makezine.com?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make">SUBSCRIBE</a>
+          </div>
+          <div class="col-sm-4 overlay-3">
+            <h2>Sign-up for updates on Maker Camp projects!</h2>
+            <p>Keep informed, stay inspired.</p>
+            <form class="sub-form" action="http://whatcounts.com/bin/listctrl" method="POST">
+              <input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43"/>
+              <input type="hidden" name="cmd" value="subscribe"/>
+              <input type="hidden" name="custom_source" value="Subscribe return path overlay"/>
+              <input type="hidden" name="custom_incentive" value="none"/>
+              <input type="hidden" name="custom_url" value=""/>
+              <input type="hidden" id="format_mime" name="format" value="mime"/>
+              <input type="hidden" name="goto" value=""/>
+              <input type="hidden" name="custom_host" value="makercamp.com" />
+              <input type="hidden" name="errors_to" value=""/>
+              <input name="email" class="overlay-input" placeholder="Enter your email" required type="email"><br>
+              <input value="GO" class="black-overlay-btn" type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $('#trigger-overlay, .overlay-div').hover(
+      function () {
+          $('.overlay-div').stop().addClass( 'open' );
+          $( 'body' ).addClass( 'modal-open' );
+      },
+      function () {
+          $('.overlay-div').stop().removeClass( 'open' );
+          $( 'body' ).removeClass( 'modal-open' );
+      }
+    );
+  </script>
+<?php }
