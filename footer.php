@@ -232,23 +232,26 @@ $(function() {
 
     if ( news_signup == null ) {
       if ( news_close == null ) {
-        $(".fancybox2").fancybox({
-            autoSize : false,
-            width  : 465,
-            height  : 200,
-            afterLoad   : function() {
-                this.content = this.content.html();
-            }
-        });
+
         // Launch fancyBox on first element
         // setTimeout( function() {$(".fancybox2").trigger('click'); },2000);
    			
-   			// On home page button click then launch
-				$( ".fancybox2-trigger" ).click(function() {
-				  $(".fancybox2").trigger('click');
-				});
       }
     }
+
+  $(".fancybox2").fancybox({
+      autoSize : false,
+      width  : 465,
+      height  : 200,
+      afterLoad   : function() {
+          this.content = this.content.html();
+      }
+  });
+
+  // On home page button click then launch
+  $( ".fancybox2-trigger" ).click(function() {
+    $(".fancybox2").trigger('click');
+  });
 });
 </script>
 <script>
@@ -271,7 +274,7 @@ $(function() {
 </script>
 <div class="fancybox2" style="display:none;">
   <h2>Sign-up for updates on Maker Camp projects!</h2>
-  <form name="MailingList" action="https://secure.whatcounts.com/bin/listctrl" method="POST">
+  <form name="MailingList" action="//secure.whatcounts.com/bin/listctrl" method="POST">
 		<input type=hidden name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43" />
 		<input type="hidden" name="cmd" value="subscribe" />
 		<input type="hidden" name="custom_host" value="makercamp.com" />
