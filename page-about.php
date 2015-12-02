@@ -153,7 +153,7 @@
               $second_section_second_right_link = makercamp_defaults_customizer( 'second_section_second_right_link' );
               if ( ! empty( $second_section_second_right_link ) ) :
                 ?>
-                <a href="<?php echo $second_section_first_right_link; ?>" class="hide-in-mobile read-more">
+                <a href="<?php echo $second_section_second_right_link; ?>" class="hide-in-mobile read-more">
                   <?php
                   $second_section_second_right_link_title = makercamp_defaults_customizer( 'second_section_second_right_link_title' );
                   if ( ! empty( $second_section_second_right_link_title ) ) :
