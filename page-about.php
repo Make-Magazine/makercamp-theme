@@ -91,8 +91,7 @@
           $second_section_left_link = makercamp_defaults_customizer( 'second_section_left_link' );
           if ( ! empty( $second_section_left_link ) ) :
             ?>
-            <a href="<?php echo $second_section_left_link ?>" data-content="Looks like you are already signed up!" data-placement="top" data-trigger="manual"
-               class="read-more sign-in-trigger">
+            <a href="<?php echo $second_section_left_link ?>" class="read-more fancybox2-trigger">
               <?php
               $second_section_left_link_title = makercamp_defaults_customizer( 'second_section_left_link_title' );
               if ( ! empty( $second_section_left_link_title ) ) :
