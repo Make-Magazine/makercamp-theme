@@ -27,11 +27,11 @@
 			<div class="col-sm-6 col-md-3 social-foot-col">
 				<h4>Explore Making</h4>
 				<ul class="list-unstyled">
-					<li><a href="//makezine.com/blog" target="_blank">Make: News</a></li>
+					<li><a href="//makezine.com/" target="_blank">Make: News &amp; Projects</a></li>
 					<li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
 					<li><a href="//makerfaire.com">Maker Faire</a></li>
 					<li><a href="//makercon.com" target="_blank">Maker Con</a></li>
-					<li><a href="https://readerservices.makezine.com/mk/default.aspx?" target="_blank">Subscribe to Make:</a></li>											
+					<li><a href="https://readerservices.makezine.com/mk/default.aspx?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make&pc=MK&pk=M5BMCP" target="_blank">Subscribe to Make:</a></li>											
 				</ul>
 			</div>
 			<div class="col-sm-6 col-md-3 social-foot-col">
@@ -135,11 +135,11 @@
 					<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
 						<div class="panel-body">
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="//makezine.com/blog" target="_blank">Make: News</a></li>
+								<li><a href="//makezine.com/" target="_blank">Make: News &amp; Projects</a></li>
 								<li><a href="//makerfaire.com">Maker Faire</a></li>
 								<li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
 								<li><a href="//makercon.com" target="_blank">MakerCon</a></li>
-								<li><a href="https://readerservices.makezine.com/mk/default.aspx?" target="_blank">Subscribe to Make:</a></li>						
+								<li><a href="https://readerservices.makezine.com/mk/default.aspx?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make&pc=MK&pk=M5BMCP" target="_blank">Subscribe to Make:</a></li>						
 							</ul>
 						</div>
 					</div>
@@ -154,7 +154,7 @@
 					<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
 						<div class="panel-body">
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="//makezine.com/blog" target="_blank">Make: News</a></li>
+								<li><a href="//makezine.com/" target="_blank">Make: News &amp; Projects</a></li>
 								<li><a href="//makerfaire.com" target="_blank">Maker Faire</a></li>
 								<li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
 								<li><a href="//makercon.com" target="_blank">MakerCon</a></li>
