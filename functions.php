@@ -311,7 +311,7 @@ function subscribe_return_path_overlay() { ?>
           <div class="col-sm-4 overlay-2">
             <h2>Get the Magazine</h2>
             <p>Make: is the voice of the Maker Movement, empowering, inspiring, and connecting Makers worldwide to tinker and hack. Subscribe to Make Magazine Today!</p>
-            <a class="black-overlay-btn" target="_blank" href="//makezine.com?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make">SUBSCRIBE</a>
+            <a class="black-overlay-btn" target="_blank" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M5BMCP">SUBSCRIBE</a>
           </div>
           <div class="col-sm-4 overlay-3">
             <h2>Sign-up for updates on Maker Camp projects!</h2>
