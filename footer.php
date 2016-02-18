@@ -156,7 +156,6 @@
 								<li><a href="//makezine.com/" target="_blank">Make: News &amp; Projects</a></li>
 								<li><a href="//makerfaire.com" target="_blank">Maker Faire</a></li>
 								<li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
-								<li><a href="//makercon.com" target="_blank">MakerCon</a></li>
 								<li><a href="https://help.makercamp.com/hc/en-us">Maker Camp Help Page</a></li>
 							</ul>
 						</div>
