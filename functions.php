@@ -270,18 +270,11 @@ class Make_Instagram {
               <div class=\"social-holder instagram\">
                 <div class=\"title\">
                   <h1>Instagram, #makercamp</h1>
-                </div>";
-          foreach( $pages as $page ) {      
-              $output .= "<ul class=\"img-list\">";
-              foreach( $page as $img ) {
-            $output .= "<li class='col-xs-6 col-sm-4'><a href=\"" . esc_url( $img->link ) . "\" target=\"_blank\" class=\"instagram-link\"><img src=\"" . esc_url( $img->images->standard_resolution->url ) . "\" class=\"img-responsive\" alt=\"image description\"></a></li>";
-              }
-            $output .= "</ul>";
-          }
-            $output .= "
-              </div>
-            </div>";
-    $output .="</div></div></div>";
+                </div>
+                <!-- SnapWidget -->
+<script src='http://snapwidget.com/js/snapwidget.js'></script>
+<iframe src='http://snapwidget.com/in/?h=bWFrZXJjYW1wfGlufDEyNXwzfDJ8fG5vfDV8bm9uZXxvblN0YXJ0fHllc3x5ZXM=&ve=050516' title='Instagram Widget' class='snapwidget-widget' allowTransparency='true' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100%;'></iframe>
+</div></div>";
 
     return $output;
   }
