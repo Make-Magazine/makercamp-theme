@@ -2,7 +2,7 @@
 
 <section>
   <a href="/map/#host-a-campsite">
-    <img src="<?php echo get_template_directory_uri() . '/assets/img/maker-camp-coming-soon.jpg' ?>" alt="Join our free community for kids who are making around the world, online and in your neighborhood" class="img-responsive" />
+    <img src="<?php echo get_template_directory_uri() . '/assets/img/maker-camp-coming-soon.jpg' ?>" alt="Join our free community for kids who are making around the world, online and in your neighborhood" style="width: 100%;" class="img-responsive" />
   </a>
 </section>
 
