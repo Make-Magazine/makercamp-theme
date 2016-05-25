@@ -40,32 +40,46 @@
 
 
 /*=========================
-  NEW HEDADER
+  HEDADER
  ======================= */
 header {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .red {
   color: #ff0000;
 }
 .header-top-nav {
-  /*margin-top: 20px;*/
   a {
     color: #4F4F4F;
   }
 }
-#menu-header-main-menu li a {
-  border-bottom: 3px solid transparent;
-  padding-bottom: 12px;
-  transition: border-color 0.2s ease;
-  text-transform: uppercase;
+.logo-container {
+  margin-top: 3px;
+  @media (min-width: 992px) and (max-width : 1199px){
+    margin-top: 5px;
+    padding-right: 0;
+  }
+  @media (min-width: 768px) and (max-width : 991px){
+    margin-top: 2px;
+    padding-right: 0;
+  }
+}
+#menu-header-main-menu {
+  li a {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 12px;
+    transition: border-color 0.2s ease;
+    text-transform: uppercase;
+  }
 }
 #menu-header-main-menu li a:hover,
 #menu-header-main-menu li a:focus {
   background-color: transparent;
-  border-bottom: 3px solid #F40B0B;
-  padding-bottom: 12px;
+  border-bottom: 3px solid #14bcfb;
   transition: border-color 0.2s ease;
+}
+#menu-header-main-menu li a:focus {
+  border-bottom: 3px solid #079cd3;
 }
 
 .nav .calendar-button {
@@ -101,27 +115,35 @@ header {
 }
 
 
-/* TEMP MOBILE NAV */
-header .bars {
-    display: block;
-    width: 20px;
-    height: 3px;
+/* MOBILE NAV */
+header .navbar-toggle {
+  .icon-bar {
     background-color: #333;
-    box-shadow: 0 5px 0 #333, 0 10px 0 #333;
+    position: relative;
+    transition: all 500ms ease-in-out;
+  }
+  &.active-bar {
+    .icon-bar:nth-of-type(2) {
+      top: 7px;
+      transform: rotate(45deg);
+    }
+    .icon-bar:nth-of-type(3) {
+      background-color: transparent;
+    }
+    .icon-bar:nth-of-type(4) {
+      top: -5px;
+      transform: rotate(-45deg);
+    }
+  }
 }
 header .menu-bar {
-    position: absolute;
-    right: 20px;
-    height: auto;
-    padding: 10px 10px 20px 10px;
-}
-header #mc-menu-container {
-    clear: both;
-    margin-top: 50px;
-    position: absolute;
-    right: 0;
-    background-color: #f0f0f0;
-    z-index: 1000;
+  position: absolute;
+  right: 20px;
+  height: auto;
+  padding: 10px 10px 20px 10px;
+  margin-top: 3px;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 /*=========================
@@ -199,26 +221,48 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 @media (min-width: 992px) and (max-width : 1199px){
-  .header-top-nav {
-    /*margin-top: 11px;*/
-  }
   .social-network-container {
-      margin-top: 8px;
+    margin-top: 8px;
   }
 }
 @media (min-width: 768px) and (max-width : 991px){
-  .header-top-nav {
-    /*margin-top: 19px;*/
-  }
 }
 @media (max-width: 767px) {
   header {
     padding: 10px 0;
     margin-top: 0;
     border-bottom: 1px solid #999;
+    > .row {
+      text-align: center;
+    }
+  }
+  .logo-container {
+    display: inline-block;
+    float: left;
+    margin-top: 0;
+  }
+  #menu-header-main-menu {
+    li {
+      a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: 1em;
+      }
+    }
+  }
+  .navbar-nav {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  #mc-menu {
+    width: 100%;
+    .nav>li>a {
+      display: inline-block;
+      margin-bottom: 8px;
+      margin-top: 8px;
+    }
   }
   .header-top-nav {
-    margin-top: 1px;
   }
   .header-logo {
     max-height: 40px;

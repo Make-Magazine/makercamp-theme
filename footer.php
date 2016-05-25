@@ -14,7 +14,7 @@
 	<div class="container">
 		<div class="row social-foot-desktop hidden-xs">
 			<div class="col-sm-6 col-md-3 social-foot-col">
-				<a href="/"><img class="footer_logo" src="http://1abxf1rh6g01lhm2riyrt55k.wpengine.netdna-cdn.com/wp-content/themes/makeblog/img/make-logo.png"  alt="Make Logo"></a>
+				<a href="/"><img class="footer_logo" src="<?php echo get_template_directory_uri() . '/assets/img/makercamp-logo.png' ?>"  alt="Maker Camp projects, making, building, tickering for kids"></a>
 				<ul class="list-unstyled">
 					<li><a href="//makezine.com/projects">Make: Projects</a></li>
 					<li><a href="//makezine.com/category/workshop/3d-printing-workshop/?post_type=projects">3D Printing Projects</a></li>
@@ -186,7 +186,7 @@
 	<!-- END container -->
     <div class="copyright">
         <p>Make: and Maker Camp are registered trademarks of Maker Media, Inc.</p>
-        <p>Copyright © 2004-2015 Maker Media, Inc. All rights reserved</p>
+        <p>Copyright © 2004-2016 Maker Media, Inc. All rights reserved</p>
     </div>
 </footer>
 <!-- END new-footer -->

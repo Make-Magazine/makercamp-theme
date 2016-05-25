@@ -61,47 +61,36 @@ document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('on
       <div class="row">
 
         <!-- LOGO & TAG LINE -->
-        <div class="col-md-2 col-sm-3 col-xs-7 text-center">
+        <div class="col-md-2 col-sm-3 logo-container">
           <a href="/">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/makercamp-logo.png' ?>" class="header-logo img-responsive" />
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/makercamp-logo.png' ?>" class="header-logo img-responsive" alt="Maker Camp projects, making, building, tickering for kids" />
           </a>
         </div>
 
         <!-- MENUS -->
-        <nav class="header-top-nav col-md-7 col-sm-9 col-xs-5">
+        <nav class="header-top-nav col-md-7 col-sm-9">
           <div class="row">
-            <a class="menu-bar visible-xs-block" data-toggle="collapse" href="#mc-menu">
-              <span class="bars"></span>            
-            </a> 
+            <button type="button" class="menu-bar visible-xs-block navbar-toggle" data-target="#mc-menu" data-toggle="collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
             <!-- Main Menu -->
             <?php
               wp_nav_menu( array(
                   'menu'              => 'Header main menu',
                   'theme_location'    => 'primary_menu',
-                  'depth'             => 2,
+                  'depth'             => 1,
                   'container'         => 'div',
+                  'container_id'      => 'mc-menu',
                   'container_class'   => 'collapse navbar-collapse',
                   'menu_class'        => 'nav navbar-nav',
                   'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                   'walker'            => new wp_bootstrap_navwalker())
               );
             ?>
-            <!-- Mobile Menu -->
-            <div class="hidden-sm hidden-md hidden-lg" id="mc-menu-container">
-              <?php
-                wp_nav_menu( array(
-                    'menu'              => 'Header main menu',
-                    'theme_location'    => 'primary_menu',
-                    'depth'             => 1,
-                    'container'         => 'div',
-                    'container_class'   => 'collapse navbar-collapse',
-                    'container_id'      => 'mc-menu',
-                    'menu_class'        => 'nav navbar-nav',
-                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                    'walker'            => new wp_bootstrap_navwalker())
-                );
-              ?>
-            </div>
           </div>
         </nav>
 

@@ -2824,4 +2824,9 @@ $(document).ready(function () {
     }
   });
 
+  // MOBILE HAMBURGER BAR ANIMATION
+  $(".navbar-toggle").on("click", function () {
+    $(this).toggleClass("active-bar");
+  });
+
 });
