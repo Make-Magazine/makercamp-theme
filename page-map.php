@@ -24,16 +24,16 @@
 		</div>
 	</section>
 
-<section class="navbar-second" id="second-navbar">
-	<div class="container-fluid">
-		<div class="menu-second-nav-container">
-			<ul class="nav navbar-nav">
-				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#find-a-campsite">Find A Campsite</a></li>
-				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#host-a-campsite">Host A Campsite</a></li>
-			</ul>
-		</div>
-	</div>
-</section>
+  <section class="navbar-second" id="second-navbar">
+  	<div class="container-fluid">
+  		<div class="menu-second-nav-container">
+  			<ul class="nav navbar-nav">
+  				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#find-a-campsite">Find A Campsite</a></li>
+  				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#host-a-campsite">Host A Campsite</a></li>
+  			</ul>
+  		</div>
+  	</div>
+  </section>
 
 	<section class="camps-map" id="find-a-campsite">
 		<?php

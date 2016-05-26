@@ -35,19 +35,11 @@ module.exports = function(grunt) {
           './bower_components/bootstrap/js/tab.js',
           './bower_components/bootstrap/js/transition.js',
           //'./assets/js/customizer.js',
-          //'./assets/js/navigation.js',
           //'./assets/js/skip-link-focus-fix.js',
           './assets/js/script.js'
         ],
         // Concatenate script.js
         dest: './public/js/script.js',
-      },
-      js_theme: {
-        src: [
-          './assets/js/theme.js'
-        ],
-        // Concatenate theme.js
-        dest: './public/js/theme.js',
       },
     },
 
@@ -60,12 +52,6 @@ module.exports = function(grunt) {
         files: {
           // Minifies  script.js 
           './public/js/script.min.js': './public/js/script.js',
-        }
-      },
-      theme: {
-        files: {
-          // Minifies theme.js
-          './public/js/theme.min.js': './public/js/theme.js',
         }
       },
     },
@@ -89,16 +75,6 @@ module.exports = function(grunt) {
             './assets/js/script.js',
             ],   
           tasks: ['concat:js_script','uglify:script'],
-          options: {
-          livereload: true
-          }
-        },
-        js_theme: {
-          files: [
-            // Watched files
-            './assets/js/theme.js',
-            ],   
-          tasks: ['concat:js_theme','uglify:theme'],
           options: {
           livereload: true
           }

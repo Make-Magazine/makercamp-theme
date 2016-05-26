@@ -83,6 +83,7 @@ add_action( 'widgets_init', 'makercamp_theme_widgets_init' );
  */
 function makercamp_theme_scripts() {
   wp_enqueue_style( 'makercamp_theme-style', get_stylesheet_uri() );
+  wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), null, 'all' );
   /* Add Custom CSS */
   wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=1' );
   /* Add jquery.cookie */
@@ -92,19 +93,14 @@ function makercamp_theme_scripts() {
   wp_enqueue_script( 'fancybox-js', get_stylesheet_directory_uri() . '/bower_components/fancybox/source/jquery.fancybox.pack.js', array( 'jquery' ), NULL, TRUE );
   /* Add Bootstrap JS */
   wp_enqueue_script( 'script-js', get_template_directory_uri() . '/public/js/script.min.js', array('jquery', 'fancybox-js', 'jquery.cookie'), '', true );
-  /* Add JS for specific Bootstrap JS Calls */
-  wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/public/js/theme.min.js', array('jquery', 'script-js'), '', true );
-  //wp_enqueue_script( 'makercamp_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
   //wp_enqueue_script( 'makercamp_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }
 }
 add_action( 'wp_enqueue_scripts', 'makercamp_theme_scripts' );
-/**
- * Implement the Custom Header feature.
- */
-//require get_template_directory() . '/inc/custom-header.php';
+
+
 /**
  * Custom template tags for this theme.
  */
@@ -121,6 +117,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
 /**
  * Custom functions
  */
@@ -133,6 +131,7 @@ function conditional_js() {
   $wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
 }
 add_action( 'wp_enqueue_scripts', 'conditional_js' );
+
 // Making jQuery Google API
 function modify_jquery() {
   if (!is_admin()) {
@@ -143,152 +142,45 @@ function modify_jquery() {
   }
 }
 add_action('init', 'modify_jquery');
+
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
-add_action( 'init', 'crew_post_types' );
-function crew_post_types() {
-  $labels = array(
-      'name'                => _x('Crew list', 'post type general name'),
-      'singular_name'       => _x('Crew', 'post type singular name'),
-      'add_new'             => _x('Add New', 'new crew'),
-      'add_new_item'        => __('Add New Crew'),
-      'edit_item'           => __('Edit Crew'),
-      'new_item'            => __('New Crew'),
-      'view_item'           => __('View Crew'),
-      'search_items'        => __('Search Crew'),
-      'not_found'           => __('Nothing found'),
-      'not_found_in_trash'  => __('Nothing found in Trash'),
-      'parent_item_colon'   => ''
-  );
-  $args = array(
-      'labels'              => $labels,
-      'public'              => true,
-      'publicly_queryable'  => true,
-      'show_ui'             => true,
-      'query_var'           => true,
-      'rewrite'             => true,
-      'capability_type'     => 'post',
-      'hierarchical'        => false,
-      'menu_position'       => null,
-      'supports'            => array('title','editor','thumbnail')
-  );
-  register_post_type( 'crew', $args );
-}
 
 /**
- * Instagram/Twitter class
+ * Create the project post types
  */
-class Make_Instagram {
-
-  /**
-   * THE CONSTRUCT.
-   *
-   * @return  void
-   */
-  public function __construct() {
-
-    add_action( 'wp_enqueue_scripts', array( $this, 'load_resources' ), 30 );
-
-  }
-
-  /**
-   * Let's add all of our resouces to make our magic happen.
-   */
-  public function load_resources() {
-
-  }
-
-  /**
-   * Load the Maker Faire data feed.
-   * Might update this at some point so that you can pass in any user.
-   *
-   * @return OBJECT Instagram response
-   */
-  public function load_data() {
-
-    $base_url = 'https://api.instagram.com/v1/tags/makercamp/media/recent';
-    $params = array(
-      'access_token' => '227901753.5b9e1e6.7b46b974b69e434e9d3322f1e4463894',
-      'count' => 6
-    );
-
-    // Build the URL
-    $url = add_query_arg( $params, $base_url );
-    // Request the data
-    $response = wp_remote_get( $url );
-    $json = wp_remote_retrieve_body( $response );
-    
-    // Parse the JSON
-    $data = json_decode( $json );
-
-    // Send it off...
-    return $data->data;
-  }
-
-        public function getFirstImage() {
-          $ps = $this->load_data(); 
-
-          // make sure $output exists, otherwise we may get an error in local environment
-    if(!isset($output) || !is_string($output)) {
-             $output = "";
-    }
-
-          $img = $ps[0];
-          
-          $output .= "<li><a href=\"" . esc_url( $img->link ) . "\" target=\"_blank\" class=\"instagram-link\">"
-                  .  "  <img src=\"" . esc_url( $img->images->standard_resolution->url ) . "\" height=\"182\" width=\"180\" alt=\"image description\">"    
-                  .  "</a></li>";
-       
-          return $output;
-        }
-
-  public function show_images() {
-    // TODO:  This whole function is a bit of a mess of entangled php and html.
-    //      Would do a lot cleaner with some sort of templating engine.
-
-    $ps = $this->load_data();
-
-    // make sure $output exists, otherwise we may get an error in local environment
-    if(!isset($output) || !is_string($output)) {
-      $output = "";
-    }
+// add_action( 'init', 'project_post_types' );
+// function project_post_types() {
+//   $labels = array(
+//       'name'                => _x('Projects', 'post type general name'),
+//       'singular_name'       => _x('Project', 'post type singular name'),
+//       'add_new'             => _x('Add New', 'new project'),
+//       'add_new_item'        => __('Add New Project'),
+//       'edit_item'           => __('Edit Project'),
+//       'new_item'            => __('New Project'),
+//       'view_item'           => __('View Project'),
+//       'search_items'        => __('Search Project'),
+//       'not_found'           => __('Nothing found'),
+//       'not_found_in_trash'  => __('Nothing found in Trash'),
+//       'parent_item_colon'   => ''
+//   );
+//   $args = array(
+//       'labels'              => $labels,
+//       'public'              => true,
+//       'publicly_queryable'  => true,
+//       'show_ui'             => true,
+//       'query_var'           => true,
+//       'rewrite'             => true,
+//       'capability_type'     => 'post',
+//       'hierarchical'        => false,
+//       'menu_position'       => null,
+//       'supports'            => array('title','editor','thumbnail')
+//   );
+//   register_post_type( 'project', $args );
+// }
 
 
-    $images_per_page = 6;
-    $num_images = count($ps);
-        $pages = array_chunk($ps, $images_per_page);
-        $num_pages = count($pages);
-    ?>
-    <?php
-    // Twitter post
-    $output ="<div class=\"item-holder\"><div class=\"container\"><h1>Let’s see what other campers make!</h1><div class='text-center padtop padbottom'><a class='read-more text-center' target='_blank' href='http://bitly.com/makercampcommunity'>Join the Online Community here</a></div><div class=\"row\"><div class=\"col-xs-12 col-sm-4\"><div class=\"social-holder twitter\"><div class=\"title\"><h1><a href=\"http://twitter.com/makercamp\" target=\"_blank\">#makercamp</a></h1></div><a class='twitter-timeline' href='https://twitter.com/MakerCamp' data-widget-id='621839689129967616'>Tweets by @MakerCamp</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script></div></div>";
-    
-    // Instagram photos
-    $output .="<div class=\"col-xs-12 col-sm-8\">
-              <div class=\"social-holder instagram\">
-                <div class=\"title\">
-                  <h1>Instagram, #makercamp</h1>
-                </div>
-                <!-- SnapWidget -->
-<script src='http://snapwidget.com/js/snapwidget.js'></script>
-<iframe src='http://snapwidget.com/in/?h=bWFrZXJjYW1wfGlufDEyNXwzfDJ8fG5vfDV8bm9uZXxvblN0YXJ0fHllc3x5ZXM=&ve=050516' title='Instagram Widget' class='snapwidget-widget' allowTransparency='true' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100%;'></iframe>
-</div></div>";
-
-    return $output;
-  }
-
-}
-
-$instagram = new Make_Instagram();
-
-function make_show_images() {
-  $instagram = new Make_Instagram();
-  return $instagram->show_images();
-}
-
-add_shortcode( 'show_twitter_instagram', 'make_show_images' );
 
 /**
  * Adds the subscribe header return path overlay

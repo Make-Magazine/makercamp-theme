@@ -13,7 +13,10 @@
 function makercamp_theme_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+  $wp_customize->remove_section( 'colors' );
+  $wp_customize->remove_control( 'header_image' );
+  $wp_customize->remove_section( 'static_front_page' );
+  $wp_customize->remove_panel( 'widgets' );
 }
 
 /**
@@ -30,47 +33,6 @@ add_action( 'customize_preview_init', 'makercamp_theme_customize_preview_js' );
  */
 
 $makercamp_defaults_customizer_values = array(
-	/**
-	 * home page
-	 */
-	'hero_section_yt'                          	 	 => 'VscvsLEcyJ4',
-	'hero_section_title'                           => 'Welcome to Fall 2015 Maker Camp!',
-	'hero_section_subtitle'                        => 'Iushdfi uhsdfiuhsdfi uhisduf hsdfiu  sdifuhs fiuhs dfiuh sidufh isudhf iusdhfiushd fiush fiuhsdfiuh ',
-	'home_first_section_title'                    => 'Discover our wide range of kid-friendly, hands-on projects and videos',
-	'home_first_section_first_block_title'        => 'Find projects ideas listed by week on makercamp.com',
-	'home_first_section_first_block_link'         => "/",
-  'home_first_section_first_block_link_title'   => "Go",
-	'home_first_section_first2_block_link'         => "/",
-  'home_first_section_first2_block_link_title'   => "PDF",
-	'home_first_section_first_block_picture'      => get_template_directory_uri() . '/public/assets/img/project_1.png',
-	'home_first_section_second_block_title'       => 'See Maker Camp 2013 YouTube playlist!',
-	'home_first_section_second_block_link'        => 'https://www.youtube.com/playlist?list=PLwhkA66li5vD027TQQWc3qLtU9LtEtCdZ',
-  'home_first_section_second_block_link_title'   => "Go",
-	'home_first_section_second2_block_link'         => "/",
-  'home_first_section_second2_block_link_title'   => "PDF",
-  'home_first_section_second_block_picture'     => get_template_directory_uri() . '/public/assets/img/project_2.jpg',
-	'home_first_section_third_block_title'        => 'See Maker Camp 2014 YouTube playlist!',
-	'home_first_section_third_block_link'         => 'https://www.youtube.com/playlist?list=PLwhkA66li5vAR_CboA0lVOlrmqIqvlw_O',
-  'home_first_section_third_block_link_title'   => "Go",
-	'home_first_section_third2_block_link'         => "/",
-  'home_first_section_third2_block_link_title'   => "PDF",
-  'home_first_section_third_block_picture'      => get_template_directory_uri() . '/public/assets/img/project_3.jpg',
-	'home_first_section_fourth_block_title'       => 'See the projects posted by other campers, or post your own!',
-	'home_first_section_fourth_block_link'        => 'https://plus.google.com/communities/107377046073638428310',
-  'home_first_section_fourth_block_link_title'   => "Go",
-	'home_first_section_fourth2_block_link'         => "/",
-  'home_first_section_fourth2_block_link_title'   => "PDF",
-  'home_first_section_fourth_block_picture'     => get_template_directory_uri() . '/public/assets/img/project_4.jpg',
-	'home_first_section_fifth_block_title'        => 'Find more project ideas in the Maker Camp Affiliate Playbook!',
-	'home_first_section_fifth_block_link'         => 'http://makercamp.com/wp-content/uploads/2014/06/MakerCamp-Playbook-2014-smaller.pdf',
-  'home_first_section_fifth_block_link_title'   => "Go",
-	'home_first_section_fifth2_block_link'         => "/",
-  'home_first_section_fifth2_block_link_title'   => "PDF",
-  'home_first_section_fifth_block_picture'      => get_template_directory_uri() . '/public/assets/img/project_5.png',
-	'home_quick_message_section_checkbox'					=> "",
-	'home_quick_message_section_title'						=> "Title goes here",
-	'home_quick_message_section_text'							=> "Text goes here",
-	'home_quick_message_section_picture'		      => get_template_directory_uri() . '/public/assets/img/project_5.png',
 	/**
 	 * Find a camp page
 	 */
@@ -184,7 +146,6 @@ $makercamp_defaults_customizer_values = array(
 /**
  * Added custom customizer for Home, Find a camp, Host a camp, About us, Hidden pages.
  */
-require get_template_directory() . '/inc/customizer/customizer-home-page.php';
 require get_template_directory() . '/inc/customizer/customizer-map-page.php';
 require get_template_directory() . '/inc/customizer/customizer-host-page.php';
 require get_template_directory() . '/inc/customizer/customizer-about-page.php';
