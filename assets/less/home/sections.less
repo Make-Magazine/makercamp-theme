@@ -34,10 +34,121 @@
 
 .what-happens-at-mc {
   background-image: url("../assets/img/cloud_bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 300px;
+  height: 670px;
+  @media (max-width: 991px) {
+    height: 725px;
+  }
+  @media (max-width: 767px) {
+    height: auto;
+  }
+  h2 {
+    color: #3fafed;
+    text-align: center;
+    margin: 30px 0 40px;
+  }
+  .foating-divs {
+    width: 100%;
+    position: relative;
+    > div {
+      position: absolute;
+      text-align: center;
+      width: 25%;
+      img {
+        padding: 0 25% 5px;
+      }
+      h4 {
+        font-size: 24px;
+        font-weight: 300;
+        padding: 0 30px;
+      }
+      p {
+        font-size: 14px;
+        padding: 0 30px;
+      }
+      .mc-blue-arrow-btn {
+        font-size: 13px;
+        @media (max-width: 1199px) {
+          padding: 10px !important;
+          i {
+            display: none;
+          }
+        }
+        i {
+          font-size: 34px;
+          margin-left: -42px;
+          margin-top: -4px;
+        }
+      }
+      @media (max-width: 991px) {
+        width: 33%;
+        &.foating-div-2{
+          margin-top: 315px;
+          margin-left: 15%;
+        }
+        &.foating-div-4 {
+          margin-top: 315px;
+          margin-right: 15%;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 50%;
+        position: static;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        float: left;
+        margin-bottom: 40px;
+        &.foating-div-2, &.foating-div-4 {
+          margin-top: 0;
+        }
+        &.foating-div-3, &.foating-div-5 {
+          clear: both;
+        }
+        img {
+          padding: 0 15px 5px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        h4 {
+          padding: 0 10px;
+          font-size: 20px;
+        }
+        p {
+          padding: 0 10px;
+        }
+        a {
+          font-size: 11px;
+        }
+      }
+    }
+    .foating-div-1 {
+
+    }
+    .foating-div-2 {
+      margin-top: 200px;
+      margin-left: 18%;
+    }
+    .foating-div-3 {
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      .mc-blue-arrow-btn {
+        font-size: 12px;
+        padding: 10px 4px 10px 39px;
+        i {
+          margin-left: -34px;
+        }
+       }
+    }
+    .foating-div-4 {
+      right: 0;
+      margin-top: 200px;
+      margin-right: 18%;
+    }
+    .foating-div-5 {
+      right: 0;
+    }
+  }
 }
 
 .a-day-at-mc {
@@ -93,6 +204,8 @@
       margin-left: auto;
       margin-right: auto;
       display: block;
+      margin-top: -10px;
+      margin-bottom: -10px;
     }
   }
 }
@@ -174,6 +287,58 @@
     margin-right: auto;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+}
+
+
+.stuff-for-sale {
+  .sale-blue-bg {
+    background-color: #3fafed;
+    @media (max-width: 767px) {
+      display: none;
+    }
+    .sale-flex-btm {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      h4 {
+        color: #fff;
+        text-align: center;
+        z-index: 10;
+      }
+      .triangle-block {
+        width: 26px;
+        height: 26px;
+        background-color: #3fafed;
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+
+  }
+  .sale-white-bg {
+    padding: 30px 0;
+    .col-sm-3 {
+      text-align: center;
+      @media (max-width: 767px) {
+        margin-top: 15px;
+      }
+      img {
+        padding: 0 7px 10px;
+      }
+      p, a {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+    }
+
   }
 }
 
