@@ -164,8 +164,13 @@
     h2 {
       margin-top: 10px;
     }
-    h4 {
-
+    @media (max-width: 450px) {
+      h2 {
+        font-size: 22px;
+      }
+      h2, h4 {
+        margin-bottom: 5px;
+      }
     }
   }
 
@@ -186,6 +191,9 @@
     margin-right: auto;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
   p {
     color: #888;

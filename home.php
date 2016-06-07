@@ -11,7 +11,7 @@
   </section>
 
   <section class="what-happens-at-mc">
-    <div class="container">
+    <div class="">
       <h2>WHAT HAPPENS AT <strong>MAKERCAMP?</strong></h2>
       <div class="foating-divs">
         <div class="foating-div-1">
@@ -27,21 +27,21 @@
           <h4>SHARE</h4>
           <p>See and share pictures and videos of cool builds!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="#"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>POST YOUR PROJECTS</a>
+          <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>POST YOUR PROJECTS</a>
           </div>
         </div>
         <div class="foating-div-3">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Collaborate_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>COLLABORATE</h4>
           <p>Make friends with Campers from all around the world and swap ideas!</p>
-          <a class="mc-blue-arrow-btn" href="#"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>JOIN THE MAKER CAMP COMMUNITY</a>
+          <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>JOIN THE MAKER CAMP COMMUNITY</a>
         </div>
         <div class="foating-div-4">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Explore_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>EXPLORE</h4>
           <p>Ther are more the 1,000 Maker Camps happening this summer.</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="#"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>FIND A MAKER CAMP NEAR YOU</a>
+          <a class="mc-blue-arrow-btn" href="/map"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>FIND A MAKER CAMP NEAR YOU</a>
           </div>
         </div>
         <div class="foating-div-5">
@@ -49,11 +49,12 @@
           <h4>HOST</h4>
           <p>Become a Maker Camp affiliate and we'll help you introduce the kids you love to the magic of making!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="#"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BECOME AN AFFILIATE</a>
+          <a class="mc-blue-arrow-btn" href="/map#host-a-campsite"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BECOME AN AFFILIATE</a>
           </div>
         </div>
       </div>
     </div>
+    <dic class="clearfix"></div>
   </section>
 
   <section class="a-day-at-mc">
@@ -90,7 +91,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <h2>HOW CAN YOU <strong>START</strong></br> YOUR OWN <strong>MAKER CAMP</strong>?</h2>
-          <a class="mc-blue-btn" href="#">JUST SIGN UP!</a>
+          <a class="mc-blue-btn" href="/map#host-a-campsite">JUST SIGN UP!</a>
         </div>
         <div class="col-xs-12 col-sm-6">
           <h4><strong>MAKER CAMP</strong> IS FREE</br>
@@ -101,14 +102,7 @@
     </div>
   </section>
 
-  <section class="mc-social container">
-    <h3><strong>MAKER CAMPS</strong> AROUND THE WORLD</h3>
-    <h4>#MAKERCAMP on <span><i class="fa fa-twitter" aria-hidden="true"></i>, <i class="fa fa-instagram" aria-hidden="true"></i></span></h4>
-    <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="makerfaire" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="764268" style="height:500px;width:100%;"></div>
-    <div class="text-center">
-      <a class="mc-blue-arrow-btn" href="#"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i> POST YOUR PROJECTS</a>
-    </div>
-  </section>
+  <?php echo social_media_panel(); ?>
 
   <section class="helps-make-makers">
     <div class="container">
@@ -120,68 +114,6 @@
     <div class="triangle-block"></div>
   </section>
 
-  <section class="stuff-for-sale">
-    <div class="sale-blue-bg">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-xs-6 col-sm-3">
-            <div class="sale-flex-btm">
-              <h4>Get "Start Making!"</h4>
-              <div class="triangle-block"></div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <div class="sale-flex-btm">
-              <h4>Get "Start Making!"</h4>
-              <div class="triangle-block"></div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <div class="sale-flex-btm">
-              <h4>Get "Start Making!"</h4>
-              <div class="triangle-block"></div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <div class="sale-flex-btm">
-              <h4>Get "Start Making!"</h4>
-              <div class="triangle-block"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="sale-white-bg">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-xs-6 col-sm-3">
-            <img src="http://lorempixel.com/400/400/" class="img-responsive" alt="Supplies for Maker Camp" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-            <a href="#">GET THIS PRODUCT HERE</a>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <img src="http://lorempixel.com/400/400/" class="img-responsive" alt="Supplies for Maker Camp" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-            <a href="#">GET THIS PRODUCT HERE</a>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <img src="http://lorempixel.com/400/400/" class="img-responsive" alt="Supplies for Maker Camp" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-            <a href="#">GET THIS PRODUCT HERE</a>
-          </div>
-          <div class="col-xs-6 col-sm-3">
-            <img src="http://lorempixel.com/400/400/" class="img-responsive" alt="Supplies for Maker Camp" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-            <a href="#">GET THIS PRODUCT HERE</a>
-          </div>        
-
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <?php echo stuff_for_sale_panel(); ?>
 
 <?php get_footer(); ?>

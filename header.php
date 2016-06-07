@@ -66,15 +66,15 @@
           <!-- Main Menu -->
           <?php
             wp_nav_menu( array(
-                'menu'              => 'Header main menu',
-                'theme_location'    => 'primary_menu',
-                'depth'             => 1,
-                'container'         => 'div',
-                'container_id'      => 'mc-menu',
-                'container_class'   => 'collapse navbar-collapse',
-                'menu_class'        => 'nav navbar-nav',
-                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
+              'menu'              => 'Header main menu',
+              'theme_location'    => 'primary_menu',
+              'depth'             => 1,
+              'container'         => 'div',
+              'container_id'      => 'mc-menu',
+              'container_class'   => 'collapse navbar-collapse',
+              'menu_class'        => 'nav navbar-nav',
+              'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+              'walker'            => new wp_bootstrap_navwalker())
             );
           ?>
         </div>

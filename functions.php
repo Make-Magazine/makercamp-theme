@@ -85,7 +85,7 @@ function makercamp_theme_scripts() {
   wp_enqueue_style( 'makercamp_theme-style', get_stylesheet_uri() );
   wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), null, 'all' );
   /* Add Custom CSS */
-  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=1' );
+  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css' );
   /* Add jquery.cookie */
   wp_enqueue_script( 'jquery.cookie', get_stylesheet_directory_uri() . '/bower_components/jquery.cookie/jquery.cookie.js', array( 'jquery' ), NULL, TRUE );
   /* Add Fancybox */
@@ -232,3 +232,88 @@ function subscribe_return_path_overlay() { ?>
     );
   </script>
 <?php }
+
+
+/**
+ * Social media panel for use on any page
+ */
+function social_media_panel() { ?>
+  <section class="mc-social container">
+    <h3><strong>MAKER CAMPS</strong> AROUND THE WORLD</h3>
+    <h4>#MAKERCAMP on <span><i class="fa fa-twitter" aria-hidden="true"></i>, <i class="fa fa-instagram" aria-hidden="true"></i></span></h4>
+    <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="makerfaire" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="764268" style="height:500px;width:100%;"></div>
+    <div class="text-center">
+      <a class="mc-blue-arrow-btn" href="#"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i> POST YOUR PROJECTS</a>
+    </div>
+  </section>
+<?php }
+
+
+/**
+ * Maker Shed products for sale panel
+ */
+function stuff_for_sale_panel() { ?>
+  <section class="stuff-for-sale">
+    <div class="sale-blue-bg">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-6 col-sm-3">
+            <div class="sale-flex-btm">
+              <h4>Get "Start Making!"</h4>
+              <div class="triangle-block"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="sale-flex-btm">
+              <h4>Get "Start Making!"</h4>
+              <div class="triangle-block"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="sale-flex-btm">
+              <h4>Get "Start Making!"</h4>
+              <div class="triangle-block"></div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <div class="sale-flex-btm">
+              <h4>Get "Start Making!"</h4>
+              <div class="triangle-block"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="sale-white-bg">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-6 col-sm-3">
+            <img src="http://lorempixel.com/400/400/" class="img-responsive" alt="Supplies for Maker Camp" />
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <a href="#">GET THIS PRODUCT HERE</a>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <img src="http://lorempixel.com/400/400/" class="img-responsive" alt="Supplies for Maker Camp" />
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <a href="#">GET THIS PRODUCT HERE</a>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <img src="http://lorempixel.com/400/400/" class="img-responsive" alt="Supplies for Maker Camp" />
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <a href="#">GET THIS PRODUCT HERE</a>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <img src="http://lorempixel.com/400/400/" class="img-responsive" alt="Supplies for Maker Camp" />
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <a href="#">GET THIS PRODUCT HERE</a>
+          </div>        
+
+        </div>
+      </div>
+    </div>
+  </section>
+<?php }
+

@@ -76,7 +76,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$output .= $indent . '<li' . $id . $value . $class_names .'>';
 
 			$atts = array();
-			$atts['title']  = ! empty( $item->title )	? $item->title	: '';
+			$atts['title']  = ! empty( $item->title )	? $item->attr_title	: '';
 			$atts['target'] = ! empty( $item->target )	? $item->target	: '';
 			$atts['rel']    = ! empty( $item->xfn )		? $item->xfn	: '';
 
@@ -103,14 +103,11 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$item_output = $args->before;
 
 			/*
-			 * Glyphicons
+			 * Tooltips if there is title attribut
 			 * ===========
-			 * Since the the menu item is NOT a Divider or Header we check the see
-			 * if there is a value in the attr_title property. If the attr_title
-			 * property is NOT null we apply it as the class name for the glyphicon.
 			 */
 			if ( ! empty( $item->attr_title ) )
-				$item_output .= '<a'. $attributes .'><span class="glyphicon ' . esc_attr( $item->attr_title ) . '"></span>&nbsp;';
+				$item_output .= '<a'. $attributes .'data-toggle="tooltip" data-placement="bottom">';
 			else
 				$item_output .= '<a'. $attributes .'>';
 

@@ -2829,4 +2829,10 @@ $(document).ready(function () {
     $(this).toggleClass("active-bar");
   });
 
+
+  /**
+   * Initialize the header navigation tooltips for descriptive text
+   */
+  $('#menu-header-main-menu a').tooltip();
+
 });
