@@ -13,6 +13,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="tjgq9UGR8WCMZI_40j_B5wda_oVYqKyFtQW547LzMgQ" />
+<meta name="google-site-verification" content="puhGmuLsH_mXPiJjD9UYQrjMLpKaLHbPd4SgX_gy4tU" />
 <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
