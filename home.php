@@ -19,7 +19,7 @@
           <h4>MAKE</h4>
           <p>Check out our awesome collection of projects - and start making today!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="#"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
+          <a class="mc-blue-arrow-btn" href="/project-library"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
           </div>
         </div>
         <div class="foating-div-2">
@@ -142,7 +142,7 @@
 
   <?php echo social_media_panel(); ?>
 
-  <section class="helps-make-makers">
+  <!--section class="helps-make-makers">
     <div class="container">
       <h3><strong>MAKE:</strong> HELPS YOU <strong>MAKE MAKERS</strong></h3>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
@@ -150,8 +150,8 @@
       </div>
     </div>
     <div class="triangle-block"></div>
-  </section>
+  </section-->
 
-  <?php echo stuff_for_sale_panel(); ?>
+  <?php //echo stuff_for_sale_panel(); ?>
 
 <?php get_footer(); ?>
