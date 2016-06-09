@@ -2,6 +2,7 @@
 
   <section class="home-hero">
     <div class="container text-center">
+      <img class="white-sponsored-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/att-Hm-Hero_600.png" alt="Maker Camp 2016 - A Summer of Making" />
       <h2>WELCOME TO A</BR><strong>SUMMER OF MAKING</strong></h2>
       <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
         <h1>A Maker Camp is where kids ages 7-12 learn the magic of making by building cool stuff. Ready to help kids fire up their imaginations and challenge their skills? We're here to help you organize your own Maker Camp in your community or at home.</h1>
