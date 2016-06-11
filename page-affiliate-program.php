@@ -22,7 +22,7 @@
         $host_hero_link = makercamp_defaults_customizer('host_hero_link');
         if (!empty($host_hero_link)) :
       ?>
-      <a class="apply-now" href="<?php echo $host_hero_link ?>">
+      <a class="apply-now" href="<?php echo $host_hero_link ?>" target="_blank">
         <?php
           $host_hero_link_title = makercamp_defaults_customizer('host_hero_link_title');
           if (!empty($host_hero_link_title)) :

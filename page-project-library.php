@@ -82,16 +82,8 @@
 
   <section class="camp-themes" id="themes">
     <div class="container-fluid">
-      <?php $third_section_title = makercamp_defaults_customizer( 'third_section_title' );
-      $third_section_subtitle    = makercamp_defaults_customizer( 'third_section_subtitle' );
-      if ( ! empty( $third_section_title ) ) :
-        ?>
-        <h1><?php echo $third_section_title; ?></h1>
-      <?php endif;
-      if ( ! empty( $third_section_subtitle ) ) :
-        ?>
-        <h2><?php echo $third_section_subtitle; ?></h2>
-      <?php endif; ?>
+      <h1>Maker Camp: Project Archive</h1>
+      <h2>New Projects Coming Soon!</h2>
 
       <ul class="weeks-section">
         <?php
