@@ -74,18 +74,20 @@
   }
   ?>
 
-  <section class="project-library">
+<div class="projects-comming-soon">
+  <div class="coming-soon-overlay">
+    <h1>CAMP PROJECTS</h1>
+    <p>The Summer is here and we are busy in our workshop creating<br /> 
+      inspiring projects for you and the community. Please check back soon!</p>
+  </div>
+</div>
+  
+  <!-- TBD:Reenable -->
+  <section style="display:none" class="camp-themes" id="themes">
     <div class="container-fluid">
+      <h2>2016 Projects Coming Soon!</h2>
 
-    </div>
-  </section>
-
-  <section class="camp-themes" id="themes">
-    <div class="container-fluid">
-      <h1>Maker Camp: Project Archive</h1>
-      <h2>New Projects Coming Soon!</h2>
-
-      <ul class="weeks-section">
+      <ul style="display:none" class="weeks-section">
         <?php
         foreach ( $all_weeks as $week ) {
           $camp_days         = get_posts( array(
