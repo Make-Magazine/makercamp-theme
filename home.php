@@ -2,7 +2,7 @@
 
   <section class="home-hero">
     <div class="container text-center">
-      <img class="white-sponsored-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/att-Hm-Hero_600.png" alt="Maker Camp 2016 - A Summer of Making" />
+      <img class="white-sponsored-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/att-Hm-Hero_600-2.png" alt="Maker Camp 2016 - A Summer of Making" />
       <h2>WELCOME TO A</BR><strong>SUMMER OF MAKING</strong></h2>
       <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
         <h1>Maker Camp is where kids aged 7–12 learn the magic of making by building cool stuff. Ready to help kids fire up their imaginations and challenge their skills? We're here to help you organize your own Maker Camp in your community or at home.</h1>
@@ -20,7 +20,7 @@
           <h4>PROJECTS</h4>
           <p>Check out our awesome collection of projects - and start making today!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="/project-library"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
+          <a class="mc-blue-arrow-btn" href="/projects"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
           </div>
         </div>
         <div class="foating-div-2">
@@ -35,14 +35,14 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Collaborate_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>COMMUNITY</h4>
           <p>Make friends with Campers from all around the world and swap ideas!</p>
-          <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>JOIN THE MAKER CAMP COMMUNITY</a>
+          <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>JOIN THE <span>MAKER CAMP </span>COMMUNITY</a>
         </div>
         <div class="foating-div-4">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Explore_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>EXPLORE</h4>
           <p>Find a Maker Camp near you!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="/map"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BROWSE THE MAKER CAMP MAP</a>
+          <a class="mc-blue-arrow-btn" href="/map"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BROWSE THE <span>MAKER CAMP </span>MAP</a>
           </div>
         </div>
         <div class="foating-div-5">
@@ -58,15 +58,17 @@
     <dic class="clearfix"></div>
   </section>
 
-  <!-- FANCYBOX VIDEO STUFF -->
+  <!-- FANCYBOX VIDEO STUFF 
   <div class="promo-video-outer" style="display: none;">
     <div id="promo-video">
       <video id="promo-video-c" controls preload="auto" poster="//staging.makercamp.com/wp-content/uploads/2016/06/promo-still.jpg" width="auto" height="auto" style="width:100% !important; height:auto !important">
-        <!--source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.mp4" type='video/mp4' /-->
+        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.mp4" type='video/mp4' />
         <source src="//staging.makercamp.com/wp-content/uploads/2016/06/promo-vo-50.webm" type='video/webm' />
-        <!--source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.ogv" type='video/ogg' /-->
+        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.ogv" type='video/ogg' />
         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
       </video>
+    </div>
+  </div>-->
       <script>
       // jQuery( document ).ready(function() {
       //   jQuery(".fancybox-promo").fancybox({
@@ -94,11 +96,9 @@
 
         jQuery(document).ready(function() {
           jQuery(".fancybox-promo").fancybox({
-            maxWidth  : 800,
-            maxHeight : 600,
             fitToView : false,
-            width   : '70%',
-            height    : '70%',
+            width   : '90%',
+            height    : '90%',
             autoSize  : false,
             closeClick  : false,
             openEffect  : 'none',
@@ -107,9 +107,6 @@
           });
         });
       </script>
-    </div>
-  </div>
-  <!-- END FANCYBOX VIDEO STUFF -->
 
   <section class="a-day-at-mc">
     <img src="<?php echo get_template_directory_uri() . '/assets/img/hm_pg_video_bg.jpg' ?>" alt="Click here to see what its like to experience Maker Camp for kids" />
