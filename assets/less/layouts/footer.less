@@ -10,6 +10,11 @@
   .container {
     padding-bottom: 15px;
   }
+  .col-sm-6.col-md-3:nth-child(3) {
+    @media (min-width: 768px) and (max-width: 991px) {
+      clear: both;
+    }
+  }
   .footer_copyright {
     p {
       margin: 0px;
@@ -148,42 +153,6 @@
   }
 }
 
-
-// Primary Call to Action button
-.btn-cyan {
-  padding: 10px 8px;
-  font-size: 15px;
-  line-height: 1em;
-  border: none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #3FAFED;
-  color: #fff;
-  transition: background-color 0.2s ease;
-}
-.btn-cyan:hover {
-  background-color: #1490d4;
-  color: #fff;
-  transition: background-color 0.2s ease;
-}
-.btn-red {
-  padding: 10px 8px;
-  font-size: 15px;
-  line-height: 1em;
-  border: none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #ef574e;
-  color: #fff;
-  transition: background-color 0.2s ease;
-}
-.btn-red:hover {
-  background-color: #d32f25;
-  color: #fff;
-  transition: background-color 0.2s ease;
-}
 form {
   margin: 0 0 20px;
   input[name=email], input[name=name] {

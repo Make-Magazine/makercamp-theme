@@ -13,7 +13,7 @@
 <footer id="footer" class="uni-footer">
 	<div class="container">
 		<div class="row social-foot-desktop hidden-xs">
-			<div class="col-sm-6 col-md-3 social-foot-col">
+			<div class="col-sm-6 col-md-3">
 				<a href="/"><img class="footer_logo" src="<?php echo get_template_directory_uri() . '/assets/img/makercamp-logo.png' ?>"  alt="Maker Camp projects, making, building, tickering for kids"></a>
 				<ul class="list-unstyled">
 					<li><a href="//makezine.com/projects">Make: Projects</a></li>
@@ -24,7 +24,7 @@
 				</ul>
 			</div>
 
-			<div class="col-sm-6 col-md-3 social-foot-col">
+			<div class="col-sm-6 col-md-3">
 				<h4>Explore Making</h4>
 				<ul class="list-unstyled">
 					<li><a href="//makezine.com/" target="_blank">Make: News &amp; Projects</a></li>
@@ -33,7 +33,7 @@
 					<li><a href="https://readerservices.makezine.com/mk/default.aspx?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make&pc=MK&pk=M5BMCP" target="_blank">Subscribe to Make:</a></li>											
 				</ul>
 			</div>
-			<div class="col-sm-6 col-md-3 social-foot-col">
+			<div class="col-sm-6 col-md-3">
 				<h4>Our Company</h4>
 				<ul class="list-unstyled">
 					<li><a href="//makermedia.com" target="_blank">About Us</a></li>

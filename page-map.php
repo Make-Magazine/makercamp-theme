@@ -29,7 +29,7 @@
   		<div class="menu-second-nav-container">
   			<ul class="nav navbar-nav">
   				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#find-a-campsite">Find A Campsite</a></li>
-  				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#host-a-campsite">Host A Campsite</a></li>
+  				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#host">Host A Campsite</a></li>
   			</ul>
   		</div>
   	</div>
@@ -192,7 +192,7 @@ usort( $addresses, function ( $a, $b ) {
 		</div>
 	</section>
 
-  <section class="host-a-camp-hero" id="host-a-campsite">
+  <section class="host-a-camp-hero" id="host">
     <article>
       <?php
         $host_hero_title = makercamp_defaults_customizer('host_hero_title');

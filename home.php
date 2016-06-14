@@ -3,12 +3,12 @@
   <section class="home-hero">
     <div class="container text-center">
       <img class="white-sponsored-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/att-Hm-Hero_600-2.png" alt="Maker Camp 2016 - A Summer of Making" />
-      <h2>WELCOME TO A</BR><strong>SUMMER OF MAKING</strong></h2>
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+      <h2>WELCOME TO<br><strong>MAKER CAMP SUMMER 2016</strong></h2>
+      <div class="hidden col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
         <h1>Maker Camp is where kids aged 7–12 learn the magic of making by building cool stuff. Ready to help kids fire up their imaginations and challenge their skills? We're here to help you organize your own Maker Camp in your community or at home.</h1>
       </div>
+       <i style="margin-bottom:5px;" class="fa fa-chevron-down" aria-hidden="true"></i>
     </div>
-    <i class="fa fa-chevron-down" aria-hidden="true"></i>
   </section>
 
   <section class="what-happens-at-mc">
@@ -42,7 +42,7 @@
           <h4>EXPLORE</h4>
           <p>Find a Maker Camp near you!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="/map"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BROWSE THE <span>MAKER CAMP </span>MAP</a>
+          <a class="mc-blue-arrow-btn" href="/explore"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BROWSE THE <span>MAKER CAMP </span>MAP</a>
           </div>
         </div>
         <div class="foating-div-5">
@@ -50,7 +50,7 @@
           <h4>HOST</h4>
           <p>Become a Maker Camp affiliate and we'll help you introduce the kids you love to the magic of making!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="/map#host-a-campsite"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BECOME AN AFFILIATE</a>
+          <a class="mc-blue-arrow-btn" href="/explore#host"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BECOME AN AFFILIATE</a>
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <h2>HOW CAN YOU <strong>START</strong></br> YOUR OWN <strong>MAKER CAMP</strong>?</h2>
-          <a class="mc-blue-btn" href="/map#host-a-campsite">SIGN UP!</a>
+          <a class="mc-blue-btn" href="/explore#host">SIGN UP!</a>
         </div>
         <div class="col-xs-12 col-sm-6">
           <h4><strong>MAKER CAMP</strong> IS FREE</br>
