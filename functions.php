@@ -239,8 +239,7 @@ function subscribe_return_path_overlay() { ?>
  */
 function social_media_panel() { ?>
   <section class="mc-social container">
-    <h3><strong>MAKER CAMPS</strong> AROUND THE WORLD</h3>
-    <h4>#MAKERCAMP on <span><i class="fa fa-twitter" aria-hidden="true"></i>, <i class="fa fa-instagram" aria-hidden="true"></i></span></h4>
+    <h3>#makercamp: Share Your Project</h3>
     <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="makercamp" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="793105" style="height:500px;width:100%;"></div>
     <div class="text-center">
       <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i> POST YOUR PROJECTS</a>
