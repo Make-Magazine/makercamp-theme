@@ -72,30 +72,30 @@ $(document).ready(function () {
   /**
    * Sign up click event handler
    */
-  $(document).on('click', '.sign-up', function (e) {
-    e.preventDefault();
+  // $(document).on('click', '.sign-up', function (e) {
+  //   e.preventDefault();
 
-    $('.start-screen').hide();
-    $('.arrow-background').hide();
-    $('.post-camp-message').hide();
-    $('.sign-up-screen').show();
-  });
+  //   $('.start-screen').hide();
+  //   $('.arrow-background').hide();
+  //   $('.post-camp-message').hide();
+  //   $('.sign-up-screen').show();
+  // });
 
   /**
    * Sign in click event handler
    */
-  $(document).on('click', '.sign-in', function (e) {
-    e.preventDefault();
+  // $(document).on('click', '.sign-in', function (e) {
+  //   e.preventDefault();
 
-    $('.start-screen').hide();
-    $('.arrow-background').hide();
-    $('.thank-you-screen').show();
+  //   $('.start-screen').hide();
+  //   $('.arrow-background').hide();
+  //   $('.thank-you-screen').show();
 
-    userSignUp = true; // User already have account
-    $.cookie('user_sign_up', true);
+  //   userSignUp = true; // User already have account
+  //   $.cookie('user_sign_up', true);
 
-    $('.week-modal-wrapper').hide();
-  });
+  //   $('.week-modal-wrapper').hide();
+  // });
 
   /**
    * Want counts form submit event handler
@@ -114,20 +114,20 @@ $(document).ready(function () {
   /**
    * Start now click event handler
    */
-  $(document).on('click', '.start-now', function (e) {
-    e.preventDefault();
+  // $(document).on('click', '.start-now', function (e) {
+  //   e.preventDefault();
 
-    hero_section.removeClass('show-content');
-    $('.thank-you-screen').hide();
+  //   hero_section.removeClass('show-content');
+  //   $('.thank-you-screen').hide();
 
-    userSignUp = true; // User signed up with whatcounts
-    $.cookie('user_sign_up', true);
+  //   userSignUp = true; // User signed up with whatcounts
+  //   $.cookie('user_sign_up', true);
 
-    if ($(document).width() < 769) {
-      hero_section.addClass('show-content');
-      $('.week-modal-wrapper').show();
-    }
-  });
+  //   if ($(document).width() < 769) {
+  //     hero_section.addClass('show-content');
+  //     $('.week-modal-wrapper').show();
+  //   }
+  // });
 
   /**
    * Show needed week modal upon map area click event
@@ -164,7 +164,6 @@ $(document).ready(function () {
         hero_section.removeClass('show-content');
       }
     }
-
   });
 
   /**
@@ -203,9 +202,9 @@ $(document).ready(function () {
   /**
    * Check of user is already signed up and show interactive hero
    */
-  if ($.cookie('user_sign_up') == 'true') {
-    $('.sign-in').click();
-  }
+  // if ($.cookie('user_sign_up') == 'true') {
+  //   $('.sign-in').click();
+  // }
 
   /**
    * Initialize fancybox for videos
@@ -461,34 +460,34 @@ $(document).ready(function () {
   /**
    * Scroll up to sign up form or Show message You are already Signed Up!
    */
-  $(document).on('click', '.sign-in-trigger', function (e) {
-    // e.preventDefault();
+  // $(document).on('click', '.sign-in-trigger', function (e) {
+  //   // e.preventDefault();
 
-    if (!userSignUp) {
-      // scroll up and show form
-      var elementClick = $(this).attr("href");
-      var destination = $(elementClick).offset().top;
+  //   if (!userSignUp) {
+  //     // scroll up and show form
+  //     var elementClick = $(this).attr("href");
+  //     var destination = $(elementClick).offset().top;
 
-      if (navigator.userAgent.indexOf('Safari')) {
-        $('body').animate({scrollTop: destination}, 1100);
-      } else {
-        $('html').animate({scrollTop: destination}, 1100);
-      }
+  //     if (navigator.userAgent.indexOf('Safari')) {
+  //       $('body').animate({scrollTop: destination}, 1100);
+  //     } else {
+  //       $('html').animate({scrollTop: destination}, 1100);
+  //     }
 
-      $('.sign-up').click();
+  //     $('.sign-up').click();
 
-      return false;
+  //     return false;
 
-    } else {
+  //   } else {
 
-      var me = $(this);
+  //     var me = $(this);
 
-      me.popover('toggle');
-      setTimeout(function () {
-        me.popover('hide');
-      }, 6000);
-    }
-  });
+  //     me.popover('toggle');
+  //     setTimeout(function () {
+  //       me.popover('hide');
+  //     }, 6000);
+  //   }
+  // });
 
   // MOBILE HAMBURGER BAR ANIMATION
   $(".navbar-toggle").on("click", function () {
