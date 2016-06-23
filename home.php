@@ -26,9 +26,9 @@
         <div class="foating-div-2">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Share_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>SHARE</h4>
-          <p>See and share pictures and videos of cool builds!</p>
+          <p>Post on social media with #makercamp and it’ll appear below!</p>
           <div class="whamc-btn-div">
-          <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>POST YOUR PROJECTS</a>
+          <a class="mc-blue-arrow-btn" href="#share"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>SEE WHAT CAMPERS ARE SHARING</a>
           </div>
         </div>
         <div class="foating-div-3">

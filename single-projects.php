@@ -9,6 +9,7 @@ get_header();
 
 $hero_image = get_field('hero_image');
 $sponsored_by = get_field('sponsored_by');
+$sponsored_by_2 = get_field('sponsored_by_2');
 $time = get_field('time');
 $what_will_you_learn = get_field('what_will_you_learn');
 
@@ -27,8 +28,13 @@ $what_will_you_learn = get_field('what_will_you_learn');
 
   <section class="sp-sponsor text-center">
     <div class="triangle-block"></div>
-    <p>SPONSORED BY:</p>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Aspire-FNL-5.png" />
+    <?php if (!empty($sponsored_by)) { ?>
+      <p>SPONSORED BY:</p>
+      <img src="<?php echo $sponsored_by['url']; ?>" alt="Maker Camp Project Sponsor logo" />
+    <?php } ?>
+    <?php if (!empty($sponsored_by_2)) { ?>
+      <img src="<?php echo $sponsored_by_2['url']; ?>" alt="Maker Camp Project Sponsor logo" />
+    <?php } ?>
   </section>
 
 
@@ -38,7 +44,7 @@ $what_will_you_learn = get_field('what_will_you_learn');
     <h5>TO COMPLETE</h5>
     <hr />
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Makey_sml.svg" alt="Maker Camp Makey Logo" />
-    <h2>WHAT WILL YOU LEARN?</h2>
+    <h2>WHAT WILL YOU MAKE?</h2>
     <div class="sp-learn"><?php echo $what_will_you_learn; ?></div>
     <a class="mc-blue-btn" href="#">PRINT THESE INSTRUCTIONS</a>
   </section>
@@ -123,7 +129,7 @@ $what_will_you_learn = get_field('what_will_you_learn');
 
           <?php if (!empty($author_url)) { echo '<a href="' . $author_url . '">'; } ?>
             <?php if (!empty($image)) { 
-              echo '<div class="sp-author-img" style="background-image: url(' . $image["url"] . ');"></div>';
+              echo '<div class="sp-author-img img-circle" style="background-image: url(' . $image["url"] . ');"></div>';
             } else {
               echo '<div class="sp-author-img" style="background-image: url(' . get_template_directory_uri() .'/assets/img/Makey_sml.svg"></div>';
             } ?>
@@ -147,12 +153,30 @@ $what_will_you_learn = get_field('what_will_you_learn');
 
 
   <section class="sp-buttons container text-center">
-    <a class="" href="#">BROWSE MORE MAKER CAMP PROJECTS</a>
-    <a class="" href="#">FIND EVEN MORE PROJECTS AT MAKEZINE</a>
+    <a class="ghost-arrow-btn" href="/projects"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>BROWSE MORE MAKER CAMP PROJECTS</a>
+    <a class="ghost-arrow-btn" href="http://makezine.com/projects/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>FIND EVEN MORE PROJECTS AT MAKEZINE</a>
   </section>
 
-    
 
+
+  <section class="sp-colab-share">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 text-center">
+          <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/collabicon.png" alt="Collaborate on making projects here at Maker Camp" />
+          <h3>COLLABORATE</h3>
+          <p>Make friends with Campers from all around the world and swap ideas!</p>
+          <a class="mc-blue-arrow-btn" href="https://plus.google.com/communities/107377046073638428310" target="_blank"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>JOIN THE <span class="hidden-xs">MAKER CAMP </span>COMMUNITY</a>
+        </div>
+        <div class="col-xs-12 col-sm-6 text-center">
+          <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/shareicon.png" alt="Share your ideas and what you build on social media" />
+          <h3>ALL DONE? SHARE IT!</h3>
+          <p>Share pictures and videos of your cool build! Be sure to use #makercamp</p>
+          <a class="mc-blue-arrow-btn" href="/#share"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>POST YOUR PROJECTS</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div>
 

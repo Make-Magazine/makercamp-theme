@@ -21,7 +21,7 @@
       }
       h1 {
         color: #fff; 
-        font-size: 44px;
+        font-size: 50px;
         font-weight: 300;
         line-height: 1.2em;
         margin-bottom: 0;
@@ -54,13 +54,13 @@
   }
 
   .sp-sponsor {
-    padding: 8px 0;
+    padding: 15px 0;
     position: relative;
-    background-color: #e5e5e5;
+    background-color: #ebebeb;
     .triangle-block {
       width: 26px;
       height: 26px;
-      background-color: #e5e5e5;
+      background-color: #ebebeb;
       position: absolute;
       top: -13px;
       left: 0;
@@ -83,8 +83,15 @@
       position: relative;
     }
     img {
-      width: 50px;
+      height: 50px;
       display: inline-block;
+      position: relative;
+    }
+    @media (max-width: 767px) {
+      padding: 8px 0;
+      img {
+        height: 30px;
+      }
     }
   }
 
@@ -112,6 +119,7 @@
     h2 {
       color: #3fafed;
       margin: 10px 0;
+      font-weight: 300;
     }
     h5 {
       line-height: 1em;
@@ -132,13 +140,14 @@
 
   .sp-materials {
     padding: 30px 15px 60px;
-    background-color: #e5e5e5;
+    background-color: #ebebeb;
     img {
       width: 70px;
     }
     h2 {
       color: #3fafed;
       margin: 10px 0 40px;
+      font-weight: 300;
     }
     .sp-materials-ul {
       max-width: 600px;
@@ -177,6 +186,10 @@
       font-size: 30px;
       margin-top: -4px;
       margin-bottom: 10px;
+      font-weight: 300;
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
     }
     h5 {
       margin-top: 0;
@@ -239,6 +252,46 @@
     }
     .sp-author-bio {
       max-width: 450px;
+      line-height: 1.6em;
+    }
+    @media (max-width: 767px) {
+      a, .sp-author-img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        float: none;
+      }
+    }
+  }
+
+  .sp-buttons {
+    padding: 60px 0;
+    .ghost-arrow-btn:first-child {
+      margin-right: 10%;
+      @media (max-width: 991px) {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .sp-colab-share {
+    padding: 90px 0;
+    background-color: #ebebeb;
+    .col-xs-12:first-child {
+      margin-bottom: 60px;
+    }
+    img {
+      height: 75px;
+    }
+    h3 {
+      font-weight: 300;
+    }
+    p {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
       line-height: 1.6em;
     }
   }
