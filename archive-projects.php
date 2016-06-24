@@ -1,6 +1,15 @@
 <?php get_header(); ?>
 
-<h1>Archive-projects</h1>
+<div class="archive-project">
+
+  <section class="hero show-content" id="hero">
+    <div class="animation-wrapper">
+      <div class="align">
+        <img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>animation.png"
+           alt="Maker Camp animation" usemap="#animation" class="transparent-hero">
+      </div>
+    </div>
+  </section>
 
   <section id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
@@ -28,5 +37,7 @@
 
     </main><!-- #main -->
   </section><!-- #primary -->
+
+</div>
 
 <?php get_footer(); ?>

@@ -2401,7 +2401,7 @@ $(document).ready(function () {
    *
    * @type {*|jQuery|HTMLElement}
    */
-  var hero_section = $('.home .hero');
+  var hero_section = $('.archive-project .hero');
 
   /**
    * Sign up click event handler
