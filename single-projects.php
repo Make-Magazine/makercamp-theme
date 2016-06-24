@@ -19,9 +19,9 @@ $what_will_you_learn = get_field('what_will_you_learn');
 
   <section class="project-hero" style="background-image: url(<?php echo $hero_image['url']; ?>);">
     <div class="sp-hero-div">
-      <h2>Theme</h2>
+      <h2>Themes comming soon...</h2>
       <hr />
-      <h1>Project Title</h1>
+      <h1><?php the_title(); ?></h1>
     </div>
   </section>
 
