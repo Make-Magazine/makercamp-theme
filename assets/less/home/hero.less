@@ -1,19 +1,19 @@
 .hero {
   position: relative;
   width: 100%;
-  background-image: url("../../assets/img/light-bike-home-bg.jpg");
+  background-image: url("../../assets/img/animation/static.gif");
   text-align: center;
 
-  &.show-content:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.0);
-    z-index: 2;
-  }
+  // &.show-content:before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(0, 0, 0, 0.5);
+  //   z-index: 2;
+  // }
 
   .arrows {
     position: absolute;
@@ -59,9 +59,8 @@
 
   &,
   .week {
-    height: 500px;
+    height: 610px;
     width: 100%;
-
     background-position: center;
     background-size: cover;
   }
@@ -79,21 +78,87 @@
 
   .week-1 {
     background-image: url("../../assets/img/animation/week1.gif");
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      transition: background 0.4s linear;
+      background: -webkit-gradient(radial, 50% 10%, 137, 50% 10%, 231, from(transparent), to(rgba(0,0,0,0.4)));
+    }
   }
   .week-2 {
     background-image: url("../../assets/img/animation/week2.gif");
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      transition: background 0.4s linear;
+      background: -webkit-gradient(radial, 70% 33%, 137, 70% 33%, 231, from(transparent), to(rgba(0,0,0,0.4)));
+    }
   }
   .week-3 {
     background-image: url("../../assets/img/animation/week3.gif");
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      transition: background 0.4s linear;
+      background: -webkit-gradient(radial, 76% 70%, 187, 76% 70%, 231, from(transparent), to(rgba(0,0,0,0.4)));
+    }
   }
   .week-4 {
     background-image: url("../../assets/img/animation/week4.gif");
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      transition: all 4s linear;
+      background: -webkit-gradient(radial, 55% 89%, 187, 55% 89%, 231, from(transparent), to(rgba(0,0,0,0.4)));
+    }
   }
   .week-5 {
     background-image: url("../../assets/img/animation/week5.gif");
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      transition: all 4s linear;
+      background: -webkit-gradient(radial, 35% 65%, 187, 35% 65%, 231, from(transparent), to(rgba(0,0,0,0.4)));
+    }
   }
   .week-6 {
     background-image: url("../../assets/img/animation/week6.gif");
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      transition: all 4s linear;
+      background: -webkit-gradient(radial, 30% 33%, 187, 30% 33%, 231, from(transparent), to(rgba(0,0,0,0.4)));
+    }
   }
 
   .content {
@@ -492,24 +557,7 @@
   }
 }
 @media (max-width: 767px) {
-  .home {
-    h1 {
-      font-size: 26px !important;
-      color: #4c505d;
-    }
-  }
   .hero {
-    .home-fall2015 {
-      .row {
-        padding: 10px 0;
-      }
-      h1, p {
-        text-align: center;
-      }
-      hr {
-        display: none;
-      }
-    }
     .arrows {
       display: none;
     }
@@ -532,7 +580,6 @@
 
       .week-modal {
         margin: 10px 10px 0 60px;
-
         border-radius: 0;
 
         .close-modal {
@@ -547,7 +594,6 @@
             min-height: 80px;
             overflow: inherit;
             padding: 10px 60px 10px 60px;
-
             position: relative;
 
             .icon-locked, .icon-current {
@@ -555,9 +601,7 @@
               position: absolute;
               top: 25px;
               right: 10px;
-
               border-radius: 50%;
-
               background-color: #0e98c8;
               background-repeat: no-repeat;
               background-size: 15px;
@@ -597,7 +641,6 @@
             position: absolute;
             left: -40px;
             top: 0;
-
             margin: 0 0 30px 0;
           }
 

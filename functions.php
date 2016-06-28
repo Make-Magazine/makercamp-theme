@@ -169,7 +169,7 @@ function project_post_types() {
   $args = array(
       'labels'              => $labels,
       'public'              => true,
-      'has_archive'         => true,
+      'has_archive'         => false,
       'publicly_queryable'  => true,
       'show_ui'             => true,
       'query_var'           => true,
