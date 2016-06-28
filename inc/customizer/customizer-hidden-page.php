@@ -24,14 +24,6 @@ function makercamp_hidden_customizer($wp_customize)
                     'priority' => 211,
             )
     );
-    $wp_customize->add_section( // 2nd section
-            'makercamp_hidden_section_second',
-            array(
-                    'title' => 'Hidden page, 2nd section',
-                    'description' => 'This is a settings for Hidden page, 2nd section',
-                    'priority' => 212,
-            )
-    );
     $wp_customize->add_section( // 3rd section
             'makercamp_hidden_section_third',
             array(
@@ -190,38 +182,6 @@ function makercamp_hidden_customizer($wp_customize)
                     'type' => 'text',
             )
     );
-    /**
-     * 2nd section
-     */
-    $wp_customize->add_setting( // Title
-            'hidden_second_section_title',
-            array(
-                    'default' => $makercamp_defaults_customizer_values['hidden_second_section_title'],
-            )
-    );
-    $wp_customize->add_control(
-            'hidden_second_section_title',
-            array(
-                    'label' => 'Title for 2nd section',
-                    'section' => 'makercamp_hidden_section_second',
-                    'type' => 'text',
-            )
-    );
-    $wp_customize->add_setting( // Text
-            'hidden_second_section_text',
-            array(
-                    'default' => $makercamp_defaults_customizer_values['hidden_second_section_text'],
-            )
-    );
-    $wp_customize->add_control(
-            'hidden_second_section_text',
-            array(
-                    'label' => 'Text for 2nd section',
-                    'section' => 'makercamp_hidden_section_second',
-                    'type' => 'text',
-            )
-    );
-    // TODO: added week edit link
     /**
      * 3rd section
      */
