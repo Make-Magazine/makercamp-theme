@@ -53,7 +53,11 @@ if( have_rows('summer_2016_themes')) { ?>
   $project_1 = get_sub_field('project_1');
   $project_2 = get_sub_field('project_2');
   $project_3 = get_sub_field('project_3');
-  $project_4 = get_sub_field('project_4'); ?>
+  $project_4 = get_sub_field('project_4'); 
+  $project_image_1 = wp_get_attachment_url( get_post_thumbnail_id($project_1->ID) );
+  $project_image_2 = wp_get_attachment_url( get_post_thumbnail_id($project_2->ID) );
+  $project_image_3 = wp_get_attachment_url( get_post_thumbnail_id($project_3->ID) );
+  $project_image_4 = wp_get_attachment_url( get_post_thumbnail_id($project_4->ID) ); ?>
 
   <section class="project-theme">
     <div class="container">
@@ -70,15 +74,56 @@ if( have_rows('summer_2016_themes')) { ?>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 pl-theme-projects">
+        <div class="col-xs-12">
           <hr />
           <h3>PICK A PROJECT AND GET MAKING!</h3>
 
-          <div class="pl-theme-project">
-            <h4><?php //echo $project_1['title']; ?></h4>
-            <div class="pl-project-img" style="background-image: url(<?php //echo $project_1['url']; ?>);">
-            </div>
-            <a class="btn-cyan" href="<?php //echo $project_1['url']; ?>">GET MAKING!</a>
+          <div class="pl-theme-projects">
+
+            <?php if (!empty($project_1)) { ?>
+            <article class="pl-theme-project">
+              <h4><?php echo $project_1->post_title; ?></h4>
+              <div class="pl-project-img" style="background-image: url(<?php echo $project_image_1; ?>);">
+              </div>
+              <a class="btn-cyan" href="<?php echo $project_1->guid; ?>">GET MAKING!</a>
+            </article>
+            <?php } else { ?>
+              <div class="pl-theme-project hidden-xs"></div>
+            <?php } ?>
+
+            <?php if (!empty($project_2)) { ?>
+            <article class="pl-theme-project">
+              <h4><?php echo $project_2->post_title; ?></h4>
+              <div class="pl-project-img" style="background-image: url(<?php echo $project_image_2; ?>);">
+              </div>
+              <a class="btn-cyan" href="<?php echo $project_2->guid; ?>">GET MAKING!</a>
+            </article>
+            <?php } else { ?>
+              <div class="pl-theme-project hidden-xs"></div>
+            <?php } ?>
+
+            <?php if (!empty($project_3)) { ?>
+            <article class="pl-theme-project">
+              <h4><?php echo $project_3->post_title; ?></h4>
+              <div class="pl-project-img" style="background-image: url(<?php echo $project_image_3; ?>);">
+              </div>
+              <a class="btn-cyan" href="<?php echo $project_3->guid; ?>">GET MAKING!</a>
+            </article>
+            <?php } else { ?>
+              <div class="pl-theme-project hidden-xs"></div>
+            <?php } ?>
+
+            <?php if (!empty($project_4)) { ?>
+            <article class="pl-theme-project">
+              <h4><?php echo $project_4->post_title; ?></h4>
+              <div class="pl-project-img" style="background-image: url(<?php echo $project_image_4; ?>);">
+              </div>
+              <a class="btn-cyan" href="<?php echo $project_4->guid; ?>">GET MAKING!</a>
+            </article>
+            <?php } else { ?>
+              <div class="pl-theme-project hidden-xs"></div>
+            <?php } ?>
+
           </div>
 
         </div>
