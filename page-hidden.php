@@ -1,4 +1,4 @@
-<?php /* Template Name: Hidden page */ ?>
+<?php /* Template Name: Hidden Page */ ?>
 
 <?php get_header(); ?>
 
@@ -83,46 +83,6 @@
 		</div>
 	</section>
 
-	<section class="maker-camp">
-		<div class="container-fluid">
-			<img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>pensils.png" alt="Section logo, pensils">
-
-			<?php $hidden_second_section_title = makercamp_defaults_customizer( 'hidden_second_section_title' );
-			$hidden_second_section_text        = makercamp_defaults_customizer( 'hidden_second_section_text' );
-			if ( ! empty( $hidden_second_section_title ) ) :
-				?>
-				<h1><?php echo $hidden_second_section_title; ?></h1>
-			<?php endif;
-			if ( ! empty( $hidden_second_section_text ) ) :
-				?>
-				<p><?php echo $hidden_second_section_text; ?></p>
-			<?php endif; ?>
-
-			<ul class="weeks-section">
-				<?php
-				$all_weeks = get_terms( 'week' );
-				foreach ( $all_weeks as $week ) {
-					$week_mobile_image = get_option( "week_mobile_image_{$week->term_id}" );
-					$week_title        = $week->name;
-					$week_subtitle     = $week->description;
-					$week_description  = get_option( "week_long_description_{$week->term_id}" );
-					$pdf_asset         = get_option( "week_pdf_asset_{$week->term_id}" );
-
-					echo '<li>';
-					echo '<h3>' . $week_title . '</h3>';
-					echo ! empty( $week_mobile_image ) ? '<img src="' . $week_mobile_image . '" alt="' . $week_title . '" class="img-circle" />' : '';
-					echo '<h2>' . $week_subtitle . '</h2>';
-					echo '<p>' . $week_description . '<p>';
-					echo ! empty( $pdf_asset ) ? '<a href="' . $pdf_asset . '" class="read-more">Download pdf</a>' : '';
-					echo '</li>';
-
-				}
-				?>
-			</ul>
-
-		</div>
-	</section>
-
 	<section class="digital-assets">
 		<div class="container-fluid">
 			<?php $hidden_third_section_title = makercamp_defaults_customizer( 'hidden_third_section_title' );
@@ -146,7 +106,7 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_first_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_first_block_link; ?>" class="read-more">
+						<a href="<?php echo $hidden_third_section_first_block_link; ?>" class="read-more" download>
 							<?php
 							$hidden_third_section_first_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_first_block_link_title' );
 							if ( ! empty( $hidden_third_section_first_block_link_title ) ) :
@@ -171,7 +131,7 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_second_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_second_block_link; ?>" class="read-more">
+						<a href="<?php echo $hidden_third_section_second_block_link; ?>" class="read-more" download>
 							<?php
 							$hidden_third_section_second_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_second_block_link_title' );
 							if ( ! empty( $hidden_third_section_second_block_link_title ) ) :
@@ -196,7 +156,7 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_third_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_third_block_link; ?>" class="read-more">
+						<a href="<?php echo $hidden_third_section_third_block_link; ?>" class="read-more" download>
 							<?php
 							$hidden_third_section_third_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_third_block_link_title' );
 							if ( ! empty( $hidden_third_section_third_block_link_title ) ) :
@@ -221,7 +181,7 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_fourth_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_fourth_block_link; ?>" class="read-more">
+						<a href="<?php echo $hidden_third_section_fourth_block_link; ?>" class="read-more" download>
 							<?php
 							$hidden_third_section_fourth_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_fourth_block_link_title' );
 							if ( ! empty( $hidden_third_section_fourth_block_link_title ) ) :
@@ -246,7 +206,7 @@
 					<?php endif;
 					if ( ! empty( $hidden_third_section_fifth_block_link ) ) :
 						?>
-						<a href="<?php echo $hidden_third_section_fifth_block_link; ?>" class="read-more">
+						<a href="<?php echo $hidden_third_section_fifth_block_link; ?>" class="read-more" download>
 							<?php
 							$hidden_third_section_fifth_block_link_title = makercamp_defaults_customizer( 'hidden_third_section_fifth_block_link_title' );
 							if ( ! empty( $hidden_third_section_fifth_block_link_title ) ) :
