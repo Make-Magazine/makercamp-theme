@@ -155,7 +155,7 @@
 
   <?php echo social_media_panel(); ?>
 
-  <!--section class="helps-make-makers">
+  <section class="helps-make-makers">
     <div class="container">
       <h3><strong>MAKE:</strong> HELPS YOU <strong>MAKE MAKERS</strong></h3>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
@@ -164,8 +164,8 @@
       </div>
     </div>
     <div class="triangle-block"></div>
-  </section-->
+  </section>
 
-  <?php //echo stuff_for_sale_panel(); ?>
+  <?php echo stuff_for_sale_panel(); ?>
 
 <?php get_footer(); ?>
