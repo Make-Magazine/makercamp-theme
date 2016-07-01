@@ -1007,20 +1007,43 @@ Helper classes and others
 }
 // Youtube, Vimeo, and Google Maps responsiveness 
 // To use: place div around iframe with one of these classes
-.embed-youtube, .embed-vimeo, .googlemaps {
+.embed-youtube, .embed-vimeo, .googlemaps, .videoBox_center {
+  clear: both;
   overflow: hidden;
   padding-bottom: 56.25%;
   margin-bottom: 15px;
   position: relative;
-  height: 0;
+  height: 0 !important;
+  width: 100% !important;
+  iframe, object {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 }
-.embed-youtube iframe, .embed-vimeo iframe, .googlemaps iframe, .embed-resp object {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+
+// Forms
+form {
+  input {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
 }
+
 /*** ADDING FLEXBOX TO PARENTS AND CHILDREN ***/
 // Add center horizontal flexbox to parent
 .flexbox-center {

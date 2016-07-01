@@ -70,7 +70,7 @@ if( have_rows('summer_2016_themes')) { ?>
           <p><?php echo $skills_learned; ?></p>
         </div>
         <div class="col-xs-12 col-sm-6">
-
+          <img class="img-responsive" src="<?php echo $theme_image['url']; ?>" alt="<?php echo $theme_image['alt']; ?>" />
         </div>
       </div>
       <div class="row">

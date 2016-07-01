@@ -2,7 +2,10 @@
 
   <section class="home-hero">
     <div class="container text-center">
-      <img class="white-sponsored-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/att-Hm-Hero_600-2.png" alt="Maker Camp 2016 - A Summer of Making" />
+      <div class="sponsor-container">
+        <span>PRESENTED BY</span>
+        <img class="white-sponsored-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/att_globe_rgb_wht.png" alt="Maker Camp 2016 - A Summer of Making" />
+      </div>
       <h2>WELCOME TO<br><strong>MAKER CAMP SUMMER 2016</strong></h2>
       <div class="hidden col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
         <h1>Maker Camp is where kids aged 7–12 learn the magic of making by building cool stuff. Ready to help kids fire up their imaginations and challenge their skills? We're here to help you organize your own Maker Camp in your community or at home.</h1>
@@ -131,7 +134,7 @@
           <p class="pull-right">THIS YEAR'S MAKER CAMP IS MADE</br> POSSIBLE BY THE GENEROUS SUPPORT OF:</P>
         </div>
         <div class="col-xs-12 col-sm-6 home-sponsor-img">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Aspire-FNL-5.png" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/att_globe_rgb_pos.png" />
         </div>
       </div>
     </div>

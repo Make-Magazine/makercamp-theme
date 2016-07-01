@@ -195,38 +195,38 @@ add_action( 'init', 'custom_post_type', 0 );
 /**
  * Create the print pages for each project
  */
-function project_add_child_print_page( $post_id ) {  
-  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
-    return;
+// function project_add_child_print_page( $post_id ) {  
+//   if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+//     return;
 
-  if ( !wp_is_post_revision( $post_id )
-  && 'projects' == get_post_type( $post_id )
-  && 'auto-draft' != get_post_status( $post_id ) ) {  
-    $show = get_post( $post_id );
-    if( 0 == $show->post_parent ){
-      $children =& get_children(
-        array(
-          'post_parent' => $post_id,
-          'post_type' => 'projects'
-        )
-      );
-      if( empty( $children ) ){
-        $child = array(
-          'post_type' => 'projects',
-          'post_title' => 'Print',
-          'post_content' => '',
-          'post_status' => 'publish',
-          'post_parent' => $post_id,
-          'post_author' => 1,
-          'comment_status' => 'closed',
-          'tax_input' => array( 'your_tax_name' => array( 'term' ))
-        );
-        wp_insert_post( $child );
-      }
-    }
-  }
-}
-add_action( 'save_post', 'project_add_child_print_page' );
+//   if ( !wp_is_post_revision( $post_id )
+//   && 'projects' == get_post_type( $post_id )
+//   && 'auto-draft' != get_post_status( $post_id ) ) {  
+//     $show = get_post( $post_id );
+//     if( 0 == $show->post_parent ){
+//       $children =& get_children(
+//         array(
+//           'post_parent' => $post_id,
+//           'post_type' => 'projects'
+//         )
+//       );
+//       if( empty( $children ) ){
+//         $child = array(
+//           'post_type' => 'projects',
+//           'post_title' => 'Print',
+//           'post_content' => '',
+//           'post_status' => 'publish',
+//           'post_parent' => $post_id,
+//           'post_author' => 1,
+//           'comment_status' => 'closed',
+//           'tax_input' => array( 'your_tax_name' => array( 'term' ))
+//         );
+//         wp_insert_post( $child );
+//       }
+//     }
+//   }
+// }
+// add_action( 'save_post', 'project_add_child_print_page' );
 
 
 
