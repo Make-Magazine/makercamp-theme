@@ -8,6 +8,7 @@
 get_header(); 
 
 $hero_image = get_field('hero_image');
+$theme = get_field('theme');
 $sponsored_by = get_field('sponsored_by');
 $sponsored_by_2 = get_field('sponsored_by_2');
 $time = get_field('time');
@@ -19,7 +20,7 @@ $what_will_you_learn = get_field('what_will_you_learn');
 
   <section class="project-hero" style="background-image: url(<?php echo $hero_image['url']; ?>);">
     <div class="sp-hero-div">
-      <h2>Themes comming soon...</h2>
+      <h2><?php echo $theme->name; ?></h2>
       <hr />
       <h1><?php the_title(); ?></h1>
     </div>
@@ -112,6 +113,24 @@ $what_will_you_learn = get_field('what_will_you_learn');
 
   </section>
 
+  <?php $whats_next = get_field( 'whats_next' );
+  if( $whats_next ): ?>
+
+    <section class="sp-whats-next">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2>WHAT'S NEXT?</h2>
+          </div> 
+          <div class="col-xs-12">
+            <?php echo $whats_next; ?>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <?php endif; ?>
+
 
   <?php if( have_rows('author') ): ?>
 
@@ -157,7 +176,12 @@ $what_will_you_learn = get_field('what_will_you_learn');
     <a class="ghost-arrow-btn" href="http://makezine.com/projects/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>FIND EVEN MORE PROJECTS AT MAKEZINE</a>
   </section>
 
-
+  <section class="sp-disclaimer">
+    <div class="container">
+      <p><strong>Please Note</strong></p>
+      <p>Your safety is your own responsibility, including proper use of equipment and safety gear, and determining whether you have adequate skill and experience. Power tools, electricity, and other resources used for these projects are dangerous, unless used properly and with adequate precautions, including safety gear and adult supervision. Some illustrative photos do not depict safety precautions or equipment, in order to show the project steps more clearly. Use of the instructions and suggestions found in Maker Camp is at your own risk. Maker Media, Inc., disclaims all responsibility for any resulting damage, injury, or expense.</p>
+    </div>
+  </section>
 
   <section class="sp-colab-share">
     <div class="container">
@@ -177,6 +201,8 @@ $what_will_you_learn = get_field('what_will_you_learn');
       </div>
     </div>
   </section>
+
+  <?php echo stuff_for_sale_panel(); ?>
 
 </div>
 

@@ -1,5 +1,16 @@
 .project-landing {
-  .hero {
+  position: relative;
+  .project-hero {
+    background-image: url("../../assets/img/MakerCamp-Hero-2016.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    height: 610px;
+    @media (max-width: 767px) {
+      height: 52vw;
+    }
     h1 {
       position: absolute;
       top: 35%;
@@ -9,7 +20,70 @@
       letter-spacing: 4px;
       font-weight: 300;
       font-size: 42px;
+      @media (max-width: 767px) {
+        font-size: 9vw;
+        top: 30%;
+      }
     }
+    #animation {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  .hero .week-1,
+  .hero .week-2,
+  .hero .week-3,
+  .hero .week-4,
+  .hero .week-5,
+  .hero .week-6 {
+    background-image: none;
+  }
+
+  .mc-blue-arrow-btn {
+    position: absolute;
+    z-index: 2;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  #mechanical-wonders {
+    .mc-blue-arrow-btn {
+      top: 50px;
+      left: 54%;
+    }
+  }
+  #way-out-sound {
+    .mc-blue-arrow-btn {
+      top: 230px;
+      left: 76%;
+    }
+  }
+  #farmstead {
+    .mc-blue-arrow-btn {
+      top: 445px;
+      left: 79%;
+    }    
+  }
+  #games {
+    .mc-blue-arrow-btn {
+      top: 547px;
+      left: 53%;
+    }    
+  }
+  #sci-fi {
+    .mc-blue-arrow-btn {
+      top: 400px;
+      left: 11%;
+    }    
+  }
+  #things-that-go {
+    .mc-blue-arrow-btn {
+      top: 125px;
+      left: 11%;
+    }   
   }
 
 
@@ -46,19 +120,31 @@
       text-align: center;
       font-weight: 300;
     }
+    @media (max-width: 767px) {
+      .pl-theme-desc {
+        margin-bottom: 15px;
+        p {
+          height: 100%;
+        }
+      }
+    }
     .pl-theme-projects {
       display: flex;
       justify-content: space-between;
       @media (max-width: 767px) {
         flex-wrap: wrap;
-        .pl-theme-project {
-          width: 50%;
-        }
       }
       .pl-theme-project {
         display: inline-block;
         width: 200px;
         text-align: center;
+        @media (min-width: 768px) and (max-width: 991px) {
+          width: 150px;
+        }
+        @media (max-width: 767px) {
+          width: 50%;
+          padding: 0 15px 15px;
+        }
         h4 {
           text-align: center;
           font-weight: 300;
@@ -70,6 +156,14 @@
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
+          @media (min-width: 768px) and (max-width: 991px) {
+            width: 150px;
+            height: 150px;
+          }
+          @media (max-width: 767px) {
+            width: 100%;
+            height: 40vw;
+          }
         }
         .btn-cyan {
           display: block;
@@ -81,12 +175,15 @@
     }
     .container {
       position: relative;
-      .fa-arrow-circle-up {
+      .pl-scroll-up {
         position: absolute;
         top: 0;
         right: -30px;
         color: #3fafed;
         cursor: pointer;
+        @media (max-width: 767px) {
+          display: none;
+        }
       }
     }
   }

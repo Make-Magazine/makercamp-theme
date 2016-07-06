@@ -27,6 +27,28 @@
             "mime_types": ""
         },
         {
+            "key": "field_577d74ab339d7",
+            "label": "Theme",
+            "name": "theme",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "themes",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "object",
+            "multiple": 0
+        },
+        {
             "key": "field_57686a031bd06",
             "label": "Sponsored By: (image 1)",
             "name": "sponsored_by",
@@ -97,7 +119,7 @@
         },
         {
             "key": "field_57686bbc1bd08",
-            "label": "What Will You Make",
+            "label": "What Will You Make?",
             "name": "what_will_you_learn",
             "type": "text",
             "instructions": "Add short description for the \"What will you make\".",
@@ -118,7 +140,7 @@
         },
         {
             "key": "field_57686c2c1bd09",
-            "label": "What Will You Need",
+            "label": "What Will You Need?",
             "name": "what_will_you_need",
             "type": "repeater",
             "instructions": "Add a new item for each needed material for the project.",
@@ -267,6 +289,24 @@
             ]
         },
         {
+            "key": "field_577d4b9bc80b8",
+            "label": "Whats Next?",
+            "name": "whats_next",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
             "key": "field_57686f3e7c0cb",
             "label": "Author Details",
             "name": "author",
@@ -393,5 +433,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1466724929
+    "modified": 1467839725
 }

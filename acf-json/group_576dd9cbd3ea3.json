@@ -25,7 +25,7 @@
                     "key": "field_576ddd9709a99",
                     "label": "Theme Title",
                     "name": "theme_title",
-                    "type": "text",
+                    "type": "taxonomy",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -34,13 +34,14 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "readonly": 0,
-                    "disabled": 0
+                    "taxonomy": "themes",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "object",
+                    "multiple": 0
                 },
                 {
                     "key": "field_576dde2b09a9c",
@@ -221,12 +222,11 @@
         "comments",
         "author",
         "format",
-        "page_attributes",
         "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1466818657
+    "modified": 1467842759
 }

@@ -2,9 +2,14 @@
 
 <?php get_header(); ?>
 
-<div class="project-landing">
+<div id="project-landing" class="project-landing">
 
-  <section class="hero show-content" id="hero">
+<!--   <section class="project-hero">
+    </map>
+    <h1>START <strong>MAKING!</strong></h1>
+  </section>  --> 
+
+  <section class="hero show-content project-hero" id="hero">
     <div class="animation-wrapper">
       <div class="align">
         <img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>animation.png"
@@ -59,12 +64,12 @@ if( have_rows('summer_2016_themes')) { ?>
   $project_image_3 = wp_get_attachment_url( get_post_thumbnail_id($project_3->ID) );
   $project_image_4 = wp_get_attachment_url( get_post_thumbnail_id($project_4->ID) ); ?>
 
-  <section class="project-theme">
+  <section id="<?php echo $theme_title->slug; ?>" class="project-theme">
     <div class="container">
       <div class="row">
 
-        <div class="col-xs-12 col-sm-6">
-          <h2><?php echo $theme_title; ?></h2>
+        <div class="col-xs-12 col-sm-6 pl-theme-desc">
+          <h2><?php echo $theme_title->name; ?></h2>
           <p><?php echo $theme_description; ?></p>
           <h5>Skills Learned:</h5>
           <p><?php echo $skills_learned; ?></p>
@@ -128,8 +133,16 @@ if( have_rows('summer_2016_themes')) { ?>
 
         </div>
       </div>
-      <i class='fa fa-arrow-circle-up fa-2x' aria-hidden='true'></i>
+
+      <a class="pl-scroll-up" href="#project-landing">
+        <i class='fa fa-arrow-circle-up fa-2x' aria-hidden='true'></i>
+      </a>
     </div>
+
+    <a class="mc-blue-arrow-btn <?php echo $theme_title->slug; ?>" href="#<?php echo $theme_title->slug; ?>">
+      <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+      <?php echo $theme_title->name; ?>
+    </a>
   </section>
 
   <?php

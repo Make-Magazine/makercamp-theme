@@ -153,6 +153,9 @@ require_once('wp_bootstrap_navwalker.php');
  */
 add_action( 'init', 'project_post_types' );
 function project_post_types() {
+  /**
+   * Register the project post type
+   */
   $labels = array(
       'name'                => _x('Projects', 'post type general name'),
       'singular_name'       => _x('Project', 'post type singular name'),
@@ -180,15 +183,33 @@ function project_post_types() {
       'supports'            => array('title','editor','excerpt','thumbnail','revisions',)
   );
   register_post_type( 'projects', $args );
+
+  /**
+   * Add new taxonomy 'themes'
+   */
+  $labels = array(
+    'name'              => _x( 'Themes', 'taxonomy general name', 'makercamp' ),
+    'singular_name'     => _x( 'Theme', 'taxonomy singular name', 'makercamp' ),
+    'search_items'      => __( 'Search Themes', 'makercamp' ),
+    'all_items'         => __( 'All Themes', 'makercamp' ),
+    'parent_item'       => __( 'Parent Theme', 'makercamp' ),
+    'parent_item_colon' => __( 'Parent Theme:', 'makercamp' ),
+    'edit_item'         => __( 'Edit Theme', 'makercamp' ),
+    'update_item'       => __( 'Update Theme', 'makercamp' ),
+    'add_new_item'      => __( 'Add New Theme', 'makercamp' ),
+    'new_item_name'     => __( 'New Theme Name', 'makercamp' ),
+    'menu_name'         => __( 'Themes', 'makercamp' )
+  );
+
+  $args = array(
+    'hierarchical'      => true,
+    'labels'            => $labels,
+    'show_ui'           => TRUE,
+    'show_admin_column' => TRUE,
+    'query_var'         => TRUE,
+  );
+  register_taxonomy( 'themes', array( 'projects' ), $args );
 }
-
-
-
-/* Hook into the 'init' action so that the function
-* Containing our post type registration is not 
-* unnecessarily executed. 
-*/
-add_action( 'init', 'custom_post_type', 0 );
 
 
 

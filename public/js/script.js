@@ -2359,6 +2359,28 @@ var hideAnimation = function (alt) {
 };
 
 /**
+ * Project Landing page blue button/hero shadow trigger
+ */
+$(".mechanical-wonders").hover(function () {
+  $(".week-1").toggleClass("active");
+});
+$(".way-out-sound").hover(function () {
+  $(".week-2").toggleClass("active");
+});
+$(".farmstead").hover(function () {
+  $(".week-3").toggleClass("active");
+});
+$(".games").hover(function () {
+  $(".week-4").toggleClass("active");
+});
+$(".sci-fi").hover(function () {
+  $(".week-5").toggleClass("active");
+});
+$(".things-that-go").hover(function () {
+  $(".week-6").toggleClass("active");
+});
+
+/**
  * Listen when document is ready
  */
 $(document).ready(function () {
