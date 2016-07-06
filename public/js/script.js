@@ -2361,23 +2361,45 @@ var hideAnimation = function (alt) {
 /**
  * Project Landing page blue button/hero shadow trigger
  */
-$(".mechanical-wonders").hover(function () {
-  $(".week-1").toggleClass("active");
+$(".week-2-scroller").hover(function () {
+  $(".week.week-1").toggleClass("active");
 });
-$(".way-out-sound").hover(function () {
-  $(".week-2").toggleClass("active");
+$(".week-3-scroller").hover(function () {
+  $(".week.week-2").toggleClass("active");
 });
-$(".farmstead").hover(function () {
-  $(".week-3").toggleClass("active");
+$(".week-6-scroller").hover(function () {
+  $(".week.week-3").toggleClass("active");
 });
-$(".games").hover(function () {
-  $(".week-4").toggleClass("active");
+$(".week-5-scroller").hover(function () {
+  $(".week.week-4").toggleClass("active");
 });
-$(".sci-fi").hover(function () {
-  $(".week-5").toggleClass("active");
+$(".week-4-scroller").hover(function () {
+  $(".week.week-5").toggleClass("active");
 });
-$(".things-that-go").hover(function () {
-  $(".week-6").toggleClass("active");
+$(".week-1-scroller").hover(function () {
+  $(".week.week-6").toggleClass("active");
+});
+
+/**
+ * Area click to scroll events for project landing
+ */
+$('area[href^="#week-1-scroller"]').click(function() {
+  $('.week-1-scroller').click();
+});
+$('area[href^="#week-2-scroller"]').click(function() {
+  $('.week-2-scroller').click();
+});
+$('area[href^="#week-3-scroller"]').click(function() {
+  $('.week-3-scroller').click();
+});
+$('area[href^="#week-4-scroller"]').click(function() {
+  $('.week-4-scroller').click();
+});
+$('area[href^="#week-5-scroller"]').click(function() {
+  $('.week-5-scroller').click();
+});
+$('area[href^="#week-6-scroller"]').click(function() {
+  $('.week-6-scroller').click();
 });
 
 /**

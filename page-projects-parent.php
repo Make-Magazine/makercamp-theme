@@ -20,18 +20,17 @@
     <?php $all_weeks = get_terms( 'week' ); ?>
 
     <map id="animation" name="animation" class="animated-areas">
-      <?php foreach ( $all_weeks as $week ) {
-        /**
-         * Week's slug
-         */
-        $week_slug = $week->slug;
-        /**
-         * Week's animation coords
-         */
-        $week_anim_coords = get_option( "week_anim_coords_{$week->term_id}" ); ?>
+      <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-6" href="#week-1-scroller" shape="poly" coords="382,1,553,2,553,104,683,106,688,186,778,188,774,215,798,216,800,310,699,312,694,280,614,282,615,308,569,310,565,264,502,262,506,276,478,277,472,262,381,262" />
 
-        <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="<?php echo $week_slug; ?>" title="" href="#" shape="poly" coords="<?php echo $week_anim_coords; ?>" />
-      <?php } ?>
+      <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-1" href="#week-2-scroller" shape="poly" coords="581,2,584,103,703,103,704,169,935,173,933,129,952,132,952,105,964,106,964,1" />
+      
+      <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-2" href="#week-3-scroller" shape="poly" coords="989,1,990,66,961,67,960,137,938,135,938,182,898,183,898,233,936,235,937,281,1173,287,1171,119,1222,118,1224,0" />
+      
+      <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-3" href="#week-6-scroller" shape="poly" coords="887,284,888,413,952,413,950,450,992,450,991,609,1280,609,1279,300,977,298,980,286" />
+      
+      <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-4" href="#week-5-scroller" shape="poly" coords="377,457,378,504,365,504,363,608,978,609,977,415,896,414,895,370,806,368,805,411,695,410,690,501,469,504,469,458" />
+      
+      <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-5" href="#week-4-scroller" shape="poly" coords="575,264,504,263,506,276,376,276,377,481,682,481,681,399,701,398,702,369,763,365,761,320,701,316,701,289,679,286,679,276,613,275,612,296,576,299,574,263" />
     </map>
 
     <div class="week week-1"></div>
@@ -47,9 +46,11 @@
 
 <?php
 
-if( have_rows('summer_2016_themes')) { ?>
+if( have_rows('summer_2016_themes')) {
 
-  <?php while( have_rows('summer_2016_themes')): the_row(); 
+  $i = 1;
+
+  while( have_rows('summer_2016_themes')): the_row(); 
 
   $theme_title = get_sub_field('theme_title');
   $theme_image = get_sub_field('theme_image');
@@ -64,7 +65,7 @@ if( have_rows('summer_2016_themes')) { ?>
   $project_image_3 = wp_get_attachment_url( get_post_thumbnail_id($project_3->ID) );
   $project_image_4 = wp_get_attachment_url( get_post_thumbnail_id($project_4->ID) ); ?>
 
-  <section id="<?php echo $theme_title->slug; ?>" class="project-theme">
+  <section id="week-<?php echo $i; ?>-scroller" class="project-theme">
     <div class="container">
       <div class="row">
 
@@ -139,13 +140,14 @@ if( have_rows('summer_2016_themes')) { ?>
       </a>
     </div>
 
-    <a class="mc-blue-arrow-btn <?php echo $theme_title->slug; ?>" href="#<?php echo $theme_title->slug; ?>">
+    <a class="mc-blue-arrow-btn week-<?php echo $i; ?>-scroller" href="#week-<?php echo $i; ?>-scroller">
       <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
       <?php echo $theme_title->name; ?>
     </a>
   </section>
 
   <?php
+  $i++;
   endwhile;
 
 } ?>
