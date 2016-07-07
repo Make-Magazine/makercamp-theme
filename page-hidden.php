@@ -68,7 +68,7 @@
 					<?php $hidden_first_section_link = makercamp_defaults_customizer( 'hidden_first_section_link' );
 					if ( ! empty( $hidden_first_section_link ) ) :
 						?>
-						<a href="<?php echo $hidden_first_section_link; ?>" class="read-more">
+						<a href="<?php echo $hidden_first_section_link; ?>" class="mc-blue-btn">
 							<?php
 							$hidden_first_section_link_title = makercamp_defaults_customizer( 'hidden_first_section_link_title' );
 							if ( ! empty( $hidden_first_section_link_title ) ) :

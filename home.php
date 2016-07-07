@@ -21,7 +21,7 @@
         <div class="foating-div-1">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Make_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>PROJECTS</h4>
-          <p>Check out our awesome collection of projects - and start making today!</p>
+          <p>Check out our awesome collection of projects and start making today!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="/projects"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>START MAKING</a>
           </div>
@@ -51,7 +51,7 @@
         <div class="foating-div-5">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Host_Icon@2x.png" class="img-responsive" alt="Supplies for Maker Camp" />
           <h4>HOST</h4>
-          <p>Become a Maker Camp affiliate and we'll help you introduce the kids you love to the magic of making!</p>
+          <p>Become a Maker Camp affiliate and introduce the kids you love to the magic of making!</p>
           <div class="whamc-btn-div">
           <a class="mc-blue-arrow-btn" href="/explore#host"><i class='fa fa-arrow-circle-right' aria-hidden='true'></i>BECOME AN AFFILIATE</a>
           </div>
@@ -144,12 +144,10 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <h2>HOW CAN YOU <strong>START</strong></br> YOUR OWN <strong>MAKER CAMP</strong>?</h2>
+          <h2>WANT TO START</br> YOUR OWN <strong>MAKER CAMP</strong>?</h2>
           <a class="mc-blue-btn" href="/explore#host">SIGN UP!</a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <h4><strong>MAKER CAMP</strong> IS FREE</br>
-            KIDS JUST BRING THEIR <strong>IMAGINATIONS!</strong></h4>
             <p>Maker Camp provides a simple, fun way for kids to get involved in making. Our worldwide network of affiliates host Maker Camps in public libraries, community groups, makerspaces, and maker homes. Cool projects are always available here online! More than <strong>1 million kids</strong> have participated in Maker Camp since it launched in 2012.</p>
         </div>
       </div>
@@ -160,10 +158,9 @@
 
   <section class="helps-make-makers">
     <div class="container">
-      <h3><strong>MAKE:</strong> HELPS YOU <strong>MAKE MAKERS</strong></h3>
+      <h3>MORE MAKER RESOURCES</h3>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-        <p>As the publisher of <strong>Make: magazine</strong> and <strong>Make: books</strong>, we are also creating a collection of project tutorials made for and by kids. Because we believe that what they learn by making today will help them make the future. Your purchase helps support MakerCamp affiliates.</p>
-        <p><em>Make:</em> is producing a collection of project tutorials by and for kids because we believe that what they learn through making today will help them make the future. Your purchase supports Maker Camp and our efforts to support tomorrow’s creators, tinkerers, hackers, and makers.</p>
+        <p>Make: produces a variety of great products and helpful project tutorials to enhance your making experience. Here are a few select items that Maker Camp affiliates are sure to enjoy.</p>
       </div>
     </div>
     <div class="triangle-block"></div>

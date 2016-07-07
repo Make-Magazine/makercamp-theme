@@ -337,25 +337,25 @@ function stuff_for_sale_panel() { ?>
 
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Get "Getting Started with Wearables"</h4>
+              <h4>Getting Started with Wearables</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Get "Start Making!"</h4>
+              <h4>Start Making!</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Get "Spinbot kit"</h4>
+              <h4>Spinbot kit</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Get "Maker's Softbound Notebook"</h4>
+              <h4>Maker's Softbound Notebook</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
@@ -370,22 +370,22 @@ function stuff_for_sale_panel() { ?>
           <div class="col-xs-6 col-sm-3">
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/DSC_4891_large_cropped.jpg" class="img-responsive" alt="Getting Started with Wearables" />
             <p>Can your clothes send you an email? They will with this kit!</p>
-            <a href="http://www.makershed.com/products/copy-of-template-standard-product-5" target="_blank">GET THIS PRODUCT HERE</a>
+            <a class="mc-blue-btn" href="http://www.makershed.com/products/copy-of-template-standard-product-5" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
             <img src="<?php echo get_template_directory_uri() . '/assets/img/StartMaking.jpg' ?>" class="img-responsive" alt="Start Making!" />
             <p>Six great projects guaranteed to spark your imagination and get you making.</p>
-            <a href="https://www.makershed.com/products/make-start-making" target="_blank">GET THIS PRODUCT HERE</a>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/make-start-making" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/MSRSPIN-2_d59bdbdc-5ad6-4503-a38f-6da199eda67a_large_cropped.jpg" class="img-responsive" alt="Spinbot kit" />
-            <p>Spinbot: Is it a beginner’s robot or an art project? Both. Let Spinbot get drawing with three arms and your colors!</p>
-            <a href="https://www.makershed.com/products/make-spinbot-kit-bagged" target="_blank">GET THIS PRODUCT HERE</a>
+            <p>Spinbots are easy-to-make drawing robots that kids love to build, tweak, and enjoy.</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/make-spinbot-kit-bagged" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/MKMNR-0_large_cropped.jpg" class="img-responsive" alt="Maker's Softbound Notebook" />
-            <p>Keep your ideas, notes, and project layouts in one place with this soft-bound maker notebook that has gridded paper for your designs!</p>
-            <a href="https://www.makershed.com/products/makers-soft-bound-notebook-128-pages" target="_blank">GET THIS PRODUCT HERE</a>
+            <p>Keep your ideas and notes in one place with this soft-bound maker notebook that has gridded paper for your designs!</p>
+            <a class="mc-blue-btn" href="https://www.makershed.com/products/makers-soft-bound-notebook-128-pages" target="_blank">BUY NOW</a>
           </div>        
 
         </div>

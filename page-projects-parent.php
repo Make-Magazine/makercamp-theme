@@ -4,12 +4,7 @@
 
 <div id="project-landing" class="project-landing">
 
-<!--   <section class="project-hero">
-    </map>
-    <h1>START <strong>MAKING!</strong></h1>
-  </section>  --> 
-
-  <section class="hero show-content project-hero" id="hero">
+  <section class="hero show-content" id="hero">
     <div class="animation-wrapper">
       <div class="align">
         <img src="<?php echo get_template_directory_uri() . '/public/assets/img/' ?>animation.png"
@@ -17,19 +12,12 @@
       </div>
     </div>
 
-    <?php $all_weeks = get_terms( 'week' ); ?>
-
     <map id="animation" name="animation" class="animated-areas">
       <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-6" href="#week-1-scroller" shape="poly" coords="382,1,553,2,553,104,683,106,688,186,778,188,774,215,798,216,800,310,699,312,694,280,614,282,615,308,569,310,565,264,502,262,506,276,478,277,472,262,381,262" />
-
       <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-1" href="#week-2-scroller" shape="poly" coords="581,2,584,103,703,103,704,169,935,173,933,129,952,132,952,105,964,106,964,1" />
-      
       <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-2" href="#week-3-scroller" shape="poly" coords="989,1,990,66,961,67,960,137,938,135,938,182,898,183,898,233,936,235,937,281,1173,287,1171,119,1222,118,1224,0" />
-      
       <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-3" href="#week-6-scroller" shape="poly" coords="887,284,888,413,952,413,950,450,992,450,991,609,1280,609,1279,300,977,298,980,286" />
-      
       <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-4" href="#week-5-scroller" shape="poly" coords="377,457,378,504,365,504,363,608,978,609,977,415,896,414,895,370,806,368,805,411,695,410,690,501,469,504,469,458" />
-      
       <area onmousemove="showAnimation(alt)" onmouseout="hideAnimation(alt)" alt="week-5" href="#week-4-scroller" shape="poly" coords="575,264,504,263,506,276,376,276,377,481,682,481,681,399,701,398,702,369,763,365,761,320,701,316,701,289,679,286,679,276,613,275,612,296,576,299,574,263" />
     </map>
 

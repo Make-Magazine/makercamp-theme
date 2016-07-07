@@ -2361,22 +2361,22 @@ var hideAnimation = function (alt) {
 /**
  * Project Landing page blue button/hero shadow trigger
  */
-$(".week-2-scroller").hover(function () {
+$(".week-1-scroller").hover(function () {
   $(".week.week-1").toggleClass("active");
 });
-$(".week-3-scroller").hover(function () {
+$(".week-2-scroller").hover(function () {
   $(".week.week-2").toggleClass("active");
 });
-$(".week-6-scroller").hover(function () {
+$(".week-3-scroller").hover(function () {
   $(".week.week-3").toggleClass("active");
 });
-$(".week-5-scroller").hover(function () {
+$(".week-4-scroller").hover(function () {
   $(".week.week-4").toggleClass("active");
 });
-$(".week-4-scroller").hover(function () {
+$(".week-5-scroller").hover(function () {
   $(".week.week-5").toggleClass("active");
 });
-$(".week-1-scroller").hover(function () {
+$(".week-6-scroller").hover(function () {
   $(".week.week-6").toggleClass("active");
 });
 

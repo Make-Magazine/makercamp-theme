@@ -28,8 +28,12 @@
   	<div class="container-fluid">
   		<div class="menu-second-nav-container">
   			<ul class="nav navbar-nav">
-  				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#find-a-campsite">Find A Campsite</a></li>
-  				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#host">Host A Campsite</a></li>
+  				<li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="#find-a-campsite">Find A Camp</a>
+          </li>
+  				<li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="#host">Host A Camp</a>
+          </li>
   			</ul>
   		</div>
   	</div>
