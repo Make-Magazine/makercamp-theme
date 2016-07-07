@@ -68,7 +68,7 @@ usort( $addresses, function ( $a, $b ) {
 } );
 ?>
 
-	<section class="camp-search" style="display:none;">
+	<section class="camp-search">
 		<div class="container-fluid">
 			<div class="form-group camp-filters clearfix">
 				<div class="form-group has-feedback">

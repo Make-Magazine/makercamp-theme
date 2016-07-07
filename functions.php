@@ -78,6 +78,8 @@ function makercamp_theme_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'makercamp_theme_widgets_init' );
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -99,6 +101,16 @@ function makercamp_theme_scripts() {
   }
 }
 add_action( 'wp_enqueue_scripts', 'makercamp_theme_scripts' );
+
+
+/**
+ * Add admin.css enqueue
+ */
+function makercamp_admin_scripts() {
+  wp_enqueue_style('admin-styles', get_template_directory_uri() . '/public/css/admin.css');
+  //wp_enqueue_script('admin-scripts', get_stylesheet_directory_uri() . '/js/admin.js', array( 'jquery' ),false,true );
+}
+add_action('admin_enqueue_scripts', 'makercamp_admin_scripts');
 
 
 /**

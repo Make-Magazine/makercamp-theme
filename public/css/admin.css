@@ -1,0 +1,14 @@
+/* WP Admin Styles */
+
+/* Project Landing page themes */
+.acf-field-576ddc9b09a98 table {
+  border-collapse: collapse;
+}
+.acf-field-576ddc9b09a98 .acf-row {
+  border-bottom: 5px solid #dfdfdf;
+}
+
+/* Hide themes right sidebar on project edit pages */
+.post-type-projects #themesdiv {
+  display: none;
+}
