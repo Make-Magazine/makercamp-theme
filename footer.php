@@ -65,20 +65,20 @@
 					?>
 					<h4>Sign Up</h4>
 					<p>Stay inspired and get fresh updates</p>
-					<form class="sub-form" action="http://whatcounts.com/bin/listctrl" method="POST">
-						<input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43"/>
-						<input type="hidden" name="cmd" value="subscribe"/>
-						<input type="hidden" name="custom_source" value="footer"/>
-						<input type="hidden" name="custom_incentive" value="none"/>
-						<input type="hidden" name="custom_url" value="<?php echo $_SERVER[" HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>"/>
-						<input type="hidden" id="format_mime" name="format" value="mime"/>
-						<input type="hidden" name="goto" value=""/>
-						<input type="hidden" name="custom_host" value="<?php echo $_SERVER[" HTTP_HOST"]; ?>" />
-						<input type="hidden" name="errors_to" value=""/>
-						<div class="mz-form-horizontal">
-							<input name="email" placeholder="Enter your Email" required type="email"><br>
-							<input value="GO" class="btn-cyan" type="submit">
-						</div>
+          <form class="sub-form whatcounts-signup1f" action="http://whatcounts.com/bin/listctrl" method="POST">
+            <input type="hidden" name="slid_1" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp Newsletter -->
+            <input type="hidden" name="slid_2" value="6B5869DC547D3D46941051CC68679543" /><!-- Maker Media Newsletter -->
+            <input type="hidden" name="multiadd" value="1" />
+            <input type="hidden" name="cmd" value="subscribe" />
+            <input type="hidden" name="custom_source" value="camp footer" />
+            <input type="hidden" name="custom_incentive" value="none" />
+            <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+            <input type="hidden" id="format_mime" name="format" value="mime" />
+            <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
+            <div class="mz-form-horizontal">
+              <input name="email" placeholder="Enter your Email" required type="email"><br>
+              <input value="GO" class="btn-cyan" type="submit">
+            </div>
 					</form>
 				</div>
 			</div>
@@ -106,21 +106,21 @@
 					?>
 					<h4>Sign Up</h4>
 					<p>Stay inspired and get fresh updates</p>
-					<form class="sub-form" action="http://whatcounts.com/bin/listctrl" method="POST">
-						<input type="hidden" name="slid" value="6B5869DC547D3D4658DF84D7F99DCB43"/>
-						<input type="hidden" name="cmd" value="subscribe"/>
-						<input type="hidden" name="custom_source" value="footer"/>
-						<input type="hidden" name="custom_incentive" value="none"/>
-						<input type="hidden" name="custom_url" value="<?php echo $_SERVER[" HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>"/>
-						<input type="hidden" id="format_mime" name="format" value="mime"/>
-						<input type="hidden" name="goto" value=""/>
-						<input type="hidden" name="custom_host" value="<?php echo $_SERVER[" HTTP_HOST"]; ?>" />
-						<input type="hidden" name="errors_to" value=""/>
-						<div class="mz-form-horizontal">
-							<input name="email" placeholder="Enter your Email" required type="email"><br>
-							<input value="GO" class="btn-cyan" type="submit">
-						</div>
-					</form>
+          <form class="sub-form whatcounts-signup1m" action="http://whatcounts.com/bin/listctrl" method="POST">
+            <input type="hidden" name="slid_1" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp Newsletter -->
+            <input type="hidden" name="slid_2" value="6B5869DC547D3D46941051CC68679543" /><!-- Maker Media Newsletter -->
+            <input type="hidden" name="multiadd" value="1" />
+            <input type="hidden" name="cmd" value="subscribe" />
+            <input type="hidden" name="custom_source" value="camp footer" />
+            <input type="hidden" name="custom_incentive" value="none" />
+            <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+            <input type="hidden" id="format_mime" name="format" value="mime" />
+            <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
+            <div class="mz-form-horizontal">
+              <input name="email" placeholder="Enter your Email" required type="email"><br>
+              <input value="GO" class="btn-cyan" type="submit">
+            </div>
+          </form>
 				</div>
 			</div>
 			<div class="col-xs-12 panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -190,6 +190,20 @@
     </div>
 </footer>
 <!-- END new-footer -->
+
+  <div class="fancybox-thx" style="display:none;">
+    <div class="col-sm-4 hidden-xs nl-modal">
+      <span class="fa-stack fa-4x">
+      <i class="fa fa-circle-thin fa-stack-2x"></i>
+      <i class="fa fa-thumbs-o-up fa-stack-1x"></i>
+      </span>
+    </div>
+    <div class="col-sm-8 col-xs-12 nl-modal">
+      <h3>Awesome!</h3>
+      <p>Thanks for signing up.</p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
 
 </div> <!-- /container -->
 
