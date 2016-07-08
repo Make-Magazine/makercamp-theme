@@ -14,9 +14,6 @@
   <title><?php wp_title( '|', true, 'right' ); ?></title>
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-  <?php wp_head(); ?>
-</head>
 <script>
 document.addEventListener("keydown", myFunction, false);
 
@@ -66,13 +63,13 @@ function myFunction2() {
   RightShin.style.fill="#f00";
 }
 </script>
-<html>
+</head>
 <body>
   <style>
     .svg{
       width:50%; 
       display: block; 
-      margin: 0 auto;"
+      margin: 0 auto;
     }
   </style>
 
@@ -174,3 +171,4 @@ function myFunction2() {
 </div>
 
 </body>
+</html>

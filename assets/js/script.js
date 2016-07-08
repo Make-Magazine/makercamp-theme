@@ -563,4 +563,21 @@ $(document).ready(function () {
     });
   });
 
+
+  // Fancybox newsletter subscribe modal stuff
+  $(".fancybox-thx").fancybox({
+    autoSize : false,
+    width  : 400,
+    autoHeight : true,
+    padding : 0,
+    afterLoad   : function() {
+      this.content = this.content.html();
+    }
+  });
+  $(document).on('submit', '.whatcounts-signup1', function (e) {
+    e.preventDefault();
+    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
+    $('.fancybox-thx').trigger('click');
+  });
+
 });
