@@ -2897,4 +2897,44 @@ $(document).ready(function () {
     });
   });
 
+
+  // Fancybox newsletter subscribe modal stuff
+  $(".fancybox-thx").fancybox({
+    autoSize : false,
+    width  : 400,
+    autoHeight : true,
+    padding : 0,
+    afterLoad   : function() {
+      this.content = this.content.html();
+    }
+  });
+  $(document).on('submit', '.whatcounts-signup1', function (e) {
+    e.preventDefault();
+    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1').serialize());
+    $('.fancybox-thx').trigger('click');
+  });
+  $(document).on('submit', '.whatcounts-signup1f', function (e) {
+    e.preventDefault();
+    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1f').serialize());
+    $('.fancybox-thx').trigger('click');
+  });
+  $(document).on('submit', '.whatcounts-signup1m', function (e) {
+    e.preventDefault();
+    $.post('http://whatcounts.com/bin/listctrl', $('.whatcounts-signup1m').serialize());
+    $('.fancybox-thx').trigger('click');
+  });
+
+
+  // Facybox for home page promo video
+  jQuery(".fancybox-promo").fancybox({
+    fitToView : false,
+    width   : '90%',
+    height    : '90%',
+    autoSize  : false,
+    closeClick  : false,
+    openEffect  : 'none',
+    closeEffect : 'none',
+    padding : 0
+  });
+
 });

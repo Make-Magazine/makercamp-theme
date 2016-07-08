@@ -64,20 +64,31 @@
     <dic class="clearfix"></div>
   </section>
 
-  <script>
-    jQuery(document).ready(function() {
-      jQuery(".fancybox-promo").fancybox({
-        fitToView : false,
-        width   : '90%',
-        height    : '90%',
-        autoSize  : false,
-        closeClick  : false,
-        openEffect  : 'none',
-        closeEffect : 'none',
-        padding : 0
-      });
-    });
-  </script>
+  <section class="newsletter-panel">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <h4>Join the Maker Community</h4>
+          <p>Get the latest news near you.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <form class="form-inline sub-form whatcounts-signup1" action="http://whatcounts.com/bin/listctrl" method="POST">
+            <input type="hidden" name="slid_1" value="6B5869DC547D3D4658DF84D7F99DCB43" /><!-- Maker Camp Newsletter -->
+            <input type="hidden" name="slid_2" value="6B5869DC547D3D46941051CC68679543" /><!-- Maker Media Newsletter -->
+            <input type="hidden" name="multiadd" value="1" />
+            <input type="hidden" name="cmd" value="subscribe" />
+            <input type="hidden" name="custom_source" value="camp home page" />
+            <input type="hidden" name="custom_incentive" value="none" />
+            <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+            <input type="hidden" id="format_mime" name="format" value="mime" />
+            <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
+            <input id="wc-email" class="form-control nl-panel-input" name="email" placeholder="Email Address" required type="email">
+            <input class="btn-cyan" value="Yes Please" type="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="a-day-at-mc">
     <img src="<?php echo get_template_directory_uri() . '/assets/img/hm_pg_video_bg.jpg' ?>" alt="Click here to see what its like to experience Maker Camp for kids" />
