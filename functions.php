@@ -384,7 +384,7 @@ function stuff_for_sale_panel() { ?>
           </div>
           <div class="col-xs-6 col-sm-3">
             <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/MKMNR-0_large_cropped.jpg" class="img-responsive" alt="Maker's Softbound Notebook" />
-            <p>Keep your ideas and notes in one place with this soft-bound maker notebook that has gridded paper for your designs!</p>
+            <p>Keep your ideas and notes in this soft-bound, gridded paper Maker notebook.</p>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/makers-soft-bound-notebook-128-pages" target="_blank">BUY NOW</a>
           </div>        
 

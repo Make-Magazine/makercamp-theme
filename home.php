@@ -61,55 +61,20 @@
     <dic class="clearfix"></div>
   </section>
 
-  <!-- FANCYBOX VIDEO STUFF 
-  <div class="promo-video-outer" style="display: none;">
-    <div id="promo-video">
-      <video id="promo-video-c" controls preload="auto" poster="//staging.makercamp.com/wp-content/uploads/2016/06/promo-still.jpg" width="auto" height="auto" style="width:100% !important; height:auto !important">
-        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.mp4" type='video/mp4' />
-        <source src="//staging.makercamp.com/wp-content/uploads/2016/06/promo-vo-50.webm" type='video/webm' />
-        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.ogv" type='video/ogg' />
-        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
-      </video>
-    </div>
-  </div>-->
-      <script>
-      // jQuery( document ).ready(function() {
-      //   jQuery(".fancybox-promo").fancybox({
-      //     'beforeShow': function(){
-      //       jQuery(window).on({
-      //         'resize.fancybox' : function(){
-      //           jQuery.fancybox.update();
-      //         }
-      //       });
-      //       jQuery('#promo-video-c').get(0).play()
-      //     },
-      //     'afterClose': function(){
-      //       jQuery(window).off('resize.fancybox');
-      //     },
-      //     width      : '640',
-      //     height     : '360',
-      //     fitToView  : true,
-      //     closeClick : false,
-      //     openEffect : 'none',
-      //     closeEffect: 'none',
-      //     closeBtn   : 'true',
-      //     scrolling  : 'no'
-      //   });
-      // });
-
-        jQuery(document).ready(function() {
-          jQuery(".fancybox-promo").fancybox({
-            fitToView : false,
-            width   : '90%',
-            height    : '90%',
-            autoSize  : false,
-            closeClick  : false,
-            openEffect  : 'none',
-            closeEffect : 'none',
-            padding : 0
-          });
-        });
-      </script>
+  <script>
+    jQuery(document).ready(function() {
+      jQuery(".fancybox-promo").fancybox({
+        fitToView : false,
+        width   : '90%',
+        height    : '90%',
+        autoSize  : false,
+        closeClick  : false,
+        openEffect  : 'none',
+        closeEffect : 'none',
+        padding : 0
+      });
+    });
+  </script>
 
   <section class="a-day-at-mc">
     <img src="<?php echo get_template_directory_uri() . '/assets/img/hm_pg_video_bg.jpg' ?>" alt="Click here to see what its like to experience Maker Camp for kids" />
@@ -117,12 +82,12 @@
       <h4>WATCH</h4>
       <h2>A DAY AT MAKER CAMP</h2>
       <h4>Ready, Set, Start Making!</h4>
-      <a class="blue-play-btn fancybox-promo fancybox.iframe" href="https://www.youtube.com/v/RCzuku8rm8M?fs=1&autoplay=1">
+      <button class="blue-play-btn fancybox-promo fancybox.iframe" href="https://www.youtube.com/embed/RCzuku8rm8M?autoplay=1">
         <span class="fa-stack fa-2x">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-play fa-stack-1x fa-inverse"></i>
         </span>
-      </a>
+      </button>
     </div>
   </section>
 

@@ -13,6 +13,7 @@ $sponsored_by = get_field('sponsored_by');
 $sponsored_by_2 = get_field('sponsored_by_2');
 $time = get_field('time');
 $what_will_you_learn = get_field('what_will_you_learn');
+$print_pdf_link = get_field('print_pdf_link');
 
 ?>
 
@@ -47,7 +48,11 @@ $what_will_you_learn = get_field('what_will_you_learn');
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Makey_sml.svg" alt="Maker Camp Makey Logo" />
     <h2>WHAT WILL YOU MAKE?</h2>
     <div class="sp-learn"><?php echo $what_will_you_learn; ?></div>
-    <a class="mc-blue-btn" href="#">PRINT THESE INSTRUCTIONS</a>
+
+    <?php if (!empty($print_pdf_link)) { ?>
+      <a class="mc-blue-btn" href="<?php echo $print_pdf_link; ?>" target="_blank">PRINT THESE INSTRUCTIONS</a>
+    <?php } ?>
+    
   </section>
 
   <section class="sp-materials text-center">
