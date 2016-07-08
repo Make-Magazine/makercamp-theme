@@ -31,3 +31,5 @@ node_modules
 # if using bower-rails ignore default bower_components path bower.json files
 /bower_components
 *.bowerrc
+
+*.mp4

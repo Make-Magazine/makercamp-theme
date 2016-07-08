@@ -1,16 +1,36 @@
 .home-hero {
-  padding-top: 75px;
-  background-image: url("../../assets/img/MakerCamp-Hero-2016.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-align: center;
   position: relative;
-  height: 38vw;
+  height: 610px;
+  overflow: hidden;
+  background-color: #000;
+  z-index: 2;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate(0, 0);
+  text-align: center;
+  video {
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    opacity: .6;
+    transition: opacity .3s ease;
+  }
+  .container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
   .sponsor-container {
     span {
       color: #fff;
       margin-right: 3px;
+      text-shadow: 0px 0px 27px #000;
     }
     .white-sponsored-img {
       width: 45px;
@@ -43,13 +63,12 @@
     right: 0;
   }
   @media (min-width: 1200px) {
-    height: 36vw;
+
   }
   @media (min-width: 768px) and (max-width: 991px) {
-    padding-top: 4vw;
+
   }
   @media (max-width: 767px) {
-    padding-top: 20px;
     h2 {
       font-size: 6vw;
       margin-top: 20px;
@@ -60,7 +79,6 @@
     }
   }
   @media (max-width: 460px) {
-    padding-top: 10px;
     h2 {
       margin-top: 10px;
     }
