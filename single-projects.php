@@ -178,7 +178,7 @@ $print_pdf_link = get_field('print_pdf_link');
 
   <section class="sp-buttons container text-center">
     <a class="ghost-arrow-btn" href="/projects"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>BROWSE MORE MAKER CAMP PROJECTS</a>
-    <a class="ghost-arrow-btn" href="http://makezine.com/projects/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>FIND EVEN MORE PROJECTS AT MAKEZINE</a>
+    <a class="ghost-arrow-btn" href="http://makezine.com/projects/" target="_blank"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>FIND EVEN MORE PROJECTS AT Make:</a>
   </section>
 
   <section class="sp-disclaimer">

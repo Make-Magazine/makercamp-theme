@@ -603,4 +603,9 @@ $(document).ready(function () {
     padding : 0
   });
 
+  // Fade in home page hero text when video is done playing
+  $("#hero-video").bind("ended", function() {
+    $(".home-hero .container, .home-hero i").fadeIn();
+  });
+
 });
