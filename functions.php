@@ -192,7 +192,7 @@ function project_post_types() {
       'hierarchical'        => true,
       'menu_position'       => null,
       'menu_icon'           => 'dashicons-hammer',
-      'supports'            => array('title','editor','excerpt','thumbnail','revisions',)
+      'supports'            => array('title','editor','excerpt','thumbnail','revisions','page-attributes',)
   );
   register_post_type( 'projects', $args );
 
@@ -223,43 +223,90 @@ function project_post_types() {
   register_taxonomy( 'themes', array( 'projects' ), $args );
 }
 
+/**
+ * Create the print post types for projects
+ */
+// add_action( 'init', 'print_post_types' );
+// function print_post_types() {
+//   /**
+//    * Register the print post type for projects
+//    */
+//   $labels = array(
+//       'name'                => _x('Print', 'post type general name'),
+//       'singular_name'       => _x('Print', 'post type singular name'),
+//       'add_new'             => _x('Add New', 'new print'),
+//       'add_new_item'        => __('Add New Print'),
+//       'edit_item'           => __('Edit Print'),
+//       'new_item'            => __('New Print'),
+//       'view_item'           => __('View Print'),
+//       'search_items'        => __('Search Print'),
+//       'not_found'           => __('Nothing found'),
+//       'not_found_in_trash'  => __('Nothing found in Trash'),
+//       'parent_item_colon'   => ''
+//   );
+//   $args = array(
+//       'labels'              => $labels,
+//       'public'              => true,
+//       'has_archive'         => false,
+//       'publicly_queryable'  => true,
+//       'show_ui'             => true,
+//       'query_var'           => true,
+//       'capability_type'     => 'page',
+//       'hierarchical'        => false,
+//       'menu_position'       => null,
+//       'supports'            => array('title','excerpt','thumbnail','page-attributes')
+//   );
+//   register_post_type( 'print', $args );
+// }
 
 
 /**
  * Create the print pages for each project
  */
-// function project_add_child_print_page( $post_id ) {  
-//   if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
-//     return;
+function project_add_child_print_page( $post_id ) {  
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+    return;
 
-//   if ( !wp_is_post_revision( $post_id )
-//   && 'projects' == get_post_type( $post_id )
-//   && 'auto-draft' != get_post_status( $post_id ) ) {  
-//     $show = get_post( $post_id );
-//     if( 0 == $show->post_parent ){
-//       $children =& get_children(
-//         array(
-//           'post_parent' => $post_id,
-//           'post_type' => 'projects'
-//         )
-//       );
-//       if( empty( $children ) ){
-//         $child = array(
-//           'post_type' => 'projects',
-//           'post_title' => 'Print',
-//           'post_content' => '',
-//           'post_status' => 'publish',
-//           'post_parent' => $post_id,
-//           'post_author' => 1,
-//           'comment_status' => 'closed',
-//           'tax_input' => array( 'your_tax_name' => array( 'term' ))
-//         );
-//         wp_insert_post( $child );
-//       }
-//     }
-//   }
-// }
-// add_action( 'save_post', 'project_add_child_print_page' );
+  if ( !wp_is_post_revision( $post_id )
+  && 'projects' == get_post_type( $post_id )
+  && 'auto-draft' != get_post_status( $post_id ) ) {  
+    $show = get_post( $post_id );
+    if( 0 == $show->post_parent ){
+      $children =& get_children(
+        array(
+          'post_parent' => $post_id,
+          'post_type' => 'projects'
+        )
+      );
+      if( empty( $children ) ){
+        $child = array(
+          'post_type' => 'projects',
+          'post_title' => 'Print',
+          'post_content' => '',
+          'post_status' => 'publish',
+          'post_parent' => $post_id,
+          'post_author' => 0,
+          'comment_status' => 'closed'
+        );
+        wp_insert_post( $child );
+      }
+    }
+  }
+}
+add_action( 'save_post', 'project_add_child_print_page' );
+
+
+/**
+ * Adds conditional function to check if parent or child project
+ */
+function is_child($page_ID) {
+  global $post;
+  if($post->post_parent == $page_ID) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 
