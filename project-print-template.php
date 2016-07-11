@@ -34,6 +34,8 @@
 
   <div id="project-print">
 
+    <p style="display:none;"><?php echo $parent_id; ?></p>
+
     <div class="pp-float-left">
 
       <section class="pp-steps">

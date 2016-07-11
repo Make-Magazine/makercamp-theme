@@ -301,7 +301,7 @@ add_action( 'save_post', 'project_add_child_print_page' );
  */
 function is_child($page_ID) {
   global $post;
-  if( is_page() && ($post->post_parent == $page_ID)  {
+  if($post->post_parent == $page_ID) {
     return true;
   } else {
     return false;
