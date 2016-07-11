@@ -70,10 +70,10 @@
 
               </div>
 
-              <div class="col-xs-12">
+              <div class="col-xs-12 pp-step-desc">
                 <h3>STEP <?php echo $step_number; ?></h3>
                 <?php if (!empty($title)) { echo '<p><strong>' . $title . '</strong></p>'; } ?>
-                <?php if (!empty($description)) { echo '<div class="pp-step-desc">' . $description . '</div>'; } ?>
+                <?php if (!empty($description)) { echo '<div>' . $description . '</div>'; } ?>
               </div>
             </div>
 
@@ -150,7 +150,7 @@
 
       <h4><?php echo $theme->name; ?></h4>
       <hr />
-      <h1><?php the_title(); ?></h1>
+      <h1><?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent ); ?></h1>
 
       <img src="<?php echo $hero_image['url']; ?>" class="img-responsive" alt="Project hero image" />
 
