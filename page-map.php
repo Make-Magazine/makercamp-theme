@@ -24,21 +24,6 @@
 		</div>
 	</section>
 
-  <section class="navbar-second" id="second-navbar">
-  	<div class="container-fluid">
-  		<div class="menu-second-nav-container">
-  			<ul class="nav navbar-nav">
-  				<li class="menu-item menu-item-type-custom menu-item-object-custom">
-            <a href="#find-a-campsite">Find A Camp</a>
-          </li>
-  				<li class="menu-item menu-item-type-custom menu-item-object-custom">
-            <a href="#host">Host A Camp</a>
-          </li>
-  			</ul>
-  		</div>
-  	</div>
-  </section>
-
 	<section class="camps-map" id="find-a-campsite">
 		<?php
 		$title_before_map = makercamp_defaults_customizer( 'title_before_map' );
@@ -286,7 +271,7 @@ usort( $addresses, function ( $a, $b ) {
 	<!-- Quick fix for URLs that are missing the http and become 404s -->
 	<script>
 		$(document).ready(function () {
-			$('a:not([href^="http://"]):not([href^="https://"])').each(function () {
+			$('.camp-search a:not([href^="http://"]):not([href^="https://"])').each(function () {
 				$(this).attr('href', 'http://' + $(this).attr('href'));
 			})
 		})
