@@ -1,5 +1,132 @@
+#project-print {
+  .pp-float-left {
+    width: 60%;
+    float: left;
+  }
+  .pp-float-right {
+    width: 35%;
+    float: right;
+    .img-responsive {
+      margin-bottom: 20px;
+    }
+  }
+  .header-logo {
+    width: 60%;
+  }
+  h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  h3 {
+    color: #3fafed;
+    -webkit-print-color-adjust: exact;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+  h4 {
 
+  }
+  hr {
+    width: 50px;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-bottom: 0;
+  }
+  .pp-steps,
+  .pp-whats-next,
+  .pp-author,
+  .p-materials,
+  .pp-learn,
+  .pp-time {
+    margin-bottom: 20px;
+  }
+
+  .pp-whats-next {
+    margin-bottom: 40px;
+  }
+
+  .pp-time {
+    border-top: 1px solid #3fafed;
+    border-bottom: 1px solid #3fafed;
+    padding: 10px 0;
+    img {
+      float: left;
+        height: 35px;
+    }
+    h4 {
+      margin-left: 40px;
+      margin-top: 0;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    h5 {
+      margin-left: 40px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  .pp-disclaimer {
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  .pp-materials {
+    .pp-materials-ul {
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 3px;
+    }
+    i {
+      padding-right: 8px;
+    }
+  }
+
+  .pp-author {
+    .pp-author-img {
+      height: 150px;
+      width: 150px;
+    }
+    h4 {
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+  }
+  .pp-hr, .pp-footer {
+    display: none;
+  }
+}
 
 @media print {
-  
+  #project-print .pp-hr {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    margin-left: auto;
+    border-top: 1px solid #3fafed;
+  }
+  #project-print .pp-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    color: #3fafed;
+    -webkit-print-color-adjust: exact;
+  }
 }
