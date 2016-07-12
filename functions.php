@@ -223,42 +223,6 @@ function project_post_types() {
   register_taxonomy( 'themes', array( 'projects' ), $args );
 }
 
-/**
- * Create the print post types for projects
- */
-// add_action( 'init', 'print_post_types' );
-// function print_post_types() {
-//   /**
-//    * Register the print post type for projects
-//    */
-//   $labels = array(
-//       'name'                => _x('Print', 'post type general name'),
-//       'singular_name'       => _x('Print', 'post type singular name'),
-//       'add_new'             => _x('Add New', 'new print'),
-//       'add_new_item'        => __('Add New Print'),
-//       'edit_item'           => __('Edit Print'),
-//       'new_item'            => __('New Print'),
-//       'view_item'           => __('View Print'),
-//       'search_items'        => __('Search Print'),
-//       'not_found'           => __('Nothing found'),
-//       'not_found_in_trash'  => __('Nothing found in Trash'),
-//       'parent_item_colon'   => ''
-//   );
-//   $args = array(
-//       'labels'              => $labels,
-//       'public'              => true,
-//       'has_archive'         => false,
-//       'publicly_queryable'  => true,
-//       'show_ui'             => true,
-//       'query_var'           => true,
-//       'capability_type'     => 'page',
-//       'hierarchical'        => false,
-//       'menu_position'       => null,
-//       'supports'            => array('title','excerpt','thumbnail','page-attributes')
-//   );
-//   register_post_type( 'print', $args );
-// }
-
 
 /**
  * Create the print pages for each project

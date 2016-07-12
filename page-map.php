@@ -24,11 +24,11 @@
 		</div>
 	</section>
 
-	<section class="camps-map" id="find-a-campsite">
+	<section class="camps-map container" id="find-a-campsite">
 		<?php
 		$title_before_map = makercamp_defaults_customizer( 'title_before_map' );
 		if ( ! empty( $title_before_map ) ): ?>
-			<h1 class="container-fluid">
+			<h1>
 				<?php echo $title_before_map; ?>
 			</h1>
 		<?php endif;
@@ -58,7 +58,7 @@ usort( $addresses, function ( $a, $b ) {
 ?>
 
 	<section class="camp-search">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="form-group camp-filters clearfix">
 				<div class="form-group has-feedback">
 					<input type="search" class="form-control camp-list-search" placeholder="Search affiliates" id="inputSuccess2" />
