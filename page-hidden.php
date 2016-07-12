@@ -63,22 +63,18 @@
 						<p><?php echo makercamp_defaults_customizer( 'hidden_first_section_fourth_text' ); ?></p>
 					<?php endif; ?>
 				</li>
-
-				<li class="link">
-					<?php $hidden_first_section_link = makercamp_defaults_customizer( 'hidden_first_section_link' );
-					if ( ! empty( $hidden_first_section_link ) ) :
-						?>
-						<a href="<?php echo $hidden_first_section_link; ?>" class="mc-blue-btn">
-							<?php
-							$hidden_first_section_link_title = makercamp_defaults_customizer( 'hidden_first_section_link_title' );
-							if ( ! empty( $hidden_first_section_link_title ) ) :
-								echo $hidden_first_section_link_title;
-							endif;
-							?>
-						</a>
-					<?php endif; ?>
-				</li>
 			</ul>
+
+			<?php $hidden_first_section_link = makercamp_defaults_customizer( 'hidden_first_section_link' );
+			if ( ! empty( $hidden_first_section_link ) ) : ?>
+				<a href="<?php echo $hidden_first_section_link; ?>" class="mc-blue-btn">
+					<?php
+					$hidden_first_section_link_title = makercamp_defaults_customizer( 'hidden_first_section_link_title' );
+					if ( ! empty( $hidden_first_section_link_title ) ) :
+						echo $hidden_first_section_link_title;
+					endif; ?>
+				</a>
+			<?php endif; ?>
 
 		</div>
 	</section>
