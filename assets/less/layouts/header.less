@@ -3,11 +3,6 @@
  ======================= */
 .top-header-bar-brand {
   background-color: #F0F0F0;
-  .container {
-    background: url('/wp-content/themes/makercamp-theme/assets/img/magazine-icon.png') top right no-repeat;
-    background-size: 43px 50px;
-    background-position: right 11px bottom -18px;
-  }
   p {
     margin-bottom: 0;
     line-height: 1.3em;
@@ -23,18 +18,10 @@
   a {
     color: #242424;
   }
-  .header-sub-link a {
-    padding-right: 41px;
-    font-size: 11px;
-  }
   .header-make-img img {
     height: 12px;
     padding-left: 2px;
     vertical-align: baseline;
-  }
-  .header-sub-link img {
-    height: 12px;
-    padding-left: 2px;
   }
 }
 
@@ -44,6 +31,9 @@
  ======================= */
 header {
   margin-top: 15px;
+  >.row {
+    position: relative;
+  }
 }
 .red {
   color: #ff0000;
@@ -51,6 +41,10 @@ header {
 .header-top-nav {
   a {
     color: #4F4F4F;
+  }
+  @media (max-width: 767px) {
+    z-index: 3;
+    background-color: #fff;
   }
 }
 .logo-container {
@@ -145,9 +139,10 @@ header .menu-bar {
   right: 20px;
   height: auto;
   padding: 10px 10px 20px 10px;
-  margin-top: 3px;
+  margin-top: 8px;
   margin-right: 0;
   margin-bottom: 0;
+  z-index: 4;
 }
 
 /*=========================
@@ -224,16 +219,79 @@ a.socialIcon:hover, .socialHoverClass {
   transition: all 0.2s;
 }
 
+
+/*=========================
+  New Subscribe stuff
+ ======================= */
+#mz-header-subscribe {
+  z-index: 10;
+  margin-bottom: -6px;
+  margin-top: -15px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @media (max-width: 991px) { 
+    margin-right: -7px;
+  }
+  div {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    img {
+      width: 115px;
+      @media (max-width: 991px) { 
+        width: 100px;
+      }
+    }
+    .subscribe-red-btn {
+      background: #f40b0b;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      padding: 6px 8px;
+      margin-bottom: 8px;
+      transition: background 0.2s;
+      &:hover {
+        background: #ea002a;
+        transition: background 0.2s;
+      }
+      @media (max-width: 991px) { 
+        position: absolute;
+        bottom: 0;
+        right: 8px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+.mobile-subscribe-link {
+  position: relative;
+  margin: 3px 0 22px;
+  margin-right: -15px;
+  margin-left: -15px;
+  a {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1em;
+    color: red;
+    font-size: 14px;
+    display: block;
+  }
+}
+
+
 @media (min-width: 992px) and (max-width : 1199px){
   .social-network-container {
     margin-top: 8px;
   }
 }
-@media (min-width: 768px) and (max-width : 991px){
-}
 @media (max-width: 767px) {
   header {
-    padding: 10px 0;
+    height: 55px;
     margin-top: 0;
     border-bottom: 1px solid #999;
     > .row {
@@ -242,8 +300,13 @@ a.socialIcon:hover, .socialHoverClass {
   }
   .logo-container {
     display: inline-block;
-    float: left;
-    margin-top: 0;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    left: 0;
+    img {
+      display: inline-block;
+    }
   }
   #menu-header-main-menu {
     li {
@@ -265,8 +328,6 @@ a.socialIcon:hover, .socialHoverClass {
       margin-bottom: 8px;
       margin-top: 8px;
     }
-  }
-  .header-top-nav {
   }
   .header-logo {
     max-height: 40px;

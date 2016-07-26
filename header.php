@@ -39,9 +39,6 @@
         <div class="col-sm-6 text-center">
           <p class="header-make-img"><a href="http://makezine.com/?utm_source=makercamp.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make" target="_blank">Explore all of <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/make_logo.png" alt="Make: Makezine Logo" /></a></p>
         </div>
-        <div class="col-sm-3">
-          <p class="header-sub-link pull-right"><a id="trigger-overlay" href="#">SUBSCRIBE </a></p>
-        </div>
       </div>
     </div>   
   </div>
@@ -67,31 +64,38 @@
             <span class="icon-bar"></span>
           </button>
 
-          <!-- Main Menu -->
-          <?php
-            wp_nav_menu( array(
-              'menu'              => 'Header main menu',
-              'theme_location'    => 'primary_menu',
-              'depth'             => 1,
-              'container'         => 'div',
-              'container_id'      => 'mc-menu',
-              'container_class'   => 'collapse navbar-collapse',
-              'menu_class'        => 'nav navbar-nav',
-              'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-              'walker'            => new wp_bootstrap_navwalker())
-            );
-          ?>
+          <div id="mc-menu" class="collapse navbar-collapse">
+
+            <!-- Main Menu -->
+            <?php
+              wp_nav_menu( array(
+                'menu'              => 'Header main menu',
+                'theme_location'    => 'primary_menu',
+                'depth'             => 1,
+                'container'         => 'div',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+              );
+            ?>
+
+            <div class="mobile-subscribe-link hidden-sm hidden-md hidden-lg">
+              <a href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ">SUBSCRIBE to Make: and save</a>
+            </div>
+
+          </div>
+
         </div>
       </nav>
 
-      <!-- SOCIAL MEDIA ICONS -->
-      <div class="social-network-container col-md-3 hidden-sm hidden-xs text-center">
-        <ul class="social-network social-circle">
-            <li><a href="https://www.facebook.com/makemagazine?_rdr" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/make" class="icoTwitter" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
-            <li><a href="https://instagram.com/makemagazine/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" target="_blank"></i></a></li>
-            <li><a href="https://plus.google.com/communities/107377046073638428310" class="icoGoogle-plus" title="Google+"><i class="fa fa-google-plus" target="_blank"></i></a></li>
-        </ul>    
+      <!-- New Header Subscribe stuff -->
+      <div id="mz-header-subscribe" class="hidden-xs">
+        <div>
+          <a id="trigger-overlay" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ" target="_blank">
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/Subscribe_CTA_2x.png'; ?>" alt="Make: Magazine latest magazine cover, subscribe here" />
+          </a>
+          <a class="subscribe-red-btn" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ" target="_blank">SUBSCRIBE</a>
+        </div>
       </div>
 
     </div> <!-- row -->  
