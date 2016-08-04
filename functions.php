@@ -366,7 +366,7 @@ function stuff_for_sale_panel() { ?>
           </div>
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Maker's Softbound Notebook</h4>
+              <h4>Maker Camp Gear</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
@@ -394,9 +394,9 @@ function stuff_for_sale_panel() { ?>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/make-spinbot-kit-bagged" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/MKMNR-0_large_cropped.jpg" class="img-responsive" alt="Maker's Softbound Notebook" />
-            <p>Keep your ideas and notes in this soft-bound, gridded paper Maker notebook.</p>
-            <a class="mc-blue-btn" href="https://www.makershed.com/products/makers-soft-bound-notebook-128-pages" target="_blank">BUY NOW</a>
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/Makey-Tshirt.png'?>" class="img-responsive" alt="Maker Camp Gear" />
+            <p>Get your official 2016 Maker Camp gear. T-shirts, water bottles and more!</p>
+            <a class="mc-blue-btn" href="http://www.cafepress.com/makercampstore" target="_blank">BUY NOW</a>
           </div>        
 
         </div>
