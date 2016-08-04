@@ -3,6 +3,8 @@
  ======================= */
 .top-header-bar-brand {
   background-color: #F0F0F0;
+  z-index: 4;
+  position: relative;
   p {
     margin-bottom: 0;
     line-height: 1.3em;
@@ -29,8 +31,14 @@
 /*=========================
   HEDADER
  ======================= */
-header {
-  margin-top: 15px;
+#site-header {
+  background: #fff;
+  z-index: 4;
+  position: relative;
+  >.container {
+    padding-top: 15px;
+    position: relative;
+  }
   >.row {
     position: relative;
   }
@@ -290,12 +298,15 @@ a.socialIcon:hover, .socialHoverClass {
   }
 }
 @media (max-width: 767px) {
-  header {
+  #site-header {
     height: 55px;
     margin-top: 0;
     border-bottom: 1px solid #999;
-    > .row {
-      text-align: center;
+    > .container {
+      padding-top: 0;
+      > .row {
+        text-align: center;
+      }
     }
   }
   .logo-container {

@@ -46,59 +46,61 @@
   </div>
 
   <!-- Header area -->
-  <header class="container">
-    <div class="row">
+  <header id="site-header">
+    <div class="container">
+      <div class="row">
 
-      <!-- LOGO & TAG LINE -->
-      <div class="col-md-2 col-sm-3 logo-container">
-        <a href="/">
-          <img src="<?php echo get_template_directory_uri() . '/assets/img/makercamp-logo.png' ?>" class="header-logo img-responsive" alt="Maker Camp projects, making, building, tickering for kids" />
-        </a>
-      </div>
+        <!-- LOGO & TAG LINE -->
+        <div class="col-md-2 col-sm-3 logo-container">
+          <a href="/">
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/makercamp-logo.png' ?>" class="header-logo img-responsive" alt="Maker Camp projects, making, building, tickering for kids" />
+          </a>
+        </div>
 
-      <!-- MENUS -->
-      <nav class="header-top-nav col-md-7 col-sm-9">
-        <div class="row">
-          <button type="button" class="menu-bar visible-xs-block navbar-toggle" data-target="#mc-menu" data-toggle="collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <!-- MENUS -->
+        <nav class="header-top-nav col-md-7 col-sm-9">
+          <div class="row">
+            <button type="button" class="menu-bar visible-xs-block navbar-toggle" data-target="#mc-menu" data-toggle="collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-          <div id="mc-menu" class="collapse navbar-collapse">
+            <div id="mc-menu" class="collapse navbar-collapse">
 
-            <!-- Main Menu -->
-            <?php
-              wp_nav_menu( array(
-                'menu'              => 'Header main menu',
-                'theme_location'    => 'primary_menu',
-                'depth'             => 1,
-                'container'         => 'div',
-                'menu_class'        => 'nav navbar-nav',
-                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
-              );
-            ?>
+              <!-- Main Menu -->
+              <?php
+                wp_nav_menu( array(
+                  'menu'              => 'Header main menu',
+                  'theme_location'    => 'primary_menu',
+                  'depth'             => 1,
+                  'container'         => 'div',
+                  'menu_class'        => 'nav navbar-nav',
+                  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                  'walker'            => new wp_bootstrap_navwalker())
+                );
+              ?>
 
-            <div class="mobile-subscribe-link hidden-sm hidden-md hidden-lg">
-              <a href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ">SUBSCRIBE to Make: and save</a>
+              <div class="mobile-subscribe-link hidden-sm hidden-md hidden-lg">
+                <a href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ">SUBSCRIBE to Make: and save</a>
+              </div>
+
             </div>
 
           </div>
+        </nav>
 
+        <!-- New Header Subscribe stuff -->
+        <div id="mz-header-subscribe" class="hidden-xs">
+          <div>
+            <a id="trigger-overlay" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ" target="_blank">
+              <img src="<?php echo get_template_directory_uri() . '/assets/img/Subscribe_CTA_2x.png'; ?>" alt="Make: Magazine latest magazine cover, subscribe here" />
+            </a>
+            <a class="subscribe-red-btn" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ" target="_blank">SUBSCRIBE</a>
+          </div>
         </div>
-      </nav>
 
-      <!-- New Header Subscribe stuff -->
-      <div id="mz-header-subscribe" class="hidden-xs">
-        <div>
-          <a id="trigger-overlay" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ" target="_blank">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/Subscribe_CTA_2x.png'; ?>" alt="Make: Magazine latest magazine cover, subscribe here" />
-          </a>
-          <a class="subscribe-red-btn" href="https://readerservices.makezine.com/mk/default.aspx?pc=MK&pk=M6GMKZ" target="_blank">SUBSCRIBE</a>
-        </div>
       </div>
-
-    </div> <!-- row -->  
+    </div>
   </header>

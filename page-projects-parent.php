@@ -77,8 +77,9 @@ if( have_rows('summer_2016_themes')) {
             <?php if (!empty($project_1)) { ?>
             <article class="pl-theme-project">
               <h4><span><?php echo $project_1->post_title; ?></span></h4>
-              <div class="pl-project-img" style="background-image: url(<?php echo $project_image_1; ?>);">
-              </div>
+              <a class="pl-project-img-parent" href="<?php echo $project_1->guid; ?>">
+                <div class="pl-project-img" style="background-image: url(<?php echo $project_image_1; ?>);"></div>
+              </a>
               <a class="btn-cyan" href="<?php echo $project_1->guid; ?>">Make This!</a>
             </article>
             <?php } else { ?>
@@ -88,8 +89,9 @@ if( have_rows('summer_2016_themes')) {
             <?php if (!empty($project_2)) { ?>
             <article class="pl-theme-project">
               <h4><span><?php echo $project_2->post_title; ?></span></h4>
-              <div class="pl-project-img" style="background-image: url(<?php echo $project_image_2; ?>);">
-              </div>
+              <a class="pl-project-img-parent" href="<?php echo $project_2->guid; ?>">
+                <div class="pl-project-img" style="background-image: url(<?php echo $project_image_2; ?>);"></div>
+              </a>
               <a class="btn-cyan" href="<?php echo $project_2->guid; ?>">Make This!</a>
             </article>
             <?php } else { ?>
@@ -99,8 +101,9 @@ if( have_rows('summer_2016_themes')) {
             <?php if (!empty($project_3)) { ?>
             <article class="pl-theme-project">
               <h4><span><?php echo $project_3->post_title; ?></span></h4>
-              <div class="pl-project-img" style="background-image: url(<?php echo $project_image_3; ?>);">
-              </div>
+              <a class="pl-project-img-parent" href="<?php echo $project_3->guid; ?>">
+                <div class="pl-project-img" style="background-image: url(<?php echo $project_image_3; ?>);"></div>
+              </a>
               <a class="btn-cyan" href="<?php echo $project_3->guid; ?>">Make This!</a>
             </article>
             <?php } else { ?>
@@ -110,8 +113,9 @@ if( have_rows('summer_2016_themes')) {
             <?php if (!empty($project_4)) { ?>
             <article class="pl-theme-project">
               <h4><span><?php echo $project_4->post_title; ?></span></h4>
-              <div class="pl-project-img" style="background-image: url(<?php echo $project_image_4; ?>);">
-              </div>
+              <a class="pl-project-img-parent" href="<?php echo $project_4->guid; ?>">
+                <div class="pl-project-img" style="background-image: url(<?php echo $project_image_4; ?>);"></div>
+              </a>
               <a class="btn-cyan" href="<?php echo $project_4->guid; ?>">Make This!</a>
             </article>
             <?php } else { ?>
