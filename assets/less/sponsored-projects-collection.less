@@ -1,0 +1,178 @@
+.sponsored-projects-collection {
+  position: relative;
+  .sp-pjct-hero {
+    padding: 0 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    height: 38vw;
+    .sp-pjct-div {
+      position: absolute;
+      top: 40%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      text-shadow: 0 0 27px #000;
+      img {
+        width: 110px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1 {
+        color: #fff; 
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1.2em;
+        margin-bottom: 0;
+        margin-top: 30px;
+      }
+      @media (max-width: 767px) {
+        padding-top: 0;
+        img {
+          width: 10vw;
+        }
+        h1 {
+          font-size: 6vw;
+          margin-top: 5px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .sp-pjct-theme {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    h2 {
+      color: #3fafed;
+      margin-top: 0;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    p {
+      line-height: 1.6em;
+      margin-bottom: 15px;
+      max-height: 100px;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    hr {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      border-top: 1px solid #3fafed;
+    }
+    h3 {
+      color: #3fafed;
+      margin-top: 0;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 300;
+    }
+    @media (max-width: 767px) {
+      .sp-pjct-desc {
+        margin-bottom: 15px;
+        p {
+          height: 100%;
+        }
+      }
+    }
+
+    .sp-pjct-projects-cont {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+      @media (max-width: 767px) {
+        
+      }
+      .sp-pjct-project {
+        //flex-basis: 25%;
+        text-align: center;
+        padding: 0 15px 50px;
+        @media (max-width: 767px) {
+          flex-basis: 50%;
+        }
+        a {
+          display: inline-block;
+          width: 210px;
+          text-align: center;
+          @media (min-width: 992px) and (max-width: 1199px) {
+            width: 200px;
+          }
+          @media (min-width: 768px) and (max-width: 991px) {
+            width: 150px;
+          }
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+          h3 {
+            text-align: center;
+            color: #444;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 300;
+            line-height: 1.2em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            height: 45px;
+            overflow: hidden;
+            position: relative;
+            span {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+            }
+          }
+          .pl-project-img-parent {
+            width: 100%;
+            height: 210px;
+            overflow: hidden;
+            display: block;
+            .pl-project-img {
+              width: 100%;
+              height: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+              transition: transform .2s cubic-bezier(0.4, 0, 1, 1);
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+              height: 200px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+              height: 150px;
+            }
+            @media (max-width: 767px) {
+              height: 40vw;
+            }
+          }
+          .btn-cyan {
+            display: block;
+            text-align: center;
+            border-radius: 20px;
+            margin-top: 10px;
+          }
+          &:hover {
+            .pl-project-img {
+              transform: scale(1.07);
+              transition: transform .2s cubic-bezier(0.4, 0, 1, 1);
+            }
+            .btn-cyan {
+              background-color: #029bd4;
+              transition: background-color .2s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

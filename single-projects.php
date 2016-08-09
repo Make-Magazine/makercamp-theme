@@ -22,8 +22,6 @@ $parent_id = $post->post_parent; ?>
   $what_will_you_learn = get_field('what_will_you_learn'); ?>
 
   <div id="single-project">
-    <p style="display:none;"><?php echo $parent_id; ?></p>
-
     <section class="project-hero" style="background-image: url(<?php echo $hero_image['url']; ?>);">
       <div class="sp-hero-div">
         <h2><?php echo $theme->name; ?></h2>
