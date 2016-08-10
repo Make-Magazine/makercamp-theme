@@ -21,7 +21,9 @@
   $theme_title = get_field('theme_title');
   $theme_image = get_field('theme_image');
   $theme_description = get_field('theme_description');
-  $skills_learned = get_field('skills_learned'); ?>
+  $skills_learned = get_field('skills_learned');
+  $sponsored_by_text = get_field('sponsored_by_text');
+  $sponsored_by_img = get_field('sponsored_by_img'); ?>
 
   <section class="sp-pjct-theme container">
     <div class="row">
@@ -38,6 +40,16 @@
 
     <div class="row">
       <div class="col-xs-12">
+        <?php if ($sponsored_by_text || $sponsored_by_img) { ?>
+          <div class="sp-pjct-theme-sponsor">
+            <?php if ($sponsored_by_text) { ?>
+              <span><?php echo $sponsored_by_text ?></span>
+            <?php } ?>
+            <?php if ($sponsored_by_img) { ?>
+              <img class="img-responsive" src="<?php echo $sponsored_by_img ?>" alt="<?php echo $theme_title ?>" />
+            <?php } ?>
+          </div>
+        <?php } ?>
         <hr />
         <h3>PICK A PROJECT AND GET MAKING!</h3>
         <div class="sp-pjct-projects-cont">
@@ -68,6 +80,27 @@
     </div>
 
   </section>
+
+  <?php echo social_media_panel(); ?>
+
+  <section class="helps-make-makers">
+    <div class="container">
+      <h3>MORE MAKER RESOURCES</h3>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <p>Make: produces a variety of great products and helpful project tutorials to enhance your making experience. Here are a few select items that Maker Camp affiliates are sure to enjoy.</p>
+      </div>
+    </div>
+    <div class="triangle-block"></div>
+  </section>
+
+  <?php echo stuff_for_sale_panel(); ?>
+
+<!--   <section class="sp-pjct-more">
+    <div class="container">
+      <h4>More Maker Resources</h4>
+      <p>Make: produces a var</p>
+    </div>
+  </section> -->
 </div>
 
 <?php get_footer(); ?>
