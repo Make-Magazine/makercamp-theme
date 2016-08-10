@@ -15,6 +15,7 @@ $parent_id = $post->post_parent; ?>
   get_header(); 
 
   $hero_image = get_field('hero_image');
+  $hero_image_sponsor = get_field('hero_image_sponsor');
   $theme = get_field('theme');
   $sponsored_by = get_field('sponsored_by');
   $sponsored_by_2 = get_field('sponsored_by_2');
@@ -24,6 +25,9 @@ $parent_id = $post->post_parent; ?>
   <div id="single-project">
     <section class="project-hero" style="background-image: url(<?php echo $hero_image['url']; ?>);">
       <div class="sp-hero-div">
+        <?php if ($hero_image_sponsor) { ?>
+          <img src="<?php echo $hero_image_sponsor ?>" alt="Maker Camp project theme sponsorship logo" />
+        <?php } ?>
         <h2><?php echo $theme->name; ?></h2>
         <hr />
         <h1><?php the_title(); ?></h1>

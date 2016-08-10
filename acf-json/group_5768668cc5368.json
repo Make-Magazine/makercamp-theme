@@ -27,6 +27,30 @@
             "mime_types": ""
         },
         {
+            "key": "field_57ab8d4b5ed83",
+            "label": "Hero Image Sponsor",
+            "name": "hero_image_sponsor",
+            "type": "image",
+            "instructions": "150px width for minimum quality or 300px width to include retina quality. This image appears above the project title in the top hero area.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_577d74ab339d7",
             "label": "Theme",
             "name": "theme",
@@ -53,7 +77,7 @@
             "label": "Sponsored By: (image 1)",
             "name": "sponsored_by",
             "type": "image",
-            "instructions": "Sponsor logo with transparent background. Make sure the size is not too large. <600px",
+            "instructions": "150px width for minimum quality or 300px width to include retina quality. This image appears in the grey bar below the hero image.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -77,7 +101,7 @@
             "label": "Sponsored By: (image 2)",
             "name": "sponsored_by_2",
             "type": "image",
-            "instructions": "Sponsor logo with transparent background. Make sure the size is not too large. <600px",
+            "instructions": "150px width for minimum quality or 300px width to include retina quality. This image appears in the grey bar below the hero image.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -439,5 +463,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1468212035
+    "modified": 1470860874
 }
