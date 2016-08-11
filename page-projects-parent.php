@@ -46,10 +46,8 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-sm-pull-6">
-          <a href="/science-journal">
-            <h3>Science Journal<br> <strong>Bonus Projects</strong></h3>
-            <span class="btn-cyan">CHECK THEM OUT</span>
-          </a>
+          <h3>Science Journal<br> <strong>Bonus Projects</strong></h3>
+          <a href="/science-journal" class="btn-cyan">CHECK THEM OUT</a>
         </div>
       </div>
     </div>

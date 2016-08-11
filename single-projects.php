@@ -38,7 +38,7 @@ $parent_id = $post->post_parent; ?>
     <section class="sp-sponsor text-center">
       <div class="triangle-block"></div>
       <?php if (!empty($sponsored_by)) { ?>
-        <p>SPONSORED BY:</p>
+        <p>SPONSORED BY</p>
         <img src="<?php echo $sponsored_by['url']; ?>" alt="Maker Camp Project Sponsor logo" />
       <?php } ?>
       <?php if (!empty($sponsored_by_2)) { ?>
