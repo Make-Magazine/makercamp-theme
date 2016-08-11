@@ -32,8 +32,31 @@
 
   </section>
 
-<?php
+  <section class="pl-sponsored-projects">
+    <div class="triangle-block"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6">
+          <img src="<?php echo get_template_directory_uri() . '/assets/img/Making-Science_Diamond.png' ?>" alt="Science Journal sponsored projects logo" />
+          <p class="pl-sponsored-blue">Maker Camp, iushdc iuhdcivuh siuh isuch iushc iush ciuhsciuh siuch isuhc iush ciush ciush dc</p>
+          <p>odihjsoijsoivj osij oisj vois joi ovij soivj os jvois voij sovij osdj vsjdvoi jsovsod vjos v iosdj vo sov isdjvo sdov os vois jvo s vos jov so vs voi sdo vois djvoi sov os vo soivj osi vo so vso v so  </p>
+          <div class="pl-theme-sponsor">
+            <span>SPONSORED BY</span>
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/Google-Gry.png' ?>" alt="Google sponsored logo" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+          <a href="/science-journal">
+            <h3>Science Journal<br> <strong>Bonus Projects</strong></h3>
+            <span class="btn-cyan">CHECK THEM OUT</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
+  </section>
+
+<?php
 if( have_rows('summer_2016_themes')) {
 
   $i = 1;
@@ -76,11 +99,13 @@ if( have_rows('summer_2016_themes')) {
 
             <?php if (!empty($project_1)) { ?>
             <article class="pl-theme-project">
-              <h4><span><?php echo $project_1->post_title; ?></span></h4>
-              <a class="pl-project-img-parent" href="<?php echo $project_1->guid; ?>">
-                <div class="pl-project-img" style="background-image: url(<?php echo $project_image_1; ?>);"></div>
+              <a href="<?php echo $project_1->guid; ?>">
+                <h4><span><?php echo $project_1->post_title; ?></span></h4>
+                <div class="pl-project-img-parent">
+                  <div class="pl-project-img" style="background-image: url(<?php echo $project_image_1; ?>);"></div>
+                </div>
+                <span class="btn-cyan" href="<?php echo $project_1->guid; ?>">Make This!</span>
               </a>
-              <a class="btn-cyan" href="<?php echo $project_1->guid; ?>">Make This!</a>
             </article>
             <?php } else { ?>
               <div class="pl-theme-project hidden-xs"></div>
@@ -88,11 +113,13 @@ if( have_rows('summer_2016_themes')) {
 
             <?php if (!empty($project_2)) { ?>
             <article class="pl-theme-project">
-              <h4><span><?php echo $project_2->post_title; ?></span></h4>
-              <a class="pl-project-img-parent" href="<?php echo $project_2->guid; ?>">
-                <div class="pl-project-img" style="background-image: url(<?php echo $project_image_2; ?>);"></div>
+              <a href="<?php echo $project_2->guid; ?>">
+                <h4><span><?php echo $project_2->post_title; ?></span></h4>
+                <div class="pl-project-img-parent">
+                  <div class="pl-project-img" style="background-image: url(<?php echo $project_image_2; ?>);"></div>
+                </div>
+                <span class="btn-cyan" href="<?php echo $project_2->guid; ?>">Make This!</span>
               </a>
-              <a class="btn-cyan" href="<?php echo $project_2->guid; ?>">Make This!</a>
             </article>
             <?php } else { ?>
               <div class="pl-theme-project hidden-xs"></div>
@@ -100,11 +127,13 @@ if( have_rows('summer_2016_themes')) {
 
             <?php if (!empty($project_3)) { ?>
             <article class="pl-theme-project">
-              <h4><span><?php echo $project_3->post_title; ?></span></h4>
-              <a class="pl-project-img-parent" href="<?php echo $project_3->guid; ?>">
-                <div class="pl-project-img" style="background-image: url(<?php echo $project_image_3; ?>);"></div>
+              <a href="<?php echo $project_3->guid; ?>">
+                <h4><span><?php echo $project_3->post_title; ?></span></h4>
+                <div class="pl-project-img-parent">
+                  <div class="pl-project-img" style="background-image: url(<?php echo $project_image_3; ?>);"></div>
+                </div>
+                <span class="btn-cyan" href="<?php echo $project_3->guid; ?>">Make This!</span>
               </a>
-              <a class="btn-cyan" href="<?php echo $project_3->guid; ?>">Make This!</a>
             </article>
             <?php } else { ?>
               <div class="pl-theme-project hidden-xs"></div>
@@ -112,11 +141,13 @@ if( have_rows('summer_2016_themes')) {
 
             <?php if (!empty($project_4)) { ?>
             <article class="pl-theme-project">
-              <h4><span><?php echo $project_4->post_title; ?></span></h4>
-              <a class="pl-project-img-parent" href="<?php echo $project_4->guid; ?>">
-                <div class="pl-project-img" style="background-image: url(<?php echo $project_image_4; ?>);"></div>
+              <a href="<?php echo $project_4->guid; ?>">
+                <h4><span><?php echo $project_4->post_title; ?></span></h4>
+                <div class="pl-project-img-parent">
+                  <div class="pl-project-img" style="background-image: url(<?php echo $project_image_4; ?>);"></div>
+                </div>
+                <span class="btn-cyan" href="<?php echo $project_4->guid; ?>">Make This!</span>
               </a>
-              <a class="btn-cyan" href="<?php echo $project_4->guid; ?>">Make This!</a>
             </article>
             <?php } else { ?>
               <div class="pl-theme-project hidden-xs"></div>
