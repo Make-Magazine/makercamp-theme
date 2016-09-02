@@ -185,7 +185,7 @@
 	</div>
 	<!-- END container -->
     <div class="copyright">
-      <p>Make: is a registered trademark and the Maker Camp logo and the Makey robot are trademarks of Maker Media.</p>
+      <p>Make: is a registered trademark and the Maker Camp logo and the Makey robot are trademarks of Maker Media | <a href="//makermedia.com/privacy/">Privacy</a> | <a href="//makermedia.com/terms/">Terms</a></p>
       <p>Copyright © 2004-2016 Maker Media, Inc. All rights reserved</p>
     </div>
 </footer>
