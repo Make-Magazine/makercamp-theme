@@ -38,16 +38,16 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-sm-push-6">
           <img src="<?php echo get_template_directory_uri() . '/assets/img/Making-Science_Diamond.png' ?>" alt="Science Journal sponsored projects logo" />
-          <p class="pl-sponsored-blue">Maker Camp, iushdc iuhdcivuh siuh isuch iushc iush ciuhsciuh siuch isuhc iush ciush ciush dc</p>
-          <p>odihjsoijsoivj osij oisj vois joi ovij soivj os jvois voij sovij osdj vsjdvoi jsovsod vjos v iosdj vo sov isdjvo sdov os vois jvo s vos jov so vs voi sdo vois djvoi sov os vo soivj osi vo so vso v so  </p>
+          <p class="pl-sponsored-blue">Use your smartphone for science! With an Android and Google's new Science Journal app, you can measure the world around you while you're playing and having fun.</p>
+          <p>Working with sensors is an easy way to explore, experiment, and measure your environment — and these 10 special projects will get you started. Whether you're discovering the forces of physics at your local playground or determining which of your friends jumps the highest, these projects will help you better understand your world. What are you waiting for? Get started today!</p>
           <div class="pl-theme-sponsor">
             <span>SPONSORED BY</span>
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/Google-Gry.png' ?>" alt="Google sponsored logo" />
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/Google-Color@2x.png' ?>" alt="Google sponsored logo" />
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-sm-pull-6">
           <h3>Science Journal<br> <strong>Bonus Projects</strong></h3>
-          <a href="/science-journal" class="btn-cyan">CHECK THEM OUT</a>
+          <a href="/science-journal" class="mc-blue-btn">CHECK THEM OUT</a>
         </div>
       </div>
     </div>
