@@ -394,9 +394,9 @@ function stuff_for_sale_panel() { ?>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/make-spinbot-kit-bagged" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="<?php echo get_template_directory_uri() . '/assets/img/Makey-Tshirt.png'?>" class="img-responsive" alt="Maker Camp Gear" />
-            <p>Get your official 2016 Maker Camp gear. T-shirts, water bottles and more!</p>
-            <a class="mc-blue-btn" href="http://www.cafepress.com/makercampstore" target="_blank">BUY NOW</a>
+            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/DSC_5185_1_large_cropped.jpg" class="img-responsive" alt="Maker Camp Hat" />
+            <p>Keep your campers cool with an official 2016 Maker Camp hat!</p>
+            <a class="mc-blue-btn" href="http://www.makershed.com/products/maker-faire-2016-trucker-hat" target="_blank">BUY NOW</a>
           </div>        
 
         </div>
