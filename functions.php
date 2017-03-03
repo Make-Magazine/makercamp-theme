@@ -87,7 +87,7 @@ function makercamp_theme_scripts() {
   wp_enqueue_style( 'makercamp_theme-style', get_stylesheet_uri() );
   wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), null, 'all' );
   /* Add Custom CSS */
-  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=1.9' );
+  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/public/css/custom.min.css?v=2.0' );
   /* Add jquery.cookie */
   //wp_enqueue_script( 'jquery.cookie', get_stylesheet_directory_uri() . '/bower_components/jquery.cookie/jquery.cookie.js', array( 'jquery' ), NULL, TRUE );
   /* Add Fancybox */
@@ -348,7 +348,7 @@ function stuff_for_sale_panel() { ?>
 
           <div class="col-xs-6 col-sm-3">
             <div class="sale-flex-btm">
-              <h4>Getting Started with Wearables</h4>
+              <h4>Make: Getting Started with Arduino Kit</h4>
               <div class="triangle-block"></div>
             </div>
           </div>
@@ -379,22 +379,26 @@ function stuff_for_sale_panel() { ?>
         <div class="row">
 
           <div class="col-xs-6 col-sm-3">
-            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/DSC_4891_large_cropped.jpg" class="img-responsive" alt="Getting Started with Wearables" />
-            <p>Can your clothes send you an email? They will with this kit!</p>
-            <a class="mc-blue-btn" href="http://www.makershed.com/products/copy-of-template-standard-product-5" target="_blank">BUY NOW</a>
+            <img src="//cdn.shopify.com/s/files/1/0243/7593/products/MakeKits-Arduino-components_web_large.jpg" class="img-responsive" alt="Getting Started with Arduino Kit" />
+            <h4>Make: Getting Started with Arduino Kit</h4>
+            <p>Kit contains the components and book you need to make getting started with Arduino easy.</p>
+            <a class="mc-blue-btn" href="http://www.makershed.com/products/make-getting-started-with-arduino-kit-special-edition" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
             <img src="<?php echo get_template_directory_uri() . '/assets/img/StartMaking.jpg' ?>" class="img-responsive" alt="Start Making!" />
+            <h4>Start Making!</h4>
             <p>Six great projects guaranteed to spark your imagination and get you making.</p>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/make-start-making" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/MSRSPIN-2_d59bdbdc-5ad6-4503-a38f-6da199eda67a_large_cropped.jpg" class="img-responsive" alt="Spinbot kit" />
+            <img src="//cdn.shopify.com/s/files/1/0243/7593/products/MSRSPIN-2_d59bdbdc-5ad6-4503-a38f-6da199eda67a_large_cropped.jpg" class="img-responsive" alt="Spinbot kit" />
+            <h4>Spinbot kit</h4>
             <p>Spinbots are easy-to-make drawing robots that kids love to build, tweak, and enjoy.</p>
             <a class="mc-blue-btn" href="https://www.makershed.com/products/make-spinbot-kit-bagged" target="_blank">BUY NOW</a>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <img src="https://cdn.shopify.com/s/files/1/0243/7593/products/DSC_5185_1_large_cropped.jpg" class="img-responsive" alt="Maker Camp Hat" />
+            <img src="//cdn.shopify.com/s/files/1/0243/7593/products/DSC_5185_1_large_cropped.jpg" class="img-responsive" alt="Maker Camp Hat" />
+            <h4>Maker Camp Gear</h4>
             <p>Keep your campers cool with an official 2016 Maker Camp hat!</p>
             <a class="mc-blue-btn" href="http://www.makershed.com/products/maker-faire-2016-trucker-hat" target="_blank">BUY NOW</a>
           </div>        
